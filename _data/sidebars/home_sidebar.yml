@@ -1,0 +1,50 @@
+# This is your sidebar TOC. The sidebar code loops through sections here and provides the appropriate formatting.
+
+
+entries:
+- title: Sidebar
+  product:
+  version:
+  folders:
+
+  - title:
+    output: pdf
+    type: frontmatter
+    folderitems:
+    - title:
+      url: /titlepage.html
+      output: pdf
+      type: frontmatter
+    - title:
+      url: /tocpage.html
+      output: pdf
+      type: frontmatter
+
+  - title: Getting Started
+    output: web, pdf
+
+  - title: Tour
+    output: web, pdf
+
+  - title: Tutorials
+    output: web, pdf
+
+  - title: API Documentation
+    output: web, pdf
+
+    folderitems:
+    - title: app
+      url: /api/app/
+      output: web, pdf
+
+    - title: canvas
+      url: /api/canvas/
+      output: web, pdf
+
+    - title: dialog
+      url: /api/dialog/
+      output: web, pdf
+
+    - title: theme
+      url: /api/theme/
+      output: web, pdf
