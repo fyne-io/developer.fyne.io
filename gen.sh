@@ -1,5 +1,7 @@
 #!/bin/sh
 
+go get -u github.com/andydotxyz/godocdown/godocdown
+
 ROOT="`go env GOPATH`/src/fyne.io/fyne"
 
 # generate API docs
@@ -7,11 +9,11 @@ ROOT="`go env GOPATH`/src/fyne.io/fyne"
 DIRS=`find $ROOT -not -path '*/\.*' -type d | grep -v vendor | grep -v internal`
 PREFIX="api"
 
-godocdown -template="_gen/api.md" $ROOT > "$PREFIX/index.md" 2>&1 | grep -v "Could not find package"
+godocdown -template="_gen/api.md" -outputDir "$PREFIX/" $ROOT 2>&1 | grep -v "Could not find package"
 for DIR in $DIRS; do
   PKG=`echo $DIR | cut -c$((${#ROOT}+2))-`
  
   mkdir -p "$PREFIX/$PKG"
  
-  godocdown -template="_gen/api.md" -heading="1Word" $DIR > "$PREFIX/$PKG/index.md" 2>&1 | grep -v "Could not find package"
+  godocdown -template="_gen/api.md" -heading="1Word" -outputDir "$PREFIX/$PKG/" $DIR 2>&1 | grep -v "Could not find package"
 done

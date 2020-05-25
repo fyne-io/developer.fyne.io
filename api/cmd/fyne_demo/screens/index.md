@@ -53,3 +53,5 @@ IconsPanel loads a panel that shows the various icons available in Fyne
 func WidgetScreen() fyne.CanvasObject
 ```
 WidgetScreen shows a panel containing widget demos
+
+#### types

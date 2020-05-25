@@ -42,3 +42,5 @@ func RenderWindow(w fyne.Window)
 ```
 RenderWindow takes a window and converts it's canvas into an inline image for
 showing in the playground
+
+#### types

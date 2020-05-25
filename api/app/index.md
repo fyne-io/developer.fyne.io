@@ -40,21 +40,6 @@ func NewWithID(id string) fyne.App
 NewWithID returns a new app instance using the test (headless) driver. The ID
 string should be globally unique to this app.
 
-#### type SettingsSchema
+#### types
 
-```go
-type SettingsSchema struct {
-	// these items are used for global settings load
-	ThemeName string  `json:"theme"`
-	Scale     float32 `json:"scale"`
-}
-```
-
-SettingsSchema is used for loading and storing global settings
-
-#### func (*SettingsSchema) StoragePath
-
-```go
-func (sc *SettingsSchema) StoragePath() string
-```
-StoragePath returns the location of the settings storage
+ * [SettingsSchema](settingsschema.html)
