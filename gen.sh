@@ -6,7 +6,7 @@ ROOT="`go env GOPATH`/src/fyne.io/fyne"
 
 # generate API docs
 
-DIRS=`find $ROOT -not -path '*/\.*' -type d | grep -v vendor | grep -v internal`
+DIRS=`find $ROOT -not -path '*/\.*' -type d | grep -v vendor | grep -v internal | grep -v testdata`
 PREFIX="api"
 
 godocdown -template="_gen/api.md" -outputDir "$PREFIX/" $ROOT 2>&1 | grep -v "Could not find package"
