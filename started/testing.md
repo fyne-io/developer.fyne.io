@@ -1,5 +1,5 @@
 ---
-layout: develop
+layout: page
 title: Testing
 
 order: 40

@@ -1,5 +1,5 @@
 ---
-layout: develop
+layout: page
 title: Cross Compiling
 
 order: 70

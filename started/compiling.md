@@ -1,5 +1,5 @@
 ---
-layout: develop
+layout: page
 title: Compile Options
 
 order: 60

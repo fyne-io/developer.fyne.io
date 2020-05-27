@@ -1,5 +1,5 @@
 ---
-layout: develop
+layout: page
 title: Your First App
 
 order: 20

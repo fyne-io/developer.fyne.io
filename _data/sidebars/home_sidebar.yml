@@ -22,7 +22,9 @@ entries:
 
   - title: Getting Started
     output: web, pdf
-     - title: Introduction
+    folderitems:
+    
+    - title: Introduction
       url: /started/
       output: web, pdf
 

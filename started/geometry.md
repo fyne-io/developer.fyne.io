@@ -1,5 +1,5 @@
 ---
-layout: develop
+layout: page
 title: Scaling & Geometry
 
 order: 200
