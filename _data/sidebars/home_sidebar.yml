@@ -45,6 +45,24 @@ entries:
       url: /api/dialog/
       output: web, pdf
 
+    - title: layout
+      url: /api/layout/
+      output: web, pdf
+
+    - title: storage
+      url: /api/storage/
+      output: web, pdf
+
+    - title: test
+      url: /api/test/
+      output: web, pdf
+
     - title: theme
       url: /api/theme/
       output: web, pdf
+
+    - title: widget
+      url: /api/widget/
+      output: web, pdf
+
+
