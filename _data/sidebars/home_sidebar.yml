@@ -22,6 +22,35 @@ entries:
 
   - title: Getting Started
     output: web, pdf
+     - title: Introduction
+      url: /started/
+      output: web, pdf
+
+    - title: Your First App
+      url: /started/firstapp
+      output: web, pdf
+
+    - title: Widget List
+      url: /started/widgets
+      output: web, pdf
+
+    - title: Testing
+      url: /started/testing
+      output: web, pdf
+
+    - title: Packaging
+      url: /started/distribution
+      output: web, pdf
+
+    - title: Compile Options
+      url: /started/compiling
+      output: web, pdf
+
+    - title: Cross Compiling
+      url: /started/cross-compiling
+      output: web, pdf
+
+
 
   - title: Tour
     output: web, pdf
