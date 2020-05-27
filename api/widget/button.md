@@ -42,16 +42,14 @@ NewButton creates a new button widget with the set label and tap handler
 ```go
 func NewButtonWithIcon(label string, icon fyne.Resource, tapped func()) *Button
 ```
-NewButtonWithIcon creates a new button widget with the specified label, themed
-icon and tap handler
+NewButtonWithIcon creates a new button widget with the specified label, themed icon and tap handler
 
 #### func (*Button) CreateRenderer
 
 ```go
 func (b *Button) CreateRenderer() fyne.WidgetRenderer
 ```
-CreateRenderer is a private method to Fyne which links this widget to its
-renderer
+CreateRenderer is a private method to Fyne which links this widget to its renderer
 
 #### func (*Button) Cursor
 
@@ -107,5 +105,4 @@ SetText allows the button label to be changed
 ```go
 func (b *Button) Tapped(*fyne.PointEvent)
 ```
-Tapped is called when a pointer tapped event is captured and triggers any tap
-handler
+Tapped is called when a pointer tapped event is captured and triggers any tap handler

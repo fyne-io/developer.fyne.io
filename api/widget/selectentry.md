@@ -18,8 +18,7 @@ type SelectEntry struct {
 }
 ```
 
-SelectEntry is an input field which supports selecting from a fixed set of
-options.
+SelectEntry is an input field which supports selecting from a fixed set of options.
 
 #### func  NewSelectEntry
 

@@ -25,8 +25,7 @@ BaseWidget provides a helper that handles basic widget behaviours.
 ```go
 func (w *BaseWidget) ExtendBaseWidget(wid fyne.Widget)
 ```
-ExtendBaseWidget is used by an extending widget to make use of BaseWidget
-functionality.
+ExtendBaseWidget is used by an extending widget to make use of BaseWidget functionality.
 
 #### func (*BaseWidget) Hide
 
@@ -47,8 +46,7 @@ MinSize for the widget - it should never be resized below this value.
 ```go
 func (w *BaseWidget) Move(pos fyne.Position)
 ```
-Move the widget to a new position, relative to its parent. Note this should not
-be used if the widget is being managed by a Layout within a Container.
+Move the widget to a new position, relative to its parent. Note this should not be used if the widget is being managed by a Layout within a Container.
 
 #### func (*BaseWidget) Position
 
@@ -69,8 +67,7 @@ Refresh causes this widget to be redrawn in it's current state
 ```go
 func (w *BaseWidget) Resize(size fyne.Size)
 ```
-Resize sets a new size for a widget. Note this should not be used if the widget
-is being managed by a Layout within a Container.
+Resize sets a new size for a widget. Note this should not be used if the widget is being managed by a Layout within a Container.
 
 #### func (*BaseWidget) Show
 
@@ -91,5 +88,4 @@ Size gets the current size of this widget.
 ```go
 func (w *BaseWidget) Visible() bool
 ```
-Visible returns whether or not this widget should be visible. Note that this may
-not mean it is currently visible if a parent has been hidden.
+Visible returns whether or not this widget should be visible. Note that this may not mean it is currently visible if a parent has been hidden.

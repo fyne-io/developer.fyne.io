@@ -20,8 +20,7 @@ type AccordionContainer struct {
 }
 ```
 
-AccordionContainer displays a list of AccordionItems. Each item is represented
-by a button that reveals a detailed view when tapped.
+AccordionContainer displays a list of AccordionItems. Each item is represented by a button that reveals a detailed view when tapped.
 
 #### func  NewAccordionContainer
 
@@ -56,8 +55,7 @@ CloseAll collapses all items.
 ```go
 func (a *AccordionContainer) CreateRenderer() fyne.WidgetRenderer
 ```
-CreateRenderer is a private method to Fyne which links this widget to its
-renderer
+CreateRenderer is a private method to Fyne which links this widget to its renderer
 
 #### func (*AccordionContainer) MinSize
 

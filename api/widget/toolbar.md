@@ -40,8 +40,7 @@ Append a new ToolbarItem to the end of this Toolbar
 ```go
 func (t *Toolbar) CreateRenderer() fyne.WidgetRenderer
 ```
-CreateRenderer is a private method to Fyne which links this widget to its
-renderer
+CreateRenderer is a private method to Fyne which links this widget to its renderer
 
 #### func (*Toolbar) MinSize
 

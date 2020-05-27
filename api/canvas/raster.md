@@ -27,38 +27,28 @@ Raster describes a raster image area that can render in a Fyne canvas
 ```go
 func NewRaster(generate func(w, h int) image.Image) *Raster
 ```
-NewRaster returns a new Image instance that is rendered dynamically using the
-specified generate function. Images returned from this method should draw
-dynamically to fill the width and height parameters passed to pixelColor.
+NewRaster returns a new Image instance that is rendered dynamically using the specified generate function. Images returned from this method should draw dynamically to fill the width and height parameters passed to pixelColor.
 
 #### func  NewRasterFromImage
 
 ```go
 func NewRasterFromImage(img image.Image) *Raster
 ```
-NewRasterFromImage returns a new Raster instance that is rendered from the Go
-image.Image passed in. Rasters returned from this method will map pixel for
-pixel to the screen starting img.Bounds().Min pixels from the top left of the
-canvas object. Truncates rather than scales the image. If smaller than the
-target space, the image will be padded with zero-pixels to the target size.
+NewRasterFromImage returns a new Raster instance that is rendered from the Go image.Image passed in. Rasters returned from this method will map pixel for pixel to the screen starting img.Bounds().Min pixels from the top left of the canvas object. Truncates rather than scales the image. If smaller than the target space, the image will be padded with zero-pixels to the target size.
 
 #### func  NewRasterWithPixels
 
 ```go
 func NewRasterWithPixels(pixelColor func(x, y, w, h int) color.Color) *Raster
 ```
-NewRasterWithPixels returns a new Image instance that is rendered dynamically by
-iterating over the specified pixelColor function for each x, y pixel. Images
-returned from this method should draw dynamically to fill the width and height
-parameters passed to pixelColor.
+NewRasterWithPixels returns a new Image instance that is rendered dynamically by iterating over the specified pixelColor function for each x, y pixel. Images returned from this method should draw dynamically to fill the width and height parameters passed to pixelColor.
 
 #### func (*Raster) Alpha
 
 ```go
 func (r *Raster) Alpha() float64
 ```
-Alpha is a convenience function that returns the alpha value for a raster based
-on its Translucency value. The result is 1.0 - Translucency.
+Alpha is a convenience function that returns the alpha value for a raster based on its Translucency value. The result is 1.0 - Translucency.
 
 #### func (*Raster) Hide
 
@@ -86,8 +76,7 @@ Move the rectangle object to a new position, relative to its parent / canvas
 ```go
 func (r *Raster) Position() fyne.Position
 ```
-CurrentPosition gets the current position of this rectangle object, relative to
-its parent / canvas
+CurrentPosition gets the current position of this rectangle object, relative to its parent / canvas
 
 #### func (*Raster) Refresh
 

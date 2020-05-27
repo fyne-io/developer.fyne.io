@@ -24,6 +24,4 @@ type WidgetRenderer interface {
 }
 ```
 
-WidgetRenderer defines the behaviour of a widget's implementation. This is
-returned from a widget's declarative object through the Render() function and
-should be exactly one instance per widget in memory.
+WidgetRenderer defines the behaviour of a widget's implementation. This is returned from a widget's declarative object through the Render() function and should be exactly one instance per widget in memory.

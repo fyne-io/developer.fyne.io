@@ -8,8 +8,7 @@ title: Fyne API canvas
 --
     import "fyne.io/fyne/canvas"
 
-Package canvas contains all of the primitive CanvasObjects that make up a Fyne
-### GUI
+Package canvas contains all of the primitive CanvasObjects that make up a Fyne GUI
 
 ## Usage
 

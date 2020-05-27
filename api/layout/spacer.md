@@ -19,16 +19,14 @@ type Spacer struct {
 }
 ```
 
-Spacer is any simple object that can be used in a box layout to space out child
-objects
+Spacer is any simple object that can be used in a box layout to space out child objects
 
 #### func (*Spacer) ExpandHorizontal
 
 ```go
 func (s *Spacer) ExpandHorizontal() bool
 ```
-ExpandHorizontal returns whether or not this spacer expands on the horizontal
-axis
+ExpandHorizontal returns whether or not this spacer expands on the horizontal axis
 
 #### func (*Spacer) ExpandVertical
 

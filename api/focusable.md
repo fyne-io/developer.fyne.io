@@ -23,7 +23,4 @@ type Focusable interface {
 }
 ```
 
-Focusable describes any CanvasObject that can respond to being focused. It will
-receive the FocusGained and FocusLost events appropriately. When focused it will
-also have TypedRune called as text is input and TypedKey called when other keys
-are pressed.
+Focusable describes any CanvasObject that can respond to being focused. It will receive the FocusGained and FocusLost events appropriately. When focused it will also have TypedRune called as text is input and TypedKey called when other keys are pressed.

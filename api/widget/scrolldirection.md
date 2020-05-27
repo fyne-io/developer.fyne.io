@@ -16,8 +16,7 @@ title: Fyne API widget
 type ScrollDirection int
 ```
 
-ScrollDirection represents the directions in which a ScrollContainer can scroll
-its child content.
+ScrollDirection represents the directions in which a ScrollContainer can scroll its child content.
 
 ```go
 const (

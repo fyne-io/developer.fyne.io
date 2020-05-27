@@ -32,13 +32,11 @@ NewToolbarAction returns a new push button style ToolbarItem
 ```go
 func NewToolbarSeparator() ToolbarItem
 ```
-NewToolbarSeparator returns a new separator item for a Toolbar to assist with
-ToolbarItem grouping
+NewToolbarSeparator returns a new separator item for a Toolbar to assist with ToolbarItem grouping
 
 #### func  NewToolbarSpacer
 
 ```go
 func NewToolbarSpacer() ToolbarItem
 ```
-NewToolbarSpacer returns a new spacer item for a Toolbar to assist with
-ToolbarItem alignment
+NewToolbarSpacer returns a new spacer item for a Toolbar to assist with ToolbarItem alignment

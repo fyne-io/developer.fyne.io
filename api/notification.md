@@ -18,13 +18,11 @@ type Notification struct {
 }
 ```
 
-Notification represents a user notification that can be sent to the operating
-system.
+Notification represents a user notification that can be sent to the operating system.
 
 #### func  NewNotification
 
 ```go
 func NewNotification(title, content string) *Notification
 ```
-NewNotification creates a notification that can be passed to
-App.SendNotification.
+NewNotification creates a notification that can be passed to App.SendNotification.

@@ -22,8 +22,7 @@ type Check struct {
 }
 ```
 
-Check widget has a text label and a checked (or unchecked) icon and triggers an
-event func when toggled
+Check widget has a text label and a checked (or unchecked) icon and triggers an event func when toggled
 
 #### func  NewCheck
 
@@ -37,8 +36,7 @@ NewCheck creates a new check widget with the set label and change handler
 ```go
 func (c *Check) CreateRenderer() fyne.WidgetRenderer
 ```
-CreateRenderer is a private method to Fyne which links this widget to its
-renderer
+CreateRenderer is a private method to Fyne which links this widget to its renderer
 
 #### func (*Check) FocusGained
 
@@ -59,9 +57,7 @@ FocusLost is called when the Check has had focus removed.
 ```go
 func (c *Check) Focused() bool
 ```
-Focused returns whether or not this Check has focus. Deprecated: this method
-will be removed as it is no longer required, widgets do not expose their focus
-state.
+Focused returns whether or not this Check has focus. Deprecated: this method will be removed as it is no longer required, widgets do not expose their focus state.
 
 #### func (*Check) Hide
 
@@ -110,8 +106,7 @@ SetChecked sets the the checked state and refreshes widget
 ```go
 func (c *Check) Tapped(*fyne.PointEvent)
 ```
-Tapped is called when a pointer tapped event is captured and triggers any change
-handler
+Tapped is called when a pointer tapped event is captured and triggers any change handler
 
 #### func (*Check) TypedKey
 

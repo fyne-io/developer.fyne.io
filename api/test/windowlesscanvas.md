@@ -37,5 +37,4 @@ NewCanvas returns a single use in-memory canvas used for testing
 ```go
 func NewCanvasWithPainter(painter SoftwarePainter) WindowlessCanvas
 ```
-NewCanvasWithPainter allows creation of an in-memory canvas with a specific
-painter. The painter will be used to render in the Capture() call.
+NewCanvasWithPainter allows creation of an in-memory canvas with a specific painter. The painter will be used to render in the Capture() call.

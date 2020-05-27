@@ -17,17 +17,14 @@ type ConfirmDialog struct {
 }
 ```
 
-ConfirmDialog is like the standard Dialog but with an additional confirmation
-button
+ConfirmDialog is like the standard Dialog but with an additional confirmation button
 
 #### func  NewConfirm
 
 ```go
 func NewConfirm(title, message string, callback func(bool), parent fyne.Window) *ConfirmDialog
 ```
-NewConfirm creates a dialog over the specified window for user confirmation. The
-title is used for the dialog window and message is the content. The callback is
-executed when the user decides. After creation you should call Show().
+NewConfirm creates a dialog over the specified window for user confirmation. The title is used for the dialog window and message is the content. The callback is executed when the user decides. After creation you should call Show().
 
 #### func (ConfirmDialog) Hide
 
@@ -66,8 +63,7 @@ SetDismissText allows custom text to be set in the confirmation button
 ```go
 func (d ConfirmDialog) SetOnClosed(closed func())
 ```
-SetOnClosed allows to set a callback function that is called when the dialog is
-closed
+SetOnClosed allows to set a callback function that is called when the dialog is closed
 
 #### func (ConfirmDialog) Show
 

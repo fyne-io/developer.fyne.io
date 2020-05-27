@@ -20,5 +20,4 @@ type FileWriteCloser interface {
 }
 ```
 
-FileWriteCloser represents a cross platform data writer for a file resource.
-This will normally refer to a local file resource.
+FileWriteCloser represents a cross platform data writer for a file resource. This will normally refer to a local file resource.

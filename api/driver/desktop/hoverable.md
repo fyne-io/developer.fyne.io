@@ -20,5 +20,4 @@ type Hoverable interface {
 }
 ```
 
-Hoverable is used when a canvas object wishes to know if a pointer device moves
-over it.
+Hoverable is used when a canvas object wishes to know if a pointer device moves over it.

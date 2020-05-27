@@ -17,26 +17,21 @@ Package dialog defines standard dialog windows for application GUIs
 ```go
 func NewFileIcon(path string) fyne.CanvasObject
 ```
-NewFileIcon takes a filepath and creates an icon with an overlayed label using
-the detected mimetype and extension
+NewFileIcon takes a filepath and creates an icon with an overlayed label using the detected mimetype and extension
 
 #### func  ShowConfirm
 
 ```go
 func ShowConfirm(title, message string, callback func(bool), parent fyne.Window)
 ```
-ShowConfirm shows a dialog over the specified window for a user confirmation.
-The title is used for the dialog window and message is the content. The callback
-is executed when the user decides.
+ShowConfirm shows a dialog over the specified window for a user confirmation. The title is used for the dialog window and message is the content. The callback is executed when the user decides.
 
 #### func  ShowCustom
 
 ```go
 func ShowCustom(title, dismiss string, content fyne.CanvasObject, parent fyne.Window)
 ```
-ShowCustom shows a dialog over the specified application using custom content.
-The button will have the dismiss text set. The MinSize() of the CanvasObject
-passed will be used to set the size of the window.
+ShowCustom shows a dialog over the specified application using custom content. The button will have the dismiss text set. The MinSize() of the CanvasObject passed will be used to set the size of the window.
 
 #### func  ShowCustomConfirm
 
@@ -44,43 +39,35 @@ passed will be used to set the size of the window.
 func ShowCustomConfirm(title, confirm, dismiss string, content fyne.CanvasObject,
 	callback func(bool), parent fyne.Window)
 ```
-ShowCustomConfirm shows a dialog over the specified application using custom
-content. The cancel button will have the dismiss text set and the "OK" will use
-the confirm text. The response callback is called on user action. The MinSize()
-of the CanvasObject passed will be used to set the size of the window.
+ShowCustomConfirm shows a dialog over the specified application using custom content. The cancel button will have the dismiss text set and the "OK" will use the confirm text. The response callback is called on user action. The MinSize() of the CanvasObject passed will be used to set the size of the window.
 
 #### func  ShowError
 
 ```go
 func ShowError(err error, parent fyne.Window)
 ```
-ShowError shows a dialog over the specified window for an application error. The
-title and message are extracted from the provided error.
+ShowError shows a dialog over the specified window for an application error. The title and message are extracted from the provided error.
 
 #### func  ShowFileOpen
 
 ```go
 func ShowFileOpen(callback func(fyne.FileReadCloser, error), parent fyne.Window)
 ```
-ShowFileOpen shows a file dialog allowing the user to choose a file to open. The
-dialog will appear over the window specified.
+ShowFileOpen shows a file dialog allowing the user to choose a file to open. The dialog will appear over the window specified.
 
 #### func  ShowFileSave
 
 ```go
 func ShowFileSave(callback func(fyne.FileWriteCloser, error), parent fyne.Window)
 ```
-ShowFileSave shows a file dialog allowing the user to choose a file to save to
-(new or overwrite). If the user chooses an existing file they will be asked if
-they are sure. The dialog will appear over the window specified.
+ShowFileSave shows a file dialog allowing the user to choose a file to save to (new or overwrite). If the user chooses an existing file they will be asked if they are sure. The dialog will appear over the window specified.
 
 #### func  ShowInformation
 
 ```go
 func ShowInformation(title, message string, parent fyne.Window)
 ```
-ShowInformation shows a dialog over the specified window for user information.
-The title is used for the dialog window and message is the content.
+ShowInformation shows a dialog over the specified window for user information. The title is used for the dialog window and message is the content.
 
 #### types
 

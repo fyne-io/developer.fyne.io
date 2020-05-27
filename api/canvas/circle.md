@@ -59,8 +59,7 @@ Move the circle object to a new position, relative to its parent / canvas
 ```go
 func (l *Circle) Position() fyne.Position
 ```
-Position gets the current top-left position of this circle object, relative to
-its parent / canvas
+Position gets the current top-left position of this circle object, relative to its parent / canvas
 
 #### func (*Circle) Refresh
 

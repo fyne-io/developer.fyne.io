@@ -19,5 +19,4 @@ type TextGridRow struct {
 }
 ```
 
-TextGridRow represents a row of cells cell in a text grid. It contains the cells
-for the row and an optional style.
+TextGridRow represents a row of cells cell in a text grid. It contains the cells for the row and an optional style.

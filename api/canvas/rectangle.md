@@ -55,8 +55,7 @@ Move the rectangle object to a new position, relative to its parent / canvas
 ```go
 func (r *Rectangle) Position() fyne.Position
 ```
-CurrentPosition gets the current position of this rectangle object, relative to
-its parent / canvas
+CurrentPosition gets the current position of this rectangle object, relative to its parent / canvas
 
 #### func (*Rectangle) Refresh
 

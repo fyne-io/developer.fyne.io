@@ -26,5 +26,4 @@ FormItem provides the details for a row in a form
 ```go
 func NewFormItem(text string, widget fyne.CanvasObject) *FormItem
 ```
-NewFormItem creates a new form item with the specified label text and input
-widget
+NewFormItem creates a new form item with the specified label text and input widget

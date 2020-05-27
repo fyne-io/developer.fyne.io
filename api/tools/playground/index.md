@@ -16,31 +16,27 @@ title: Fyne API playground
 ```go
 func NewSoftwareCanvas() test.WindowlessCanvas
 ```
-NewSoftwareCanvas creates a new canvas in memory that can render without
-hardware support
+NewSoftwareCanvas creates a new canvas in memory that can render without hardware support
 
 #### func  Render
 
 ```go
 func Render(obj fyne.CanvasObject)
 ```
-Render takes a canvasobject and converts it into an inline image for showing in
-the playground
+Render takes a canvasobject and converts it into an inline image for showing in the playground
 
 #### func  RenderCanvas
 
 ```go
 func RenderCanvas(c fyne.Canvas)
 ```
-RenderCanvas takes a canvas and converts it into an inline image for showing in
-the playground
+RenderCanvas takes a canvas and converts it into an inline image for showing in the playground
 
 #### func  RenderWindow
 
 ```go
 func RenderWindow(w fyne.Window)
 ```
-RenderWindow takes a window and converts it's canvas into an inline image for
-showing in the playground
+RenderWindow takes a window and converts it's canvas into an inline image for showing in the playground
 
 #### types

@@ -17,37 +17,28 @@ Package test provides utility drivers for running UI tests without rendering
 ```go
 func ApplyTheme(t *testing.T, theme fyne.Theme)
 ```
-ApplyTheme sets the given theme and waits for it to be applied to the current
-app.
+ApplyTheme sets the given theme and waits for it to be applied to the current app.
 
 #### func  AssertCanvasTappableAt
 
 ```go
 func AssertCanvasTappableAt(t *testing.T, c fyne.Canvas, pos fyne.Position) bool
 ```
-AssertCanvasTappableAt asserts that the canvas is tappable at the given
-position.
+AssertCanvasTappableAt asserts that the canvas is tappable at the given position.
 
 #### func  AssertImageMatches
 
 ```go
 func AssertImageMatches(t *testing.T, masterFilename string, img image.Image, msgAndArgs ...interface{}) bool
 ```
-AssertImageMatches asserts that the given image is the same as the one stored in
-the master file. The master filename is relative to the `testdata` directory
-which is relative to the test. The test `t` fails if the given image is not
-equal to the loaded master image. In this case the given image is written into a
-file in `testdata/failed/<masterFilename>` (relative to the test). This path is
-also reported, thus the file can be used as new master.
+AssertImageMatches asserts that the given image is the same as the one stored in the master file. The master filename is relative to the `testdata` directory which is relative to the test. The test `t` fails if the given image is not equal to the loaded master image. In this case the given image is written into a file in `testdata/failed/<masterFilename>` (relative to the test). This path is also reported, thus the file can be used as new master.
 
 #### func  AssertNotificationSent
 
 ```go
 func AssertNotificationSent(t *testing.T, n *fyne.Notification, f func())
 ```
-AssertNotificationSent allows an app developer to assert that a notification was
-sent. After the content of f has executed this utility will check that the
-specified notification was sent.
+AssertNotificationSent allows an app developer to assert that a notification was sent. After the content of f has executed this utility will check that the specified notification was sent.
 
 #### func  Canvas
 
@@ -61,8 +52,7 @@ Canvas returns a reusable in-memory canvas used for testing
 ```go
 func LaidOutObjects(o fyne.CanvasObject) (objects []fyne.CanvasObject)
 ```
-LaidOutObjects returns all fyne.CanvasObject starting at the given
-fyne.CanvasObject which is laid out previously.
+LaidOutObjects returns all fyne.CanvasObject starting at the given fyne.CanvasObject which is laid out previously.
 
 #### func  MoveMouse
 
@@ -76,8 +66,7 @@ MoveMouse simulates a mouse movement to the given position.
 ```go
 func NewApp() fyne.App
 ```
-NewApp returns a new dummy app used for testing. It loads a test driver which
-creates a virtual window in memory for testing.
+NewApp returns a new dummy app used for testing. It loads a test driver which creates a virtual window in memory for testing.
 
 #### func  NewClipboard
 
@@ -98,8 +87,7 @@ NewDriver sets up and registers a new dummy driver for test purpose
 ```go
 func NewDriverWithPainter(painter SoftwarePainter) fyne.Driver
 ```
-NewDriverWithPainter creates a new dummy driver that will pass the given painter
-to all canvases created
+NewDriverWithPainter creates a new dummy driver that will pass the given painter to all canvases created
 
 #### func  NewTheme
 
@@ -127,8 +115,7 @@ Tap simulates a left mouse click on the specified object.
 ```go
 func TapAt(obj fyne.Tappable, pos fyne.Position)
 ```
-TapAt simulates a left mouse click on the passed object at a specified place
-within it.
+TapAt simulates a left mouse click on the passed object at a specified place within it.
 
 #### func  TapCanvas
 
@@ -149,34 +136,28 @@ TapSecondary simulates a right mouse click on the specified object.
 ```go
 func TapSecondaryAt(obj fyne.SecondaryTappable, pos fyne.Position)
 ```
-TapSecondaryAt simulates a right mouse click on the passed object at a specified
-place within it.
+TapSecondaryAt simulates a right mouse click on the passed object at a specified place within it.
 
 #### func  Type
 
 ```go
 func Type(obj fyne.Focusable, chars string)
 ```
-Type performs a series of key events to simulate typing of a value into the
-specified object. The focusable object will be focused before typing begins. The
-chars parameter will be input one rune at a time to the focused object.
+Type performs a series of key events to simulate typing of a value into the specified object. The focusable object will be focused before typing begins. The chars parameter will be input one rune at a time to the focused object.
 
 #### func  TypeOnCanvas
 
 ```go
 func TypeOnCanvas(c fyne.Canvas, chars string)
 ```
-TypeOnCanvas is like the Type function but it passes the key events to the
-canvas object rather than a focusable widget.
+TypeOnCanvas is like the Type function but it passes the key events to the canvas object rather than a focusable widget.
 
 #### func  WidgetRenderer
 
 ```go
 func WidgetRenderer(wid fyne.Widget) fyne.WidgetRenderer
 ```
-WidgetRenderer allows test scripts to gain access to the current renderer for a
-widget. This can be used for verifying correctness of rendered components for a
-widget in unit tests.
+WidgetRenderer allows test scripts to gain access to the current renderer for a widget. This can be used for verifying correctness of rendered components for a widget in unit tests.
 
 #### func  WithTestTheme
 

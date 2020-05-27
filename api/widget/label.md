@@ -43,8 +43,7 @@ NewLabelWithStyle creates a new label widget with the set text content
 ```go
 func (l *Label) CreateRenderer() fyne.WidgetRenderer
 ```
-CreateRenderer is a private method to Fyne which links this widget to its
-renderer
+CreateRenderer is a private method to Fyne which links this widget to its renderer
 
 #### func (*Label) MinSize
 
@@ -58,16 +57,14 @@ MinSize returns the size that this widget should not shrink below
 ```go
 func (l *Label) Refresh()
 ```
-Refresh checks if the text content should be updated then refreshes the
-graphical context
+Refresh checks if the text content should be updated then refreshes the graphical context
 
 #### func (*Label) Resize
 
 ```go
 func (l *Label) Resize(size fyne.Size)
 ```
-Resize sets a new size for the label. Note this should not be used if the widget
-is being managed by a Layout within a Container.
+Resize sets a new size for the label. Note this should not be used if the widget is being managed by a Layout within a Container.
 
 #### func (*Label) SetText
 

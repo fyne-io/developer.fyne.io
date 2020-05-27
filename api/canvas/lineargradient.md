@@ -20,44 +20,35 @@ type LinearGradient struct {
 }
 ```
 
-LinearGradient defines a Gradient travelling straight at a given angle. The only
-supported values for the angle are `0.0` (vertical) and `90.0` (horizontal),
-currently.
+LinearGradient defines a Gradient travelling straight at a given angle. The only supported values for the angle are `0.0` (vertical) and `90.0` (horizontal), currently.
 
 #### func  NewHorizontalGradient
 
 ```go
 func NewHorizontalGradient(start, end color.Color) *LinearGradient
 ```
-NewHorizontalGradient creates a new horizontally travelling linear gradient. The
-start color will be at the left of the gradient and the end color will be at the
-right.
+NewHorizontalGradient creates a new horizontally travelling linear gradient. The start color will be at the left of the gradient and the end color will be at the right.
 
 #### func  NewLinearGradient
 
 ```go
 func NewLinearGradient(start, end color.Color, angle float64) *LinearGradient
 ```
-NewLinearGradient creates a linear gradient at a the specified angle. The angle
-parameter is the degree angle along which the gradient is calculated. A
-NewHorizontalGradient uses 270 degrees and NewVerticalGradient is 0 degrees.
+NewLinearGradient creates a linear gradient at a the specified angle. The angle parameter is the degree angle along which the gradient is calculated. A NewHorizontalGradient uses 270 degrees and NewVerticalGradient is 0 degrees.
 
 #### func  NewVerticalGradient
 
 ```go
 func NewVerticalGradient(start color.Color, end color.Color) *LinearGradient
 ```
-NewVerticalGradient creates a new vertically travelling linear gradient. The
-start color will be at the top of the gradient and the end color will be at the
-bottom.
+NewVerticalGradient creates a new vertically travelling linear gradient. The start color will be at the top of the gradient and the end color will be at the bottom.
 
 #### func (*LinearGradient) Generate
 
 ```go
 func (g *LinearGradient) Generate(iw, ih int) image.Image
 ```
-Generate calculates an image of the gradient with the specified width and
-height.
+Generate calculates an image of the gradient with the specified width and height.
 
 #### func (*LinearGradient) Hide
 
@@ -85,8 +76,7 @@ Move the rectangle object to a new position, relative to its parent / canvas
 ```go
 func (r *LinearGradient) Position() fyne.Position
 ```
-CurrentPosition gets the current position of this rectangle object, relative to
-its parent / canvas
+CurrentPosition gets the current position of this rectangle object, relative to its parent / canvas
 
 #### func (*LinearGradient) Refresh
 

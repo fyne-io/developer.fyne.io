@@ -23,8 +23,7 @@ type Radio struct {
 }
 ```
 
-Radio widget has a list of text labels and radio check icons next to each.
-Changing the selection (only one can be selected) will trigger the changed func.
+Radio widget has a list of text labels and radio check icons next to each. Changing the selection (only one can be selected) will trigger the changed func.
 
 #### func  NewRadio
 
@@ -45,8 +44,7 @@ Append adds a new option to the end of a Radio widget.
 ```go
 func (r *Radio) CreateRenderer() fyne.WidgetRenderer
 ```
-CreateRenderer is a private method to Fyne which links this widget to its
-renderer
+CreateRenderer is a private method to Fyne which links this widget to its renderer
 
 #### func (*Radio) MinSize
 
@@ -88,5 +86,4 @@ SetSelected sets the radio option, it can be used to set a default option.
 ```go
 func (r *Radio) Tapped(event *fyne.PointEvent)
 ```
-Tapped is called when a pointer tapped event is captured and triggers any change
-handler
+Tapped is called when a pointer tapped event is captured and triggers any change handler

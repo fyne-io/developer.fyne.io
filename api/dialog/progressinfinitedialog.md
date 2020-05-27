@@ -17,16 +17,14 @@ type ProgressInfiniteDialog struct {
 }
 ```
 
-ProgressInfiniteDialog is a simple dialog window that displays text and a
-infinite progress bar.
+ProgressInfiniteDialog is a simple dialog window that displays text and a infinite progress bar.
 
 #### func  NewProgressInfinite
 
 ```go
 func NewProgressInfinite(title, message string, parent fyne.Window) *ProgressInfiniteDialog
 ```
-NewProgressInfinite creates a infinite progress dialog and returns the handle.
-Using the returned type you should call Show().
+NewProgressInfinite creates a infinite progress dialog and returns the handle. Using the returned type you should call Show().
 
 #### func (*ProgressInfiniteDialog) Hide
 
@@ -59,8 +57,7 @@ SetDismissText allows custom text to be set in the confirmation button
 ```go
 func (d ProgressInfiniteDialog) SetOnClosed(closed func())
 ```
-SetOnClosed allows to set a callback function that is called when the dialog is
-closed
+SetOnClosed allows to set a callback function that is called when the dialog is closed
 
 #### func (ProgressInfiniteDialog) Show
 

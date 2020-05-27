@@ -23,9 +23,7 @@ type Text struct {
 }
 ```
 
-Text describes a text primitive in a Fyne canvas. A text object can have a style
-set which will apply to the whole string. No formatting or text parsing will be
-performed
+Text describes a text primitive in a Fyne canvas. A text object can have a style set which will apply to the whole string. No formatting or text parsing will be performed
 
 #### func  NewText
 
@@ -46,8 +44,7 @@ Hide will set this object to not be visible
 ```go
 func (t *Text) MinSize() fyne.Size
 ```
-MinSize returns the minimum size of this text object based on its font size and
-content. This is normally determined by the render implementation.
+MinSize returns the minimum size of this text object based on its font size and content. This is normally determined by the render implementation.
 
 #### func (*Text) Move
 
@@ -61,8 +58,7 @@ Move the rectangle object to a new position, relative to its parent / canvas
 ```go
 func (r *Text) Position() fyne.Position
 ```
-CurrentPosition gets the current position of this rectangle object, relative to
-its parent / canvas
+CurrentPosition gets the current position of this rectangle object, relative to its parent / canvas
 
 #### func (*Text) Refresh
 
@@ -83,8 +79,7 @@ Resize sets a new size for the rectangle object
 ```go
 func (t *Text) SetMinSize(size fyne.Size)
 ```
-SetMinSize has no effect as the smallest size this canvas object can be is based
-on its font size and content.
+SetMinSize has no effect as the smallest size this canvas object can be is based on its font size and content.
 
 #### func (*Text) Show
 

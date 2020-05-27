@@ -31,5 +31,4 @@ Device provides information about the devices the code is running on
 ```go
 func CurrentDevice() Device
 ```
-CurrentDevice returns the device information for the current hardware (via the
-driver)
+CurrentDevice returns the device information for the current hardware (via the driver)

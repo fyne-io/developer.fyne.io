@@ -19,5 +19,4 @@ type ScrollEvent struct {
 }
 ```
 
-ScrollEvent defines the parameters of a pointer or other scroll event. The
-DeltaX and DeltaY represent how large the scroll was in two dimensions.
+ScrollEvent defines the parameters of a pointer or other scroll event. The DeltaX and DeltaY represent how large the scroll was in two dimensions.

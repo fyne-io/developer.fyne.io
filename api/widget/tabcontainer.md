@@ -21,16 +21,14 @@ type TabContainer struct {
 }
 ```
 
-TabContainer widget allows switching visible content from a list of TabItems.
-Each item is represented by a button at the top of the widget.
+TabContainer widget allows switching visible content from a list of TabItems. Each item is represented by a button at the top of the widget.
 
 #### func  NewTabContainer
 
 ```go
 func NewTabContainer(items ...*TabItem) *TabContainer
 ```
-NewTabContainer creates a new tab bar widget that allows the user to choose
-between different visible containers
+NewTabContainer creates a new tab bar widget that allows the user to choose between different visible containers
 
 #### func (*TabContainer) Append
 
@@ -44,8 +42,7 @@ Append adds a new TabItem to the rightmost side of the tab panel
 ```go
 func (c *TabContainer) CreateRenderer() fyne.WidgetRenderer
 ```
-CreateRenderer is a private method to Fyne which links this widget to its
-renderer
+CreateRenderer is a private method to Fyne which links this widget to its renderer
 
 #### func (*TabContainer) CurrentTab
 
@@ -94,8 +91,7 @@ SelectTab sets the specified TabItem to be selected and its content visible.
 ```go
 func (c *TabContainer) SelectTabIndex(index int)
 ```
-SelectTabIndex sets the TabItem at the specific index to be selected and its
-content visible.
+SelectTabIndex sets the TabItem at the specific index to be selected and its content visible.
 
 #### func (*TabContainer) SetItems
 

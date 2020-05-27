@@ -19,24 +19,21 @@ type Position struct {
 }
 ```
 
-Position describes a generic X, Y coordinate relative to a parent Canvas or
-CanvasObject.
+Position describes a generic X, Y coordinate relative to a parent Canvas or CanvasObject.
 
 #### func  NewPos
 
 ```go
 func NewPos(x int, y int) Position
 ```
-NewPos returns a newly allocated Position representing the specified
-coordinates.
+NewPos returns a newly allocated Position representing the specified coordinates.
 
 #### func (Position) Add
 
 ```go
 func (p Position) Add(p2 Position) Position
 ```
-Add returns a new Position that is the result of offsetting the current position
-by p2 X and Y.
+Add returns a new Position that is the result of offsetting the current position by p2 X and Y.
 
 #### func (Position) IsZero
 
@@ -50,5 +47,4 @@ IsZero returns whether the Position is at the zero-point.
 ```go
 func (p Position) Subtract(p2 Position) Position
 ```
-Subtract returns a new Position that is the result of offsetting the current
-position by p2 -X and -Y.
+Subtract returns a new Position that is the result of offsetting the current position by p2 -X and -Y.

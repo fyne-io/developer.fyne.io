@@ -20,6 +20,4 @@ type Widget interface {
 }
 ```
 
-Widget defines the standard behaviours of any widget. This extends the
-CanvasObject - a widget behaves in the same basic way but will encapsulate many
-child objects to create the rendered widget.
+Widget defines the standard behaviours of any widget. This extends the CanvasObject - a widget behaves in the same basic way but will encapsulate many child objects to create the rendered widget.

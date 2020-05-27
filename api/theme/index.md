@@ -31,96 +31,84 @@ ButtonColor returns the theme's standard button colour
 ```go
 func CancelIcon() fyne.Resource
 ```
-CancelIcon returns a resource containing the standard cancel icon for the
-current theme
+CancelIcon returns a resource containing the standard cancel icon for the current theme
 
 #### func  CheckButtonCheckedIcon
 
 ```go
 func CheckButtonCheckedIcon() fyne.Resource
 ```
-CheckButtonCheckedIcon returns a resource containing the standard checkbox
-checked icon for the current theme
+CheckButtonCheckedIcon returns a resource containing the standard checkbox checked icon for the current theme
 
 #### func  CheckButtonIcon
 
 ```go
 func CheckButtonIcon() fyne.Resource
 ```
-CheckButtonIcon returns a resource containing the standard checkbox icon for the
-current theme
+CheckButtonIcon returns a resource containing the standard checkbox icon for the current theme
 
 #### func  ConfirmIcon
 
 ```go
 func ConfirmIcon() fyne.Resource
 ```
-ConfirmIcon returns a resource containing the standard confirm icon for the
-current theme
+ConfirmIcon returns a resource containing the standard confirm icon for the current theme
 
 #### func  ContentAddIcon
 
 ```go
 func ContentAddIcon() fyne.Resource
 ```
-ContentAddIcon returns a resource containing the standard content add icon for
-the current theme
+ContentAddIcon returns a resource containing the standard content add icon for the current theme
 
 #### func  ContentClearIcon
 
 ```go
 func ContentClearIcon() fyne.Resource
 ```
-ContentClearIcon returns a resource containing the standard content clear icon
-for the current theme
+ContentClearIcon returns a resource containing the standard content clear icon for the current theme
 
 #### func  ContentCopyIcon
 
 ```go
 func ContentCopyIcon() fyne.Resource
 ```
-ContentCopyIcon returns a resource containing the standard content copy icon for
-the current theme
+ContentCopyIcon returns a resource containing the standard content copy icon for the current theme
 
 #### func  ContentCutIcon
 
 ```go
 func ContentCutIcon() fyne.Resource
 ```
-ContentCutIcon returns a resource containing the standard content cut icon for
-the current theme
+ContentCutIcon returns a resource containing the standard content cut icon for the current theme
 
 #### func  ContentPasteIcon
 
 ```go
 func ContentPasteIcon() fyne.Resource
 ```
-ContentPasteIcon returns a resource containing the standard content paste icon
-for the current theme
+ContentPasteIcon returns a resource containing the standard content paste icon for the current theme
 
 #### func  ContentRedoIcon
 
 ```go
 func ContentRedoIcon() fyne.Resource
 ```
-ContentRedoIcon returns a resource containing the standard content redo icon for
-the current theme
+ContentRedoIcon returns a resource containing the standard content redo icon for the current theme
 
 #### func  ContentRemoveIcon
 
 ```go
 func ContentRemoveIcon() fyne.Resource
 ```
-ContentRemoveIcon returns a resource containing the standard content remove icon
-for the current theme
+ContentRemoveIcon returns a resource containing the standard content remove icon for the current theme
 
 #### func  ContentUndoIcon
 
 ```go
 func ContentUndoIcon() fyne.Resource
 ```
-ContentUndoIcon returns a resource containing the standard content undo icon for
-the current theme
+ContentUndoIcon returns a resource containing the standard content undo icon for the current theme
 
 #### func  DarkTheme
 
@@ -141,8 +129,7 @@ DefaultTextBoldFont retutns the font resource for the built-in bold font style
 ```go
 func DefaultTextBoldItalicFont() fyne.Resource
 ```
-DefaultTextBoldItalicFont returns the font resource for the built-in bold and
-italic font style
+DefaultTextBoldItalicFont returns the font resource for the built-in bold and italic font style
 
 #### func  DefaultTextFont
 
@@ -156,24 +143,21 @@ DefaultTextFont returns the font resource for the built-in regular font style
 ```go
 func DefaultTextItalicFont() fyne.Resource
 ```
-DefaultTextItalicFont returns the font resource for the built-in italic font
-style
+DefaultTextItalicFont returns the font resource for the built-in italic font style
 
 #### func  DefaultTextMonospaceFont
 
 ```go
 func DefaultTextMonospaceFont() fyne.Resource
 ```
-DefaultTextMonospaceFont retutns the font resource for the built-in monospace
-font face
+DefaultTextMonospaceFont retutns the font resource for the built-in monospace font face
 
 #### func  DeleteIcon
 
 ```go
 func DeleteIcon() fyne.Resource
 ```
-DeleteIcon returns a resource containing the standard delete icon for the
-current theme
+DeleteIcon returns a resource containing the standard delete icon for the current theme
 
 #### func  DisabledButtonColor
 
@@ -201,72 +185,63 @@ DisabledTextColor returns the color for a disabledIcon UI element
 ```go
 func DocumentCreateIcon() fyne.Resource
 ```
-DocumentCreateIcon returns a resource containing the standard document create
-icon for the current theme
+DocumentCreateIcon returns a resource containing the standard document create icon for the current theme
 
 #### func  DocumentPrintIcon
 
 ```go
 func DocumentPrintIcon() fyne.Resource
 ```
-DocumentPrintIcon returns a resource containing the standard document print icon
-for the current theme
+DocumentPrintIcon returns a resource containing the standard document print icon for the current theme
 
 #### func  DocumentSaveIcon
 
 ```go
 func DocumentSaveIcon() fyne.Resource
 ```
-DocumentSaveIcon returns a resource containing the standard document save icon
-for the current theme
+DocumentSaveIcon returns a resource containing the standard document save icon for the current theme
 
 #### func  FileApplicationIcon
 
 ```go
 func FileApplicationIcon() fyne.Resource
 ```
-FileApplicationIcon returns a resource containing the file icon representing
-application files for the current theme
+FileApplicationIcon returns a resource containing the file icon representing application files for the current theme
 
 #### func  FileAudioIcon
 
 ```go
 func FileAudioIcon() fyne.Resource
 ```
-FileAudioIcon returns a resource containing the file icon representing audio
-files for the current theme
+FileAudioIcon returns a resource containing the file icon representing audio files for the current theme
 
 #### func  FileIcon
 
 ```go
 func FileIcon() fyne.Resource
 ```
-FileIcon returns a resource containing the appropriate file icon for the current
-theme
+FileIcon returns a resource containing the appropriate file icon for the current theme
 
 #### func  FileImageIcon
 
 ```go
 func FileImageIcon() fyne.Resource
 ```
-FileImageIcon returns a resource containing the file icon representing image
-files for the current theme
+FileImageIcon returns a resource containing the file icon representing image files for the current theme
 
 #### func  FileTextIcon
 
 ```go
 func FileTextIcon() fyne.Resource
 ```
-FileTextIcon returns a resource containing the file icon representing text files
-for the current theme
+FileTextIcon returns a resource containing the file icon representing text files for the current theme
 
 #### func  FileVideoIcon
 
 ```go
 func FileVideoIcon() fyne.Resource
 ```
-FileVideoIcon returns a resource containing the file icon representing video
-files for the current theme
+FileVideoIcon returns a resource containing the file icon representing video files for the current theme
 
 #### func  FocusColor
 
@@ -280,24 +255,21 @@ FocusColor returns the colour used to highlight a focussed widget
 ```go
 func FolderIcon() fyne.Resource
 ```
-FolderIcon returns a resource containing the standard folder icon for the
-current theme
+FolderIcon returns a resource containing the standard folder icon for the current theme
 
 #### func  FolderNewIcon
 
 ```go
 func FolderNewIcon() fyne.Resource
 ```
-FolderNewIcon returns a resource containing the standard folder creation icon
-for the current theme
+FolderNewIcon returns a resource containing the standard folder creation icon for the current theme
 
 #### func  FolderOpenIcon
 
 ```go
 func FolderOpenIcon() fyne.Resource
 ```
-FolderOpenIcon returns a resource containing the standard folder open icon for
-the current theme
+FolderOpenIcon returns a resource containing the standard folder open icon for the current theme
 
 #### func  FyneLogo
 
@@ -311,24 +283,21 @@ FyneLogo returns a resource containing the Fyne logo
 ```go
 func HelpIcon() fyne.Resource
 ```
-HelpIcon returns a resource containing the standard help icon for the current
-theme
+HelpIcon returns a resource containing the standard help icon for the current theme
 
 #### func  HomeIcon
 
 ```go
 func HomeIcon() fyne.Resource
 ```
-HomeIcon returns a resource containing the standard home folder icon for the
-current theme
+HomeIcon returns a resource containing the standard home folder icon for the current theme
 
 #### func  HoverColor
 
 ```go
 func HoverColor() color.Color
 ```
-HoverColor returns the colour used to highlight interactive elements currently
-under a cursor
+HoverColor returns the colour used to highlight interactive elements currently under a cursor
 
 #### func  HyperlinkColor
 
@@ -349,16 +318,14 @@ IconColor returns the theme's standard text colour
 ```go
 func IconInlineSize() int
 ```
-IconInlineSize is the standard size of icons which appear within buttons, labels
-etc.
+IconInlineSize is the standard size of icons which appear within buttons, labels etc.
 
 #### func  InfoIcon
 
 ```go
 func InfoIcon() fyne.Resource
 ```
-InfoIcon returns a resource containing the standard dialog info icon for the
-current theme
+InfoIcon returns a resource containing the standard dialog info icon for the current theme
 
 #### func  LightTheme
 
@@ -372,184 +339,161 @@ LightTheme defines the built in light theme colours and sizes
 ```go
 func MailAttachmentIcon() fyne.Resource
 ```
-MailAttachmentIcon returns a resource containing the standard mail attachment
-icon for the current theme
+MailAttachmentIcon returns a resource containing the standard mail attachment icon for the current theme
 
 #### func  MailComposeIcon
 
 ```go
 func MailComposeIcon() fyne.Resource
 ```
-MailComposeIcon returns a resource containing the standard mail compose icon for
-the current theme
+MailComposeIcon returns a resource containing the standard mail compose icon for the current theme
 
 #### func  MailForwardIcon
 
 ```go
 func MailForwardIcon() fyne.Resource
 ```
-MailForwardIcon returns a resource containing the standard mail forward icon for
-the current theme
+MailForwardIcon returns a resource containing the standard mail forward icon for the current theme
 
 #### func  MailReplyAllIcon
 
 ```go
 func MailReplyAllIcon() fyne.Resource
 ```
-MailReplyAllIcon returns a resource containing the standard mail reply all icon
-for the current theme
+MailReplyAllIcon returns a resource containing the standard mail reply all icon for the current theme
 
 #### func  MailReplyIcon
 
 ```go
 func MailReplyIcon() fyne.Resource
 ```
-MailReplyIcon returns a resource containing the standard mail reply icon for the
-current theme
+MailReplyIcon returns a resource containing the standard mail reply icon for the current theme
 
 #### func  MailSendIcon
 
 ```go
 func MailSendIcon() fyne.Resource
 ```
-MailSendIcon returns a resource containing the standard mail send icon for the
-current theme
+MailSendIcon returns a resource containing the standard mail send icon for the current theme
 
 #### func  MediaFastForwardIcon
 
 ```go
 func MediaFastForwardIcon() fyne.Resource
 ```
-MediaFastForwardIcon returns a resource containing the standard media
-fast-forward icon for the current theme
+MediaFastForwardIcon returns a resource containing the standard media fast-forward icon for the current theme
 
 #### func  MediaFastRewindIcon
 
 ```go
 func MediaFastRewindIcon() fyne.Resource
 ```
-MediaFastRewindIcon returns a resource containing the standard media fast-rewind
-icon for the current theme
+MediaFastRewindIcon returns a resource containing the standard media fast-rewind icon for the current theme
 
 #### func  MediaPauseIcon
 
 ```go
 func MediaPauseIcon() fyne.Resource
 ```
-MediaPauseIcon returns a resource containing the standard media pause icon for
-the current theme
+MediaPauseIcon returns a resource containing the standard media pause icon for the current theme
 
 #### func  MediaPlayIcon
 
 ```go
 func MediaPlayIcon() fyne.Resource
 ```
-MediaPlayIcon returns a resource containing the standard media play icon for the
-current theme
+MediaPlayIcon returns a resource containing the standard media play icon for the current theme
 
 #### func  MediaRecordIcon
 
 ```go
 func MediaRecordIcon() fyne.Resource
 ```
-MediaRecordIcon returns a resource containing the standard media record icon for
-the current theme
+MediaRecordIcon returns a resource containing the standard media record icon for the current theme
 
 #### func  MediaReplayIcon
 
 ```go
 func MediaReplayIcon() fyne.Resource
 ```
-MediaReplayIcon returns a resource containing the standard media replay icon for
-the current theme
+MediaReplayIcon returns a resource containing the standard media replay icon for the current theme
 
 #### func  MediaSkipNextIcon
 
 ```go
 func MediaSkipNextIcon() fyne.Resource
 ```
-MediaSkipNextIcon returns a resource containing the standard media skip next
-icon for the current theme
+MediaSkipNextIcon returns a resource containing the standard media skip next icon for the current theme
 
 #### func  MediaSkipPreviousIcon
 
 ```go
 func MediaSkipPreviousIcon() fyne.Resource
 ```
-MediaSkipPreviousIcon returns a resource containing the standard media skip
-previous icon for the current theme
+MediaSkipPreviousIcon returns a resource containing the standard media skip previous icon for the current theme
 
 #### func  MenuDropDownIcon
 
 ```go
 func MenuDropDownIcon() fyne.Resource
 ```
-MenuDropDownIcon returns a resource containing the standard menu drop down icon
-for the current theme
+MenuDropDownIcon returns a resource containing the standard menu drop down icon for the current theme
 
 #### func  MenuDropUpIcon
 
 ```go
 func MenuDropUpIcon() fyne.Resource
 ```
-MenuDropUpIcon returns a resource containing the standard menu drop up icon for
-the current theme
+MenuDropUpIcon returns a resource containing the standard menu drop up icon for the current theme
 
 #### func  MenuExpandIcon
 
 ```go
 func MenuExpandIcon() fyne.Resource
 ```
-MenuExpandIcon returns a resource containing the standard (mobile) expand
-"submenu icon for the current theme
+MenuExpandIcon returns a resource containing the standard (mobile) expand "submenu icon for the current theme
 
 #### func  MenuIcon
 
 ```go
 func MenuIcon() fyne.Resource
 ```
-MenuIcon returns a resource containing the standard (mobile) menu icon for the
-current theme
+MenuIcon returns a resource containing the standard (mobile) menu icon for the current theme
 
 #### func  MoveDownIcon
 
 ```go
 func MoveDownIcon() fyne.Resource
 ```
-MoveDownIcon returns a resource containing the standard down arrow icon for the
-current theme
+MoveDownIcon returns a resource containing the standard down arrow icon for the current theme
 
 #### func  MoveUpIcon
 
 ```go
 func MoveUpIcon() fyne.Resource
 ```
-MoveUpIcon returns a resource containing the standard up arrow icon for the
-current theme
+MoveUpIcon returns a resource containing the standard up arrow icon for the current theme
 
 #### func  NavigateBackIcon
 
 ```go
 func NavigateBackIcon() fyne.Resource
 ```
-NavigateBackIcon returns a resource containing the standard backward navigation
-icon for the current theme
+NavigateBackIcon returns a resource containing the standard backward navigation icon for the current theme
 
 #### func  NavigateNextIcon
 
 ```go
 func NavigateNextIcon() fyne.Resource
 ```
-NavigateNextIcon returns a resource containing the standard forward navigation
-icon for the current theme
+NavigateNextIcon returns a resource containing the standard forward navigation icon for the current theme
 
 #### func  Padding
 
 ```go
 func Padding() int
 ```
-Padding is the standard gap between elements and the border around interface
-elements
+Padding is the standard gap between elements and the border around interface elements
 
 #### func  PlaceHolderColor
 
@@ -570,24 +514,21 @@ PrimaryColor returns the colour used to highlight primary features
 ```go
 func QuestionIcon() fyne.Resource
 ```
-QuestionIcon returns a resource containing the standard dialog question icon for
-the current theme
+QuestionIcon returns a resource containing the standard dialog question icon for the current theme
 
 #### func  RadioButtonCheckedIcon
 
 ```go
 func RadioButtonCheckedIcon() fyne.Resource
 ```
-RadioButtonCheckedIcon returns a resource containing the standard radio button
-checked icon for the current theme
+RadioButtonCheckedIcon returns a resource containing the standard radio button checked icon for the current theme
 
 #### func  RadioButtonIcon
 
 ```go
 func RadioButtonIcon() fyne.Resource
 ```
-RadioButtonIcon returns a resource containing the standard radio button icon for
-the current theme
+RadioButtonIcon returns a resource containing the standard radio button icon for the current theme
 
 #### func  ScrollBarColor
 
@@ -608,40 +549,35 @@ ScrollBarSize is the width (or height) of the bars on a ScrollContainer
 ```go
 func ScrollBarSmallSize() int
 ```
-ScrollBarSmallSize is the width (or height) of the minimized bars on a
-ScrollContainer
+ScrollBarSmallSize is the width (or height) of the minimized bars on a ScrollContainer
 
 #### func  SearchIcon
 
 ```go
 func SearchIcon() fyne.Resource
 ```
-SearchIcon returns a resource containing the standard search icon for the
-current theme
+SearchIcon returns a resource containing the standard search icon for the current theme
 
 #### func  SearchReplaceIcon
 
 ```go
 func SearchReplaceIcon() fyne.Resource
 ```
-SearchReplaceIcon returns a resource containing the standard search and replace
-icon for the current theme
+SearchReplaceIcon returns a resource containing the standard search and replace icon for the current theme
 
 #### func  SettingsIcon
 
 ```go
 func SettingsIcon() fyne.Resource
 ```
-SettingsIcon returns a resource containing the standard settings icon for the
-current theme
+SettingsIcon returns a resource containing the standard settings icon for the current theme
 
 #### func  ShadowColor
 
 ```go
 func ShadowColor() color.Color
 ```
-ShadowColor returns the color (and translucency) for shadows used for indicating
-elevation
+ShadowColor returns the color (and translucency) for shadows used for indicating elevation
 
 #### func  TextBoldFont
 
@@ -697,96 +633,84 @@ TextSize returns the standard text size
 ```go
 func ViewFullScreenIcon() fyne.Resource
 ```
-ViewFullScreenIcon returns a resource containing the standard fullscreen icon
-for the current theme
+ViewFullScreenIcon returns a resource containing the standard fullscreen icon for the current theme
 
 #### func  ViewRefreshIcon
 
 ```go
 func ViewRefreshIcon() fyne.Resource
 ```
-ViewRefreshIcon returns a resource containing the standard refresh icon for the
-current theme
+ViewRefreshIcon returns a resource containing the standard refresh icon for the current theme
 
 #### func  ViewRestoreIcon
 
 ```go
 func ViewRestoreIcon() fyne.Resource
 ```
-ViewRestoreIcon returns a resource containing the standard exit fullscreen icon
-for the current theme
+ViewRestoreIcon returns a resource containing the standard exit fullscreen icon for the current theme
 
 #### func  VisibilityIcon
 
 ```go
 func VisibilityIcon() fyne.Resource
 ```
-VisibilityIcon returns a resource containing the standard visibity icon for the
-current theme
+VisibilityIcon returns a resource containing the standard visibity icon for the current theme
 
 #### func  VisibilityOffIcon
 
 ```go
 func VisibilityOffIcon() fyne.Resource
 ```
-VisibilityOffIcon returns a resource containing the standard visibity off icon
-for the current theme
+VisibilityOffIcon returns a resource containing the standard visibity off icon for the current theme
 
 #### func  VolumeDownIcon
 
 ```go
 func VolumeDownIcon() fyne.Resource
 ```
-VolumeDownIcon returns a resource containing the standard volume down icon for
-the current theme
+VolumeDownIcon returns a resource containing the standard volume down icon for the current theme
 
 #### func  VolumeMuteIcon
 
 ```go
 func VolumeMuteIcon() fyne.Resource
 ```
-VolumeMuteIcon returns a resource containing the standard volume mute icon for
-the current theme
+VolumeMuteIcon returns a resource containing the standard volume mute icon for the current theme
 
 #### func  VolumeUpIcon
 
 ```go
 func VolumeUpIcon() fyne.Resource
 ```
-VolumeUpIcon returns a resource containing the standard volume up icon for the
-current theme
+VolumeUpIcon returns a resource containing the standard volume up icon for the current theme
 
 #### func  WarningIcon
 
 ```go
 func WarningIcon() fyne.Resource
 ```
-WarningIcon returns a resource containing the standard dialog warning icon for
-the current theme
+WarningIcon returns a resource containing the standard dialog warning icon for the current theme
 
 #### func  ZoomFitIcon
 
 ```go
 func ZoomFitIcon() fyne.Resource
 ```
-ZoomFitIcon returns a resource containing the standard zoom fit icon for the
-current theme
+ZoomFitIcon returns a resource containing the standard zoom fit icon for the current theme
 
 #### func  ZoomInIcon
 
 ```go
 func ZoomInIcon() fyne.Resource
 ```
-ZoomInIcon returns a resource containing the standard zoom in icon for the
-current theme
+ZoomInIcon returns a resource containing the standard zoom in icon for the current theme
 
 #### func  ZoomOutIcon
 
 ```go
 func ZoomOutIcon() fyne.Resource
 ```
-ZoomOutIcon returns a resource containing the standard zoom out icon for the
-current theme
+ZoomOutIcon returns a resource containing the standard zoom out icon for the current theme
 
 #### types
 

@@ -23,32 +23,28 @@ type Select struct {
 }
 ```
 
-Select widget has a list of options, with the current one shown, and triggers an
-event func when clicked
+Select widget has a list of options, with the current one shown, and triggers an event func when clicked
 
 #### func  NewSelect
 
 ```go
 func NewSelect(options []string, changed func(string)) *Select
 ```
-NewSelect creates a new select widget with the set list of options and changes
-handler
+NewSelect creates a new select widget with the set list of options and changes handler
 
 #### func (*Select) ClearSelected
 
 ```go
 func (s *Select) ClearSelected()
 ```
-ClearSelected clears the current option of the select widget. After clearing the
-current option, the Select widget's PlaceHolder will be displayed.
+ClearSelected clears the current option of the select widget. After clearing the current option, the Select widget's PlaceHolder will be displayed.
 
 #### func (*Select) CreateRenderer
 
 ```go
 func (s *Select) CreateRenderer() fyne.WidgetRenderer
 ```
-CreateRenderer is a private method to Fyne which links this widget to its
-renderer
+CreateRenderer is a private method to Fyne which links this widget to its renderer
 
 #### func (*Select) Hide
 
@@ -97,8 +93,7 @@ Move changes the relative position of the select. Implements: fyne.Widget
 ```go
 func (s *Select) Resize(size fyne.Size)
 ```
-Resize sets a new size for a widget. Note this should not be used if the widget
-is being managed by a Layout within a Container.
+Resize sets a new size for a widget. Note this should not be used if the widget is being managed by a Layout within a Container.
 
 #### func (*Select) SetSelected
 
@@ -112,5 +107,4 @@ SetSelected sets the current option of the select widget
 ```go
 func (s *Select) Tapped(*fyne.PointEvent)
 ```
-Tapped is called when a pointer tapped event is captured and triggers any tap
-handler
+Tapped is called when a pointer tapped event is captured and triggers any tap handler

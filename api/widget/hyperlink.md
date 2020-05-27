@@ -23,8 +23,7 @@ type Hyperlink struct {
 }
 ```
 
-Hyperlink widget is a text component with appropriate padding and layout. When
-clicked, the default web browser should open with a URL
+Hyperlink widget is a text component with appropriate padding and layout. When clicked, the default web browser should open with a URL
 
 #### func  NewHyperlink
 
@@ -45,8 +44,7 @@ NewHyperlinkWithStyle creates a new hyperlink widget with the set text content
 ```go
 func (hl *Hyperlink) CreateRenderer() fyne.WidgetRenderer
 ```
-CreateRenderer is a private method to Fyne which links this widget to its
-renderer
+CreateRenderer is a private method to Fyne which links this widget to its renderer
 
 #### func (*Hyperlink) Cursor
 
@@ -67,8 +65,7 @@ MinSize returns the smallest size this widget can shrink to
 ```go
 func (hl *Hyperlink) Resize(size fyne.Size)
 ```
-Resize sets a new size for the hyperlink. Note this should not be used if the
-widget is being managed by a Layout within a Container.
+Resize sets a new size for the hyperlink. Note this should not be used if the widget is being managed by a Layout within a Container.
 
 #### func (*Hyperlink) SetText
 
@@ -96,5 +93,4 @@ SetURLFromString sets the URL of the hyperlink, taking in a string type
 ```go
 func (hl *Hyperlink) Tapped(*fyne.PointEvent)
 ```
-Tapped is called when a pointer tapped event is captured and triggers any change
-handler
+Tapped is called when a pointer tapped event is captured and triggers any change handler

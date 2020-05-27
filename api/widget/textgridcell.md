@@ -19,5 +19,4 @@ type TextGridCell struct {
 }
 ```
 
-TextGridCell represents a single cell in a text grid. It has a rune for the text
-content and a style associated with it.
+TextGridCell represents a single cell in a text grid. It has a rune for the text content and a style associated with it.

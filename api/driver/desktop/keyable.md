@@ -21,6 +21,4 @@ type Keyable interface {
 }
 ```
 
-Keyable describes any focusable canvas object that can accept desktop key
-events. This is the traditional key down and up event that is not applicable to
-all devices.
+Keyable describes any focusable canvas object that can accept desktop key events. This is the traditional key down and up event that is not applicable to all devices.

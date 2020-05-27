@@ -8,10 +8,7 @@ title: Fyne API fyne
 --
     import "fyne.io/fyne"
 
-Package fyne describes the objects and components available to any Fyne app.
-These can all be created, manipulated and tested without rendering (for speed).
-Your main package should use the app package to create an application with a
-default driver that will render your UI.
+Package fyne describes the objects and components available to any Fyne app. These can all be created, manipulated and tested without rendering (for speed). Your main package should use the app package to create an application with a default driver that will render your UI.
 
 A simple application may look like this:
 
@@ -38,32 +35,28 @@ A simple application may look like this:
 ```go
 const SettingsScaleAuto = float32(-1.0)
 ```
-SettingsScaleAuto is a specific scale value that indicates a canvas should scale
-according to the DPI of the window that contains it.
+SettingsScaleAuto is a specific scale value that indicates a canvas should scale according to the DPI of the window that contains it.
 
 #### func  IsHorizontal
 
 ```go
 func IsHorizontal(orient DeviceOrientation) bool
 ```
-IsHorizontal is a helper utility that determines if a passed orientation is
-horizontal
+IsHorizontal is a helper utility that determines if a passed orientation is horizontal
 
 #### func  IsVertical
 
 ```go
 func IsVertical(orient DeviceOrientation) bool
 ```
-IsVertical is a helper utility that determines if a passed orientation is
-vertical
+IsVertical is a helper utility that determines if a passed orientation is vertical
 
 #### func  LogError
 
 ```go
 func LogError(reason string, err error)
 ```
-LogError reports an error to the command line with the specified err cause, if
-not nil. The function also reports basic information about the code location.
+LogError reports an error to the command line with the specified err cause, if not nil. The function also reports basic information about the code location.
 
 #### func  Max
 

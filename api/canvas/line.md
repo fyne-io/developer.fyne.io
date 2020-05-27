@@ -23,9 +23,7 @@ type Line struct {
 }
 ```
 
-Line describes a coloured line primitive in a Fyne canvas. Lines are special as
-they can have a negative width or height to indicate an inverse slope (i.e.
-slope up vs down).
+Line describes a coloured line primitive in a Fyne canvas. Lines are special as they can have a negative width or height to indicate an inverse slope (i.e. slope up vs down).
 
 #### func  NewLine
 
@@ -60,8 +58,7 @@ Move the line object to a new position, relative to its parent / canvas
 ```go
 func (l *Line) Position() fyne.Position
 ```
-Position gets the current top-left position of this line object, relative to its
-parent / canvas
+Position gets the current top-left position of this line object, relative to its parent / canvas
 
 #### func (*Line) Refresh
 
@@ -96,5 +93,4 @@ Size returns the current size of bounding box for this line object
 ```go
 func (l *Line) Visible() bool
 ```
-Visible returns true if this line// Show will set this circle to be visible is
-visible, false otherwise
+Visible returns true if this line// Show will set this circle to be visible is visible, false otherwise

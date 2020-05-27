@@ -21,5 +21,4 @@ type URI interface {
 }
 ```
 
-URI represents the identifier of a resource on a target system. This resource
-may be a file or another data source such as an app or file sharing system.
+URI represents the identifier of a resource on a target system. This resource may be a file or another data source such as an app or file sharing system.

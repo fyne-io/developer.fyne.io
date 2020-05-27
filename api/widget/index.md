@@ -17,61 +17,49 @@ Package widget defines the UI widgets within the Fyne toolkit
 ```go
 func DestroyRenderer(wid fyne.Widget)
 ```
-DestroyRenderer frees a render implementation for a widget. This is typically
-for internal use only. Deprecated: Access to widget renderers is being removed,
-render details should be private to a WidgetRenderer.
+DestroyRenderer frees a render implementation for a widget. This is typically for internal use only. Deprecated: Access to widget renderers is being removed, render details should be private to a WidgetRenderer.
 
 #### func  Refresh
 
 ```go
 func Refresh(wid fyne.Widget)
 ```
-Refresh instructs the containing canvas to refresh the specified widget.
-Deprecated: Call Widget.Refresh() instead.
+Refresh instructs the containing canvas to refresh the specified widget. Deprecated: Call Widget.Refresh() instead.
 
 #### func  Renderer
 
 ```go
 func Renderer(wid fyne.Widget) fyne.WidgetRenderer
 ```
-Renderer looks up the render implementation for a widget Deprecated: Access to
-widget renderers is being removed, render details should be private to a
-WidgetRenderer.
+Renderer looks up the render implementation for a widget Deprecated: Access to widget renderers is being removed, render details should be private to a WidgetRenderer.
 
 #### func  ShowModalPopUp
 
 ```go
 func ShowModalPopUp(content fyne.CanvasObject, canvas fyne.Canvas)
 ```
-ShowModalPopUp creates a new popUp for the specified content and displays it on
-the passed canvas. A modal PopUp blocks interactions with underlying elements,
-covered with a semi-transparent overlay.
+ShowModalPopUp creates a new popUp for the specified content and displays it on the passed canvas. A modal PopUp blocks interactions with underlying elements, covered with a semi-transparent overlay.
 
 #### func  ShowPopUp
 
 ```go
 func ShowPopUp(content fyne.CanvasObject, canvas fyne.Canvas)
 ```
-ShowPopUp creates a new popUp for the specified content and displays it on the
-passed canvas.
+ShowPopUp creates a new popUp for the specified content and displays it on the passed canvas.
 
 #### func  ShowPopUpAtPosition
 
 ```go
 func ShowPopUpAtPosition(content fyne.CanvasObject, canvas fyne.Canvas, pos fyne.Position)
 ```
-ShowPopUpAtPosition creates a new popUp for the specified content at the
-specified absolute position. It will then display the popup on the passed
-canvas.
+ShowPopUpAtPosition creates a new popUp for the specified content at the specified absolute position. It will then display the popup on the passed canvas.
 
 #### func  ShowPopUpMenuAtPosition
 
 ```go
 func ShowPopUpMenuAtPosition(menu *fyne.Menu, c fyne.Canvas, pos fyne.Position)
 ```
-ShowPopUpMenuAtPosition creates a PopUp menu populated with items from the
-passed menu structure. It will automatically be positioned at the provided
-location and shown as an overlay on the specified canvas.
+ShowPopUpMenuAtPosition creates a PopUp menu populated with items from the passed menu structure. It will automatically be positioned at the provided location and shown as an overlay on the specified canvas.
 
 #### types
 

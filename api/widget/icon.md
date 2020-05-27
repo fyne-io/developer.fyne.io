@@ -20,8 +20,7 @@ type Icon struct {
 }
 ```
 
-Icon widget is a basic image component that load's its resource to match the
-theme.
+Icon widget is a basic image component that load's its resource to match the theme.
 
 #### func  NewIcon
 
@@ -35,8 +34,7 @@ NewIcon returns a new icon widget that displays a themed icon resource
 ```go
 func (i *Icon) CreateRenderer() fyne.WidgetRenderer
 ```
-CreateRenderer is a private method to Fyne which links this widget to its
-renderer
+CreateRenderer is a private method to Fyne which links this widget to its renderer
 
 #### func (*Icon) MinSize
 

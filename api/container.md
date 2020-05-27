@@ -21,24 +21,21 @@ type Container struct {
 }
 ```
 
-Container is a CanvasObject that contains a collection of child objects. The
-layout of the children is set by the specified Layout.
+Container is a CanvasObject that contains a collection of child objects. The layout of the children is set by the specified Layout.
 
 #### func  NewContainer
 
 ```go
 func NewContainer(objects ...CanvasObject) *Container
 ```
-NewContainer returns a new Container instance holding the specified
-CanvasObjects.
+NewContainer returns a new Container instance holding the specified CanvasObjects.
 
 #### func  NewContainerWithLayout
 
 ```go
 func NewContainerWithLayout(layout Layout, objects ...CanvasObject) *Container
 ```
-NewContainerWithLayout returns a new Container instance holding the specified
-CanvasObjects which will be laid out according to the specified Layout.
+NewContainerWithLayout returns a new Container instance holding the specified CanvasObjects which will be laid out according to the specified Layout.
 
 #### func (*Container) AddObject
 
@@ -59,16 +56,14 @@ Hide sets this container, and all its children, to be not visible.
 ```go
 func (c *Container) MinSize() Size
 ```
-MinSize calculates the minimum size of a Container. This is delegated to the
-Layout, if specified, otherwise it will mimic MaxLayout.
+MinSize calculates the minimum size of a Container. This is delegated to the Layout, if specified, otherwise it will mimic MaxLayout.
 
 #### func (*Container) Move
 
 ```go
 func (c *Container) Move(pos Position)
 ```
-Move the container (and all its children) to a new position, relative to its
-parent.
+Move the container (and all its children) to a new position, relative to its parent.
 
 #### func (*Container) Position
 

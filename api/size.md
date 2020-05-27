@@ -40,8 +40,7 @@ NewSize returns a newly allocated Size of the specified dimensions.
 ```go
 func (s Size) Add(s2 Size) Size
 ```
-Add returns a new Size that is the result of increasing the current size by s2
-Width and Height.
+Add returns a new Size that is the result of increasing the current size by s2 Width and Height.
 
 #### func (Size) IsZero
 
@@ -69,13 +68,11 @@ Min returns a new Size that is the minimum of the current Size and s2.
 ```go
 func (s Size) Subtract(s2 Size) Size
 ```
-Subtract returns a new Size that is the result of decreasing the current size by
-s2 Width and Height.
+Subtract returns a new Size that is the result of decreasing the current size by s2 Width and Height.
 
 #### func (Size) Union
 
 ```go
 func (s Size) Union(s2 Size) Size
 ```
-Union returns a new Size that is the maximum of the current Size and s2.
-Deprecated: use Max() instead
+Union returns a new Size that is the maximum of the current Size and s2. Deprecated: use Max() instead

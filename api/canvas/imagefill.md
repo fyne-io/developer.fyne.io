@@ -16,8 +16,7 @@ title: Fyne API canvas
 type ImageFill int
 ```
 
-ImageFill defines the different type of ways an image can stretch to fill its
-space.
+ImageFill defines the different type of ways an image can stretch to fill its space.
 
 ```go
 const (

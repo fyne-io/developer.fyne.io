@@ -43,15 +43,11 @@ NewVSplitContainer create a splitable parent wrapping the specified children.
 ```go
 func (s *SplitContainer) CreateRenderer() fyne.WidgetRenderer
 ```
-CreateRenderer is a private method to Fyne which links this widget to its
-renderer
+CreateRenderer is a private method to Fyne which links this widget to its renderer
 
 #### func (*SplitContainer) SetOffset
 
 ```go
 func (s *SplitContainer) SetOffset(offset float64)
 ```
-SetOffset sets the offset (0.0 to 1.0) of the SplitContainer divider. 0.0 -
-Leading is min size, Trailing uses all remaining space. 0.5 - Leading & Trailing
-equally share the available space. 1.0 - Trailing is min size, Leading uses all
-remaining space.
+SetOffset sets the offset (0.0 to 1.0) of the SplitContainer divider. 0.0 - Leading is min size, Trailing uses all remaining space. 0.5 - Leading & Trailing equally share the available space. 1.0 - Trailing is min size, Leading uses all remaining space.

@@ -22,43 +22,35 @@ type ScrollContainer struct {
 }
 ```
 
-ScrollContainer defines a container that is smaller than the Content. The Offset
-is used to determine the position of the child widgets within the container.
+ScrollContainer defines a container that is smaller than the Content. The Offset is used to determine the position of the child widgets within the container.
 
 #### func  NewHScrollContainer
 
 ```go
 func NewHScrollContainer(content fyne.CanvasObject) *ScrollContainer
 ```
-NewHScrollContainer create a scrollable parent wrapping the specified content.
-Note that this may cause the MinSize.Width to be smaller than that of the passed
-object.
+NewHScrollContainer create a scrollable parent wrapping the specified content. Note that this may cause the MinSize.Width to be smaller than that of the passed object.
 
 #### func  NewScrollContainer
 
 ```go
 func NewScrollContainer(content fyne.CanvasObject) *ScrollContainer
 ```
-NewScrollContainer creates a scrollable parent wrapping the specified content.
-Note that this may cause the MinSize to be smaller than that of the passed
-object.
+NewScrollContainer creates a scrollable parent wrapping the specified content. Note that this may cause the MinSize to be smaller than that of the passed object.
 
 #### func  NewVScrollContainer
 
 ```go
 func NewVScrollContainer(content fyne.CanvasObject) *ScrollContainer
 ```
-NewVScrollContainer create a scrollable parent wrapping the specified content.
-Note that this may cause the MinSize.Height to be smaller than that of the
-passed object.
+NewVScrollContainer create a scrollable parent wrapping the specified content. Note that this may cause the MinSize.Height to be smaller than that of the passed object.
 
 #### func (*ScrollContainer) CreateRenderer
 
 ```go
 func (s *ScrollContainer) CreateRenderer() fyne.WidgetRenderer
 ```
-CreateRenderer is a private method to Fyne which links this widget to its
-renderer
+CreateRenderer is a private method to Fyne which links this widget to its renderer
 
 #### func (*ScrollContainer) DragEnd
 
@@ -107,6 +99,4 @@ Scrolled is called when an input device triggers a scroll event
 ```go
 func (s *ScrollContainer) SetMinSize(size fyne.Size)
 ```
-SetMinSize specifies a minimum size for this scroll container. If the specified
-size is larger than the content size then scrolling will not be enabled This can
-be helpful to set scrolling in only 1 direction.
+SetMinSize specifies a minimum size for this scroll container. If the specified size is larger than the content size then scrolling will not be enabled This can be helpful to set scrolling in only 1 direction.

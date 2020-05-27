@@ -17,9 +17,7 @@ type ToolbarSpacer struct {
 }
 ```
 
-ToolbarSpacer is a blank, stretchable space for a toolbar. This is typically
-used to assist layout if you wish some left and some right aligned items. Space
-will be split evebly amongst all the spacers on a toolbar.
+ToolbarSpacer is a blank, stretchable space for a toolbar. This is typically used to assist layout if you wish some left and some right aligned items. Space will be split evebly amongst all the spacers on a toolbar.
 
 #### func (*ToolbarSpacer) ToolbarObject
 

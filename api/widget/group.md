@@ -20,25 +20,21 @@ type Group struct {
 }
 ```
 
-Group widget contains a list of widgets that are grouped under a dividing line
-and title at the top.
+Group widget contains a list of widgets that are grouped under a dividing line and title at the top.
 
 #### func  NewGroup
 
 ```go
 func NewGroup(title string, children ...fyne.CanvasObject) *Group
 ```
-NewGroup creates a new grouped list widget with a title and the specified list
-of child objects.
+NewGroup creates a new grouped list widget with a title and the specified list of child objects.
 
 #### func  NewGroupWithScroller
 
 ```go
 func NewGroupWithScroller(title string, children ...fyne.CanvasObject) *Group
 ```
-NewGroupWithScroller creates a new grouped list widget with a title and the
-specified list of child objects. This group will scroll when the available space
-is less than needed to display the items it contains.
+NewGroupWithScroller creates a new grouped list widget with a title and the specified list of child objects. This group will scroll when the available space is less than needed to display the items it contains.
 
 #### func (*Group) Append
 
@@ -52,8 +48,7 @@ Append adds a new CanvasObject to the end of the group
 ```go
 func (g *Group) CreateRenderer() fyne.WidgetRenderer
 ```
-CreateRenderer is a private method to Fyne which links this widget to its
-renderer
+CreateRenderer is a private method to Fyne which links this widget to its renderer
 
 #### func (*Group) MinSize
 

@@ -21,24 +21,21 @@ type Box struct {
 }
 ```
 
-Box widget is a simple list where the child elements are arranged in a single
-column for vertical or a single row for horizontal arrangement
+Box widget is a simple list where the child elements are arranged in a single column for vertical or a single row for horizontal arrangement
 
 #### func  NewHBox
 
 ```go
 func NewHBox(children ...fyne.CanvasObject) *Box
 ```
-NewHBox creates a new horizontally aligned box widget with the specified list of
-child objects
+NewHBox creates a new horizontally aligned box widget with the specified list of child objects
 
 #### func  NewVBox
 
 ```go
 func NewVBox(children ...fyne.CanvasObject) *Box
 ```
-NewVBox creates a new vertically aligned box widget with the specified list of
-child objects
+NewVBox creates a new vertically aligned box widget with the specified list of child objects
 
 #### func (*Box) Append
 
@@ -52,8 +49,7 @@ Append adds a new CanvasObject to the end/right of the box
 ```go
 func (b *Box) CreateRenderer() fyne.WidgetRenderer
 ```
-CreateRenderer is a private method to Fyne which links this widget to its
-renderer
+CreateRenderer is a private method to Fyne which links this widget to its renderer
 
 #### func (*Box) MinSize
 

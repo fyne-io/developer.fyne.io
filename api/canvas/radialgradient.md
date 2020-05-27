@@ -23,8 +23,7 @@ type RadialGradient struct {
 }
 ```
 
-RadialGradient defines a Gradient travelling radially from a center point
-outward.
+RadialGradient defines a Gradient travelling radially from a center point outward.
 
 #### func  NewRadialGradient
 
@@ -38,8 +37,7 @@ NewRadialGradient creates a new radial gradient.
 ```go
 func (g *RadialGradient) Generate(iw, ih int) image.Image
 ```
-Generate calculates an image of the gradient with the specified width and
-height.
+Generate calculates an image of the gradient with the specified width and height.
 
 #### func (*RadialGradient) Hide
 
@@ -67,8 +65,7 @@ Move the rectangle object to a new position, relative to its parent / canvas
 ```go
 func (r *RadialGradient) Position() fyne.Position
 ```
-CurrentPosition gets the current position of this rectangle object, relative to
-its parent / canvas
+CurrentPosition gets the current position of this rectangle object, relative to its parent / canvas
 
 #### func (*RadialGradient) Refresh
 

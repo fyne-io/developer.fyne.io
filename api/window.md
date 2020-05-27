@@ -100,5 +100,4 @@ type Window interface {
 }
 ```
 
-Window describes a user interface window. Depending on the platform an app may
-have many windows or just the one.
+Window describes a user interface window. Depending on the platform an app may have many windows or just the one.

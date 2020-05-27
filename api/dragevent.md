@@ -19,5 +19,4 @@ type DragEvent struct {
 }
 ```
 
-DragEvent defines the parameters of a pointer or other drag event. The DraggedX
-and DraggedY fields show how far the item was dragged since the last event.
+DragEvent defines the parameters of a pointer or other drag event. The DraggedX and DraggedY fields show how far the item was dragged since the last event.

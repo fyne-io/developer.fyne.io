@@ -20,5 +20,4 @@ type Disableable interface {
 }
 ```
 
-Disableable describes any CanvasObject that can be disabled. This is primarily
-used with objects that also implement the Tappable interface.
+Disableable describes any CanvasObject that can be disabled. This is primarily used with objects that also implement the Tappable interface.

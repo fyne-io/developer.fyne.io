@@ -17,16 +17,14 @@ Package layout defines the various layouts available to Fyne apps
 ```go
 func NewAdaptiveGridLayout(rowcols int) fyne.Layout
 ```
-NewAdaptiveGridLayout returns a new grid layout which uses columns when
-horizontal but rows when vertical.
+NewAdaptiveGridLayout returns a new grid layout which uses columns when horizontal but rows when vertical.
 
 #### func  NewBorderLayout
 
 ```go
 func NewBorderLayout(top, bottom, left, right fyne.CanvasObject) fyne.Layout
 ```
-NewBorderLayout creates a new BorderLayout instance with top, left, bottom and
-right objects set. All other items in the container will fill the centre space
+NewBorderLayout creates a new BorderLayout instance with top, left, bottom and right objects set. All other items in the container will fill the centre space
 
 #### func  NewCenterLayout
 
@@ -40,8 +38,7 @@ NewCenterLayout creates a new CenterLayout instance
 ```go
 func NewFixedGridLayout(size fyne.Size) fyne.Layout
 ```
-NewFixedGridLayout returns a new FixedGridLayout instance Deprecated: use the
-replacement NewGridWrapLayout. This method will be removed in 2.0.
+NewFixedGridLayout returns a new FixedGridLayout instance Deprecated: use the replacement NewGridWrapLayout. This method will be removed in 2.0.
 
 #### func  NewFormLayout
 
@@ -55,25 +52,21 @@ NewFormLayout returns a new FormLayout instance
 ```go
 func NewGridLayout(cols int) fyne.Layout
 ```
-NewGridLayout returns a grid layout arranged in a specified number of columns.
-The number of rows will depend on how many children are in the container that
-uses this layout.
+NewGridLayout returns a grid layout arranged in a specified number of columns. The number of rows will depend on how many children are in the container that uses this layout.
 
 #### func  NewGridLayoutWithColumns
 
 ```go
 func NewGridLayoutWithColumns(cols int) fyne.Layout
 ```
-NewGridLayoutWithColumns returns a new grid layout that specifies a column count
-and wrap to new rows when needed.
+NewGridLayoutWithColumns returns a new grid layout that specifies a column count and wrap to new rows when needed.
 
 #### func  NewGridLayoutWithRows
 
 ```go
 func NewGridLayoutWithRows(rows int) fyne.Layout
 ```
-NewGridLayoutWithRows returns a new grid layout that specifies a row count that
-creates new columns as required.
+NewGridLayoutWithRows returns a new grid layout that specifies a row count that creates new columns as required.
 
 #### func  NewGridWrapLayout
 
@@ -87,8 +80,7 @@ NewGridWrapLayout returns a new GridWrapLayout instance
 ```go
 func NewHBoxLayout() fyne.Layout
 ```
-NewHBoxLayout returns a horizontal box layout for stacking a number of child
-canvas objects or widgets left to right.
+NewHBoxLayout returns a horizontal box layout for stacking a number of child canvas objects or widgets left to right.
 
 #### func  NewMaxLayout
 
@@ -102,16 +94,14 @@ NewMaxLayout creates a new MaxLayout instance
 ```go
 func NewSpacer() fyne.CanvasObject
 ```
-NewSpacer returns a spacer object which can fill vertical and horizontal space.
-This is primarily used with a box layout.
+NewSpacer returns a spacer object which can fill vertical and horizontal space. This is primarily used with a box layout.
 
 #### func  NewVBoxLayout
 
 ```go
 func NewVBoxLayout() fyne.Layout
 ```
-NewVBoxLayout returns a vertical box layout for stacking a number of child
-canvas objects or widgets top to bottom.
+NewVBoxLayout returns a vertical box layout for stacking a number of child canvas objects or widgets top to bottom.
 
 #### types
 

@@ -26,44 +26,35 @@ type Image struct {
 }
 ```
 
-Image describes a drawable image area that can render in a Fyne canvas The image
-may be a vector or a bitmap representation and it will fill the area. The fill
-mode can be changed by setting FillMode to a different ImageFill.
+Image describes a drawable image area that can render in a Fyne canvas The image may be a vector or a bitmap representation and it will fill the area. The fill mode can be changed by setting FillMode to a different ImageFill.
 
 #### func  NewImageFromFile
 
 ```go
 func NewImageFromFile(file string) *Image
 ```
-NewImageFromFile creates a new image from a local file. Images returned from
-this method will scale to fit the canvas object. The method for scaling can be
-set using the Fill field.
+NewImageFromFile creates a new image from a local file. Images returned from this method will scale to fit the canvas object. The method for scaling can be set using the Fill field.
 
 #### func  NewImageFromImage
 
 ```go
 func NewImageFromImage(img image.Image) *Image
 ```
-NewImageFromImage returns a new Image instance that is rendered from the Go
-image.Image passed in. Images returned from this method will scale to fit the
-canvas object. The method for scaling can be set using the Fill field.
+NewImageFromImage returns a new Image instance that is rendered from the Go image.Image passed in. Images returned from this method will scale to fit the canvas object. The method for scaling can be set using the Fill field.
 
 #### func  NewImageFromResource
 
 ```go
 func NewImageFromResource(res fyne.Resource) *Image
 ```
-NewImageFromResource creates a new image by loading the specified resource.
-Images returned from this method will scale to fit the canvas object. The method
-for scaling can be set using the Fill field.
+NewImageFromResource creates a new image by loading the specified resource. Images returned from this method will scale to fit the canvas object. The method for scaling can be set using the Fill field.
 
 #### func (*Image) Alpha
 
 ```go
 func (i *Image) Alpha() float64
 ```
-Alpha is a convenience function that returns the alpha value for an image based
-on its Translucency value. The result is 1.0 - Translucency.
+Alpha is a convenience function that returns the alpha value for an image based on its Translucency value. The result is 1.0 - Translucency.
 
 #### func (*Image) Hide
 
@@ -91,8 +82,7 @@ Move the rectangle object to a new position, relative to its parent / canvas
 ```go
 func (r *Image) Position() fyne.Position
 ```
-CurrentPosition gets the current position of this rectangle object, relative to
-its parent / canvas
+CurrentPosition gets the current position of this rectangle object, relative to its parent / canvas
 
 #### func (*Image) Refresh
 

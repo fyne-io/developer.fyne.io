@@ -20,5 +20,4 @@ type TextStyle struct {
 }
 ```
 
-TextStyle represents the styles that can be applied to a text canvas object or
-text based widget.
+TextStyle represents the styles that can be applied to a text canvas object or text based widget.

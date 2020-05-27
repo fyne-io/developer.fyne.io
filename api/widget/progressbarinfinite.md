@@ -18,27 +18,21 @@ type ProgressBarInfinite struct {
 }
 ```
 
-ProgressBarInfinite widget creates a horizontal panel that indicates waiting
-indefinitely An infinite progress bar loops 0% -> 100% repeatedly until Stop()
-is called
+ProgressBarInfinite widget creates a horizontal panel that indicates waiting indefinitely An infinite progress bar loops 0% -> 100% repeatedly until Stop() is called
 
 #### func  NewProgressBarInfinite
 
 ```go
 func NewProgressBarInfinite() *ProgressBarInfinite
 ```
-NewProgressBarInfinite creates a new progress bar widget that loops indefinitely
-from 0% -> 100% SetValue() is not defined for infinite progress bar To stop the
-looping progress and set the progress bar to 100%, call
-ProgressBarInfinite.Stop()
+NewProgressBarInfinite creates a new progress bar widget that loops indefinitely from 0% -> 100% SetValue() is not defined for infinite progress bar To stop the looping progress and set the progress bar to 100%, call ProgressBarInfinite.Stop()
 
 #### func (*ProgressBarInfinite) CreateRenderer
 
 ```go
 func (p *ProgressBarInfinite) CreateRenderer() fyne.WidgetRenderer
 ```
-CreateRenderer is a private method to Fyne which links this widget to its
-renderer
+CreateRenderer is a private method to Fyne which links this widget to its renderer
 
 #### func (*ProgressBarInfinite) Hide
 

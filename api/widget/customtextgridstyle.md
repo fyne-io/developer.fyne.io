@@ -18,8 +18,7 @@ type CustomTextGridStyle struct {
 }
 ```
 
-CustomTextGridStyle is a utility type for those not wanting to define their own
-style types.
+CustomTextGridStyle is a utility type for those not wanting to define their own style types.
 
 #### func (*CustomTextGridStyle) BackgroundColor
 

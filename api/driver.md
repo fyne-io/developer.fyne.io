@@ -45,5 +45,4 @@ type Driver interface {
 }
 ```
 
-Driver defines an abstract concept of a Fyne render driver. Any implementation
-must provide at least these methods.
+Driver defines an abstract concept of a Fyne render driver. Any implementation must provide at least these methods.

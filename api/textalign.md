@@ -16,8 +16,7 @@ title: Fyne API fyne
 type TextAlign int
 ```
 
-TextAlign represents the horizontal alignment of text within a widget or canvas
-object.
+TextAlign represents the horizontal alignment of text within a widget or canvas object.
 
 ```go
 const (
