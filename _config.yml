@@ -53,6 +53,8 @@ kramdown:
  auto_ids: true
  hard_wrap: false
  syntax_highlighter: rouge
+plugins:
+  - jekyll-redirect-from
 
 # filter used to process markdown. note that kramdown differs from github-flavored markdown in some subtle ways
 

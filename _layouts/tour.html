@@ -1,0 +1,133 @@
+<!doctype HTML>
+<html>
+  <head>
+    {% include head.html %}
+    {% include head_nav.html %}
+
+    {%- assign type = page.include | default: "go" -%}
+    {% if type == "go" %}
+        {% assign gofile = page.path | replace:'.md','.go' %}
+    {% else if type == "sh" %}
+        {% assign gofile = page.path | replace:'.md','.sh' %}
+    {% endif %}
+
+    {% capture code %}{%- include {{ gofile }} -%}{% endcapture %}
+    {% assign jsCode = code | newline_to_br | replace: '<br />', '\n\\' | replace: '"', '\"' %}
+ 
+    <script language="JavaScript">
+      function copyCode() {
+        var textArea = document.createElement("textarea");
+        textArea.value = "{{- jsCode -}}";
+        document.body.appendChild(textArea);
+        textArea.select();
+        document.execCommand("Copy");
+        textArea.remove();
+
+      }
+    </script>
+  </head>
+
+  <body>
+{% include topnav.html %}
+<!-- Page Content -->
+<div class="container">
+  <div id="main">
+    <!-- Content Row -->
+    <div class="row">
+        {% assign content_col_size = "col-md-12" %}
+        {% unless page.hide_sidebar %}
+            <!-- Sidebar Column -->
+            <div class="col-md-3" id="tg-sb-sidebar">
+                {% include sidebar.html %}
+            </div>
+            {% assign content_col_size = "col-md-9" %}
+        {% endunless %}
+
+        <!-- Words Column -->
+        <div class="col-md-4" id="tg-sb-content">
+
+          {% if page.since %}
+          <code class="since">Since {{ page.since }}</code>
+          {% endif %}
+          <h1>{{ page.title }}</h1>
+          {{ content }}
+
+        </div>
+        <!-- Code Column -->
+        <div class="col-md-5" id="tg-sb-content">
+
+
+          <button class="copyCode" onclick="copyCode()">Copy Example</button>
+          <h1>Example Code</h1>
+          <div id="sourceCode">
+            {% if type == "go" %}
+            {%- highlight go linenos -%}
+            {%- include {{ gofile }} -%}
+            {%- endhighlight -%}
+            {% else if type == "sh" %}
+            {%- highlight sh linenos -%}
+            {%- include {{ gofile }} -%}
+            {%- endhighlight -%}
+            {% endif %}
+          </div>
+        </div>
+    <!-- /.row -->
+    </div>
+<!-- /#main -->
+    </div>
+</div>
+<!-- /.container -->
+
+    {% assign url_parts = page.url | split: '/' %}
+    {% assign base_url = url_parts[2] %}
+
+    <footer id="tourNav">
+      <span>
+
+      {% assign count = 0 %}
+      {% assign current = 0 %}
+      {% assign pages = '' | split: '' %}
+
+      {% assign sortedPages = site.pages | sort:"order" %}
+      {% for node in sortedPages %}
+        {% assign node_url_parts = node.url | split: '/' %}
+        {% assign filename = node_url_parts | last %}
+        {% if node_url_parts[1] == "tour" and node_url_parts[2] == base_url and node.title != undefined %}
+
+          {% assign pageUrl = node.url | split: 'fake' %}
+          {% assign pages = pages | concat: pageUrl %}
+
+          {% if node.url == page.url %}
+          {% assign current = count %}
+          {% endif %}
+          {% assign count = count | plus:1 %}
+        {% endif %}
+      {% endfor %}
+
+      {% assign currentPlus = current | plus:1 %}
+      {% if current > 0 %}
+        {% assign prev = current | minus:1 %}
+        <a href="{{ pages[prev] }}">&lt;</a>
+      {% else %}
+        <span class="disabled">&lt;</span>
+      {% endif %}
+
+      {{ currentPlus }}/{{ count }}
+
+      {% if currentPlus < count %}
+        {% assign next = currentPlus %}
+        <a href="{{ pages[next] }}">&gt;</a>
+      {% else %}
+        <span class="disabled">&gt;</span>
+      {% endif %}
+      </span>
+    </footer>
+
+{% include footer.html %}
+
+</body>
+{% if site.google_analytics %}
+{% include google_analytics.html %}
+{% endif %}
+</html>
+

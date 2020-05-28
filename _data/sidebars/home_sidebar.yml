@@ -56,6 +56,28 @@ entries:
 
   - title: Tour
     output: web, pdf
+    folderitems:
+
+    - title: Introduction
+      url: /tour/introduction/
+      output: web, pdf
+
+    - title: Basics
+      url: /tour/basics/
+      output: web, pdf
+
+    - title: Canvas
+      url: /tour/canvas/
+      output: web, pdf
+
+    - title: Layout
+      url: /tour/layout/
+      output: web, pdf
+
+    - title: Widget
+      url: /tour/widget/
+      output: web, pdf
+
 
   - title: Tutorials
     output: web, pdf
