@@ -1,0 +1,121 @@
+---
+layout: page
+tags: [api]
+title: Fyne API canvas
+---
+
+# canvas
+--
+    import "fyne.io/fyne/canvas"
+
+## Usage
+
+#### type Raster
+
+```go
+type Raster struct {
+	Generator func(w, h int) image.Image // Render the raster image from code
+
+	Translucency float64 // Set a translucency value > 0.0 to fade the raster
+}
+```
+
+Raster describes a raster image area that can render in a Fyne canvas
+
+#### func  NewRaster
+
+```go
+func NewRaster(generate func(w, h int) image.Image) *Raster
+```
+NewRaster returns a new Image instance that is rendered dynamically using the specified generate function. Images returned from this method should draw dynamically to fill the width and height parameters passed to pixelColor.
+
+#### func  NewRasterFromImage
+
+```go
+func NewRasterFromImage(img image.Image) *Raster
+```
+NewRasterFromImage returns a new Raster instance that is rendered from the Go image.Image passed in. Rasters returned from this method will map pixel for pixel to the screen starting img.Bounds().Min pixels from the top left of the canvas object. Truncates rather than scales the image. If smaller than the target space, the image will be padded with zero-pixels to the target size.
+
+#### func  NewRasterWithPixels
+
+```go
+func NewRasterWithPixels(pixelColor func(x, y, w, h int) color.Color) *Raster
+```
+NewRasterWithPixels returns a new Image instance that is rendered dynamically by iterating over the specified pixelColor function for each x, y pixel. Images returned from this method should draw dynamically to fill the width and height parameters passed to pixelColor.
+
+#### func (*Raster) Alpha
+
+```go
+func (r *Raster) Alpha() float64
+```
+Alpha is a convenience function that returns the alpha value for a raster based on its Translucency value. The result is 1.0 - Translucency.
+
+#### func (*Raster) Hide
+
+```go
+func (r *Raster) Hide()
+```
+Hide will set this object to not be visible
+
+#### func (*Raster) MinSize
+
+```go
+func (r *Raster) MinSize() fyne.Size
+```
+MinSize returns the specified minimum size, if set, or {1, 1} otherwise
+
+#### func (*Raster) Move
+
+```go
+func (r *Raster) Move(pos fyne.Position)
+```
+Move the rectangle object to a new position, relative to its parent / canvas
+
+#### func (*Raster) Position
+
+```go
+func (r *Raster) Position() fyne.Position
+```
+CurrentPosition gets the current position of this rectangle object, relative to its parent / canvas
+
+#### func (*Raster) Refresh
+
+```go
+func (r *Raster) Refresh()
+```
+Refresh causes this object to be redrawn in it's current state
+
+#### func (*Raster) Resize
+
+```go
+func (r *Raster) Resize(size fyne.Size)
+```
+Resize sets a new size for the rectangle object
+
+#### func (*Raster) SetMinSize
+
+```go
+func (r *Raster) SetMinSize(size fyne.Size)
+```
+SetMinSize specifies the smallest size this object should be
+
+#### func (*Raster) Show
+
+```go
+func (r *Raster) Show()
+```
+Show will set this object to be visible
+
+#### func (*Raster) Size
+
+```go
+func (r *Raster) Size() fyne.Size
+```
+CurrentSize returns the current size of this rectangle object
+
+#### func (*Raster) Visible
+
+```go
+func (r *Raster) Visible() bool
+```
+IsVisible returns true if this object is visible, false otherwise

@@ -29,6 +29,7 @@ exclude:
   - .gitignore
   - vendor
   - _gen
+  - gen.sh
 # these are the files and directories that jekyll will exclude from the build
 
 feedback_subject_line: Fyne develop site

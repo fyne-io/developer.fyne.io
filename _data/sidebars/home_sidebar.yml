@@ -113,35 +113,35 @@ entries:
 
     folderitems:
     - title: app
-      url: /api/app/
+      url: /api/v1.3/app/
       output: web, pdf
 
     - title: canvas
-      url: /api/canvas/
+      url: /api/v1.3/canvas/
       output: web, pdf
 
     - title: dialog
-      url: /api/dialog/
+      url: /api/v1.3/dialog/
       output: web, pdf
 
     - title: layout
-      url: /api/layout/
+      url: /api/v1.3/layout/
       output: web, pdf
 
     - title: storage
-      url: /api/storage/
+      url: /api/v1.3/storage/
       output: web, pdf
 
     - title: test
-      url: /api/test/
+      url: /api/v1.3/test/
       output: web, pdf
 
     - title: theme
-      url: /api/theme/
+      url: /api/v1.3/theme/
       output: web, pdf
 
     - title: widget
-      url: /api/widget/
+      url: /api/v1.3/widget/
       output: web, pdf
 
 

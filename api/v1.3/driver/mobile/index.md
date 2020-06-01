@@ -1,0 +1,20 @@
+---
+layout: page
+tags: [api]
+title: Fyne API mobile
+---
+
+# mobile
+--
+    import "fyne.io/fyne/driver/mobile"
+
+
+## Usage
+
+#### types
+
+ * [Device](device.html)
+ * [KeyboardType](keyboardtype.html)
+ * [Keyboardable](keyboardable.html)
+ * [TouchEvent](touchevent.html)
+ * [Touchable](touchable.html)
