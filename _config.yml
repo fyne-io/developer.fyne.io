@@ -1,4 +1,4 @@
-repository: fyne-io/develop.fyne.io
+repository: fyne-io/developer.fyne.io
 
 output: web
 # this property is useful for conditional filtering of content that is separate from the PDF.
@@ -12,7 +12,7 @@ site_title: Develop using Fyne
 company_name: Fyne.io
 # this appears in the footer
 
-github_editme_path: fyne-io/develop.fyne.io
+github_editme_path: fyne-io/developer.fyne.io/blob/master/
 # if you're using Github, provide the basepath to the branch you've created for reviews, following the sample here. if not, leave this value blank.
 
 google_analytics:
