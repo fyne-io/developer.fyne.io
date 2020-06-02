@@ -323,6 +323,11 @@ footer {
     font-size: smaller;
 }
 
+footer img {
+    float: right;
+    padding-left:  4pt;
+}
+
 /* FAQ page */
 #accordion .panel-heading {
     font-size: 12px;
