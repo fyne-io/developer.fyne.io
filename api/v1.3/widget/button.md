@@ -22,8 +22,7 @@ type Button struct {
 	Alignment     ButtonAlign
 	IconPlacement ButtonIconPlacement
 
-	OnTapped func() `json:"-"`
-
+	OnTapped   func() `json:"-"`
 	HideShadow bool
 }
 ```

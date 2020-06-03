@@ -4,6 +4,7 @@ ROOT="`go env GOPATH`/src/fyne.io/fyne"
 VERSION="v1.3"
 
 cd "$(dirname "$0")"
+cd ..
 go get -u github.com/andydotxyz/godocdown/godocdown
 
 # generate API docs
