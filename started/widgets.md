@@ -17,95 +17,98 @@ Box widget is a simple list where the child elements are arranged in a single co
 
 Button widget has a text label and icon, both are optional.
 
-![Button](/started/widget/button.png)
- ![Button with Icon](/started/widget/button-icon.png)
+{% include widget.html name="button" %}
 
 ### Check
 
 Check widget has a text label and a checked (or unchecked) icon.
 
-![Check](/started/widget/check.png) ![Check On](/started/widget/check-on.png)
+{% include widget.html name="check" %}
 
 ### Entry
 
 Entry widget allows simple text to be input when focused.
 
-![Entry](/started/widget/entry.png)
+{% include widget.html name="entry" %}
 
 PasswordEntry widget hides text input and adds a button to display the text.
 
-![PasswordEntry](/started/widget/password-entry.png)
+{% include widget.html name="password" %}
 
 ### Form
 
 Form widget is two column grid where each row has a label and a widget (usually an input). The last row of the grid will contain the appropriate form control buttons if any should be shown.
 
-![Form](/started/widget/form.png)
+{% include widget.html name="form" %}
 
 ### Group
 
 Group widget is list of widgets that contains a visual divider to indicate the group with a title at the top.
 
-![Group](/started/widget/group.png)
+{% include widget.html name="group" %}
 
 ### Hyperlink
 
 Hyperlink widget is a text component with appropriate padding and layout. When clicked, the URL opens in your default web browser.
 
-![Hyperlink](/started/widget/hyperlink.png)
+{% include widget.html name="hyperlink" %}
 
 ### Icon
 
 Icon widget is a basic image component that load's its resource to match the theme.
 
-![Icon](/started/widget/icon.png)
+{% include widget.html name="icon" %}
 
 ### Label
 
 Label widget is a label component with appropriate padding and layout.
 
-![Label](/started/widget/label.png)
+{% include widget.html name="label" %}
 
 ### Progress bar
 
 ProgressBar widget creates a horizontal panel that indicates progress.
 
-![Progress](/started/widget/progress.png)
+{% include widget.html name="progress" %}
 
 ProgressBarInfinite widget creates a horizontal panel that indicates waiting indefinitely An infinite progress bar loops 0% -> 100% repeatedly until Stop() is called.
 
-![Progress Infinite](/started/widget/progress-infinite.png)
+{% include widget.html name="progressinf" %}
 
 ### Radio
 
 Radio widget has a list of text labels and radio check icons next to each.
 
-![Radio](/started/widget/radio.png) ![Radio On](/started/widget/radio-on.png)
+{% include widget.html name="radio" %}
 
 ### ScrollContainer
 
 ScrollContainer defines a container that is smaller than the Content.
 
+{% include widget.html name="scroll" %}
+
 ### Select
 
 Select widget has a list of options, with the current one shown, and triggers an event function when clicked.
 
-![Select](/started/widget/select.png)
+{% include widget.html name="select" %}
 
 ### Slider
 
 Slider if a widget that can slide between two fixed values.
 
-![Slider](/started/widget/slider.png)
+{% include widget.html name="slider" %}
 
 ### TabContainer
 
 TabContainer widget allows switching visible content from a list of TabItems. Each item is represented by a button at the top of the widget.
 
-![Tab Container](/started/widget/tabcontainer.png)
+{% include widget.html name="tabcontainer" %}
 
 ### Toolbar
 
 Toolbar widget creates a horizontal list of tool buttons.
 
-![Toolbar](/started/widget/toolbar.png)
+{% include widget.html name="toolbar" %}
+
+
