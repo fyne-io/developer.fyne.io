@@ -43,16 +43,31 @@
                 $("#tg-sb-content").toggleClass('col-md-12');
                 $("#tg-sb-icon").toggleClass('fa-toggle-on');
                 $("#tg-sb-icon").toggleClass('fa-toggle-off');
+
+if ($("#tg-sb-icon").hasClass('fa-toggle-on')) {
+    createCookie("nonav", "false", 365);
+} else {
+    createCookie("nonav", "true", 365);
+}
+
             });
+            if (readCookie("nonav") == "true") {
+                $("#tg-sb-link").click();
+            };
             $("#tg-dark-link").click(function() {
 if ($("#tg-dark-icon").hasClass('fa-toggle-on')) {
-   $('link[href="/css/theme-dark.css"]').attr('href','/css/theme-light.css');
+    $('link[href="/css/theme-dark.css"]').attr('href','/css/theme-light.css');
+    createCookie("dark", "false", 365);
 } else {
-   $('link[href="/css/theme-light.css"]').attr('href','/css/theme-dark.css');
+    $('link[href="/css/theme-light.css"]').attr('href','/css/theme-dark.css');
+    createCookie("dark", "true", 365);
 }
                 $("#tg-dark-icon").toggleClass('fa-toggle-on');
                 $("#tg-dark-icon").toggleClass('fa-toggle-off');
             });
+            if (readCookie("dark") == "true") {
+                $("#tg-dark-link").click();
+            };
         });
     </script>
     {% if page.datatable == true %}
