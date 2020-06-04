@@ -26,6 +26,10 @@ button.copyCode {
     white-space: pre !important;
 }
 
+div.intro-row div {
+    padding-bottom: 30px;
+}
+
 
 .bs-callout {
     padding: 20px;
