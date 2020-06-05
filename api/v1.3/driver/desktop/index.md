@@ -5,8 +5,10 @@ title: Fyne API desktop
 ---
 
 # desktop
---
-    import "fyne.io/fyne/driver/desktop"
+---
+```go
+import "fyne.io/fyne/driver/desktop"
+```
 
 
 ## Usage

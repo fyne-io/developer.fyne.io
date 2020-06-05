@@ -5,8 +5,10 @@ title: Fyne API widget
 ---
 
 # widget
---
-    import "fyne.io/fyne/widget"
+---
+```go
+import "fyne.io/fyne/widget"
+```
 
 Package widget defines the UI widgets within the Fyne toolkit
 
@@ -17,21 +19,27 @@ Package widget defines the UI widgets within the Fyne toolkit
 ```go
 func DestroyRenderer(wid fyne.Widget)
 ```
-DestroyRenderer frees a render implementation for a widget. This is typically for internal use only. Deprecated: Access to widget renderers is being removed, render details should be private to a WidgetRenderer.
+DestroyRenderer frees a render implementation for a widget. This is typically for internal use only.
+
+<div class="deprecated"> Deprecated: Access to widget renderers is being removed, render details should be private to a WidgetRenderer.</div>
 
 #### func  Refresh
 
 ```go
 func Refresh(wid fyne.Widget)
 ```
-Refresh instructs the containing canvas to refresh the specified widget. Deprecated: Call Widget.Refresh() instead.
+Refresh instructs the containing canvas to refresh the specified widget.
+
+<div class="deprecated"> Deprecated: Call Widget.Refresh() instead.</div>
 
 #### func  Renderer
 
 ```go
 func Renderer(wid fyne.Widget) fyne.WidgetRenderer
 ```
-Renderer looks up the render implementation for a widget Deprecated: Access to widget renderers is being removed, render details should be private to a WidgetRenderer.
+Renderer looks up the render implementation for a widget
+
+<div class="deprecated"> Deprecated: Access to widget renderers is being removed, render details should be private to a WidgetRenderer.</div>
 
 #### func  ShowModalPopUp
 

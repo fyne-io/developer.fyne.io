@@ -5,8 +5,10 @@ title: Fyne API fyne
 ---
 
 # fyne
---
-    import "fyne.io/fyne"
+---
+```go
+import "fyne.io/fyne"
+```
 
 ## Usage
 

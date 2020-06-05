@@ -5,8 +5,10 @@ title: Fyne API canvas
 ---
 
 # canvas
---
-    import "fyne.io/fyne/canvas"
+---
+```go
+import "fyne.io/fyne/canvas"
+```
 
 ## Usage
 

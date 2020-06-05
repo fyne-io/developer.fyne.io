@@ -5,8 +5,10 @@ title: Fyne API widget
 ---
 
 # widget
---
-    import "fyne.io/fyne/widget"
+---
+```go
+import "fyne.io/fyne/widget"
+```
 
 ## Usage
 
@@ -28,35 +30,45 @@ PopUp is a widget that can float above the user interface. It wraps any standard
 ```go
 func NewModalPopUp(content fyne.CanvasObject, canvas fyne.Canvas) *PopUp
 ```
-NewModalPopUp creates a new popUp for the specified content and displays it on the passed canvas. A modal PopUp blocks interactions with underlying elements, covered with a semi-transparent overlay. Deprecated: This will no longer show the pop-up in 2.0. Use ShowModalPopUp instead.
+NewModalPopUp creates a new popUp for the specified content and displays it on the passed canvas. A modal PopUp blocks interactions with underlying elements, covered with a semi-transparent overlay.
+
+<div class="deprecated"> Deprecated: This will no longer show the pop-up in 2.0. Use ShowModalPopUp instead.</div>
 
 #### func  NewPopUp
 
 ```go
 func NewPopUp(content fyne.CanvasObject, canvas fyne.Canvas) *PopUp
 ```
-NewPopUp creates a new popUp for the specified content and displays it on the passed canvas. Deprecated: This will no longer show the pop-up in 2.0. Use ShowPopUp() instead.
+NewPopUp creates a new popUp for the specified content and displays it on the passed canvas.
+
+<div class="deprecated"> Deprecated: This will no longer show the pop-up in 2.0. Use ShowPopUp() instead.</div>
 
 #### func  NewPopUpAtPosition
 
 ```go
 func NewPopUpAtPosition(content fyne.CanvasObject, canvas fyne.Canvas, pos fyne.Position) *PopUp
 ```
-NewPopUpAtPosition creates a new popUp for the specified content at the specified absolute position. It will then display the popup on the passed canvas. Deprecated: Use ShowPopUpAtPosition() instead.
+NewPopUpAtPosition creates a new popUp for the specified content at the specified absolute position. It will then display the popup on the passed canvas.
+
+<div class="deprecated"> Deprecated: Use ShowPopUpAtPosition() instead.</div>
 
 #### func  NewPopUpMenu
 
 ```go
 func NewPopUpMenu(menu *fyne.Menu, c fyne.Canvas) *PopUp
 ```
-NewPopUpMenu creates a PopUp widget populated with menu items from the passed menu structure. It will automatically be shown as an overlay on the specified canvas. Deprecated: Use ShowPopUpMenuAtPosition instead.
+NewPopUpMenu creates a PopUp widget populated with menu items from the passed menu structure. It will automatically be shown as an overlay on the specified canvas.
+
+<div class="deprecated"> Deprecated: Use ShowPopUpMenuAtPosition instead.</div>
 
 #### func  NewPopUpMenuAtPosition
 
 ```go
 func NewPopUpMenuAtPosition(menu *fyne.Menu, c fyne.Canvas, pos fyne.Position) *PopUp
 ```
-NewPopUpMenuAtPosition creates a PopUp widget populated with menu items from the passed menu structure. It will automatically be positioned at the provided location and shown as an overlay on the specified canvas. Deprecated: Use ShowPopUpMenuAtPosition instead.
+NewPopUpMenuAtPosition creates a PopUp widget populated with menu items from the passed menu structure. It will automatically be positioned at the provided location and shown as an overlay on the specified canvas.
+
+<div class="deprecated"> Deprecated: Use ShowPopUpMenuAtPosition instead.</div>
 
 #### func (*PopUp) CreateRenderer
 
@@ -91,7 +103,9 @@ Move the widget to a new position. A PopUp position is absolute to the top, left
 ```go
 func (p *PopUp) Resize(size fyne.Size)
 ```
-Resize changes the size of the PopUp. PopUps always have the size of their canvas. However, Resize changes the size of the PopUp's content. Implements: fyne.Widget
+Resize changes the size of the PopUp. PopUps always have the size of their canvas. However, Resize changes the size of the PopUp's content.
+
+<div class="implements">Implements: <code> fyne.Widget</code></div>
 
 #### func (*PopUp) Show
 

@@ -5,8 +5,10 @@ title: Fyne API widget
 ---
 
 # widget
---
-    import "fyne.io/fyne/widget"
+---
+```go
+import "fyne.io/fyne/widget"
+```
 
 ## Usage
 
@@ -51,7 +53,9 @@ CreateRenderer is a private method to Fyne which links this widget to its render
 ```go
 func (s *Select) Hide()
 ```
-Hide hides the select. Implements: fyne.Widget
+Hide hides the select.
+
+<div class="implements">Implements: <code> fyne.Widget</code></div>
 
 #### func (*Select) MinSize
 
@@ -86,7 +90,9 @@ MouseOut is called when a desktop pointer exits the widget
 ```go
 func (s *Select) Move(pos fyne.Position)
 ```
-Move changes the relative position of the select. Implements: fyne.Widget
+Move changes the relative position of the select.
+
+<div class="implements">Implements: <code> fyne.Widget</code></div>
 
 #### func (*Select) Resize
 

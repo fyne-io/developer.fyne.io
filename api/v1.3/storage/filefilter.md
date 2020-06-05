@@ -5,8 +5,10 @@ title: Fyne API storage
 ---
 
 # storage
---
-    import "fyne.io/fyne/storage"
+---
+```go
+import "fyne.io/fyne/storage"
+```
 
 ## Usage
 

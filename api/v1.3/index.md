@@ -5,13 +5,16 @@ title: Fyne API fyne
 ---
 
 # fyne
---
-    import "fyne.io/fyne"
+---
+```go
+import "fyne.io/fyne"
+```
 
 Package fyne describes the objects and components available to any Fyne app. These can all be created, manipulated and tested without rendering (for speed). Your main package should use the app package to create an application with a default driver that will render your UI.
 
 A simple application may look like this:
 
+```go
     package main
 
     import "fyne.io/fyne/app"
@@ -29,13 +32,16 @@ A simple application may look like this:
 
     	w.ShowAndRun()
     }
+```
 
 ## Usage
 
 ```go
 const SettingsScaleAuto = float32(-1.0)
 ```
-SettingsScaleAuto is a specific scale value that indicates a canvas should scale according to the DPI of the window that contains it. Deprecated: Automatic scaling is now handled in the drivers and is not a user setting.
+SettingsScaleAuto is a specific scale value that indicates a canvas should scale according to the DPI of the window that contains it.
+
+<div class="deprecated"> Deprecated: Automatic scaling is now handled in the drivers and is not a user setting.</div>
 
 #### func  IsHorizontal
 
@@ -93,8 +99,6 @@ SetCurrentApp is an internal function to set the app instance currently running.
  * [DragEvent](dragevent.html)
  * [Draggable](draggable.html)
  * [Driver](driver.html)
- * [FileReadCloser](filereadcloser.html)
- * [FileWriteCloser](filewritecloser.html)
  * [Focusable](focusable.html)
  * [KeyEvent](keyevent.html)
  * [KeyName](keyname.html)
@@ -127,6 +131,8 @@ SetCurrentApp is an internal function to set the app instance currently running.
  * [TextWrap](textwrap.html)
  * [Theme](theme.html)
  * [URI](uri.html)
+ * [URIReadCloser](urireadcloser.html)
+ * [URIWriteCloser](uriwritecloser.html)
  * [Widget](widget.html)
  * [WidgetRenderer](widgetrenderer.html)
  * [Window](window.html)

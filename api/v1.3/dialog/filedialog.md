@@ -5,8 +5,10 @@ title: Fyne API dialog
 ---
 
 # dialog
---
-    import "fyne.io/fyne/dialog"
+---
+```go
+import "fyne.io/fyne/dialog"
+```
 
 ## Usage
 
@@ -22,14 +24,14 @@ FileDialog is a dialog containing a file picker for use in opening or saving fil
 #### func  NewFileOpen
 
 ```go
-func NewFileOpen(callback func(fyne.FileReadCloser, error), parent fyne.Window) *FileDialog
+func NewFileOpen(callback func(fyne.URIReadCloser, error), parent fyne.Window) *FileDialog
 ```
 NewFileOpen creates a file dialog allowing the user to choose a file to open. The dialog will appear over the window specified when Show() is called.
 
 #### func  NewFileSave
 
 ```go
-func NewFileSave(callback func(fyne.FileWriteCloser, error), parent fyne.Window) *FileDialog
+func NewFileSave(callback func(fyne.URIWriteCloser, error), parent fyne.Window) *FileDialog
 ```
 NewFileSave creates a file dialog allowing the user to choose a file to save to (new or overwrite). If the user chooses an existing file they will be asked if they are sure. The dialog will appear over the window specified when Show() is called.
 

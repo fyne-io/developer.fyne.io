@@ -5,8 +5,10 @@ title: Fyne API fyne
 ---
 
 # fyne
---
-    import "fyne.io/fyne"
+---
+```go
+import "fyne.io/fyne"
+```
 
 ## Usage
 
@@ -75,4 +77,6 @@ Subtract returns a new Size that is the result of decreasing the current size by
 ```go
 func (s Size) Union(s2 Size) Size
 ```
-Union returns a new Size that is the maximum of the current Size and s2. Deprecated: use Max() instead
+Union returns a new Size that is the maximum of the current Size and s2.
+
+<div class="deprecated"> Deprecated: use Max() instead</div>

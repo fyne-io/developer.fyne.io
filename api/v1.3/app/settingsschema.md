@@ -5,8 +5,10 @@ title: Fyne API app
 ---
 
 # app
---
-    import "fyne.io/fyne/app"
+---
+```go
+import "fyne.io/fyne/app"
+```
 
 ## Usage
 

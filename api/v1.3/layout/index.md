@@ -5,8 +5,10 @@ title: Fyne API layout
 ---
 
 # layout
---
-    import "fyne.io/fyne/layout"
+---
+```go
+import "fyne.io/fyne/layout"
+```
 
 Package layout defines the various layouts available to Fyne apps
 
@@ -38,7 +40,9 @@ NewCenterLayout creates a new CenterLayout instance
 ```go
 func NewFixedGridLayout(size fyne.Size) fyne.Layout
 ```
-NewFixedGridLayout returns a new FixedGridLayout instance Deprecated: use the replacement NewGridWrapLayout. This method will be removed in 2.0.
+NewFixedGridLayout returns a new FixedGridLayout instance
+
+<div class="deprecated"> Deprecated: use the replacement NewGridWrapLayout. This method will be removed in 2.0.</div>
 
 #### func  NewFormLayout
 

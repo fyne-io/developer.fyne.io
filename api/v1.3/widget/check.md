@@ -5,8 +5,10 @@ title: Fyne API widget
 ---
 
 # widget
---
-    import "fyne.io/fyne/widget"
+---
+```go
+import "fyne.io/fyne/widget"
+```
 
 ## Usage
 
@@ -57,7 +59,9 @@ FocusLost is called when the Check has had focus removed.
 ```go
 func (c *Check) Focused() bool
 ```
-Focused returns whether or not this Check has focus. Deprecated: this method will be removed as it is no longer required, widgets do not expose their focus state.
+Focused returns whether or not this Check has focus.
+
+<div class="deprecated"> Deprecated: this method will be removed as it is no longer required, widgets do not expose their focus state.</div>
 
 #### func (*Check) Hide
 

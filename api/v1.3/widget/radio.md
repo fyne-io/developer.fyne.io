@@ -5,8 +5,10 @@ title: Fyne API widget
 ---
 
 # widget
---
-    import "fyne.io/fyne/widget"
+---
+```go
+import "fyne.io/fyne/widget"
+```
 
 ## Usage
 

@@ -22,6 +22,11 @@ button.copyCode {
     background-color: rgba(125, 125, 125, 0.12);
 }
 
+div.deprecated {
+    padding: 7pt;
+    background-color: rgba(125, 125, 125, 0.12);
+}
+
 #sourceCode pre {
     margin: 0;
     white-space: pre !important;
@@ -824,7 +829,6 @@ table code {background-color: transparent;}
 
 .highlight pre {
     border: none;
-    padding: 0;
 }
 
 .highlight pre .lineno{

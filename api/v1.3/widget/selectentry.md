@@ -5,8 +5,10 @@ title: Fyne API widget
 ---
 
 # widget
---
-    import "fyne.io/fyne/widget"
+---
+```go
+import "fyne.io/fyne/widget"
+```
 
 ## Usage
 
@@ -32,14 +34,18 @@ NewSelectEntry creates a SelectEntry.
 ```go
 func (e *SelectEntry) MinSize() fyne.Size
 ```
-MinSize returns the minimal size of the select entry. Implements: fyne.Widget
+MinSize returns the minimal size of the select entry.
+
+<div class="implements">Implements: <code> fyne.Widget</code></div>
 
 #### func (*SelectEntry) Resize
 
 ```go
 func (e *SelectEntry) Resize(size fyne.Size)
 ```
-Resize changes the size of the select entry. Implements: fyne.Widget
+Resize changes the size of the select entry.
+
+<div class="implements">Implements: <code> fyne.Widget</code></div>
 
 #### func (*SelectEntry) SetOptions
 

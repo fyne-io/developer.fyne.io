@@ -5,8 +5,10 @@ title: Fyne API dialog
 ---
 
 # dialog
---
-    import "fyne.io/fyne/dialog"
+---
+```go
+import "fyne.io/fyne/dialog"
+```
 
 Package dialog defines standard dialog windows for application GUIs
 
@@ -51,14 +53,14 @@ ShowError shows a dialog over the specified window for an application error. The
 #### func  ShowFileOpen
 
 ```go
-func ShowFileOpen(callback func(fyne.FileReadCloser, error), parent fyne.Window)
+func ShowFileOpen(callback func(fyne.URIReadCloser, error), parent fyne.Window)
 ```
 ShowFileOpen creates and shows a file dialog allowing the user to choose a file to open. The dialog will appear over the window specified.
 
 #### func  ShowFileSave
 
 ```go
-func ShowFileSave(callback func(fyne.FileWriteCloser, error), parent fyne.Window)
+func ShowFileSave(callback func(fyne.URIWriteCloser, error), parent fyne.Window)
 ```
 ShowFileSave creates and shows a file dialog allowing the user to choose a file to save to (new or overwrite). If the user chooses an existing file they will be asked if they are sure. The dialog will appear over the window specified.
 
