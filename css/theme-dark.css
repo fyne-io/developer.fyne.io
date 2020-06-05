@@ -5,23 +5,24 @@
 }
 body {
     background-color: #303030;
+    color: #ffffff;
 }
 
 h3 {color: #E50E51; }
 h4 {color: #808080; }
 
 .nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus {
-    background-color: #7986cb;
+    background-color: #ff7043;
     color: rgba(255, 255, 255, 1);
 }
 
 .nav > li.active > a {
-    background-color: #7986cb;
+    background-color: #ff7043;
 	color: #303030;
 }
 
 .nav > li > a:hover {
-    background-color: #7986cb;
+    background-color: #ff7043;
 	color: #303030;
 }
 
@@ -30,7 +31,7 @@ h4 {color: #808080; }
 }
 
 div.navbar-collapse .dropdown-menu > li > a:hover {
-    background-color: #7986cb;
+    background-color: #ff7043;
 }
 
 .navbar-inverse .navbar-nav>li>a, .navbar-inverse .navbar-brand {
@@ -48,7 +49,7 @@ div.navbar-collapse .dropdown-menu > li > a:hover {
 
 .nav li.thirdlevel > a {
     background-color: #FAFAFA !important;
-    color: #7986cb;
+    color: #ff7043;
     font-weight: bold;
 }
 
@@ -59,8 +60,8 @@ a[data-toggle="tooltip"] {
 }
 
 .navbar-inverse {
-    background-color: #7986cb;
-    border-color: #5b893c;
+    background-color: #ff7043;
+    border-color: rgba(255, 255, 255, 0.3);
 }
 
 .navbar-inverse .navbar-nav > .open > a, .navbar-inverse .navbar-nav > .open > a:hover, .navbar-inverse .navbar-nav > .open > a:focus {
@@ -74,7 +75,7 @@ a[data-toggle="tooltip"] {
 
 /* not sure if using this ...*/
 .navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form {
-    border-color: #7986cb !important;
+    border-color: #ff7043 !important;
 }
 
 .btn-primary {
@@ -86,17 +87,13 @@ a[data-toggle="tooltip"] {
     color: #ffffff;
     Background-color: #303030;
 }
-body {
-    background-color: #242424;
-    color: #ffffff;
-}
 
 .btn-primary:hover,
 .btn-primary:focus,
 .btn-primary:active,
 .btn-primary.active,
 .open .dropdown-toggle.btn-primary {
-    background-color: #7986cb;
+    background-color: #ff7043;
     border-color: #5b893c;
 }
 
