@@ -71,12 +71,6 @@
             {% endif %}
           </div>
         </div>
-    <!-- /.row -->
-    </div>
-<!-- /#main -->
-    </div>
-</div>
-<!-- /.container -->
 
     {% assign url_parts = page.url | split: '/' %}
     {% assign base_url = url_parts[2] %}
@@ -124,6 +118,13 @@
     </footer>
 
 {% include footer.html %}
+
+    <!-- /.row -->
+    </div>
+  <!-- /#main -->
+  </div>
+<!-- /.container -->
+</div>
 
 </body>
 {% if site.google_analytics %}

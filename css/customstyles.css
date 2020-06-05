@@ -14,11 +14,12 @@ button.copyCode {
     position: sticky;
     bottom: 4pt;
     text-align: center;
+    clear: both;
 }
 
 #tourNav span {
-    background-color: #f5f5f5;
     font-size: medium;
+    background-color: rgba(125, 125, 125, 0.12);
 }
 
 #sourceCode pre {
@@ -807,6 +808,33 @@ table code {background-color: transparent;}
     background-color: transparent !important;
 }
 
+.highlight table {
+    margin-bottom: 0;
+    border: none;
+}
+
+.highlight td.gutter, .highlight td.code {
+    padding: 0 !important;
+    border: none;
+}
+
+.highlight td.gutter pre {
+    padding-right: 2pt;
+}
+
+.highlight pre {
+    border: none;
+    padding: 0;
+}
+
+.highlight pre .lineno{
+    border-right: 1px solid #ccc;
+}
+
+.highlight rouge-table {
+    border: none;
+}
+
 table p {
     margin-top: 12px;
     margin-bottom: 12px;
@@ -1101,7 +1129,6 @@ ol li ul li ol li ul li{
 table thead th code.highlighter-rouge {
     background-color: transparent;
 }
-
 
 .box {
     padding: 10px;
