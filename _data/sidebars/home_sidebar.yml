@@ -112,6 +112,10 @@ entries:
     output: web, pdf
 
     folderitems:
+    - title: fyne v1.3
+      url: /api/v1.3/
+      output: web, pdf
+
     - title: app
       url: /api/v1.3/app/
       output: web, pdf
