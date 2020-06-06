@@ -20,7 +20,10 @@ type drawItem struct {
 
 var (
 	imgDir string
-	drawList = []drawItem{
+)
+
+func makeDrawList() []drawItem {
+	return []drawItem{
 		{"button", widget.NewButtonWithIcon("Cancel", theme.CancelIcon(), func() {})},
 		{"check", &widget.Check{Text: "Check", Checked: true}},
 		{"entry", &widget.Entry{PlaceHolder: "Entry"}},
@@ -50,7 +53,7 @@ var (
 			widget.NewToolbarAction(theme.ContentPasteIcon(), func() {}),
 		)},
 	}
-)
+}
 
 func draw(obj fyne.CanvasObject, name string, c fyne.Canvas, themeName string) {
 	fileName := filepath.Join(imgDir, name+"-"+themeName+".png")
@@ -66,10 +69,6 @@ func draw(obj fyne.CanvasObject, name string, c fyne.Canvas, themeName string) {
 
 	c.SetScale(2.0) // get HiDPI output so we can render nicely on fancy screens :)
 	c.SetContent(obj)
-	c.Content().Refresh() // for some reason a few themed items did not pick up the current theme :(
-	if scroll, ok := c.Content().(*widget.ScrollContainer); ok {
-		scroll.Content.Refresh() // as above because scrollcontainer refresh does not propagate
-	}
 	img := c.Capture()
 	err = png.Encode(file, img)
 	if err != nil {
@@ -85,12 +84,12 @@ func main() {
 	imgDir = filepath.Join(pwd, "images", "widgets")
 
 	fyne.CurrentApp().Settings().SetTheme(theme.LightTheme())
-	for _, item := range drawList {
+	for _, item := range makeDrawList() {
 		draw(item.obj, item.name, c, "light")
 	}
 
 	fyne.CurrentApp().Settings().SetTheme(theme.DarkTheme())
-	for _, item := range drawList {
+	for _, item := range makeDrawList() {
 		draw(item.obj, item.name, c, "dark")
 	}
 }
