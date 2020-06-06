@@ -116,6 +116,10 @@ entries:
       url: /api/v1.3/
       output: web, pdf
 
+    - title: upgrading
+      url: /api/v1.3/upgrading
+      output: web, pdf
+
     - title: app
       url: /api/v1.3/app/
       output: web, pdf
