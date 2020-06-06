@@ -13,7 +13,7 @@ order: 30
 
 AccordionContainer displays a list of AccordionItems. Each item is represented by a button that reveals a detailed view when tapped.
 
-{% include widget.html name="accordion" %}
+{% include widget.html name="accordioncontainer" %}
 
 ### Box
 
@@ -91,7 +91,7 @@ Radio widget has a list of text labels and radio check icons next to each.
 
 ScrollContainer defines a container that is smaller than the Content.
 
-{% include widget.html name="scroll" %}
+{% include widget.html name="scrollcontainer" %}
 
 ### Select
 

@@ -26,7 +26,7 @@ func makeDrawList() []drawItem {
 	prop := canvas.NewRectangle(color.Transparent)
 	prop.SetMinSize(fyne.NewSize(100, 0))
 	return []drawItem{
-		{"accordion", widget.NewAccordionContainer(
+		{"accordioncontainer", widget.NewAccordionContainer(
 			&widget.AccordionItem{Title: "A", Detail: widget.NewLabel("Shown item"), Open: true},
 			widget.NewAccordionItem("B", widget.NewLabel("Hidden")))},
 		{"button", widget.NewButtonWithIcon("Cancel", theme.CancelIcon(), func() {})},
@@ -45,7 +45,7 @@ func makeDrawList() []drawItem {
 		{"progress", &widget.ProgressBar{Value: 0.74}},
 		{"progressinf", widget.NewProgressBarInfinite()},
 		{"radio", widget.NewRadio([]string{"Item 1"}, func(string) {})},
-		{"scroll", widget.NewScrollContainer(widget.NewLabel("Scroll"))},
+		{"scrollcontainer", widget.NewScrollContainer(widget.NewLabel("Scroll"))},
 		{"select", widget.NewSelect([]string{"1", "2"}, func(string) {})},
 		{"slider", widget.NewSlider(-5, 25)},
 		{"splitcontainer", widget.NewHSplitContainer(widget.NewLabel("Line1\nLine2"),
