@@ -33,6 +33,6 @@ run as expected, there are some changes which you may notice.
 * Running `Run()` or `ShowAndRun()` in a goroutine is not supported and will now panic
 * Running on Linux applications are now 20% smaller, better matching other OS
 * Resizing windows now live-refreshes the content and animations will continue
-* `FixedGridLayout` has been renmaed `GridWrapLayout` - the old APIs remain but deprecated
+* `FixedGridLayout` has been renamed `GridWrapLayout` - the old APIs remain but deprecated
 * Some other APIs have been deprecated and will be removed in 2.0 later in 2020
 
