@@ -23,28 +23,37 @@ var (
 )
 
 func makeDrawList() []drawItem {
+	prop := canvas.NewRectangle(color.Transparent)
+	prop.SetMinSize(fyne.NewSize(100, 0))
 	return []drawItem{
+		{"accordion", widget.NewAccordionContainer(
+			&widget.AccordionItem{Title: "A", Detail: widget.NewLabel("Shown item"), Open: true},
+			widget.NewAccordionItem("B", widget.NewLabel("Hidden")))},
 		{"button", widget.NewButtonWithIcon("Cancel", theme.CancelIcon(), func() {})},
 		{"check", &widget.Check{Text: "Check", Checked: true}},
 		{"entry", &widget.Entry{PlaceHolder: "Entry"}},
 		{"form", &widget.Form{Items:
-			[]*widget.FormItem{
-				{Text: "Username", Widget: widget.NewEntry()},
-				{Text: "Password", Widget: widget.NewPasswordEntry()}},
+		[]*widget.FormItem{
+			{Text: "Username", Widget: widget.NewEntry()},
+			{Text: "Password", Widget: widget.NewPasswordEntry()}},
 			OnSubmit: func() {}, OnCancel: func() {}}},
+		{"group", widget.NewGroup("Group", prop)},
 		{"hyperlink", widget.NewHyperlink("fyne.io", nil)},
 		{"icon", widget.NewIcon(theme.ContentPasteIcon())},
 		{"label", widget.NewLabel("Text label")},
-		{"password", &widget.Entry{PlaceHolder:"Password", Password: true}},
-		{"progress", &widget.ProgressBar{Value:0.74}},
+		{"password", &widget.Entry{PlaceHolder: "Password", Password: true}},
+		{"progress", &widget.ProgressBar{Value: 0.74}},
 		{"progressinf", widget.NewProgressBarInfinite()},
 		{"radio", widget.NewRadio([]string{"Item 1"}, func(string) {})},
 		{"scroll", widget.NewScrollContainer(widget.NewLabel("Scroll"))},
 		{"select", widget.NewSelect([]string{"1", "2"}, func(string) {})},
 		{"slider", widget.NewSlider(-5, 25)},
+		{"splitcontainer", widget.NewHSplitContainer(widget.NewLabel("Line1\nLine2"),
+			widget.NewVSplitContainer(widget.NewLabel("Top"), widget.NewLabel("Bottom")))},
 		{"tabcontainer", widget.NewTabContainer(
 			widget.NewTabItem("Tab1", canvas.NewRectangle(color.Transparent)),
 			widget.NewTabItem("Tab2", canvas.NewRectangle(color.Transparent)))},
+		{"textgrid", makeTextGrid()},
 		{"toolbar", widget.NewToolbar(widget.NewToolbarAction(theme.MailComposeIcon(), func() {}),
 			widget.NewToolbarSeparator(),
 			widget.NewToolbarSpacer(),
@@ -53,6 +62,20 @@ func makeDrawList() []drawItem {
 			widget.NewToolbarAction(theme.ContentPasteIcon(), func() {}),
 		)},
 	}
+}
+
+func makeTextGrid() *widget.TextGrid {
+	grid := widget.NewTextGridFromString("TextGrid\n  Content  ")
+	grid.SetStyleRange(0, 0, 0, 3,
+		&widget.CustomTextGridStyle{FGColor: theme.PrimaryColor()})
+	grid.SetStyleRange(0, 4, 0, 7,
+		&widget.CustomTextGridStyle{BGColor: theme.PrimaryColor()})
+	grid.Rows[1].Style = &widget.CustomTextGridStyle{BGColor: theme.ButtonColor()}
+
+	grid.ShowLineNumbers = true
+	grid.ShowWhitespace = true
+
+	return grid
 }
 
 func draw(obj fyne.CanvasObject, name string, c fyne.Canvas, themeName string) {
