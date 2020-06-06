@@ -5,8 +5,10 @@ title: Fyne API mobile
 ---
 
 # mobile
---
-    import "fyne.io/fyne/driver/mobile"
+---
+```go
+import "fyne.io/fyne/driver/mobile"
+```
 
 
 ## Usage

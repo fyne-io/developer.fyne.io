@@ -5,8 +5,10 @@ title: Fyne API layout
 ---
 
 # layout
---
-    import "fyne.io/fyne/layout"
+---
+```go
+import "fyne.io/fyne/layout"
+```
 
 ## Usage
 

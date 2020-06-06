@@ -5,8 +5,10 @@ title: Fyne API theme
 ---
 
 # theme
---
-    import "fyne.io/fyne/theme"
+---
+```go
+import "fyne.io/fyne/theme"
+```
 
 Package theme defines how a Fyne app should look when rendered
 

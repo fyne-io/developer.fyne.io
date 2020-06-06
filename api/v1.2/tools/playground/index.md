@@ -5,8 +5,10 @@ title: Fyne API playground
 ---
 
 # playground
---
-    import "fyne.io/fyne/tools/playground"
+---
+```go
+import "fyne.io/fyne/tools/playground"
+```
 
 
 ## Usage

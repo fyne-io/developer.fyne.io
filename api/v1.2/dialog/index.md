@@ -5,8 +5,10 @@ title: Fyne API dialog
 ---
 
 # dialog
---
-    import "fyne.io/fyne/dialog"
+---
+```go
+import "fyne.io/fyne/dialog"
+```
 
 Package dialog defines standard dialog windows for application GUIs
 

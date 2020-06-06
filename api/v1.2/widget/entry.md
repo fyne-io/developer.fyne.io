@@ -5,8 +5,10 @@ title: Fyne API widget
 ---
 
 # widget
---
-    import "fyne.io/fyne/widget"
+---
+```go
+import "fyne.io/fyne/widget"
+```
 
 ## Usage
 
@@ -176,7 +178,9 @@ SetPlaceHolder sets the text that will be displayed if the entry is otherwise em
 ```go
 func (e *Entry) SetReadOnly(ro bool)
 ```
-SetReadOnly sets whether or not the Entry should not be editable Deprecated: Use Disable() instead.
+SetReadOnly sets whether or not the Entry should not be editable
+
+<div class="deprecated"> Deprecated: Use Disable() instead.</div>
 
 #### func (*Entry) SetText
 
