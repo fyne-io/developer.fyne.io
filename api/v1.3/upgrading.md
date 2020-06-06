@@ -25,7 +25,7 @@ go get -u fyne.io/fyne
 
 Any apps without a module file will now use the 1.3 release.
 
-# Changes
+## Changes
 
 Although this release is backwards compatible so your code will compile and
 run as expected, there are some changes which you may notice.
