@@ -9,6 +9,12 @@ order: 30
 
 ---
 
+### AccordionContainer
+
+AccordionContainer displays a list of AccordionItems. Each item is represented by a button that reveals a detailed view when tapped.
+
+{% include widget.html name="accordion" %}
+
 ### Box
 
 Box widget is a simple list where the child elements are arranged in a single column for vertical or a single row for horizontal arrangement.
@@ -99,11 +105,23 @@ Slider if a widget that can slide between two fixed values.
 
 {% include widget.html name="slider" %}
 
+### SplitContainer
+
+SplitContainer defines a container whose size is split between two children.
+
+{% include widget.html name="splitcontainer" %}
+
 ### TabContainer
 
 TabContainer widget allows switching visible content from a list of TabItems. Each item is represented by a button at the top of the widget.
 
 {% include widget.html name="tabcontainer" %}
+
+### TextGrid
+
+TextGrid is a monospaced grid of characters. This is designed to be used by a text editor, code preview or terminal emulator.
+
+{% include widget.html name="textgrid" %}
 
 ### Toolbar
 
