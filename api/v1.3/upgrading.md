@@ -10,9 +10,14 @@ This is different depending on whether or not you use go modules.
 
 ## Modules
 
-If your project has a `go.mod` file all you need to do is update the `require` line
-to read `fyne.io/fyne v1.3.0`. The next time you build or run your app it will be
-using the 1.3 release
+If your project has a `go.mod` file then you can edit the `require` line to use
+version `v1.3.0`, or you can execute the following command inside the directory:
+
+```bash
+go get fyne.io/fyne@v1.3.0
+```
+
+The next time you build or run your app it will be using the 1.3 release
 
 ## GOPATH
 
