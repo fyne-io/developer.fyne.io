@@ -48,22 +48,72 @@ fyne-cross allows to build binaries and create distribution packages for the fol
 | android | 386 |
 | android | arm64 |
 | android | arm |
+| ios | |
+| freebsd | amd64 |
 
+> Note: iOS compilation is supported only on darwin hosts.
 
 #### Installation
 
-        go get github.com/lucor/fyne-cross/cmd/fyne-cross
+```
+go get github.com/lucor/fyne-cross/v2/cmd/fyne-cross
+```
 
 #### Usage
 
-        fyne-cross --targets=linux/amd64,windows/amd64,darwin/amd64 package
+```
+fyne-cross <command> [options]
 
-> Use `fyne-cross help` for more informations
+The commands are:
+
+	darwin        Build and package a fyne application for the darwin OS
+	linux         Build and package a fyne application for the linux OS
+	windows       Build and package a fyne application for the windows OS
+	android       Build and package a fyne application for the android OS
+	ios           Build and package a fyne application for the iOS OS
+	freebsd       Build and package a fyne application for the freebsd OS
+	version       Print the fyne-cross version information
+
+Use "fyne-cross <command> -help" for more information about a command.
+```
+
+#### Wildcards
+
+The `arch` flag support wildcards in case want to compile against all supported GOARCH for a specified GOOS
+
+Example:
+
+```
+fyne-cross windows -arch=*
+```
+
+is equivalent to
+
+```
+fyne-cross windows -arch=amd64,386
+```
 
 #### Example
 
-The example below cross build the [fyne examples application](https://github.com/fyne-io/examples)
+The example below cross compile and package the [fyne examples application](https://github.com/fyne-io/examples)
 
-        git clone https://github.com/fyne-io/examples.git
-        cd examples
-        fyne-cross --targets=linux/amd64,windows/amd64,darwin/amd64 github.com/fyne-io/examples
+```
+git clone https://github.com/fyne-io/examples.git
+cd examples
+```
+
+##### Compile and package the main example app
+
+```
+fyne-cross linux
+```
+
+> Note: by default fyne-cross will compile the package into the current dir.
+>
+> The command above is equivalent to: `fyne-cross linux .`
+
+##### Compile and package a particular example app
+
+```
+fyne-cross linux -output bugs ./cmd/bugs
+```
