@@ -163,4 +163,4 @@ then you can see our demo app running on your computer by executing:
 
 And that's all there is to it! Now you can write your own Fyne application in your IDE of choice. If you want to see some Fyne code in action then you can read [your first application](/develop/firstapp.html). Alternatively you could check out our tour of the Fyne toolkit using the button below.
 
-<a href="https://tour.fyne.io" class="btn btn-primary btn-xl" style="visibility: visible;">Take the Tour</a>
+<a href="/tour/" class="btn btn-primary btn-xl" style="visibility: visible;">Take the Tour</a>
