@@ -66,11 +66,9 @@ func makeDrawList() []drawItem {
 
 func makeTextGrid() *widget.TextGrid {
 	grid := widget.NewTextGridFromString("TextGrid\n  Content  ")
-	grid.SetStyleRange(0, 0, 0, 3,
-		&widget.CustomTextGridStyle{FGColor: theme.PrimaryColor()})
 	grid.SetStyleRange(0, 4, 0, 7,
-		&widget.CustomTextGridStyle{BGColor: theme.PrimaryColor()})
-	grid.Rows[1].Style = &widget.CustomTextGridStyle{BGColor: theme.ButtonColor()}
+		&widget.CustomTextGridStyle{BGColor: &color.NRGBA{R: 64, G: 64, B: 192, A: 128}})
+	grid.Rows[1].Style = &widget.CustomTextGridStyle{BGColor: &color.NRGBA{R: 64, G: 192, B: 64, A: 128}}
 
 	grid.ShowLineNumbers = true
 	grid.ShowWhitespace = true
