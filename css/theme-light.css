@@ -41,7 +41,7 @@ a[data-toggle="tooltip"] {
     cursor: default;
 }
 
-.navbar-inverse {
+.navbar-inverse, .btn-primary {
     background-color: #ff7043;
     border-color: #e0e0e0;
     color: rgba(0, 0, 0, 0.87);
@@ -62,23 +62,8 @@ a.navbar-brand:hover {
     border-color: #ff7043 !important;
 }
 
-.btn-primary {
-    color: #ffffff;
-    background-color: #ff7043;
-    border-color: #ff7043;
-}
-
 .navbar-inverse .navbar-nav > .active > a, .navbar-inverse .navbar-nav > .active > a:hover, .navbar-inverse .navbar-nav > .active > a:focus {
     background-color: #ff7043;
-}
-
-.btn-primary:hover,
-.btn-primary:focus,
-.btn-primary:active,
-.btn-primary.active,
-.open .dropdown-toggle.btn-primary {
-    background-color: #ff7043;
-    border-color: #ff7043;
 }
 
 .printTitle {
