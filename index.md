@@ -3,8 +3,6 @@ title: "Fyne toolkit documentation for developers"
 permalink: index.html
 ---
 
-{% include note.html content="This site is a work in progress, to see our current documentation please go to <a href=\"https://fyne.io/develop\">fyne.io/develop</a>" %}
-
 This site is home to the documentation and tutorials for developers working with the
 Fyne toolkit. We have details for people just getting started, building their first
 graphical app through to detailed walkthroughs of complex topics related to building
