@@ -108,6 +108,15 @@ entries:
       output: web, pdf
 
 
+  - title: Architecture
+    output: web, pdf
+
+    folderitems:
+    - title: Scaling & Geometry
+      url: /architecture/geometry
+      output: web, pdf
+
+
   - title: API Documentation
     output: web, pdf
 
