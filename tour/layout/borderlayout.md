@@ -6,7 +6,7 @@ order: 4
 
 ---
 
-The border layout is possible the most widely used to construct user
+The border layout is possibly the most widely used to construct user
 interfaces as it allows the positioning of items around a central element
 which will expand to fill the space. To create a border layout you need
 to pass the `fyne.CanvasObject`s that should be positioned in a border

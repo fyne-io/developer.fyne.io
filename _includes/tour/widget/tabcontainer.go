@@ -14,7 +14,7 @@ func main() {
 		widget.NewTabItem("Tab 1", widget.NewLabel("Hello")),
 		widget.NewTabItem("Tab 2", widget.NewLabel("World!")))
 
-	//widget.NewTabItemWithIcon("Home", theme.HomeIcon(), widget.NewLabel("Home tab"))
+	//tabs.Append(widget.NewTabItemWithIcon("Home", theme.HomeIcon(), widget.NewLabel("Home tab")))
 
 	tabs.SetTabLocation(widget.TabLocationLeading)
 

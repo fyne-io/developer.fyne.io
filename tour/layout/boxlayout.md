@@ -19,13 +19,13 @@ row or column with optional spaces to assist alignment.
 
 A horizontal box layout, created with `layout.NewHBoxLayout()` creates
 an arrangement of items in a single row. Every item in the box will
-have it's width set to it's `MinSize().Width` and the height will be
+have its width set to its `MinSize().Width` and the height will be
 equal for all items, the largest of all the `MinSize().Height` values.
 The layout can be used in a container or you can use the box widget
 `widget.NewHBox()`.
 
 A vertical box layout is similar but it arranges items in a column.
-Each item will have it's height set to minimum and all the widths will
+Each item will have its height set to minimum and all the widths will
 be equal, set to the largest of the minimum widths.
 
 To create an expanding space between elements (so that some are left

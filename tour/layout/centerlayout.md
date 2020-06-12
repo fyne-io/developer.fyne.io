@@ -6,7 +6,7 @@ order: 6
 
 ---
 
-`layout.CenterLayout` organises all items in it's container to be
+`layout.CenterLayout` organises all items in its container to be
 centered in the available space. The objects will be drawn in the order
 the are passed to the container, with the last being drawn top-most.
 
