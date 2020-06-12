@@ -141,6 +141,13 @@ entries:
       url: /api/v1.3/dialog/
       output: web, pdf
 
+    - title: driver/desktop
+      url: /api/v1.3/driver/desktop/
+      output: web, pdf
+    - title: driver/mobile
+      url: /api/v1.3/driver/mobile/
+      output: web, pdf
+
     - title: layout
       url: /api/v1.3/layout/
       output: web, pdf
