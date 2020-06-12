@@ -39,7 +39,7 @@ If you have not used Fyne before then the following steps will get you up and ru
 1. `go get fyne.io/fyne`
 
 For more details including the exact commands for your operating system see 
-the [getting started](http://localhost:4000/started/) page.
+the [getting started](/started/) page.
 
 ## Diving Right In
 
