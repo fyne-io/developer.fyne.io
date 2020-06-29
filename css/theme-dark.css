@@ -112,10 +112,3 @@ li.sidebarTitle {
     margin-left: 5px;
 }
 
-.navbar-inverse .navbar-toggle:focus, .navbar-inverse .navbar-toggle:hover {
-    background-color: #015CAE;
-}
-
-.navbar-inverse .navbar-toggle {
-    border-color: #015CAE;
-}
