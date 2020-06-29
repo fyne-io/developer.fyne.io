@@ -21,4 +21,4 @@ and examples code associated with the content.
 You can navigate through the pages of this tour using the navigation arrows
 at the bottom of each page.
 
-When you are ready to get started click on the [right arrow](/introduction/golang) below.
+When you are ready to get started click on the [right arrow](/tour/introduction/golang) below.

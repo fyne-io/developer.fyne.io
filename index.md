@@ -44,5 +44,5 @@ the [getting started](/started/) page.
 ## Diving Right In
 
 To explore more detailed topics you can check out our growing list of
-[tutorials](/tutorials/). If you would like to request addditional examples or
+[tutorials](/tutorial/). If you would like to request addditional examples or
 some support for your project you can [get in touch](https://fyne.io/support/).

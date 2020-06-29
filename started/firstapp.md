@@ -21,7 +21,7 @@ hello:
 ## Create your first Fyne app
 ---
 
-Having completed the steps in the [getting started](/develop/) document you're ready to build your first app. To illustrate the process we will build a simple hello world application.
+Having completed the steps in the [getting started](/started/) document you're ready to build your first app. To illustrate the process we will build a simple hello world application.
 
 A simple app starts by creating an app instance with app.New() and then opening a window with app.NewWindow(). Then a widget tree is defined that is set as the main content with SetContent() on a window. The app UI is then shown by calling ShowAndRun() on the window.
 
