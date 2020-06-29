@@ -99,6 +99,13 @@ Select widget has a list of options, with the current one shown, and triggers an
 
 {% include widget.html name="select" %}
 
+### SelectEntry
+
+Select entry widget adds an editable component to the select widget.
+Users can select an option or enter their own value.
+
+{% include widget.html name="selectentry" %}
+
 ### Slider
 
 Slider if a widget that can slide between two fixed values.
