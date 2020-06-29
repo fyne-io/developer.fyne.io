@@ -86,11 +86,11 @@ The code above can be built using the command `go build hello.go` and then execu
 
 Either approach will show a window that looks just like this:
 
-<img src="/develop/img/hello-normal.png" width="207" alt="Hello Window" />
+<img src="/images/started/hello-normal.png" width="207" alt="Hello Window" />
 
 If you prefer a light theme then just set the environment variable `FYNE_THEME=light` and you'll get:
 
-<img src="/develop/img/hello-light.png" width="207" alt="Hello Light Theme" />
+<img src="/images/started/hello-light.png" width="207" alt="Hello Light Theme" />
 
 That's all there is to getting started. You can find the full API documentation on [GoDoc.org](https://godoc.org/fyne.io/fyne). If you prefer a curated process we have prepared a tour of the toolkit that you can launch using the button below.
 

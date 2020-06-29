@@ -22,11 +22,11 @@ These values can make content larger or smaller than the system settings, using 
 or setting 0.8 will make it 20% smaller.
 
 <table style="text-align: center; margin: auto;"><tr>
-<td><img src="img/hello-normal.png" width="207" height="204" alt="Hello normal size" />
+<td><img src="/images/started/hello-normal.png" width="207" height="204" alt="Hello normal size" />
   <br />Standard size</td>
-<td><img src="img/hello-small.png" width="160" height="169" alt="Hello small size" />
+<td><img src="images/started/hello-small.png" width="160" height="169" alt="Hello small size" />
   <br />FYNE_SCALE=0.5</td>
-<td><img src="img/hello-large.png" width="350" height="309" alt="Hello large size" />
+<td><img src="images/started/hello-large.png" width="350" height="309" alt="Hello large size" />
   <br />FYNE_SCALE=2.5</td>
 </tr></table>
 
