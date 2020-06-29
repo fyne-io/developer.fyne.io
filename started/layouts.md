@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Widget List
+title: Layout List
 
 order: 35
 ---
