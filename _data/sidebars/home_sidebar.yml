@@ -36,6 +36,10 @@ entries:
       url: /started/widgets
       output: web, pdf
 
+    - title: Layout List
+      url: /started/layouts
+      output: web, pdf
+
     - title: Testing
       url: /started/testing
       output: web, pdf
