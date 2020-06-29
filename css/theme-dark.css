@@ -11,6 +11,10 @@ body {
 h3 {color: #E50E51; }
 h4 {color: #808080; }
 
+table > tbody > tr:nth-of-type(odd) {
+    background-color: #363636;
+}
+
 .nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus {
     background-color: #ff7043;
     color: rgba(255, 255, 255, 1);
