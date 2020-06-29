@@ -25,6 +25,8 @@ var (
 func makeDrawList() []drawItem {
 	prop := canvas.NewRectangle(color.Transparent)
 	prop.SetMinSize(fyne.NewSize(100, 0))
+	se := widget.NewSelectEntry([]string{"1", "2"})
+	se.SetPlaceHolder("Select one or type")
 	return []drawItem{
 		{"accordioncontainer", widget.NewAccordionContainer(
 			&widget.AccordionItem{Title: "A", Detail: widget.NewLabel("Shown item"), Open: true},
@@ -47,6 +49,7 @@ func makeDrawList() []drawItem {
 		{"radio", widget.NewRadio([]string{"Item 1"}, func(string) {})},
 		{"scrollcontainer", widget.NewScrollContainer(widget.NewLabel("Scroll"))},
 		{"select", widget.NewSelect([]string{"1", "2"}, func(string) {})},
+		{"selectentry", se},
 		{"slider", widget.NewSlider(-5, 25)},
 		{"splitcontainer", widget.NewHSplitContainer(widget.NewLabel("Line1\nLine2"),
 			widget.NewVSplitContainer(widget.NewLabel("Top"), widget.NewLabel("Bottom")))},
