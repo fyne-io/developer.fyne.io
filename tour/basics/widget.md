@@ -17,3 +17,5 @@ content of our window to a single widget. See how we create a new
 As we saw in the previous example you can also add multiple objects
 to a canvas using a `Container` and the same can be done with sets of
 widgets to start building up graphical application interface.
+
+Next take some time to learn about other "[Canvas Objects](/tour/canvas/)".

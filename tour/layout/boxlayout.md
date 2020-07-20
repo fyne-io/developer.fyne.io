@@ -29,7 +29,7 @@ Each item will have its height set to minimum and all the widths will
 be equal, set to the largest of the minimum widths.
 
 To create an expanding space between elements (so that some are left
-aligned and the others right alighed, for example) add a `layout.NewSpacer()`
+aligned and the others right aligned, for example) add a `layout.NewSpacer()`
 as one of the items. A spacer will expand to fill all available space.
 Adding a spacer at the beginning of a vertical box layout will cause
 all items to be bottom aligned. You can add one to the beginning and
