@@ -83,6 +83,8 @@ Note that these steps are just required for development - your Fyne applications
 `sudo eopkg it -c system.devel golang mesalib-devel libxrandr-devel libxcursor-devel libxi-devel libxinerama-devel`
 * **Arch Linux:**
 `sudo pacman -S go xorg-server-devel`
+* **Void Linux:**
+`sudo xbps-install -S go base-devel xorg-server-devel libXrandr-devel libXcursor-devel libXinerama-devel`
 
 </div>
 </div>
