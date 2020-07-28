@@ -68,3 +68,12 @@ to the container (last-most is on top).
 {% include layout.html name="max" %}
 
 
+## Combining Layouts
+
+It is possible to build up more complex application structures by using multiple layouts.
+Multiple containers that each have their own layout can be nested to create complete user 
+interface arrangements using only the standard layouts listed above.
+For example a horizontal box for a header, a vertical box for a left side file panel and a grid 
+wrap layout in the content area - all inside a container using a border layout can build the result illustrated below.
+
+{% include layout.html name="combined" %}

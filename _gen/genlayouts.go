@@ -24,6 +24,16 @@ var (
 func makeDrawList() []drawItem {
 	bObjs := makeObjs()
 	border := fyne.NewContainerWithLayout(layout.NewBorderLayout(bObjs[0], nil, bObjs[1], nil), bObjs...)
+
+	smaller := makeObjs()
+	for _, s := range smaller {
+		s.(*canvas.Rectangle).SetMinSize(fyne.NewSize(s.MinSize().Width, 25))
+	}
+	top := fyne.NewContainerWithLayout(layout.NewHBoxLayout(), smaller...)
+	left := fyne.NewContainerWithLayout(layout.NewVBoxLayout(), makeObjs()...)
+	content := fyne.NewContainerWithLayout(layout.NewGridWrapLayout(fyne.NewSize(40, 40)), makeObjs()...)
+	combined := fyne.NewContainerWithLayout(layout.NewBorderLayout(top, nil, left, nil), top, left, content)
+
 	return []drawItem{
 		{"hbox", fyne.NewContainerWithLayout(layout.NewHBoxLayout(), makeObjs()...)},
 		{"vbox", fyne.NewContainerWithLayout(layout.NewVBoxLayout(), makeObjs()...)},
@@ -32,6 +42,7 @@ func makeDrawList() []drawItem {
 		{"grid", fyne.NewContainerWithLayout(layout.NewGridLayout(2), makeObjs()...)},
 		{"gridwrap", fyne.NewContainerWithLayout(layout.NewGridWrapLayout(fyne.NewSize(75, 75)), makeObjs()...)},
 		{"max", fyne.NewContainerWithLayout(layout.NewMaxLayout(), makeObjs()...)},
+		{"combined", combined},
 	}
 }
 
