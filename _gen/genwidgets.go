@@ -15,7 +15,7 @@ import (
 
 type drawItem struct {
 	name string
-	obj fyne.CanvasObject
+	obj  fyne.CanvasObject
 }
 
 var (
@@ -34,8 +34,7 @@ func makeDrawList() []drawItem {
 		{"button", widget.NewButtonWithIcon("Cancel", theme.CancelIcon(), func() {})},
 		{"check", &widget.Check{Text: "Check", Checked: true}},
 		{"entry", &widget.Entry{PlaceHolder: "Entry"}},
-		{"form", &widget.Form{Items:
-		[]*widget.FormItem{
+		{"form", &widget.Form{Items: []*widget.FormItem{
 			{Text: "Username", Widget: widget.NewEntry()},
 			{Text: "Password", Widget: widget.NewPasswordEntry()}},
 			OnSubmit: func() {}, OnCancel: func() {}}},
@@ -117,4 +116,3 @@ func main() {
 		draw(item.obj, item.name, c, "dark")
 	}
 }
-

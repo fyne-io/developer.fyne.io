@@ -95,4 +95,3 @@ func main() {
 		draw(item.lay, item.name, c, "dark")
 	}
 }
-
