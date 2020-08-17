@@ -1,0 +1,56 @@
+a, h3, h4 {
+    color: #03a9f4;
+}
+
+.nav ul li a, .dropdown-menu a {
+    background-color: transparent;
+}
+
+.navbar-inverse .navbar-nav>li>a, .navbar-inverse .navbar-brand {
+    color: #303030;
+}
+
+.navbar-inverse .navbar-nav>li>a:hover, a.fa.fa-home.fa-lg.navbar-brand:hover {
+     color: rgba(255, 255, 255, 0.3);
+}
+
+#main ul.nav {
+    background-color: transparent;
+    box-shadow: 0 0 2pt #000000;
+}
+
+.nav li a {
+	background-color: transparent;
+}
+
+div.navbar-collapse, .dropdown-menu > li > a:hover {
+     background-color: #03a9f4;
+}
+
+.nav li.thirdlevel > a {
+    background-color: #FAFAFA !important;
+    color: #03a9f4;
+    font-weight: bold;
+}
+
+.navbar-inverse, .btn-primary {
+    background-color: #03a9f4;
+    border-color: rgba(255, 255, 255, 0.3);
+}
+
+.nav li.thirdlevel > a {
+    background-color: #FAFAFA !important;
+    color: #03a9f4;
+    font-weight: bold;
+}
+
+.navbar-inverse, .btn-primary, .nav .submit a {
+    background-color: #03a9f4;
+    border-color: rgba(255, 255, 255, 0.3);
+}
+
+.nav .submit {
+    position: absolute;
+    margin-top: 25pt;
+    width: 100%;
+}

@@ -1,3 +1,5 @@
+@import url("syntax-base16.dark.css");
+
 .summary {
     color: #808080;
     border-left: 5px solid #E50E51;
@@ -8,81 +10,24 @@ body {
     color: #ffffff;
 }
 
-h3 {color: #E50E51; }
-h4 {color: #808080; }
+.nav a {
+    color: #ffffff;
+}
 
+.nav-tabs > li.active > a, .nav-tabs > li.active > a:hover,
+  .nav-tabs > li.active > a:focus, .nav > li.active > a, .nav li > a:hover, .dropdown-menu a:hover {
+    color: #ffffff;
+    background-color: rgba(255, 255, 255, 0.3);
+}   
+    
 table > tbody > tr:nth-of-type(odd) {
     background-color: #363636;
-}
-
-.nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus {
-    background-color: #ff7043;
-    color: rgba(255, 255, 255, 1);
-}
-
-.nav > li.active > a, .nav > li > a:hover {
-    background-color: #ff7043;
-    color: #303030;
-}
-
-.nav > li > a:hover, .dropdown-menu a:hover {
-    background-color: #ff7043;
-    color: #303030;
-}
-
-.nav ul li a, .dropdown-menu a {
-    background-color: #303030;
-}
-
-.nav ul li a {
-    background-color: rgba(255, 255, 255, 0.3);
-}
-
-.dropdown-menu {
-    background-color: #8D8D8D;
-}
-
-.navbar-inverse .navbar-nav>li>a, .navbar-inverse .navbar-brand {
-    color: #303030;
-}
-
-.navbar-inverse .navbar-nav>li>a:hover, a.fa.fa-home.fa-lg.navbar-brand:hover {
-     color: rgba(255, 255, 255, 0.3);
-}
-
-.nav ul {
-    background-color: #303030;
-}
-
-.nav li a {
-	background-color: rgba(255, 255, 255, 0.12);
-	color: rgba(255, 255, 255, 0.7);
-}
-
-div.navbar-collapse, .dropdown-menu > li > a:hover {
-     background-color: #ff7043;
-}
-
-.nav li.thirdlevel > a {
-    background-color: #FAFAFA !important;
-    color: #ff7043;
-    font-weight: bold;
 }
 
 a[data-toggle="tooltip"] {
     color: #649345;
     font-style: italic;
     cursor: default;
-}
-
-.navbar-inverse, .btn-primary {
-    background-color: #ff7043;
-    border-color: rgba(255, 255, 255, 0.3);
-}
-
-/* not sure if using this ...*/
-.navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form {
-    border-color: #ff7043 !important;
 }
 
 .btn-default {
@@ -97,18 +42,5 @@ body.print h4 {color: #679DCE !important; font-size:14px; font-style: italic;}
 
 .anchorjs-link:hover {
     color: #4f7233;
-}
-
-div.sidebarTitle {
-    color: #E50E51;
-}
-
-li.sidebarTitle {
-    margin-top:20px;
-    font-weight:normal;
-    font-size:130%;
-    color: #ED1951;
-    margin-bottom:10px;
-    margin-left: 5px;
 }
 

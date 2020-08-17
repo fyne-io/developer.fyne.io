@@ -1,3 +1,5 @@
+@import url("syntax-base16.light.css");
+
 .summary {
     color: #808080;
     border-left: 5px solid #ED1951;
@@ -7,63 +9,16 @@ body {
     background-color: #ffffff;
 }
 
-
-h3 {color: #ED1951; }
-h4 {color: #808080; }
-
-.nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus {
-    background-color: #ff7043;
-    color: rgba(0, 0, 0, 0.87);
-}
-
-.nav > li.active > a, .nav > li > a:hover {
-    background-color: #ff7043;
-}
-
-.dropdown-menu {
-    background-color: #fafafa;
-}
-
-div.navbar-collapse, .dropdown-menu > li > a:hover {
-    background-color: #ff7043;
-    color: #ffffff;
-}
-
-.nav li.thirdlevel > a {
-    background-color: #FAFAFA !important;
-    color: #248EC2;
-    font-weight: bold;
-}
-
+.nav-tabs > li.active > a, .nav-tabs > li.active > a:hover,
+  .nav-tabs > li.active > a:focus, .nav > li.active > a, .nav li > a:hover, .dropdown-menu a:hover {
+    color: #333;
+    background-color: #e0e0e0;
+}   
+    
 a[data-toggle="tooltip"] {
     color: #649345;
     font-style: italic;
     cursor: default;
-}
-
-.navbar-inverse, .btn-primary {
-    background-color: #ff7043;
-    border-color: #e0e0e0;
-    color: rgba(0, 0, 0, 0.87);
-}
-.navbar-inverse .navbar-nav>li>a, .navbar-inverse .navbar-brand {
-    color: #ffffff;
-}
-
-.navbar-inverse .navbar-nav>li>a:hover, a.fa.fa-home.fa-lg.navbar-brand:hover {
-     color: #e0e0e0;
-}
-
-a.navbar-brand:hover {
-  color: #f0f0f0;
-}
-
-.navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form {
-    border-color: #ff7043 !important;
-}
-
-.navbar-inverse .navbar-nav > .active > a, .navbar-inverse .navbar-nav > .active > a:hover, .navbar-inverse .navbar-nav > .active > a:focus {
-    background-color: #ff7043;
 }
 
 .printTitle {
@@ -77,19 +32,5 @@ body.print h4 {color: #679DCE !important; font-size:14px; font-style: italic !im
 
 .anchorjs-link:hover {
     color: #216f9b;
-}
-
-div.sidebarTitle {
-    color: #015CAE;
-}
-
-li.sidebarTitle {
-  margin-top:20px;
-    font-weight:normal;
-    font-size:130%;
-    color: #ED1951;
-    margin-bottom:10px;
-    margin-left: 5px;
-
 }
 
