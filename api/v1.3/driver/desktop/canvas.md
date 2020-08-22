@@ -1,6 +1,6 @@
 ---
 layout: page
-tags: [api]
+tags: [api, Graphics]
 title: Fyne API desktop
 ---
 
