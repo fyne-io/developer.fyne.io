@@ -5,9 +5,11 @@ import (
 	"image/png"
 	"os"
 	"path/filepath"
+	"time"
 
 	"fyne.io/fyne"
 	"fyne.io/fyne/canvas"
+	"fyne.io/fyne/driver/desktop"
 	"fyne.io/fyne/test"
 	"fyne.io/fyne/theme"
 	"fyne.io/fyne/widget"
@@ -32,8 +34,11 @@ func makeDrawList() []drawItem {
 			&widget.AccordionItem{Title: "A", Detail: widget.NewLabel("Shown item"), Open: true},
 			widget.NewAccordionItem("B", widget.NewLabel("Hidden")))},
 		{"button", widget.NewButtonWithIcon("Cancel", theme.CancelIcon(), func() {})},
+		{"card", &widget.Card{Title: "Card Title", Subtitle: "Subtitle", Image: canvas.NewImageFromResource(theme.FyneLogo())}},
 		{"check", &widget.Check{Text: "Check", Checked: true}},
 		{"entry", &widget.Entry{PlaceHolder: "Entry"}},
+		{"entry-invalid", makeInvalidEntry()},
+		{"entry-valid", &widget.Entry{Validator: &valid{nil}, Text: "Valid"}},
 		{"form", &widget.Form{Items: []*widget.FormItem{
 			{Text: "Username", Widget: widget.NewEntry()},
 			{Text: "Password", Widget: widget.NewPasswordEntry()}},
@@ -43,9 +48,10 @@ func makeDrawList() []drawItem {
 		{"icon", widget.NewIcon(theme.ContentPasteIcon())},
 		{"label", widget.NewLabel("Text label")},
 		{"password", &widget.Entry{PlaceHolder: "Password", Password: true}},
+		{"popupmenu", makePopUpMenu()},
 		{"progress", &widget.ProgressBar{Value: 0.74}},
 		{"progressinf", widget.NewProgressBarInfinite()},
-		{"radio", widget.NewRadio([]string{"Item 1"}, func(string) {})},
+		{"radio", &widget.Radio{Options: []string{"Item 1", "Item 2"}, OnChanged: func(string) {}, Selected: "Item 1"}},
 		{"scrollcontainer", widget.NewScrollContainer(widget.NewLabel("Scroll"))},
 		{"select", widget.NewSelect([]string{"1", "2"}, func(string) {})},
 		{"selectentry", se},
@@ -64,6 +70,31 @@ func makeDrawList() []drawItem {
 			widget.NewToolbarAction(theme.ContentPasteIcon(), func() {}),
 		)},
 	}
+}
+
+type valid struct {
+	err error
+}
+
+func (v *valid) Validate(string) error {
+	return v.err
+}
+
+func makeInvalidEntry() *widget.Entry {
+	e := widget.NewEntry()
+	e.Validator = &valid{fmt.Errorf("reason")}
+	test.Type(e, "Invalid")
+	e.FocusLost()
+	return e
+}
+
+func makePopUpMenu() fyne.CanvasObject {
+	m := widget.NewMenu(fyne.NewMenu("",
+		fyne.NewMenuItem("Item 1", func() {}),
+		fyne.NewMenuItem("Item 2", func() {})))
+
+	m.Items[0].(desktop.Hoverable).MouseIn(nil)
+	return m
 }
 
 func makeTextGrid() *widget.TextGrid {
@@ -92,6 +123,9 @@ func draw(obj fyne.CanvasObject, name string, c fyne.Canvas, themeName string) {
 
 	c.SetScale(2.0) // get HiDPI output so we can render nicely on fancy screens :)
 	c.SetContent(obj)
+	if name == "progressinf" {
+		time.Sleep(time.Second)
+	}
 	img := c.Capture()
 	err = png.Encode(file, img)
 	if err != nil {
