@@ -53,10 +53,16 @@ fyne-cross allows to build binaries and create distribution packages for the fol
 
 > Note: iOS compilation is supported only on darwin hosts.
 
+#### Requirements
+
+- go >= 1.13
+- docker
+- [module-aware mode](https://golang.org/ref/mod#mod-commands) enabled
+
 #### Installation
 
 ```
-go get github.com/lucor/fyne-cross/v2/cmd/fyne-cross
+GO111MODULE=on go get github.com/lucor/fyne-cross/v2/cmd/fyne-cross
 ```
 
 #### Usage
