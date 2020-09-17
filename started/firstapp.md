@@ -68,12 +68,13 @@ import (
 
 func main() {
 	a := app.New()
-
 	w := a.NewWindow("Hello")
+
+	hello := &widget.Label{Text: "Hello Fyne!"}
 	w.SetContent(&widget.Box{Children: []fyne.CanvasObject{
-		&widget.Label{Text: "Hello Fyne!"},
-		&widget.Button{Text: "Quit", OnTapped: func() {
-			a.Quit()
+		hello,
+		&widget.Button{Text: "Hi!", OnTapped: func() {
+			hello.SetText("Welcome :)")
 		}},
 	}})
 
