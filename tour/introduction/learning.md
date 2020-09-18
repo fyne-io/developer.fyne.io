@@ -14,7 +14,7 @@ Through this tutorial you will find topics that grow in complexity
 but none should be beyond a proficient programmer. Every step of the
 way you can copy the examples into your IDE and see them in action.
 
-By the end of this tour you will be know all of the building blocks
+By the end of this tour you will know all of the building blocks
 of Fyne and its tools. We can't wait to see what you build.
 
 If at any point you want to start giving back we welcome contributions,
