@@ -78,7 +78,7 @@ Note that these steps are just required for development - your Fyne applications
 * **Ubuntu / Debian:**
 `sudo apt-get install golang gcc libgl1-mesa-dev xorg-dev`
 * **Fedora:**
-`sudo dnf install golang gcc libXcursor-devel libXrandr-devel mesa-libGL-devel libXi-devel libXinerama-devel libXxf86vm`
+`sudo dnf install golang gcc libXcursor-devel libXrandr-devel mesa-libGL-devel libXi-devel libXinerama-devel libXxf86vm libXxf86vm-devel`
 * **Solus:**
 `sudo eopkg it -c system.devel golang mesalib-devel libxrandr-devel libxcursor-devel libxi-devel libxinerama-devel`
 * **Arch Linux:**
