@@ -30,9 +30,10 @@ func makeDrawList() []drawItem {
 	se := widget.NewSelectEntry([]string{"1", "2"})
 	se.SetPlaceHolder("Select one or type")
 	return []drawItem{
-		{"accordioncontainer", widget.NewAccordionContainer(
-			&widget.AccordionItem{Title: "A", Detail: widget.NewLabel("Shown item"), Open: true},
-			widget.NewAccordionItem("B", widget.NewLabel("Hidden")))},
+		{"accordion", widget.NewAccordion(
+			&widget.AccordionItem{Title: "A", Detail: widget.NewLabel("Hidden")},
+			widget.NewAccordionItem("B", widget.NewLabel("Shown item")),
+			widget.NewAccordionItem("C", widget.NewLabel("2")))},
 		{"button", widget.NewButtonWithIcon("Cancel", theme.CancelIcon(), func() {})},
 		{"card", &widget.Card{Title: "Card Title", Subtitle: "Subtitle", Image: canvas.NewImageFromResource(theme.FyneLogo())}},
 		{"check", &widget.Check{Text: "Check", Checked: true}},
