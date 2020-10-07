@@ -71,8 +71,9 @@ func draw(scene func(fyne.Window), name string, w fyne.Window, c test.Windowless
 		w.Resize(fyne.NewSize(420, 320))
 		c.Overlays().Top().Resize(fyne.NewSize(412, 312))
 	} else {
-		w.Resize(fyne.NewSize(280, 160))
-		c.Overlays().Top().Resize(fyne.NewSize(272, 152))
+		min := c.Overlays().Top().MinSize()
+		w.Resize(min.Add(fyne.NewSize(theme.Padding()*2, theme.Padding()*2)))
+		c.Overlays().Top().Resize(min)
 	}
 
 	img := c.Capture()
