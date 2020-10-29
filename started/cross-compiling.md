@@ -29,7 +29,7 @@ If further errors occur it is likely to be due to missing packages. Some target 
 
 ### Using a virtual environment
 
-As a Linux system is able to cross compile to macOS and Windows easily it can be simpler to use a virtualised environment when you are not developing from Linux. Docker images are a useful tool for a complex build configuration and this works for Fyne as well. There are different tools that can be used. The tool recommended by the Fyne developers is [fyne-cross](https://github.com/lucor/fyne-cross). It has been inspired by [xgo](https://github.com/karalabe/xgo) and uses a [docker image](https://hub.docker.com/r/lucor/fyne-cross) built on top of the [golang-cross](https://github.com/docker/golang-cross) image,
+As a Linux system is able to cross compile to macOS and Windows easily it can be simpler to use a virtualised environment when you are not developing from Linux. Docker images are a useful tool for a complex build configuration and this works for Fyne as well. There are different tools that can be used. The tool recommended by the Fyne developers is [fyne-cross](https://github.com/fyne-io/fyne-cross). It has been inspired by [xgo](https://github.com/karalabe/xgo) and uses a [docker image](https://hub.docker.com/r/fyneio/fyne-cross) built on top of the [golang-cross](https://github.com/docker/golang-cross) image,
 that includes the MinGW compiler for windows, and a macOS SDK, along with the Fyne requirements.
 
 fyne-cross allows to build binaries and create distribution packages for the following targets:
@@ -57,12 +57,11 @@ fyne-cross allows to build binaries and create distribution packages for the fol
 
 - go >= 1.13
 - docker
-- [module-aware mode](https://golang.org/ref/mod#mod-commands) enabled
 
 #### Installation
 
 ```
-GO111MODULE=on go get github.com/lucor/fyne-cross/v2/cmd/fyne-cross
+go get github.com/fyne-io/fyne-cross
 ```
 
 #### Usage
