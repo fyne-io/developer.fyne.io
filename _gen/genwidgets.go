@@ -1,6 +1,7 @@
 package main
 
 import (
+	"fmt"
 	"image/color"
 	"image/png"
 	"os"
@@ -10,6 +11,7 @@ import (
 	"fyne.io/fyne"
 	"fyne.io/fyne/canvas"
 	"fyne.io/fyne/driver/desktop"
+	"fyne.io/fyne/layout"
 	"fyne.io/fyne/test"
 	"fyne.io/fyne/theme"
 	"fyne.io/fyne/widget"
@@ -48,6 +50,9 @@ func makeDrawList() []drawItem {
 		{"hyperlink", widget.NewHyperlink("fyne.io", nil)},
 		{"icon", widget.NewIcon(theme.ContentPasteIcon())},
 		{"label", widget.NewLabel("Text label")},
+		{"list", makeList()},
+		{"table", makeTable()},
+		{"tree", makeTree()},
 		{"password", &widget.Entry{PlaceHolder: "Password", Password: true}},
 		{"popupmenu", makePopUpMenu()},
 		{"progress", &widget.ProgressBar{Value: 0.74}},
@@ -89,6 +94,18 @@ func makeInvalidEntry() *widget.Entry {
 	return e
 }
 
+func makeList() *widget.List {
+	l := widget.NewList(func() int { return 5 },
+		func() fyne.CanvasObject {
+			return fyne.NewContainerWithLayout(layout.NewHBoxLayout(), widget.NewIcon(theme.DocumentIcon()), widget.NewLabel("TemplateItm"))
+		},
+		func(i int, item fyne.CanvasObject) {
+			item.(*fyne.Container).Objects[1].(*widget.Label).SetText(fmt.Sprintf("List item %d", i+1))
+		})
+
+	return l
+}
+
 func makePopUpMenu() fyne.CanvasObject {
 	m := widget.NewMenu(fyne.NewMenu("",
 		fyne.NewMenuItem("Item 1", func() {}),
@@ -110,6 +127,31 @@ func makeTextGrid() *widget.TextGrid {
 	return grid
 }
 
+func makeTable() *widget.Table {
+	return widget.NewTable(
+		func() (int, int) {
+			return 3, 3
+		},
+		func() fyne.CanvasObject {
+			return widget.NewLabel("Cell 0, 0")
+		},
+		func(id widget.TableCellID, obj fyne.CanvasObject) {
+			text := fmt.Sprintf("Cell %d, %d", id.Row+1, id.Col+1)
+			obj.(*widget.Label).SetText(text)
+		})
+}
+
+func makeTree() *widget.Tree {
+	data := make(map[string][]string)
+	data[""] = []string{"Cars", "Trains"}
+	data["Cars"] = []string{"Ford", "Tesla", "Jaguar"}
+	data["Trains"] = []string{"Rocket", "TGV", "Eurotar"}
+
+	t := widget.NewTreeWithStrings(data)
+	t.OpenBranch("Trains")
+	return t
+}
+
 func draw(obj fyne.CanvasObject, name string, c fyne.Canvas, themeName string) {
 	fileName := filepath.Join(imgDir, name+"-"+themeName+".png")
 	file, err := os.Create(fileName)
@@ -126,6 +168,10 @@ func draw(obj fyne.CanvasObject, name string, c fyne.Canvas, themeName string) {
 	c.SetContent(obj)
 	if name == "progressinf" {
 		time.Sleep(time.Second)
+	} else if name == "list" || name == "table" || name == "tree" || name == "accordion" {
+		obj.Resize(fyne.NewSize(136, 120))
+		c.(test.WindowlessCanvas).Resize(fyne.NewSize(136, 120))
+		test.TapCanvas(c, fyne.NewPos(50, 50))
 	}
 	img := c.Capture()
 	err = png.Encode(file, img)
