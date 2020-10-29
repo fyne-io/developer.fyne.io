@@ -41,7 +41,7 @@ func makeDrawList() []drawItem {
 		{"check", &widget.Check{Text: "Check", Checked: true}},
 		{"entry", &widget.Entry{PlaceHolder: "Entry"}},
 		{"entry-invalid", makeInvalidEntry()},
-		{"entry-valid", &widget.Entry{Validator: &valid{nil}, Text: "Valid"}},
+		{"entry-valid", &widget.Entry{Validator: func(_ string) error { return nil }, Text: "Valid"}},
 		{"form", &widget.Form{Items: []*widget.FormItem{
 			{Text: "Username", Widget: widget.NewEntry()},
 			{Text: "Password", Widget: widget.NewPasswordEntry()}},
@@ -78,17 +78,9 @@ func makeDrawList() []drawItem {
 	}
 }
 
-type valid struct {
-	err error
-}
-
-func (v *valid) Validate(string) error {
-	return v.err
-}
-
 func makeInvalidEntry() *widget.Entry {
 	e := widget.NewEntry()
-	e.Validator = &valid{fmt.Errorf("reason")}
+	e.Validator = func(_ string) error { return fmt.Errorf("reason") }
 	test.Type(e, "Invalid")
 	e.FocusLost()
 	return e
