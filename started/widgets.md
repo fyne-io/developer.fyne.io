@@ -15,15 +15,23 @@ Accordion displays a list of AccordionItems. Each item is represented by a butto
 
 {% include widget.html name="accordion" %}
 
-### Box
+### AppTabs
 
-Box widget is a simple list where the child elements are arranged in a single column for vertical or a single row for horizontal arrangement.
+AppTabs widget allows switching visible content from a list of TabItems. Each item is represented by a button at the top of the widget.
+
+{% include widget.html name="apptabs" %}
 
 ### Button
 
 Button widget has a text label and icon, both are optional.
 
 {% include widget.html name="button" %}
+
+### Card
+
+Card widget groups elements with a header and subheader, all are optional.
+
+{% include widget.html name="card" %}
 
 ### Check
 
@@ -36,6 +44,8 @@ Check widget has a text label and a checked (or unchecked) icon.
 Entry widget allows simple text to be input when focused.
 
 {% include widget.html name="entry" %}
+{% include widget.html name="entry-valid" %}
+{% include widget.html name="entry-invalid" %}
 
 PasswordEntry widget hides text input and adds a button to display the text.
 
@@ -46,12 +56,6 @@ PasswordEntry widget hides text input and adds a button to display the text.
 Form widget is two column grid where each row has a label and a widget (usually an input). The last row of the grid will contain the appropriate form control buttons if any should be shown.
 
 {% include widget.html name="form" %}
-
-### Group
-
-Group widget is list of widgets that contains a visual divider to indicate the group with a title at the top.
-
-{% include widget.html name="group" %}
 
 ### Hyperlink
 
@@ -70,6 +74,12 @@ Icon widget is a basic image component that load's its resource to match the the
 Label widget is a label component with appropriate padding and layout.
 
 {% include widget.html name="label" %}
+
+### List
+
+List provides a high performance vertical scroll of many sub-items.
+
+{% include widget.html name="list" %}
 
 ### Progress bar
 
@@ -106,6 +116,12 @@ Users can select an option or enter their own value.
 
 {% include widget.html name="selectentry" %}
 
+### Separator
+
+Separator widget shows a dividing line between other elements.
+
+{% include widget.html name="separator" %}
+
 ### Slider
 
 Slider if a widget that can slide between two fixed values.
@@ -118,11 +134,11 @@ SplitContainer defines a container whose size is split between two children.
 
 {% include widget.html name="splitcontainer" %}
 
-### TabContainer
+### Table
 
-TabContainer widget allows switching visible content from a list of TabItems. Each item is represented by a button at the top of the widget.
+Table provides a high performance scrolled two dimensional display of many sub-items.
 
-{% include widget.html name="tabcontainer" %}
+{% include widget.html name="table" %}
 
 ### TextGrid
 
@@ -136,4 +152,9 @@ Toolbar widget creates a horizontal list of tool buttons.
 
 {% include widget.html name="toolbar" %}
 
+### Tree
+
+Tree provides a high performance vertical scroll of items that can be expanded to reveal child elements..
+
+{% include widget.html name="tree" %}
 

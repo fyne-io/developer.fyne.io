@@ -36,6 +36,9 @@ func makeDrawList() []drawItem {
 			&widget.AccordionItem{Title: "A", Detail: widget.NewLabel("Hidden")},
 			widget.NewAccordionItem("B", widget.NewLabel("Shown item")),
 			widget.NewAccordionItem("C", widget.NewLabel("2")))},
+		{"apptabs", widget.NewTabContainer(
+			widget.NewTabItemWithIcon("Tab1", theme.HomeIcon(), canvas.NewRectangle(color.Transparent)),
+			widget.NewTabItemWithIcon("Tab2", theme.MailSendIcon(), canvas.NewRectangle(color.Transparent)))},
 		{"button", widget.NewButtonWithIcon("Cancel", theme.CancelIcon(), func() {})},
 		{"card", &widget.Card{Title: "Card Title", Subtitle: "Subtitle", Image: canvas.NewImageFromResource(theme.FyneLogo())}},
 		{"check", &widget.Check{Text: "Check", Checked: true}},
@@ -61,12 +64,10 @@ func makeDrawList() []drawItem {
 		{"scrollcontainer", widget.NewScrollContainer(widget.NewLabel("Scroll"))},
 		{"select", widget.NewSelect([]string{"1", "2"}, func(string) {})},
 		{"selectentry", se},
+		{"separator", widget.NewSeparator()},
 		{"slider", widget.NewSlider(-5, 25)},
 		{"splitcontainer", widget.NewHSplitContainer(widget.NewLabel("Line1\nLine2"),
 			widget.NewVSplitContainer(widget.NewLabel("Top"), widget.NewLabel("Bottom")))},
-		{"tabcontainer", widget.NewTabContainer(
-			widget.NewTabItem("Tab1", canvas.NewRectangle(color.Transparent)),
-			widget.NewTabItem("Tab2", canvas.NewRectangle(color.Transparent)))},
 		{"textgrid", makeTextGrid()},
 		{"toolbar", widget.NewToolbar(widget.NewToolbarAction(theme.MailComposeIcon(), func() {}),
 			widget.NewToolbarSeparator(),
@@ -160,6 +161,8 @@ func draw(obj fyne.CanvasObject, name string, c fyne.Canvas, themeName string) {
 	c.SetContent(obj)
 	if name == "progressinf" {
 		time.Sleep(time.Second)
+	} else if name == "separator" {
+		c.(test.WindowlessCanvas).Resize(obj.MinSize().Add(fyne.NewSize(120+theme.Padding()*2, theme.Padding()*2)))
 	} else if name == "list" || name == "table" || name == "tree" || name == "accordion" {
 		obj.Resize(fyne.NewSize(136, 120))
 		c.(test.WindowlessCanvas).Resize(fyne.NewSize(136, 120))
