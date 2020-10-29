@@ -9,7 +9,7 @@ redirect_from:
 
 ---
 
-As discussed in [Container and Layouts](/basics/container.html) elements
+As discussed in [Container and Layouts](/tour/basics/container.html) elements
 within a container can be arranged using a layout. This section explores
 the builtin layouts and how to use them.
 
