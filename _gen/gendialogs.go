@@ -1,6 +1,7 @@
 package main
 
 import (
+	"image/color"
 	"image/png"
 	"os"
 	"path/filepath"
@@ -26,6 +27,9 @@ var (
 func makeDrawList() []drawItem {
 	return []drawItem{
 		{"information", func(w fyne.Window) { dialog.ShowInformation("Some Information", "This is a thing to know", w) }},
+		{"color", func(w fyne.Window) {
+			dialog.ShowColorPicker("Choose a color", "Please pick a color...", func(color.Color) {}, w)
+		}},
 		{"confirm", func(w fyne.Window) { dialog.ShowConfirm("Please Confirm", "Are you sure..?", func(bool) {}, w) }},
 		{"progress", func(w fyne.Window) {
 			d := dialog.NewProgress("Please Wait", "Doing something...", w)

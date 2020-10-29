@@ -40,6 +40,11 @@ entries:
       url: /started/layouts
       output: web, pdf
 
+    - title: Dialog List
+      url: /started/dialogs
+      output: web, pdf
+
+
     - title: Testing
       url: /started/testing
       output: web, pdf
