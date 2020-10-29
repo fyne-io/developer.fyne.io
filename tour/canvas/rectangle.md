@@ -4,8 +4,10 @@ layout: tour
 title: Rectangle
 order: 1
 
+permalink: /tour/canvas/
+
 redirect_from:
-  - /tour/canvas/
+  - /tour/canvas/rectangle
 
 ---
 

@@ -4,8 +4,10 @@ layout: tour
 title: Label
 order: 1
 
+permalink: /tour/widget/
+
 redirect_from:
-- /tour/widget/
+- /tour/widget/label
 
 ---
 

@@ -4,9 +4,11 @@ layout: tour
 title: Introduction
 order: 1
 
+permalink: /tour/introduction/
+
 redirect_from:
-- /tour/introduction/
 - /tour/
+- /tour/introduction/hello
 
 ---
 

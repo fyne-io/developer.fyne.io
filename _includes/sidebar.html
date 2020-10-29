@@ -8,10 +8,11 @@
       <a title="{{folder.title}}" href="#">{{folder.title}}</a>
       <ul>
           {% for folderitem in folder.folderitems %}
+          {% assign folderitemurlhtml = folderitem.url | append: ".html" %}
           {% if folderitem.output contains "web" %}
           {% if folderitem.external_url %}
           <li><a title="{{folderitem.title}}" href="{{folderitem.external_url}}" target="_blank" rel="noopener">{{folderitem.title}}</a></li>
-          {% elsif page.url == folderitem.url %}
+          {% elsif page.url == folderitem.url or page.url == folderitemurlhtml %}
           <li class="active"><a title="{{folderitem.title}}" href="{{folderitem.url}}">{{folderitem.title}}</a></li>
           {% elsif folderitem.type == "empty" %}
           <li><a title="{{folderitem.title}}" href="{{folderitem.url}}">{{folderitem.title}}</a></li>

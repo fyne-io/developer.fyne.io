@@ -4,8 +4,10 @@ layout: tour
 title: Box Layout
 order: 1
 
+permalink: /tour/layout/
+
 redirect_from:
-- /tour/layout/
+- /tour/layout/boxlayout
 
 ---
 

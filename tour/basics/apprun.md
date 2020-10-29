@@ -4,8 +4,10 @@ layout: tour
 title: Application and RunLoop
 order: 1
 
+permalink: /tour/basics/
+
 redirect_from:
-- /tour/basics/
+- /tour/basics/apprun
 
 ---
 
