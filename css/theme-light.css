@@ -9,10 +9,10 @@ body {
     background-color: #ffffff;
 }
 
-.nav-tabs > li.active > a, .nav-tabs > li.active > a:hover,
-  .nav-tabs > li.active > a:focus, .nav > li.active > a, .nav li > a:hover, .dropdown-menu a:hover {
+.nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav > li > a:hover,
+  .nav-tabs > li.active > a:focus, .nav li > a:hover, .dropdown-menu a:hover {
     color: #333;
-    background-color: #e0e0e0;
+    border-color: #e0e0e0;
 }   
     
 a[data-toggle="tooltip"] {
