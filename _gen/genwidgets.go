@@ -138,7 +138,7 @@ func makeTree() *widget.Tree {
 	data := make(map[string][]string)
 	data[""] = []string{"Cars", "Trains"}
 	data["Cars"] = []string{"Ford", "Tesla", "Jaguar"}
-	data["Trains"] = []string{"Rocket", "TGV", "Eurotar"}
+	data["Trains"] = []string{"Rocket", "TGV", "Eurostar"}
 
 	t := widget.NewTreeWithStrings(data)
 	t.OpenBranch("Trains")
@@ -164,7 +164,6 @@ func draw(obj fyne.CanvasObject, name string, c fyne.Canvas, themeName string) {
 	} else if name == "separator" {
 		c.(test.WindowlessCanvas).Resize(obj.MinSize().Add(fyne.NewSize(120+theme.Padding()*2, theme.Padding()*2)))
 	} else if name == "list" || name == "table" || name == "tree" || name == "accordion" {
-		obj.Resize(fyne.NewSize(136, 120))
 		c.(test.WindowlessCanvas).Resize(fyne.NewSize(136, 120))
 		test.TapCanvas(c, fyne.NewPos(50, 50))
 	}
