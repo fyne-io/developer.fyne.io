@@ -25,7 +25,7 @@ type Box struct {
 
 Box widget is a simple list where the child elements are arranged in a single column for vertical or a single row for horizontal arrangement.
 
-<div class="deprecated"> Deprecated: Use layout.NewVBoxContainer() or layout.NewHBoxContainer().</div>
+<div class="deprecated"> Deprecated: Use container.NewVBox() or container.NewHBox().</div>
 
 #### func  NewHBox
 
@@ -34,7 +34,7 @@ func NewHBox(children ...fyne.CanvasObject) *Box
 ```
 NewHBox creates a new horizontally aligned box widget with the specified list of child objects.
 
-<div class="deprecated"> Deprecated: Use layout.NewHBoxContainer() instead.</div>
+<div class="deprecated"> Deprecated: Use container.NewHBox() instead.</div>
 
 #### func  NewVBox
 
@@ -43,7 +43,7 @@ func NewVBox(children ...fyne.CanvasObject) *Box
 ```
 NewVBox creates a new vertically aligned box widget with the specified list of child objects.
 
-<div class="deprecated"> Deprecated: Use layout.NewVBoxContainer() instead.</div>
+<div class="deprecated"> Deprecated: Use container.NewVBox() instead.</div>
 
 #### func (*Box) Append
 
