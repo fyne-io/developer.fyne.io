@@ -146,6 +146,11 @@ entries:
       url: /api/v1.4/canvas/
       output: web, pdf
 
+    - title: container
+      url: /api/v1.4/container/
+      output: web, pdf
+
+
     - title: dialog
       url: /api/v1.4/dialog/
       output: web, pdf
