@@ -1,6 +1,7 @@
 package main
 
 import (
+	"image/color"
 	"image/png"
 	"os"
 	"path/filepath"
@@ -20,6 +21,16 @@ type drawItem struct {
 var (
 	imgDir string
 )
+
+func boxColor() color.Color {
+	base := theme.DisabledButtonColor()
+	r, _, _, _ := base.RGBA()
+	if r>>8 < 0x80 {
+		return color.NRGBA{0x18, 0x18, 0x18, 0xff}
+	}
+
+	return color.NRGBA{0xe2, 0xe2, 0xe2, 0xff}
+}
 
 func makeDrawList() []drawItem {
 	bObjs := makeObjs()
@@ -47,11 +58,11 @@ func makeDrawList() []drawItem {
 }
 
 func makeObjs() []fyne.CanvasObject {
-	prop1 := canvas.NewRectangle(theme.ButtonColor())
+	prop1 := canvas.NewRectangle(boxColor())
 	prop1.SetMinSize(fyne.NewSize(50, 50))
-	prop2 := canvas.NewRectangle(theme.ButtonColor())
+	prop2 := canvas.NewRectangle(boxColor())
 	prop2.SetMinSize(fyne.NewSize(25, 25))
-	prop3 := canvas.NewRectangle(theme.ButtonColor())
+	prop3 := canvas.NewRectangle(boxColor())
 	prop3.SetMinSize(fyne.NewSize(75, 75))
 	return []fyne.CanvasObject{prop1, prop2, prop3}
 }
@@ -69,8 +80,9 @@ func draw(scene fyne.CanvasObject, name string, c test.WindowlessCanvas, themeNa
 	}
 
 	c.SetScale(2.0) // get HiDPI output so we can render nicely on fancy screens :)
+	c.SetPadded(false)
 	c.SetContent(scene)
-	c.Resize(fyne.NewSize(250, 200))
+	c.Resize(fyne.NewSize(220, 180))
 	img := c.Capture()
 	err = png.Encode(file, img)
 	if err != nil {

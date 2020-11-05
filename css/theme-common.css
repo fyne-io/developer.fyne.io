@@ -52,3 +52,9 @@ div.navbar-collapse, .dropdown-menu > li > a:hover {
     margin-top: 25pt;
     width: 100%;
 }
+
+.layout {
+    border: 1pt solid #999;
+    box-shadow: 0 0 3pt #999;
+}
+
