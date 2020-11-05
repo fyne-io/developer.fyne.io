@@ -32,6 +32,15 @@ Every object will be set to it's minimum size.
 
 {% include layout.html name="center" %}
 
+### Form
+
+Form layout arranges items in pairs where the first column is at minimum width.
+This is normally useful for labelling elements in a form, where the label is in the first
+column and the item it describes is in the second.
+You should always add an even number of elements to a form layout.
+
+{% include layout.html name="form" %}
+
 ### Grid
 
 Grid layout arranges items equally in the available space.
@@ -67,6 +76,14 @@ to the container (last-most is on top).
 
 {% include layout.html name="max" %}
 
+### Padded
+
+Padded layout positions all container elements to fill the available space
+but with a small padding around the outside. The size of the padding is theme
+specific. The objects will all be drawn in the order they were added
+to the container (last-most is on top).
+
+{% include layout.html name="padded" %}
 
 ## Combining Layouts
 

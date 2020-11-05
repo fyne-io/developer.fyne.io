@@ -50,9 +50,11 @@ func makeDrawList() []drawItem {
 		{"vbox", fyne.NewContainerWithLayout(layout.NewVBoxLayout(), makeObjs()...)},
 		{"border", border},
 		{"center", fyne.NewContainerWithLayout(layout.NewCenterLayout(), makeObjs()...)},
+		{"form", fyne.NewContainerWithLayout(layout.NewFormLayout(), append(makeObjs(), canvas.NewRectangle(boxColor()))...)},
 		{"grid", fyne.NewContainerWithLayout(layout.NewGridLayout(2), makeObjs()...)},
 		{"gridwrap", fyne.NewContainerWithLayout(layout.NewGridWrapLayout(fyne.NewSize(75, 75)), makeObjs()...)},
 		{"max", fyne.NewContainerWithLayout(layout.NewMaxLayout(), makeObjs()...)},
+		{"padded", fyne.NewContainerWithLayout(layout.NewPaddedLayout(), makeObjs()...)},
 		{"combined", combined},
 	}
 }
