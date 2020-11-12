@@ -40,16 +40,19 @@ func newEnterEntry() *enterEntry {
 }
 ```
 
-Then override the `KeyDown()` method that's part of `widget.Entry`, this will replace the built in key handling with our own. Inside this method, we will use a conditional to check if the `key.Name` value matches the `Return` key using the `fyne.KeyReturn` variable and if that is the case, we run our `onEnter` method. We need to have a default case that calls `e.Entry.KeyDown(key)` to maintain the behavior of other keys in the entry.
+Then override the `TypedKey()` method that's part of the `fyne.Focusable` interface,
+this will allow us to intercept the standard key handling and pass through if we want.
+Inside this method, we will use a conditional to check if the `key.Name` value matches the `Return` key using the `fyne.KeyReturn` variable and if that is the case, we run our `onEnter` method.
+We need to have a default case that calls `e.Entry.TypedKey(key)` to maintain the behavior of other keys in the entry.
 This implementation can easily be extended to check for other keys in the future if necessary.
 
 ```go
-func (e *enterEntry) KeyDown(key *fyne.KeyEvent) {
+func (e *enterEntry) TypedKey(key *fyne.KeyEvent) {
     switch key.Name {
     case fyne.KeyReturn:
         e.onEnter()
     default:
-        e.Entry.KeyDown(key)
+        e.Entry.TypedKey(key)
     }
 
 }
