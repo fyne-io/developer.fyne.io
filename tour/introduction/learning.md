@@ -23,4 +23,4 @@ You can find more about contributing by visiting our
 [contributors page](https://fyne.io/contribute.html) or 
 [github repository](https://github.com/fyne-io/fyne/).
 
-Please continue to our first tutorial "[Getting Started](/tour/basics/)".
+Please continue to our first tutorial "[Basics](/tour/basics/)".
