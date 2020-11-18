@@ -1,10 +1,10 @@
 ---
 layout: page
 tags: [api]
-title: Fyne API dialog
+title: Fyne API "dialog.FileDialog"
 ---
 
-# dialog
+# dialog.FileDialog
 ---
 ```go
 import "fyne.io/fyne/dialog"
@@ -41,6 +41,10 @@ NewFileSave creates a file dialog allowing the user to choose a file to save to 
 func NewFolderOpen(callback func(fyne.ListableURI, error), parent fyne.Window) *FileDialog
 ```
 NewFolderOpen creates a file dialog allowing the user to choose a folder to open. The dialog will appear over the window specified when Show() is called.
+
+
+<div class="since">Since: <code>
+1.4</code></div>
 
 #### func (*FileDialog) Hide
 
@@ -83,6 +87,10 @@ SetFilter sets a filter for limiting files that can be chosen in the file dialog
 func (f *FileDialog) SetLocation(u fyne.ListableURI)
 ```
 SetLocation tells this FileDirectory which location to display. This is normally called before the dialog is shown.
+
+
+<div class="since">Since: <code>
+1.4</code></div>
 
 #### func (*FileDialog) SetOnClosed
 

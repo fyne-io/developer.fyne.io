@@ -1,7 +1,7 @@
 ---
 layout: page
 tags: [api]
-title: Fyne API canvas
+title: Fyne API "canvas"
 ---
 
 # canvas

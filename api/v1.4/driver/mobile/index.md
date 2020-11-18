@@ -1,7 +1,7 @@
 ---
 layout: page
 tags: [api]
-title: Fyne API mobile
+title: Fyne API "mobile"
 ---
 
 # mobile

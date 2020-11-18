@@ -1,10 +1,10 @@
 ---
 layout: page
 tags: [api]
-title: Fyne API desktop
+title: Fyne API "desktop.Cursorable"
 ---
 
-# desktop
+# desktop.Cursorable
 ---
 ```go
 import "fyne.io/fyne/driver/desktop"

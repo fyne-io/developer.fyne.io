@@ -1,7 +1,7 @@
 ---
 layout: page
 tags: [api]
-title: Fyne API dialog
+title: Fyne API "dialog"
 ---
 
 # dialog
@@ -29,6 +29,10 @@ NewFileIcon takes a filepath and creates an icon with an overlayed label using t
 func ShowColorPicker(title, message string, callback func(c color.Color), parent fyne.Window)
 ```
 ShowColorPicker creates and shows a color dialog. The callback is triggered when the user selects a color.
+
+
+<div class="since">Since: <code>
+1.4</code></div>
 
 #### func  ShowConfirm
 
@@ -86,6 +90,10 @@ ShowFileSave creates and shows a file dialog allowing the user to choose a file 
 func ShowFolderOpen(callback func(fyne.ListableURI, error), parent fyne.Window)
 ```
 ShowFolderOpen creates and shows a file dialog allowing the user to choose a folder to open. The dialog will appear over the window specified.
+
+
+<div class="since">Since: <code>
+1.4</code></div>
 
 #### func  ShowInformation
 

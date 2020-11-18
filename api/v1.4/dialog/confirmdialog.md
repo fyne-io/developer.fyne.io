@@ -1,10 +1,10 @@
 ---
 layout: page
 tags: [api]
-title: Fyne API dialog
+title: Fyne API "dialog.ConfirmDialog"
 ---
 
-# dialog
+# dialog.ConfirmDialog
 ---
 ```go
 import "fyne.io/fyne/dialog"

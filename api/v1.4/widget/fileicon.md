@@ -1,10 +1,10 @@
 ---
 layout: page
 tags: [api]
-title: Fyne API widget
+title: Fyne API "widget.FileIcon"
 ---
 
-# widget
+# widget.FileIcon
 ---
 ```go
 import "fyne.io/fyne/widget"
@@ -25,12 +25,20 @@ type FileIcon struct {
 
 FileIcon is an adaption of widget.Icon for showing files and folders
 
+
+<div class="since">Since: <code>
+1.4</code></div>
+
 #### func  NewFileIcon
 
 ```go
 func NewFileIcon(uri fyne.URI) *FileIcon
 ```
 NewFileIcon takes a filepath and creates an icon with an overlayed label using the detected mimetype and extension
+
+
+<div class="since">Since: <code>
+1.4</code></div>
 
 #### func (*FileIcon) CreateRenderer
 

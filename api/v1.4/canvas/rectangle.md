@@ -1,10 +1,10 @@
 ---
 layout: page
 tags: [api]
-title: Fyne API canvas
+title: Fyne API "canvas.Rectangle"
 ---
 
-# canvas
+# canvas.Rectangle
 ---
 ```go
 import "fyne.io/fyne/canvas"

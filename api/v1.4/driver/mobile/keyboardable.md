@@ -1,10 +1,10 @@
 ---
 layout: page
 tags: [api]
-title: Fyne API mobile
+title: Fyne API "mobile.Keyboardable"
 ---
 
-# mobile
+# mobile.Keyboardable
 ---
 ```go
 import "fyne.io/fyne/driver/mobile"

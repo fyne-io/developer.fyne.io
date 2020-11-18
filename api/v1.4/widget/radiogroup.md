@@ -1,10 +1,10 @@
 ---
 layout: page
 tags: [api]
-title: Fyne API widget
+title: Fyne API "widget.RadioGroup"
 ---
 
-# widget
+# widget.RadioGroup
 ---
 ```go
 import "fyne.io/fyne/widget"
@@ -27,12 +27,20 @@ type RadioGroup struct {
 
 RadioGroup widget has a list of text labels and radio check icons next to each. Changing the selection (only one can be selected) will trigger the changed func.
 
+
+<div class="since">Since: <code>
+1.4</code></div>
+
 #### func  NewRadioGroup
 
 ```go
 func NewRadioGroup(options []string, changed func(string)) *RadioGroup
 ```
 NewRadioGroup creates a new radio widget with the set options and change handler
+
+
+<div class="since">Since: <code>
+1.4</code></div>
 
 #### func (*RadioGroup) Append
 

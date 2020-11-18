@@ -1,10 +1,10 @@
 ---
 layout: page
 tags: [api]
-title: Fyne API dialog
+title: Fyne API "dialog.ColorPickerDialog"
 ---
 
-# dialog
+# dialog.ColorPickerDialog
 ---
 ```go
 import "fyne.io/fyne/dialog"
@@ -22,12 +22,20 @@ type ColorPickerDialog struct {
 
 ColorPickerDialog is a simple dialog window that displays a color picker.
 
+
+<div class="since">Since: <code>
+1.4</code></div>
+
 #### func  NewColorPicker
 
 ```go
 func NewColorPicker(title, message string, callback func(c color.Color), parent fyne.Window) *ColorPickerDialog
 ```
 NewColorPicker creates a color dialog and returns the handle. Using the returned type you should call Show() and then set its color through SetColor(). The callback is triggered when the user selects a color.
+
+
+<div class="since">Since: <code>
+1.4</code></div>
 
 #### func (ColorPickerDialog) Hide
 

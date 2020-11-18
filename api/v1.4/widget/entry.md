@@ -1,10 +1,10 @@
 ---
 layout: page
 tags: [api]
-title: Fyne API widget
+title: Fyne API "widget.Entry"
 ---
 
-# widget
+# widget.Entry
 ---
 ```go
 import "fyne.io/fyne/widget"
@@ -27,6 +27,8 @@ type Entry struct {
 	MultiLine bool
 	Wrapping  fyne.TextWrap
 
+	// Set a validator that this entry will check against
+	// Since: 1.4
 	Validator fyne.StringValidator
 
 	CursorRow, CursorColumn int

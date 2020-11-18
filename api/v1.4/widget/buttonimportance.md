@@ -1,10 +1,10 @@
 ---
 layout: page
 tags: [api]
-title: Fyne API widget
+title: Fyne API "widget.ButtonImportance"
 ---
 
-# widget
+# widget.ButtonImportance
 ---
 ```go
 import "fyne.io/fyne/widget"
@@ -19,6 +19,10 @@ type ButtonImportance int
 ```
 
 ButtonImportance represents how prominent the button should appear
+
+
+<div class="since">Since: <code>
+1.4</code></div>
 
 ```go
 const (

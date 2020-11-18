@@ -1,10 +1,10 @@
 ---
 layout: page
 tags: [api]
-title: Fyne API fyne
+title: Fyne API "fyne.ShortcutHandler"
 ---
 
-# fyne
+# fyne.ShortcutHandler
 ---
 ```go
 import "fyne.io/fyne"

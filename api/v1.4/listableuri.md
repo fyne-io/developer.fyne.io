@@ -1,10 +1,10 @@
 ---
 layout: page
 tags: [api]
-title: Fyne API fyne
+title: Fyne API "fyne.ListableURI"
 ---
 
-# fyne
+# fyne.ListableURI
 ---
 ```go
 import "fyne.io/fyne"
@@ -24,3 +24,7 @@ type ListableURI interface {
 ```
 
 ListableURI represents a URI that can have child items, most commonly a directory on disk in the native filesystem.
+
+
+<div class="since">Since: <code>
+1.4</code></div>

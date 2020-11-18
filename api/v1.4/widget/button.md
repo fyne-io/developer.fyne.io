@@ -1,10 +1,10 @@
 ---
 layout: page
 tags: [api]
-title: Fyne API widget
+title: Fyne API "widget.Button"
 ---
 
-# widget
+# widget.Button
 ---
 ```go
 import "fyne.io/fyne/widget"
@@ -22,8 +22,9 @@ type Button struct {
 	Style ButtonStyle
 	Icon  fyne.Resource
 	// Specify how prominent the button should be, High will highlight the button and Low will remove some decoration.
-	Importance ButtonImportance
-
+	//
+	// Since: 1.4
+	Importance    ButtonImportance
 	Alignment     ButtonAlign
 	IconPlacement ButtonIconPlacement
 

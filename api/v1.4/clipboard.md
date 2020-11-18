@@ -1,10 +1,10 @@
 ---
 layout: page
 tags: [api]
-title: Fyne API fyne
+title: Fyne API "fyne.Clipboard"
 ---
 
-# fyne
+# fyne.Clipboard
 ---
 ```go
 import "fyne.io/fyne"

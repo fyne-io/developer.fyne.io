@@ -1,10 +1,10 @@
 ---
 layout: page
 tags: [api]
-title: Fyne API fyne
+title: Fyne API "fyne.StaticResource"
 ---
 
-# fyne
+# fyne.StaticResource
 ---
 ```go
 import "fyne.io/fyne"

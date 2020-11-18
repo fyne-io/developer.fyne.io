@@ -1,10 +1,10 @@
 ---
 layout: page
 tags: [api]
-title: Fyne API widget
+title: Fyne API "widget.Separator"
 ---
 
-# widget
+# widget.Separator
 ---
 ```go
 import "fyne.io/fyne/widget"
@@ -22,12 +22,20 @@ type Separator struct {
 
 Separator is a widget for displaying a separator with themeable color.
 
+
+<div class="since">Since: <code>
+1.4</code></div>
+
 #### func  NewSeparator
 
 ```go
 func NewSeparator() *Separator
 ```
 NewSeparator creates a new separator.
+
+
+<div class="since">Since: <code>
+1.4</code></div>
 
 #### func (*Separator) CreateRenderer
 

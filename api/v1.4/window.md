@@ -1,10 +1,10 @@
 ---
 layout: page
 tags: [api]
-title: Fyne API fyne
+title: Fyne API "fyne.Window"
 ---
 
-# fyne
+# fyne.Window
 ---
 ```go
 import "fyne.io/fyne"
@@ -79,6 +79,8 @@ type Window interface {
 
 	// SetCloseIntercept sets a function that runs instead of closing if defined.
 	// Close() should be called explicitly in the interceptor to close the window.
+	//
+	// Since: 1.4
 	SetCloseIntercept(func())
 
 	// Show the window on screen.

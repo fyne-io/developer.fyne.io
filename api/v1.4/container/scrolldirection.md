@@ -1,10 +1,10 @@
 ---
 layout: page
 tags: [api]
-title: Fyne API container
+title: Fyne API "container.ScrollDirection"
 ---
 
-# container
+# container.ScrollDirection
 ---
 ```go
 import "fyne.io/fyne/container"
@@ -19,6 +19,10 @@ type ScrollDirection = widget.ScrollDirection
 ```
 
 ScrollDirection represents the directions in which a Scroll container can scroll its child content.
+
+
+<div class="since">Since: <code>
+1.4</code></div>
 
 ```go
 const (

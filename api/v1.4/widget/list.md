@@ -1,10 +1,10 @@
 ---
 layout: page
 tags: [api]
-title: Fyne API widget
+title: Fyne API "widget.List"
 ---
 
-# widget
+# widget.List
 ---
 ```go
 import "fyne.io/fyne/widget"
@@ -28,12 +28,20 @@ type List struct {
 
 List is a widget that pools list items for performance and lays the items out in a vertical direction inside of a scroller. List requires that all items are the same size.
 
+
+<div class="since">Since: <code>
+1.4</code></div>
+
 #### func  NewList
 
 ```go
 func NewList(length func() int, createItem func() fyne.CanvasObject, updateItem func(ListItemID, fyne.CanvasObject)) *List
 ```
 NewList creates and returns a list widget for displaying items in a vertical layout with scrolling and caching for performance.
+
+
+<div class="since">Since: <code>
+1.4</code></div>
 
 #### func (*List) CreateRenderer
 

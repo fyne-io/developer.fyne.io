@@ -1,10 +1,10 @@
 ---
 layout: page
 tags: [api]
-title: Fyne API canvas
+title: Fyne API "canvas.Image"
 ---
 
-# canvas
+# canvas.Image
 ---
 ```go
 import "fyne.io/fyne/canvas"

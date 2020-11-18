@@ -1,10 +1,10 @@
 ---
 layout: page
 tags: [api]
-title: Fyne API widget
+title: Fyne API "widget.Table"
 ---
 
-# widget
+# widget.Table
 ---
 ```go
 import "fyne.io/fyne/widget"
@@ -28,12 +28,20 @@ type Table struct {
 
 Table widget is a grid of items that can be scrolled and a cell selected. It's performance is provided by caching cell templates created with CreateCell and re-using them with UpdateCell. The size of the content rows/columns is returned by the Length callback.
 
+
+<div class="since">Since: <code>
+1.4</code></div>
+
 #### func  NewTable
 
 ```go
 func NewTable(length func() (int, int), create func() fyne.CanvasObject, update func(TableCellID, fyne.CanvasObject)) *Table
 ```
 NewTable returns a new performant table widget defined by the passed functions. The first returns the data size in rows and columns, second parameter is a function that returns cell template objects that can be cached and the third is used to apply data at specified data location to the passed template CanvasObject.
+
+
+<div class="since">Since: <code>
+1.4</code></div>
 
 #### func (*Table) CreateRenderer
 

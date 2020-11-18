@@ -1,10 +1,10 @@
 ---
 layout: page
 tags: [api]
-title: Fyne API theme
+title: Fyne API "theme.ErrorThemedResource"
 ---
 
-# theme
+# theme.ErrorThemedResource
 ---
 ```go
 import "fyne.io/fyne/theme"

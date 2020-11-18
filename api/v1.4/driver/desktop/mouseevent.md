@@ -1,10 +1,10 @@
 ---
 layout: page
 tags: [api]
-title: Fyne API desktop
+title: Fyne API "desktop.MouseEvent"
 ---
 
-# desktop
+# desktop.MouseEvent
 ---
 ```go
 import "fyne.io/fyne/driver/desktop"

@@ -1,10 +1,10 @@
 ---
 layout: page
 tags: [api]
-title: Fyne API app
+title: Fyne API "app.SettingsSchema"
 ---
 
-# app
+# app.SettingsSchema
 ---
 ```go
 import "fyne.io/fyne/app"

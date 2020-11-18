@@ -1,10 +1,10 @@
 ---
 layout: page
 tags: [api]
-title: Fyne API storage
+title: Fyne API "storage.MimeTypeFileFilter"
 ---
 
-# storage
+# storage.MimeTypeFileFilter
 ---
 ```go
 import "fyne.io/fyne/storage"

@@ -1,10 +1,10 @@
 ---
 layout: page
 tags: [api]
-title: Fyne API container
+title: Fyne API "container.TabLocation"
 ---
 
-# container
+# container.TabLocation
 ---
 ```go
 import "fyne.io/fyne/container"
@@ -19,6 +19,10 @@ type TabLocation = widget.TabLocation
 ```
 
 TabLocation is the location where the tabs of a tab container should be rendered
+
+
+<div class="since">Since: <code>
+1.4</code></div>
 
 ```go
 const (

@@ -1,10 +1,10 @@
 ---
 layout: page
 tags: [api]
-title: Fyne API desktop
+title: Fyne API "desktop.Keyable"
 ---
 
-# desktop
+# desktop.Keyable
 ---
 ```go
 import "fyne.io/fyne/driver/desktop"

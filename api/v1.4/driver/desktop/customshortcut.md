@@ -1,10 +1,10 @@
 ---
 layout: page
 tags: [api]
-title: Fyne API desktop
+title: Fyne API "desktop.CustomShortcut"
 ---
 
-# desktop
+# desktop.CustomShortcut
 ---
 ```go
 import "fyne.io/fyne/driver/desktop"

@@ -1,7 +1,7 @@
 ---
 layout: page
 tags: [api]
-title: Fyne API desktop
+title: Fyne API "desktop"
 ---
 
 # desktop

@@ -1,7 +1,7 @@
 ---
 layout: page
 tags: [api]
-title: Fyne API app
+title: Fyne API "app"
 ---
 
 # app
@@ -37,7 +37,7 @@ Deprecated: Developers should not specify a driver manually but use NewAppWithID
 ```go
 func NewWithID(id string) fyne.App
 ```
-NewWithID returns a new app instance using the test (headless) driver. The ID string should be globally unique to this app.
+NewWithID returns a new app instance using the appropriate runtime driver. The ID string should be globally unique to this app.
 
 #### types
 

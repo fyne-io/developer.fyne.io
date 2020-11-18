@@ -1,7 +1,7 @@
 ---
 layout: page
 tags: [api]
-title: Fyne API storage
+title: Fyne API "storage"
 ---
 
 # storage
@@ -26,6 +26,10 @@ func Child(u fyne.URI, component string) (fyne.URI, error)
 ```
 Child appends a new path element to a URI, separated by a '/' character.
 
+
+<div class="since">Since: <code>
+1.4</code></div>
+
 #### func  Exists
 
 ```go
@@ -33,12 +37,27 @@ func Exists(u fyne.URI) (bool, error)
 ```
 Exists will return true if the resource the URI refers to exists, and false otherwise. If an error occurs while checking, false is returned as the first return.
 
+
+<div class="since">Since: <code>
+1.4</code></div>
+
 #### func  ListerForURI
 
 ```go
 func ListerForURI(uri fyne.URI) (fyne.ListableURI, error)
 ```
 ListerForURI will attempt to use the application's driver to convert a standard URI into a listable URI.
+
+
+<div class="since">Since: <code>
+1.4</code></div>
+
+#### func  LoadResourceFromURI
+
+```go
+func LoadResourceFromURI(u fyne.URI) (fyne.Resource, error)
+```
+LoadResourceFromURI creates a new StaticResource in memory using the contents of the specified URI. The URI will be opened using the current driver, so valid schemas will vary from platform to platform. The file:// schema will always work.
 
 #### func  NewFileURI
 
@@ -67,6 +86,10 @@ OpenFileFromURI loads a file read stream from a resource identifier. This is mos
 func Parent(u fyne.URI) (fyne.URI, error)
 ```
 Parent gets the parent of a URI by splitting it along '/' separators and removing the last item.
+
+
+<div class="since">Since: <code>
+1.4</code></div>
 
 #### func  SaveFileToURI
 

@@ -1,10 +1,10 @@
 ---
 layout: page
 tags: [api]
-title: Fyne API fyne
+title: Fyne API "fyne.Container"
 ---
 
-# fyne
+# fyne.Container
 ---
 ```go
 import "fyne.io/fyne"
@@ -56,6 +56,10 @@ NewContainerWithoutLayout returns a new Container instance holding the specified
 func (c *Container) Add(add CanvasObject)
 ```
 Add appends the specified object to the items this container manages.
+
+
+<div class="since">Since: <code>
+1.4</code></div>
 
 #### func (*Container) AddObject
 

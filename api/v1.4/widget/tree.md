@@ -1,10 +1,10 @@
 ---
 layout: page
 tags: [api]
-title: Fyne API widget
+title: Fyne API "widget.Tree"
 ---
 
-# widget
+# widget.Tree
 ---
 ```go
 import "fyne.io/fyne/widget"
@@ -32,6 +32,10 @@ type Tree struct {
 
 Tree widget displays hierarchical data. Each node of the tree must be identified by a Unique TreeNodeID.
 
+
+<div class="since">Since: <code>
+1.4</code></div>
+
 #### func  NewTree
 
 ```go
@@ -39,12 +43,20 @@ func NewTree(childUIDs func(TreeNodeID) []TreeNodeID, isBranch func(TreeNodeID) 
 ```
 NewTree returns a new performant tree widget defined by the passed functions. childUIDs returns the child TreeNodeIDs of the given node. isBranch returns true if the given node is a branch, false if it is a leaf. create returns a new template object that can be cached. update is used to apply data at specified data location to the passed template CanvasObject.
 
+
+<div class="since">Since: <code>
+1.4</code></div>
+
 #### func  NewTreeWithStrings
 
 ```go
 func NewTreeWithStrings(data map[string][]string) (t *Tree)
 ```
 NewTreeWithStrings creates a new tree with the given string map. Data must contain a mapping for the root, which defaults to empty string ("").
+
+
+<div class="since">Since: <code>
+1.4</code></div>
 
 #### func (*Tree) CloseAllBranches
 

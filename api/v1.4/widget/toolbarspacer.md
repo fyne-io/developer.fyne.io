@@ -1,10 +1,10 @@
 ---
 layout: page
 tags: [api]
-title: Fyne API widget
+title: Fyne API "widget.ToolbarSpacer"
 ---
 
-# widget
+# widget.ToolbarSpacer
 ---
 ```go
 import "fyne.io/fyne/widget"

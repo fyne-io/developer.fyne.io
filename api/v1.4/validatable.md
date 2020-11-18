@@ -1,10 +1,10 @@
 ---
 layout: page
 tags: [api]
-title: Fyne API fyne
+title: Fyne API "fyne.Validatable"
 ---
 
-# fyne
+# fyne.Validatable
 ---
 ```go
 import "fyne.io/fyne"
@@ -25,3 +25,7 @@ type Validatable interface {
 ```
 
 Validatable is an interface for specifying if a widget is validatable.
+
+
+<div class="since">Since: <code>
+1.4</code></div>

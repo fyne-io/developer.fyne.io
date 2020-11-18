@@ -1,10 +1,10 @@
 ---
 layout: page
 tags: [api]
-title: Fyne API widget
+title: Fyne API "widget.Card"
 ---
 
-# widget
+# widget.Card
 ---
 ```go
 import "fyne.io/fyne/widget"
@@ -25,12 +25,20 @@ type Card struct {
 
 Card widget groups title, subtitle with content and a header image
 
+
+<div class="since">Since: <code>
+1.4</code></div>
+
 #### func  NewCard
 
 ```go
 func NewCard(title, subtitle string, content fyne.CanvasObject) *Card
 ```
 NewCard creates a new card widget with the specified title, subtitle and content (all optional).
+
+
+<div class="since">Since: <code>
+1.4</code></div>
 
 #### func (*Card) CreateRenderer
 

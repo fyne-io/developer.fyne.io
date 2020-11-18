@@ -1,10 +1,10 @@
 ---
 layout: page
 tags: [api]
-title: Fyne API fyne
+title: Fyne API "fyne.URIWriteCloser"
 ---
 
-# fyne
+# fyne.URIWriteCloser
 ---
 ```go
 import "fyne.io/fyne"

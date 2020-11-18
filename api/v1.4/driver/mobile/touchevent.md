@@ -1,10 +1,10 @@
 ---
 layout: page
 tags: [api]
-title: Fyne API mobile
+title: Fyne API "mobile.TouchEvent"
 ---
 
-# mobile
+# mobile.TouchEvent
 ---
 ```go
 import "fyne.io/fyne/driver/mobile"

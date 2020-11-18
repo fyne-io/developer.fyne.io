@@ -1,7 +1,7 @@
 ---
 layout: page
 tags: [api]
-title: Fyne API layout
+title: Fyne API "layout"
 ---
 
 # layout
@@ -101,6 +101,10 @@ NewMaxLayout creates a new MaxLayout instance
 func NewPaddedLayout() fyne.Layout
 ```
 NewPaddedLayout creates a new PaddedLayout instance
+
+
+<div class="since">Since: <code>
+1.4</code></div>
 
 #### func  NewSpacer
 

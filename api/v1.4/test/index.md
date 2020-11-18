@@ -1,7 +1,7 @@
 ---
 layout: page
 tags: [api]
-title: Fyne API test
+title: Fyne API "test"
 ---
 
 # test
