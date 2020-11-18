@@ -16,9 +16,15 @@ import "fyne.io/fyne/canvas"
 
 ```go
 type Raster struct {
-	Generator func(w, h int) image.Image // Render the raster image from code
 
-	Translucency float64 // Set a translucency value > 0.0 to fade the raster
+	// Render the raster image from code
+	Generator func(w, h int) image.Image
+
+	// Set a translucency value > 0.0 to fade the raster
+	Translucency float64
+	// Specify the type of scaling interpolation applied to the raster if it is not full-size
+	// Since: 1.4.1
+	ScaleMode ImageScale
 }
 ```
 

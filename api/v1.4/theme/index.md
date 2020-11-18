@@ -173,7 +173,7 @@ DarkTheme defines the built in dark theme colors and sizes
 ```go
 func DefaultTextBoldFont() fyne.Resource
 ```
-DefaultTextBoldFont retutns the font resource for the built-in bold font style
+DefaultTextBoldFont returns the font resource for the built-in bold font style
 
 #### func  DefaultTextBoldItalicFont
 
@@ -201,7 +201,7 @@ DefaultTextItalicFont returns the font resource for the built-in italic font sty
 ```go
 func DefaultTextMonospaceFont() fyne.Resource
 ```
-DefaultTextMonospaceFont retutns the font resource for the built-in monospace font face
+DefaultTextMonospaceFont returns the font resource for the built-in monospace font face
 
 #### func  DeleteIcon
 
@@ -324,7 +324,7 @@ FileVideoIcon returns a resource containing the file icon representing video fil
 ```go
 func FocusColor() color.Color
 ```
-FocusColor returns the color used to highlight a focussed widget
+FocusColor returns the color used to highlight a focused widget
 
 #### func  FolderIcon
 
@@ -696,7 +696,7 @@ StorageIcon returns a resource containing the standard storage icon for the curr
 ```go
 func TextBoldFont() fyne.Resource
 ```
-TextBoldFont retutns the font resource for the bold font style
+TextBoldFont returns the font resource for the bold font style
 
 #### func  TextBoldItalicFont
 
@@ -731,7 +731,7 @@ TextItalicFont returns the font resource for the italic font style
 ```go
 func TextMonospaceFont() fyne.Resource
 ```
-TextMonospaceFont retutns the font resource for the monospace font face
+TextMonospaceFont returns the font resource for the monospace font face
 
 #### func  TextSize
 

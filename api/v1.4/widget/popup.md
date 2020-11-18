@@ -1,10 +1,10 @@
 ---
 layout: page
 tags: [api]
-title: Fyne API widget
+title: Fyne API "widget.PopUp"
 ---
 
-# widget
+# widget.PopUp
 ---
 ```go
 import "fyne.io/fyne/widget"
@@ -67,7 +67,7 @@ NewPopUpMenu creates a PopUp widget populated with menu items from the passed me
 
 
 <div class="deprecated">
-Deprecated: Use ShowPopUpMenuAtPosition instead.</div>
+Deprecated: Use ShowPopUpMenuAtPosition() with a zero position instead.</div>
 
 #### func  NewPopUpMenuAtPosition
 
@@ -78,7 +78,7 @@ NewPopUpMenuAtPosition creates a PopUp widget populated with menu items from the
 
 
 <div class="deprecated">
-Deprecated: Use ShowPopUpMenuAtPosition instead.</div>
+Deprecated: Use ShowPopUpMenuAtPosition() instead.</div>
 
 #### func (*PopUp) CreateRenderer
 

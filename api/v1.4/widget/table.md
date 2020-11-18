@@ -61,6 +61,17 @@ func (t *Table) Select(id TableCellID)
 ```
 Select will mark the specified cell as selected.
 
+#### func (*Table) SetColumnWidth
+
+```go
+func (t *Table) SetColumnWidth(id, width int)
+```
+SetColumnWidth supports changing the width of the specified column. Columns normally take the width of the template cell returned from the CreateCell callback. The width parameter uses the same units as a fyne.Size type and refers to the internal content width not including any standard padding or divider size.
+
+
+<div class="since">Since: <code>
+1.4.1</code></div>
+
 #### func (*Table) Unselect
 
 ```go
