@@ -5,7 +5,7 @@ title: Widget List
 order: 30
 ---
 
-## Standard Widgets
+## Standard Widgets (in `widget` package)
 
 ---
 
@@ -14,12 +14,6 @@ order: 30
 Accordion displays a list of AccordionItems. Each item is represented by a button that reveals a detailed view when tapped.
 
 {% include widget.html name="accordion" %}
-
-### AppTabs
-
-AppTabs widget allows switching visible content from a list of TabItems. Each item is represented by a button at the top of the widget.
-
-{% include widget.html name="apptabs" %}
 
 ### Button
 
@@ -75,12 +69,6 @@ Label widget is a label component with appropriate padding and layout.
 
 {% include widget.html name="label" %}
 
-### List
-
-List provides a high performance vertical scroll of many sub-items.
-
-{% include widget.html name="list" %}
-
 ### Progress bar
 
 ProgressBar widget creates a horizontal panel that indicates progress.
@@ -96,12 +84,6 @@ ProgressBarInfinite widget creates a horizontal panel that indicates waiting ind
 Radio widget has a list of text labels and radio check icons next to each.
 
 {% include widget.html name="radio" %}
-
-### ScrollContainer
-
-ScrollContainer defines a container that is smaller than the Content.
-
-{% include widget.html name="scrollcontainer" %}
 
 ### Select
 
@@ -128,18 +110,6 @@ Slider if a widget that can slide between two fixed values.
 
 {% include widget.html name="slider" %}
 
-### SplitContainer
-
-SplitContainer defines a container whose size is split between two children.
-
-{% include widget.html name="splitcontainer" %}
-
-### Table
-
-Table provides a high performance scrolled two dimensional display of many sub-items.
-
-{% include widget.html name="table" %}
-
 ### TextGrid
 
 TextGrid is a monospaced grid of characters. This is designed to be used by a text editor, code preview or terminal emulator.
@@ -152,9 +122,50 @@ Toolbar widget creates a horizontal list of tool buttons.
 
 {% include widget.html name="toolbar" %}
 
+
+## Collection Widgets (in `widget` package)
+
+Collection widgets provide advanced caching functionality to provide high performance rendering of massive data. This does lead to a more complex constructor,
+but is a good balance for the outcome it enables.
+Each of these widgets uses a series of callbacks, the minimum set is defined by their constructor function, which includes the data size, the creation of template items that can be re-used and finally the function that applies data to a widget as it is about to be added to the display.
+
+### List
+
+List provides a high performance vertical scroll of many sub-items.
+
+{% include widget.html name="list" %}
+
+### Table
+
+Table provides a high performance scrolled two dimensional display of many sub-items.
+
+{% include widget.html name="table" %}
+
 ### Tree
 
 Tree provides a high performance vertical scroll of items that can be expanded to reveal child elements..
 
 {% include widget.html name="tree" %}
 
+
+## Container Widgets (in `container` package)
+
+Container widgets are like regular containers but they provide some additional functionality.
+
+### AppTabs
+
+AppTabs widget allows switching visible content from a list of TabItems. Each item is represented by a button at the top of the widget.
+
+{% include widget.html name="apptabs" %}
+
+### ScrollContainer
+
+ScrollContainer defines a container that is smaller than the Content.
+
+{% include widget.html name="scrollcontainer" %}
+
+### SplitContainer
+
+SplitContainer defines a container whose size is split between two children.
+
+{% include widget.html name="splitcontainer" %}
