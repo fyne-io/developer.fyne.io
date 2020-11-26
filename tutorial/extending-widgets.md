@@ -68,3 +68,91 @@ func main() {
 	w.ShowAndRun()
 }
 ```
+
+We can also extend a widget and its renderer, allowing you to override its 
+default appearance. For instance if we want to override the default background 
+colour of the Entry widget, we first have to extend the Entry base widget 
+as follows.
+
+```go
+// create an extended Entry widget
+type skinnedEntry struct {
+	widget.Entry
+}
+
+func newSkinnedEntry() *skinnedEntry {
+	skinnedentry := &skinnedEntry{}
+	skinnedentry.ExtendBaseWidget(skinnedentry)
+	return skinnedentry
+}
+```
+
+We then need to extend the renderer as well. For our purposes we cache a
+copy of the Entry widget renderer and pass through to that for the functions 
+where we don't need to amend the behaviour.
+
+```go
+// Create the skinned entry renderer by caching the entry renderer and including
+// a reference to ourselves
+func (skinnedentry *skinnedEntry) CreateRenderer() fyne.WidgetRenderer {
+	skinnedentry.ExtendBaseWidget(skinnedentry)
+	entryrenderer := skinnedentry.Entry.CreateRenderer()
+	return &skinnedEntryRenderer{
+		skinnedentry: skinnedentry,
+		entryrenderer: entryrenderer,
+	}
+}
+
+type skinnedEntryRenderer struct {
+	skinnedentry *skinnedEntry
+	entryrenderer fyne.WidgetRenderer
+}
+
+// Pass through these functions to the base Entry widget renderer
+func (renderer *skinnedEntryRenderer) Refresh() {
+	renderer.entryrenderer.Refresh()
+}
+
+func (renderer *skinnedEntryRenderer) MinSize() fyne.Size {
+	return renderer.entryrenderer.MinSize()
+}
+
+func (renderer *skinnedEntryRenderer) Layout(size fyne.Size) {
+	renderer.entryrenderer.Layout(size)
+}
+
+func (renderer *skinnedEntryRenderer) Objects() []fyne.CanvasObject {
+	return renderer.entryrenderer.Objects()
+}
+
+func (renderer *skinnedEntryRenderer) Destroy() {
+  renderer.entryrenderer.Destroy()
+}
+
+// Override the background colour function to provide one explicitly, rather 
+// than from the theme
+func (renderer *skinnedEntryRenderer) BackgroundColor() color.Color {
+	return color.NRGBA{R: 0x7c, G: 0x7c, B: 0x7c, A: 0xff}
+}
+```
+
+We can test out our new extended widget using a simple program such as the below.
+
+```go
+import (
+	"fyne.io/fyne"
+	"fyne.io/fyne/app"
+	"fyne.io/fyne/widget"
+	"image/color"
+)
+
+func main() {
+	a := app.New()
+	w := a.NewWindow("Skinned Entry")
+	w.SetContent(newSkinnedEntry())
+	w.ShowAndRun()
+}
+``` 
+
+The result is that a window will appear with a gray-coloured entry box instead 
+of whatever colour is the usual for the currently chosen theme. 
