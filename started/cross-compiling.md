@@ -2,7 +2,7 @@
 layout: page
 title: Cross Compiling
 
-order: 70
+order: 80
 ---
 
 ## Compiling for different platforms
