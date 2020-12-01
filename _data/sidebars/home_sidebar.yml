@@ -50,9 +50,17 @@ entries:
       output: web, pdf
 
     - title: Packaging
-      url: /started/distribution
+      url: /started/packaging
+      output: web, pdf
+ 
+    - title: Mobile Packaging
+      url: /started/packaging-mobile
       output: web, pdf
 
+    - title: Distribution
+      url: /started/distribution
+      output: web, pdf
+ 
     - title: Compile Options
       url: /started/compiling
       output: web, pdf

@@ -1,89 +1,98 @@
 ---
 layout: page
-title: Packaging
+title: Distribution	
 
-order: 50
+order: 60
 ---
 
-## Packaging
+## Distributing to App Stores
 
 ---
 
-Packaging a graphical app for distribution can be complex - Windows executables
-need embedded icons, macOS apps are bundles and with Linux there are various
-metadata files that should get installed. What a hassle!
+Packaging a graphical app as described in the [Packaging](/started/packaging)
+page provides a file or bundle that could be directly shared or distributed.
+However signing and uploading to app stores and market places is an additional
+step that requires platform-specific configuration, which we will cover in this
+page.
 
-In addition to that mobile apps need extra information to install correctly
-(we look at mobile at the end of this page).
+In each of these steps we will use a new tool that is part of the fyne command
+line utilities. The `fyne release` step handles the signing and preparation
+for each store, but the parameters vary per-platform, which we see below.
 
-### Desktop
+### macOS App Store (since fyne 1.4.2)
 
-Thankfully the "fyne" app has a "package" command that can handle this automatically. Just specifying the target OS and any required metadata (such as icon) will generate the appropriate package. The icon conversion will be done automatically for .icns or .ico so just provide a .png file :). All you need is to have the application already built for the target platform...
+Prerequisites:
 
-```
-go get fyne.io/fyne/cmd/fyne
-fyne package -os darwin -icon myapp.png
-```
+* Apple mac running macOS and Xcode
+* Apple Developer account
+* Mac App Store application certificate
+* Mac App Store installer certificate
+* Apple Transporter app from App Store
 
-Will create myapp.app, a complete bundle structure for distribution to macOS users. You could then build the linux and Windows versions too...
+1. 
+Set up your app / version ready for a build to be uploaded at
+[AppStore Connect](https://appstoreconnect.apple.com).
 
-```
-fyne package -os linux -icon myapp.png
-fyne package -os windows -icon myapp.png
-```
-
-These commands will create:
-
-  * myapp.tar.gz that contains a folder structure starting at usr/local/ that a Linux user could expand to the root of their system.
-  * myapp.exe (after the second build, which is required for a windows package) will have the icon and app metadata embedded.
-
-If you just want to install the desktop app on your computer then you can make
-use of the helpful install subcommand. For example to install your current
-application system wide you could simply execute the following:
+2.
+Bundle the completed app for release:
 
 ```
-fyne install -icon myapp.png
+$ fyne release -appID com.example.myapp -appVersion 1.0 -appBuild 1 -category games
 ```
 
-All of these commands also support a default icon file of `Icon.png` so that you
-can avoid typing the parameter for each execution.
+3.
+Drag the `.pkg` onto Transporter and tap "Deliver".
 
-### Mobile
+4.
+Go to back to the AppStore Connect website, choose your build for the release and submit for review.
 
-Packaging on mobile is very similar with Fyne but it will require additional
-tools installed. For Android builds you must have the Android SDK and NDK
-installed with appropriate environment set up so that the tools (such as `adb`)
-can be found on the command line. To build iOS apps you will need Xcode installed
-on your macOS computer as well as the command line tools optional package.
+### Google Play Store (Android)
 
-Once you have a working development environment the packaging is simple.
-To build an application for Android and iOS the following commands will do
-everything for you. Be sure to have a unique application identifier as it is
-unwise to change these after your first release.
+Prerequisites:
 
-```
-fyne package -os android -appID com.example.myapp -icon mobileIcon.png
-fyne package -os ios - appID com.example.myapp -icon mobileIcon.png
-```
+* Google Plan Console account
+* distribution keystore (creation instructions in
+[android docs](https://developer.android.com/studio/publish/app-signing))
 
-After these commands have completed (which may take some time on first
-compilation) you will see two new files in your directory, `myapp.apk` and
-`myapp.app`. You will see that the latter has the same name as a darwin
-application bundle - don't get them confused as they will not work on the
-other platform.
+1.
+Set up your app / version ready for build to be uploaded at
+[Google Play Console](https://play.google.com/apps/publish). Turn off "Play app signing" option as we manage it ourselves.
 
-To install the android app on your phone or a simulator simply call:
+2.
+Bundle the completed app for release:
 
 ```
-adb install myapp.apk
+$ fyne release -os android -appID com.example.myapp -appVersion 1.0 -appBuild 1
 ```
 
-For iOS to install on device open Xcode and choose the "Devices and
-Simulators" menu item within the "Window" menu. Then find your phone and drag
-the `myapp.app` icon onto your app list. To install on a simulator you can 
-use the command line tools as follows:
+3.
+Drag the `.apk` file into the build drop zone on the app version page in Play Console
+
+4.
+Start rollout of new version.
+
+### iOS App Store (since fyne 1.4.1)
+
+Prerequisites:
+
+* Apple mac running macOS and Xcode
+* Apple Developer account
+* iOS App Store distribution certificate
+* Apple Transporter app from App Store
+
+1.
+Set up your app / version ready for a build to be uploaded at
+[AppStore Connect](https://appstoreconnect.apple.com).
+
+2.
+Bundle the completed app for release:
 
 ```
-xcrun simctl install booted myapp.app
+$ fyne release -os ios -appID com.example.myapp -appVersion 1.0 -appBuild 1
 ```
 
+3.
+Drag the `.ipa` onto Transporter and tap "Deliver".
+
+4.
+Go to back to the AppStore Connect website, choose your build for the release and submit for review.
