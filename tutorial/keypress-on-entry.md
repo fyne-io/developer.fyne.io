@@ -58,7 +58,7 @@ func (e *enterEntry) TypedKey(key *fyne.KeyEvent) {
 }
 ```
 
-With this, the entry now performs a custom action that will be executed when the `KeyDown()` event occurs in our GUI program.
+With this, the entry now performs a custom action that will be executed when the `TypedKey()` event occurs in our GUI program.
 
 In the end, the resulting code could look something like this:
 
@@ -88,12 +88,12 @@ func newEnterEntry() *enterEntry {
     return entry
 }
 
-func (e *enterEntry) KeyDown(key *fyne.KeyEvent) {
+func (e *enterEntry) TypedKey(key *fyne.KeyEvent) {
     switch key.Name {
     case fyne.KeyReturn:
         e.onEnter()
     default:
-        e.Entry.KeyDown(key)
+        e.Entry.TypedKey(key)
     }
 
 }
