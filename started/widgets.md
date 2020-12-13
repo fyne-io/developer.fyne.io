@@ -45,6 +45,13 @@ PasswordEntry widget hides text input and adds a button to display the text.
 
 {% include widget.html name="password" %}
 
+### FileIcon
+
+FileIcon provides helpful standard icons for various types of file.
+It displays the type of file as an indicator icon and shows the extension of the file type.
+
+{% include widget.html name="fileicon" %}
+
 ### Form
 
 Form widget is two column grid where each row has a label and a widget (usually an input). The last row of the grid will contain the appropriate form control buttons if any should be shown.
