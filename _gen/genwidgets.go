@@ -12,6 +12,7 @@ import (
 	"fyne.io/fyne/canvas"
 	"fyne.io/fyne/driver/desktop"
 	"fyne.io/fyne/layout"
+	"fyne.io/fyne/storage"
 	"fyne.io/fyne/test"
 	"fyne.io/fyne/theme"
 	"fyne.io/fyne/widget"
@@ -45,6 +46,7 @@ func makeDrawList() []drawItem {
 		{"entry", &widget.Entry{PlaceHolder: "Entry"}},
 		{"entry-invalid", makeInvalidEntry()},
 		{"entry-valid", &widget.Entry{Validator: func(_ string) error { return nil }, Text: "Valid"}},
+		{"fileicon", widget.NewFileIcon(storage.NewURI("../images/logo.png"))},
 		{"form", &widget.Form{Items: []*widget.FormItem{
 			{Text: "Username", Widget: widget.NewEntry()},
 			{Text: "Password", Widget: widget.NewPasswordEntry()}},
