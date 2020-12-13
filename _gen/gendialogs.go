@@ -5,7 +5,6 @@ import (
 	"image/png"
 	"os"
 	"path/filepath"
-	"time"
 
 	"fyne.io/fyne"
 	"fyne.io/fyne/canvas"
@@ -31,18 +30,11 @@ func makeDrawList() []drawItem {
 			dialog.ShowColorPicker("Choose a color", "Please pick a color...", func(color.Color) {}, w)
 		}},
 		{"confirm", func(w fyne.Window) { dialog.ShowConfirm("Please Confirm", "Are you sure..?", func(bool) {}, w) }},
-		{"progress", func(w fyne.Window) {
-			d := dialog.NewProgress("Please Wait", "Doing something...", w)
-			d.SetValue(0.45)
-			d.Show()
-		}},
-		{"progressinf", func(w fyne.Window) {
-			d := dialog.NewProgressInfinite("Please Wait", "Doing something...", w)
-			time.Sleep(time.Millisecond * 800)
-			d.Show()
-		}},
-		{"entry", func(w fyne.Window) { dialog.ShowEntryDialog("Entry Input", "Enter a string...", func(string) {}, w) }},
 		{"fileopen", func(w fyne.Window) { dialog.ShowFileOpen(func(fyne.URIReadCloser, error) {}, w) }},
+		{"form", func(w fyne.Window) {
+			dialog.ShowFormDialog("Form Input", "Enter", "Cancel",
+				[]*widget.FormItem{widget.NewFormItem("Enter a string...", widget.NewEntry())}, func(bool) {}, w)
+		}},
 		{"custom", func(w fyne.Window) {
 			text := widget.NewTextGrid()
 			text.SetText("Custom content")
