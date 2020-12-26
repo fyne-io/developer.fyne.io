@@ -9,8 +9,8 @@ func main() {
 	myApp := app.New()
 	myWindow := myApp.NewWindow("Entry Widget")
 
-	content := widget.NewVBox(widget.NewLabel("The top row of VBox"),
-		widget.NewHBox(
+	content := container.NewVBox(widget.NewLabel("The top row of VBox"),
+		container.NewHBox(
 			widget.NewLabel("Label 1"),
 			widget.NewLabel("Label 2")))
 
