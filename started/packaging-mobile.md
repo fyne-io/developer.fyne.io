@@ -22,7 +22,7 @@ unwise to change these after your first release.
 
 ```
 fyne package -os android -appID com.example.myapp -icon mobileIcon.png
-fyne package -os ios - appID com.example.myapp -icon mobileIcon.png
+fyne package -os ios -appID com.example.myapp -icon mobileIcon.png
 ```
 
 After these commands have completed (which may take some time on first
