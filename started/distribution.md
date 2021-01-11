@@ -50,7 +50,7 @@ Go to back to the AppStore Connect website, choose your build for the release an
 
 Prerequisites:
 
-* Google Plan Console account
+* Google Play Console account
 * distribution keystore (creation instructions in
 [android docs](https://developer.android.com/studio/publish/app-signing))
 
