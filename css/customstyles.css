@@ -32,8 +32,9 @@ div.deprecated {
     white-space: pre !important;
 }
 
-div.intro-row div {
-    padding-bottom: 30px;
+div.intro-row {
+    display: flex;
+    flex-flow: row nowrap;
 }
 
 ul.tabcontrol.tabs {
