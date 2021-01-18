@@ -7,7 +7,7 @@ title: Fyne API "mobile.Keyboardable"
 # mobile.Keyboardable
 ---
 ```go
-import "fyne.io/fyne/driver/mobile"
+import "fyne.io/fyne/v2/driver/mobile"
 ```
 
 ## Usage

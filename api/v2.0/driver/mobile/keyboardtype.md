@@ -7,7 +7,7 @@ title: Fyne API "mobile.KeyboardType"
 # mobile.KeyboardType
 ---
 ```go
-import "fyne.io/fyne/driver/mobile"
+import "fyne.io/fyne/v2/driver/mobile"
 ```
 
 ## Usage

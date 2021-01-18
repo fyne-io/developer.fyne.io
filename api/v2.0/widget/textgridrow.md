@@ -7,7 +7,7 @@ title: Fyne API "widget.TextGridRow"
 # widget.TextGridRow
 ---
 ```go
-import "fyne.io/fyne/widget"
+import "fyne.io/fyne/v2/widget"
 ```
 
 ## Usage

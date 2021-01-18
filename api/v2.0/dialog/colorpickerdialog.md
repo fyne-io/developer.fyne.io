@@ -7,7 +7,7 @@ title: Fyne API "dialog.ColorPickerDialog"
 # dialog.ColorPickerDialog
 ---
 ```go
-import "fyne.io/fyne/dialog"
+import "fyne.io/fyne/v2/dialog"
 ```
 
 ## Usage

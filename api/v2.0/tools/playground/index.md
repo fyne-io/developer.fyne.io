@@ -7,7 +7,7 @@ title: Fyne API "playground"
 # playground
 ---
 ```go
-import "fyne.io/fyne/tools/playground"
+import "fyne.io/fyne/v2/tools/playground"
 ```
 
 Package playground provides tooling for running fyne applications inside the Go playground.

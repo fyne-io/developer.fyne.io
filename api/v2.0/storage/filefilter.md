@@ -7,7 +7,7 @@ title: Fyne API "storage.FileFilter"
 # storage.FileFilter
 ---
 ```go
-import "fyne.io/fyne/storage"
+import "fyne.io/fyne/v2/storage"
 ```
 
 ## Usage

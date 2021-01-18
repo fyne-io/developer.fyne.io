@@ -7,7 +7,7 @@ title: Fyne API "container.TabItem"
 # container.TabItem
 ---
 ```go
-import "fyne.io/fyne/container"
+import "fyne.io/fyne/v2/container"
 ```
 
 ## Usage

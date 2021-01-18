@@ -7,7 +7,7 @@ title: Fyne API "dialog.ProgressInfiniteDialog"
 # dialog.ProgressInfiniteDialog
 ---
 ```go
-import "fyne.io/fyne/dialog"
+import "fyne.io/fyne/v2/dialog"
 ```
 
 ## Usage

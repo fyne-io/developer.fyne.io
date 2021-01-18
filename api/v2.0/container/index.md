@@ -7,7 +7,7 @@ title: Fyne API "container"
 # container
 ---
 ```go
-import "fyne.io/fyne/container"
+import "fyne.io/fyne/v2/container"
 ```
 
 Package container provides container widgets that are used to lay out and organise applications

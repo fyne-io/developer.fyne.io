@@ -7,7 +7,7 @@ title: Fyne API "widget.ToolbarSeparator"
 # widget.ToolbarSeparator
 ---
 ```go
-import "fyne.io/fyne/widget"
+import "fyne.io/fyne/v2/widget"
 ```
 
 ## Usage

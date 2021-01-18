@@ -7,7 +7,7 @@ title: Fyne API "layout.SpacerObject"
 # layout.SpacerObject
 ---
 ```go
-import "fyne.io/fyne/layout"
+import "fyne.io/fyne/v2/layout"
 ```
 
 ## Usage

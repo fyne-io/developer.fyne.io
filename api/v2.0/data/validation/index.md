@@ -7,7 +7,7 @@ title: Fyne API "validation"
 # validation
 ---
 ```go
-import "fyne.io/fyne/data/validation"
+import "fyne.io/fyne/v2/data/validation"
 ```
 
 Package validation provides validation for data inside widgets

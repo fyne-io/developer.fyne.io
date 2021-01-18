@@ -61,8 +61,9 @@ These items must be addressed when upgrading for your app to compile and run:
   - `widget.ScrollContainer` (now `container.Scroll`)
   - `widget.SplitContainer` (now `container.Spilt`)
   - `widget.Group` (replaced by `widget.Card`)
-  - `widget.Box` (now `container.NewH/VBox`)
+  - `widget.Box` (now `container.NewH/VBox` and `Children` field becomes `Objects`)
 
+* A commonly used `widget.Refresh` call was finally removed, use `Widget.Refresh()` instead
 
 ### Other changes
 

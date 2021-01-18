@@ -7,7 +7,7 @@ title: Fyne API "storage"
 # storage
 ---
 ```go
-import "fyne.io/fyne/storage"
+import "fyne.io/fyne/v2/storage"
 ```
 
 Package storage provides storage access and management functionality.

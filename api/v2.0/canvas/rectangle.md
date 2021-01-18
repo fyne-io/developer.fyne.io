@@ -7,7 +7,7 @@ title: Fyne API "canvas.Rectangle"
 # canvas.Rectangle
 ---
 ```go
-import "fyne.io/fyne/canvas"
+import "fyne.io/fyne/v2/canvas"
 ```
 
 ## Usage

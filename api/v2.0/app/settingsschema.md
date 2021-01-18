@@ -7,7 +7,7 @@ title: Fyne API "app.SettingsSchema"
 # app.SettingsSchema
 ---
 ```go
-import "fyne.io/fyne/app"
+import "fyne.io/fyne/v2/app"
 ```
 
 ## Usage

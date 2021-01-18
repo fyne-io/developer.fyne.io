@@ -7,7 +7,7 @@ title: Fyne API "layout"
 # layout
 ---
 ```go
-import "fyne.io/fyne/layout"
+import "fyne.io/fyne/v2/layout"
 ```
 
 Package layout defines the various layouts available to Fyne apps

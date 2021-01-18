@@ -7,7 +7,7 @@ title: Fyne API "dialog.ConfirmDialog"
 # dialog.ConfirmDialog
 ---
 ```go
-import "fyne.io/fyne/dialog"
+import "fyne.io/fyne/v2/dialog"
 ```
 
 ## Usage

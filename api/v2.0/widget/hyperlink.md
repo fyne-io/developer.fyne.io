@@ -7,7 +7,7 @@ title: Fyne API "widget.Hyperlink"
 # widget.Hyperlink
 ---
 ```go
-import "fyne.io/fyne/widget"
+import "fyne.io/fyne/v2/widget"
 ```
 
 ## Usage

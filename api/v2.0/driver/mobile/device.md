@@ -7,7 +7,7 @@ title: Fyne API "mobile.Device"
 # mobile.Device
 ---
 ```go
-import "fyne.io/fyne/driver/mobile"
+import "fyne.io/fyne/v2/driver/mobile"
 ```
 
 ## Usage

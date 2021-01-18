@@ -7,7 +7,7 @@ title: Fyne API "dialog.EntryDialog"
 # dialog.EntryDialog
 ---
 ```go
-import "fyne.io/fyne/dialog"
+import "fyne.io/fyne/v2/dialog"
 ```
 
 ## Usage

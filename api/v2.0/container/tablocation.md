@@ -7,7 +7,7 @@ title: Fyne API "container.TabLocation"
 # container.TabLocation
 ---
 ```go
-import "fyne.io/fyne/container"
+import "fyne.io/fyne/v2/container"
 ```
 
 ## Usage

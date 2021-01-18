@@ -7,7 +7,7 @@ title: Fyne API "software"
 # software
 ---
 ```go
-import "fyne.io/fyne/driver/software"
+import "fyne.io/fyne/v2/driver/software"
 ```
 
 

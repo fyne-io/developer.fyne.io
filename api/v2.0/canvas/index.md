@@ -7,7 +7,7 @@ title: Fyne API "canvas"
 # canvas
 ---
 ```go
-import "fyne.io/fyne/canvas"
+import "fyne.io/fyne/v2/canvas"
 ```
 
 Package canvas contains all of the primitive CanvasObjects that make up a Fyne GUI

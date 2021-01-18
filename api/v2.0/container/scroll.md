@@ -7,7 +7,7 @@ title: Fyne API "container.Scroll"
 # container.Scroll
 ---
 ```go
-import "fyne.io/fyne/container"
+import "fyne.io/fyne/v2/container"
 ```
 
 ## Usage

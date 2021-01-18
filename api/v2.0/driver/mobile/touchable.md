@@ -7,7 +7,7 @@ title: Fyne API "mobile.Touchable"
 # mobile.Touchable
 ---
 ```go
-import "fyne.io/fyne/driver/mobile"
+import "fyne.io/fyne/v2/driver/mobile"
 ```
 
 ## Usage

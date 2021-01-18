@@ -7,7 +7,7 @@ title: Fyne API "widget"
 # widget
 ---
 ```go
-import "fyne.io/fyne/widget"
+import "fyne.io/fyne/v2/widget"
 ```
 
 Package widget defines the UI widgets within the Fyne toolkit

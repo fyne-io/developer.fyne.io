@@ -7,7 +7,7 @@ title: Fyne API "repository.Repository"
 # repository.Repository
 ---
 ```go
-import "fyne.io/fyne/storage/repository"
+import "fyne.io/fyne/v2/storage/repository"
 ```
 
 ## Usage

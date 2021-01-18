@@ -7,7 +7,7 @@ title: Fyne API "binding.Bool"
 # binding.Bool
 ---
 ```go
-import "fyne.io/fyne/data/binding"
+import "fyne.io/fyne/v2/data/binding"
 ```
 
 ## Usage

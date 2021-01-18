@@ -7,7 +7,7 @@ title: Fyne API "widget.ToolbarAction"
 # widget.ToolbarAction
 ---
 ```go
-import "fyne.io/fyne/widget"
+import "fyne.io/fyne/v2/widget"
 ```
 
 ## Usage

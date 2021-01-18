@@ -7,7 +7,7 @@ title: Fyne API "widget.ListItemID"
 # widget.ListItemID
 ---
 ```go
-import "fyne.io/fyne/widget"
+import "fyne.io/fyne/v2/widget"
 ```
 
 ## Usage

@@ -7,7 +7,7 @@ title: Fyne API "test.WindowlessCanvas"
 # test.WindowlessCanvas
 ---
 ```go
-import "fyne.io/fyne/test"
+import "fyne.io/fyne/v2/test"
 ```
 
 ## Usage

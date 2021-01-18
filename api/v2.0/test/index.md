@@ -7,7 +7,7 @@ title: Fyne API "test"
 # test
 ---
 ```go
-import "fyne.io/fyne/test"
+import "fyne.io/fyne/v2/test"
 ```
 
 Package test provides utility drivers for running UI tests without rendering

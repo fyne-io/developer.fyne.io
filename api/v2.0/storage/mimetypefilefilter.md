@@ -7,7 +7,7 @@ title: Fyne API "storage.MimeTypeFileFilter"
 # storage.MimeTypeFileFilter
 ---
 ```go
-import "fyne.io/fyne/storage"
+import "fyne.io/fyne/v2/storage"
 ```
 
 ## Usage

@@ -7,7 +7,7 @@ title: Fyne API "theme.PrimaryThemedResource"
 # theme.PrimaryThemedResource
 ---
 ```go
-import "fyne.io/fyne/theme"
+import "fyne.io/fyne/v2/theme"
 ```
 
 ## Usage

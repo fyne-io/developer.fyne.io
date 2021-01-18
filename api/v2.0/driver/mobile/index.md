@@ -7,7 +7,7 @@ title: Fyne API "mobile"
 # mobile
 ---
 ```go
-import "fyne.io/fyne/driver/mobile"
+import "fyne.io/fyne/v2/driver/mobile"
 ```
 
 Package mobile provides mobile specific driver functionality.

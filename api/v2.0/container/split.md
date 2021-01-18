@@ -7,7 +7,7 @@ title: Fyne API "container.Split"
 # container.Split
 ---
 ```go
-import "fyne.io/fyne/container"
+import "fyne.io/fyne/v2/container"
 ```
 
 ## Usage

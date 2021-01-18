@@ -7,7 +7,7 @@ title: Fyne API "canvas.Text"
 # canvas.Text
 ---
 ```go
-import "fyne.io/fyne/canvas"
+import "fyne.io/fyne/v2/canvas"
 ```
 
 ## Usage

@@ -7,7 +7,7 @@ title: Fyne API "desktop.Cursor"
 # desktop.Cursor
 ---
 ```go
-import "fyne.io/fyne/driver/desktop"
+import "fyne.io/fyne/v2/driver/desktop"
 ```
 
 ## Usage

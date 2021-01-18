@@ -7,7 +7,7 @@ title: Fyne API "widget.Orientation"
 # widget.Orientation
 ---
 ```go
-import "fyne.io/fyne/widget"
+import "fyne.io/fyne/v2/widget"
 ```
 
 ## Usage

@@ -7,7 +7,7 @@ title: Fyne API "desktop"
 # desktop
 ---
 ```go
-import "fyne.io/fyne/driver/desktop"
+import "fyne.io/fyne/v2/driver/desktop"
 ```
 
 Package desktop provides desktop specific driver functionality.

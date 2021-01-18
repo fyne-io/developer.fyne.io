@@ -7,7 +7,7 @@ title: Fyne API "widget.Label"
 # widget.Label
 ---
 ```go
-import "fyne.io/fyne/widget"
+import "fyne.io/fyne/v2/widget"
 ```
 
 ## Usage

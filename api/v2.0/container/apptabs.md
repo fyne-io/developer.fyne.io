@@ -7,7 +7,7 @@ title: Fyne API "container.AppTabs"
 # container.AppTabs
 ---
 ```go
-import "fyne.io/fyne/container"
+import "fyne.io/fyne/v2/container"
 ```
 
 ## Usage

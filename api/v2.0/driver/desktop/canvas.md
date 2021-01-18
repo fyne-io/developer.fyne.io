@@ -7,7 +7,7 @@ title: Fyne API "desktop.Canvas"
 # desktop.Canvas
 ---
 ```go
-import "fyne.io/fyne/driver/desktop"
+import "fyne.io/fyne/v2/driver/desktop"
 ```
 
 ## Usage
