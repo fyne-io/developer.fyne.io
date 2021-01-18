@@ -1,0 +1,45 @@
+---
+layout: page
+tags: [api]
+title: Fyne API "binding.StringList"
+---
+
+# binding.StringList
+---
+```go
+import "fyne.io/fyne/data/binding"
+```
+
+## Usage
+
+#### type StringList
+
+```go
+type StringList interface {
+	DataList
+
+	Append(string) error
+	Get() ([]string, error)
+	GetValue(int) (string, error)
+	Prepend(string) error
+	Set([]string) error
+	SetValue(int, string) error
+}
+```
+
+StringList supports binding a list of string values.
+
+
+<div class="since">Since: <code>
+2.0</code></div>
+
+#### func  NewStringList
+
+```go
+func NewStringList() StringList
+```
+NewStringList returns a bindable list of string values.
+
+
+<div class="since">Since: <code>
+2.0</code></div>

@@ -1,0 +1,29 @@
+---
+layout: page
+tags: [api]
+title: Fyne API "binding.DataList"
+---
+
+# binding.DataList
+---
+```go
+import "fyne.io/fyne/data/binding"
+```
+
+## Usage
+
+#### type DataList
+
+```go
+type DataList interface {
+	DataItem
+	GetItem(int) (DataItem, error)
+	Length() int
+}
+```
+
+DataList is the base interface for all bindable data lists.
+
+
+<div class="since">Since: <code>
+2.0</code></div>

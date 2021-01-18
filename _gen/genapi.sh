@@ -1,7 +1,7 @@
 #!/bin/sh
 
 ROOT="`go env GOPATH`/src/fyne.io/fyne"
-VERSION="v1.4"
+VERSION="v2.0"
 
 cd "$(dirname "$0")"
 cd ..
