@@ -1,6 +1,6 @@
 #!/bin/sh
 
-ROOT="`go env GOPATH`/src/fyne.io/fyne"
+ROOT="`go env GOPATH`/src/fyne.io/fyne/v2"
 VERSION="v2.0"
 
 cd "$(dirname "$0")"
@@ -13,7 +13,7 @@ function redirect() {
   cat <<EOT >  "$1"
 ---
 permalink: /api/$2
-redirect_to: /api/v1.4/$2
+redirect_to: /api/$VERSION/$2
 ---
 EOT
 }

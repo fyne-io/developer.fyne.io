@@ -1,4 +1,4 @@
 ---
 permalink: /api/tools/playground/
-redirect_to: /api/v1.4/tools/playground/
+redirect_to: /api/v2.0/tools/playground/
 ---

@@ -1,4 +1,4 @@
 ---
 permalink: /api/driver/
-redirect_to: /api/v1.4/driver/
+redirect_to: /api/v2.0/driver/
 ---

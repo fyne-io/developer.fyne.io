@@ -1,4 +1,4 @@
 ---
 permalink: /api/layout/
-redirect_to: /api/v1.4/layout/
+redirect_to: /api/v2.0/layout/
 ---

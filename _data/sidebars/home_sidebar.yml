@@ -138,56 +138,56 @@ entries:
     output: web, pdf
 
     folderitems:
-    - title: fyne v1.4
-      url: /api/v1.4/
+    - title: fyne v2.0
+      url: /api/v2.0/
       output: web, pdf
 
     - title: upgrading
-      url: /api/v1.4/upgrading
+      url: /api/v2.0/upgrading
       output: web, pdf
 
     - title: app
-      url: /api/v1.4/app/
+      url: /api/v2.0/app/
       output: web, pdf
 
     - title: canvas
-      url: /api/v1.4/canvas/
+      url: /api/v2.0/canvas/
       output: web, pdf
 
     - title: container
-      url: /api/v1.4/container/
+      url: /api/v2.0/container/
       output: web, pdf
 
 
     - title: dialog
-      url: /api/v1.4/dialog/
+      url: /api/v2.0/dialog/
       output: web, pdf
 
     - title: driver/desktop
-      url: /api/v1.4/driver/desktop/
+      url: /api/v2.0/driver/desktop/
       output: web, pdf
     - title: driver/mobile
-      url: /api/v1.4/driver/mobile/
+      url: /api/v2.0/driver/mobile/
       output: web, pdf
 
     - title: layout
-      url: /api/v1.4/layout/
+      url: /api/v2.0/layout/
       output: web, pdf
 
     - title: storage
-      url: /api/v1.4/storage/
+      url: /api/v2.0/storage/
       output: web, pdf
 
     - title: test
-      url: /api/v1.4/test/
+      url: /api/v2.0/test/
       output: web, pdf
 
     - title: theme
-      url: /api/v1.4/theme/
+      url: /api/v2.0/theme/
       output: web, pdf
 
     - title: widget
-      url: /api/v1.4/widget/
+      url: /api/v2.0/widget/
       output: web, pdf
 
 

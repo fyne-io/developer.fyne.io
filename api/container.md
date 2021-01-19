@@ -1,4 +1,4 @@
 ---
 permalink: /api/container/
-redirect_to: /api/v1.4/container/
+redirect_to: /api/v2.0/container/
 ---
