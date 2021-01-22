@@ -150,7 +150,7 @@ Note that these steps are just required for development - your Fyne applications
 
 After installing any prerequisites the following command will do everything to get Fyne installed:
 
-    $ go get fyne.io/fyne
+    $ go get fyne.io/fyne/v2
 
 Once that command completes you will have the full Fyne development package installed
 in your GOPATH.
@@ -160,7 +160,7 @@ in your GOPATH.
 If you want to see the Fyne toolkit in action before you start to code your own application
 then you can see our demo app running on your computer by executing:
 
-    $ go get fyne.io/fyne/cmd/fyne_demo
+    $ go get fyne.io/fyne/v2/cmd/fyne_demo
     $ fyne_demo
 
 And that's all there is to it! Now you can write your own Fyne application in your IDE of choice. If you want to see some Fyne code in action then you can read [your first application](/started/firstapp.html). Alternatively you could check out our tour of the Fyne toolkit using the button below.
