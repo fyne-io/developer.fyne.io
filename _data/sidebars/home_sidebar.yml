@@ -158,6 +158,13 @@ entries:
       url: /api/v2.0/container/
       output: web, pdf
 
+    - title: data/binding
+      url: /api/v2.0/data/binding/
+      output: web, pdf
+
+    - title: data/validation
+      url: /api/v2.0/data/validation/
+      output: web, pdf
 
     - title: dialog
       url: /api/v2.0/dialog/
