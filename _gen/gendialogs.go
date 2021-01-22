@@ -32,7 +32,7 @@ func makeDrawList() []drawItem {
 		{"confirm", func(w fyne.Window) { dialog.ShowConfirm("Please Confirm", "Are you sure..?", func(bool) {}, w) }},
 		{"fileopen", func(w fyne.Window) { dialog.ShowFileOpen(func(fyne.URIReadCloser, error) {}, w) }},
 		{"form", func(w fyne.Window) {
-			dialog.ShowFormDialog("Form Input", "Enter", "Cancel",
+			dialog.ShowForm("Form Input", "Enter", "Cancel",
 				[]*widget.FormItem{widget.NewFormItem("Enter a string...", widget.NewEntry())}, func(bool) {}, w)
 		}},
 		{"custom", func(w fyne.Window) {
