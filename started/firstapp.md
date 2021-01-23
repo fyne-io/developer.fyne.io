@@ -3,18 +3,6 @@ layout: page
 title: Your First App
 
 order: 20
-
-hello:
-    tab1:
-        name: function
-        title: Using Functions
-        source: function
-        active: 1
-    tab2:
-        name: struct
-        title: Using Structs
-        source: struct
-
 ---
 
 
@@ -25,16 +13,15 @@ Having completed the steps in the [getting started](/started/) document you're r
 
 A simple app starts by creating an app instance with app.New() and then opening a window with app.NewWindow(). Then a widget tree is defined that is set as the main content with SetContent() on a window. The app UI is then shown by calling ShowAndRun() on the window.
 
-{% include tabs.html bodyclass="fullborder" tabs=page.hello id="hello" %}
-
-<div id="hello__function" class="hidden">
+<div id="hello__function">
 <div style="text-align: left" markdown="1">
 ```go
 package main
 
 import (
-	"fyne.io/fyne/app"
-	"fyne.io/fyne/widget"
+	"fyne.io/fyne/v2/app"
+	"fyne.io/fyne/v2/container"
+	"fyne.io/fyne/v2/widget"
 )
 
 func main() {
@@ -42,41 +29,12 @@ func main() {
 	w := a.NewWindow("Hello")
 
 	hello := widget.NewLabel("Hello Fyne!")
-	w.SetContent(widget.NewVBox(
+	w.SetContent(container.NewVBox(
 		hello,
 		widget.NewButton("Hi!", func() {
 			hello.SetText("Welcome :)")
 		}),
 	))
-
-	w.ShowAndRun()
-}
-```
-</div>
-</div>
-
-<div id="hello__struct" class="hidden">
-<div style="text-align: left" markdown="1">
-```go
-package main
-
-import (
-	"fyne.io/fyne"
-	"fyne.io/fyne/app"
-	"fyne.io/fyne/widget"
-)
-
-func main() {
-	a := app.New()
-	w := a.NewWindow("Hello")
-
-	hello := &widget.Label{Text: "Hello Fyne!"}
-	w.SetContent(&widget.Box{Children: []fyne.CanvasObject{
-		hello,
-		&widget.Button{Text: "Hi!", OnTapped: func() {
-			hello.SetText("Welcome :)")
-		}},
-	}})
 
 	w.ShowAndRun()
 }

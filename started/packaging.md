@@ -16,7 +16,7 @@ metadata files that should get installed. What a hassle!
 Thankfully the "fyne" app has a "package" command that can handle this automatically. Just specifying the target OS and any required metadata (such as icon) will generate the appropriate package. The icon conversion will be done automatically for .icns or .ico so just provide a .png file :). All you need is to have the application already built for the target platform...
 
 ```
-go get fyne.io/fyne/cmd/fyne
+go get fyne.io/fyne/v2/cmd/fyne
 fyne package -os darwin -icon myapp.png
 ```
 
