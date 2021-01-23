@@ -3,8 +3,9 @@ package main
 import (
 	"time"
 
-	"fyne.io/fyne/app"
-	"fyne.io/fyne/widget"
+	"fyne.io/fyne/v2/app"
+	"fyne.io/fyne/v2/container"
+	"fyne.io/fyne/v2/widget"
 )
 
 func main() {
@@ -21,6 +22,6 @@ func main() {
 		}
 	}()
 
-	myWindow.SetContent(widget.NewVBox(progress, infinite))
+	myWindow.SetContent(container.NewVBox(progress, infinite))
 	myWindow.ShowAndRun()
 }

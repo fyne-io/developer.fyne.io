@@ -3,11 +3,10 @@ package main
 import (
 	"log"
 
-	"fyne.io/fyne"
-	"fyne.io/fyne/app"
-	"fyne.io/fyne/layout"
-	"fyne.io/fyne/theme"
-	"fyne.io/fyne/widget"
+	"fyne.io/fyne/v2/app"
+	"fyne.io/fyne/v2/container"
+	"fyne.io/fyne/v2/theme"
+	"fyne.io/fyne/v2/widget"
 )
 
 func main() {
@@ -28,8 +27,7 @@ func main() {
 		}),
 	)
 
-	content := fyne.NewContainerWithLayout(layout.NewBorderLayout(toolbar, nil, nil, nil),
-		toolbar, widget.NewLabel("Content"))
+	content := container.NewBorder(toolbar, nil, nil, nil, widget.NewLabel("Content"))
 	myWindow.SetContent(content)
 	myWindow.ShowAndRun()
 }

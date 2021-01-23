@@ -2,7 +2,7 @@
 layout: tour
 
 title: Form
-order: 6
+order: 5
 
 ---
 
@@ -21,4 +21,4 @@ can be used for an alternative syntax.
 In this example we create two entries, one of which is a
 "multiline" (like HTML TextArea) to hold values.
 There is an OnSubmit handler which prints the information
-before closing the window and therefore the application.
+before closing the window (and therefore the application).

@@ -7,7 +7,8 @@ order: 3
 ---
 
 The code samples in this tutorial can be built and run on your computer,
-all you need is a working [Go installation](https://golang.org/doc/install#install).
+all you need is a working [Go installation](https://golang.org/doc/install#install)
+and the [prerequisites](https://developer.fyne.io/started/#prerequisites) for Fyne.
 
 Once you have Go installed you can copy any example
 (use the "Copy Code" button) and paste it into a text file.

@@ -1,6 +1,6 @@
 #!/bin/sh
 
-go get fyne.io/fyne/cmd/fyne
+go get fyne.io/fyne/v2/cmd/fyne
 
 go build
 fyne package -icon mylogo.png

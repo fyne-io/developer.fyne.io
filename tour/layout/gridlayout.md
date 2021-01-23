@@ -14,7 +14,7 @@ Vertical space will be split equally between each of the rows of objects.
 You create a grid layout using `layout.NewGridLayout(cols)` where cols
 is the number of items (columns) you wish to have in each row. This
 layout is then passed as the first parameter to
-`fyne.NewContainerWithLayout(...)`.
+`container.New(...)`.
 
 If you resize the container then each of the cells will resize equally
 to share the available space.

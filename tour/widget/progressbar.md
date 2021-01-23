@@ -2,7 +2,7 @@
 layout: tour
 
 title: ProgressBar
-order: 7
+order: 6
 
 ---
 

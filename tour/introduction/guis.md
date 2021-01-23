@@ -7,7 +7,7 @@ order: 4
 ---
 
 Graphical applications are often more complicated to create than web
-based or command line applications. Fyne uses the great design of Go
+based or command line applications. Fyne changes this by utilizing the great design of Go
 to make building beautiful graphical applications simple and fast.
 
 For a graphical application to work we need to create a window and ask
