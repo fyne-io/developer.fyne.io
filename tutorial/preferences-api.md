@@ -12,7 +12,7 @@ redirect_from: /develop/preferences-api.html
 
 Storing user configurations and values is a common task for application developers, but implementing it across multiple platforms can be tedious and time-consuming. To make it easier, Fyne has an API for storing values on the filesystem in a clean and understandable way while the complex parts are handled for you.
 
-Lets start with the setup of the API. It is part of the [Preferences](https://pkg.go.dev/fyne.io/fyne?tab=doc#Preferences) interface where storage and loading functions exist for values of Bool, Float, Int and String. They each consist of three different functions, one for loading, one loading with a fallback value and lastly, one for storing values. An example of the three functions and their behaviour can be seen below for the String type:
+Lets start with the setup of the API. It is part of the [Preferences](https://pkg.go.dev/fyne.io/fyne/v2?tab=doc#Preferences) interface where storage and loading functions exist for values of Bool, Float, Int and String. They each consist of three different functions, one for loading, one loading with a fallback value and lastly, one for storing values. An example of the three functions and their behaviour can be seen below for the String type:
 ```go
 // String looks up a string value for the key
 String(key string) string
@@ -76,8 +76,8 @@ package main
 import (
     "time"
 
-    "fyne.io/fyne/app"
-    "fyne.io/fyne/widget"
+    "fyne.io/fyne/v2/app"
+    "fyne.io/fyne/v2/widget"
 )
 
 func main() {

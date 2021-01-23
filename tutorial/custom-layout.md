@@ -9,7 +9,7 @@ order: 20
 ---
 
 In a Fyne application each `Container` arranges it's child elements using a simple layout algorithm.
-Fyne defines many layouts available in the `fyne.io/fyne/layout` package.
+Fyne defines many layouts available in the `fyne.io/fyne/v2/layout` package.
 If you look at the code you will see that they all implement the `Layout` interface.
 
 ```go
@@ -25,13 +25,13 @@ To illustrate this we will create a new layout that arranges elements in a diago
 First we will define a new type, `diagonal`, and define what it's minimum size will be. To calculate this we just add the width and height of all child elements (specified as the `[]fyne.CanvasObject` parameter to `MinSize`.
 
 ```go
-import "fyne.io/fyne"
+import "fyne.io/fyne/v2"
 
 type diagonal struct {
 }
 
 func (d *diagonal) MinSize(objects []fyne.CanvasObject) fyne.Size {
-	w, h := 0, 0
+	w, h := float32(0), float32(0)
 	for _, o := range objects {
 		childSize := o.MinSize()
 
@@ -69,9 +69,9 @@ If you run this application you will see the diagonal widget arrangement and, up
 package main
 
 import (
-	"fyne.io/fyne"
-	"fyne.io/fyne/app"
-	"fyne.io/fyne/widget"
+	"fyne.io/fyne/v2"
+	"fyne.io/fyne/v2/app"
+	"fyne.io/fyne/v2/widget"
 )
 
 func main() {

@@ -9,14 +9,14 @@ redirect_from: /develop/keypress-on-entry.html
 ## Respond to Specific Key Presses in Entry
 ---
 
-In the traditional sense, GUI programs have used callbacks to customize actions for widgets. Fyne does not expose inserting closure callbacks inside widgets, but it does not need to. The Go language is plenty extensible to make this work.
+In the traditional sense, GUI programs have used callbacks to customize actions for widgets. Fyne does not expose inserting custom callbacks to capture events on widgets, but it does not need to. The Go language is plenty extensible to make this work.
 
-Simply use Type Embedding and extend the widget, along with adding a method to run when the enter/return key is pressed.
+Instead we can simply use Type Embedding and extend the widget, and add a method to run when the escape key is pressed.
 
-First create a new type struct, we will call it `enterEntry`.
+First create a new type struct, we will call it `escapeEntry`.
 
 ```go
-type enterEntry struct {
+type escapeEntry struct {
     widget.Entry
 }
 ```
@@ -24,7 +24,7 @@ type enterEntry struct {
 Next up we need to create our `onEnter` method for the `enterEntry` struct. This will later be used to run when the enter key is pressed to print out the written text and then clear the text.
 
 ```go
-func (e *enterEntry) onEnter() {
+func (e * escapeEntry) onEsc() {
     fmt.Println(e.Entry.Text)
     e.Entry.SetText("")
 }
@@ -33,8 +33,8 @@ func (e *enterEntry) onEnter() {
 As mentioned in [Extending existing widgets](https://fyne.io/develop/extending-widgets.html), we follow good practice and create a constructor function and extend the `BaseWidget`.
 
 ```go
-func newEnterEntry() *enterEntry {
-    entry := &enterEntry{}
+func newEscapeEntry() * escapeEntry {
+    entry := & escapeEntry{}
     entry.ExtendBaseWidget(entry)
     return entry
 }
@@ -42,19 +42,18 @@ func newEnterEntry() *enterEntry {
 
 Then override the `TypedKey()` method that's part of the `fyne.Focusable` interface,
 this will allow us to intercept the standard key handling and pass through if we want.
-Inside this method, we will use a conditional to check if the `key.Name` value matches the `Return` key using the `fyne.KeyReturn` variable and if that is the case, we run our `onEnter` method.
+Inside this method, we will use a conditional to check if the `key.Name` value matches the `Escape` key using the `fyne.KeyEscape` variable and if that is the case, we run our `onEsc` method.
 We need to have a default case that calls `e.Entry.TypedKey(key)` to maintain the behavior of other keys in the entry.
 This implementation can easily be extended to check for other keys in the future if necessary.
 
 ```go
-func (e *enterEntry) TypedKey(key *fyne.KeyEvent) {
+func (e *escapeEntry) TypedKey(key *fyne.KeyEvent) {
     switch key.Name {
-    case fyne.KeyReturn:
-        e.onEnter()
+    case fyne.KeyEscape:
+        e.onEsc()
     default:
         e.Entry.TypedKey(key)
     }
-
 }
 ```
 
@@ -66,47 +65,45 @@ In the end, the resulting code could look something like this:
 package main
 
 import (
-    "fmt"
+	"fmt"
 
-    "fyne.io/fyne"
-    "fyne.io/fyne/app"
-    "fyne.io/fyne/widget"
+	"fyne.io/fyne/v2"
+	"fyne.io/fyne/v2/app"
+	"fyne.io/fyne/v2/widget"
 )
 
-type enterEntry struct {
-    widget.Entry
+type escapeEntry struct {
+	widget.Entry
 }
 
-func (e *enterEntry) onEnter() {
-    fmt.Println(e.Entry.Text)
-    e.Entry.SetText("")
+func (e *escapeEntry) onEsc() {
+	fmt.Println(e.Entry.Text)
+	e.Entry.SetText("")
 }
 
-func newEnterEntry() *enterEntry {
-    entry := &enterEntry{}
-    entry.ExtendBaseWidget(entry)
-    return entry
+func newEscEntry() *escapeEntry {
+	entry := &escapeEntry{}
+	entry.ExtendBaseWidget(entry)
+	return entry
 }
 
-func (e *enterEntry) TypedKey(key *fyne.KeyEvent) {
-    switch key.Name {
-    case fyne.KeyReturn:
-        e.onEnter()
-    default:
-        e.Entry.TypedKey(key)
-    }
-
+func (e *escapeEntry) TypedKey(key *fyne.KeyEvent) {
+	switch key.Name {
+	case fyne.KeyEscape:
+		e.onEsc()
+	default:
+		e.Entry.TypedKey(key)
+	}
 }
 
 func main() {
-    a := app.New()
-    w := a.NewWindow("Messenger")
+	a := app.New()
+	w := a.NewWindow("Messenger")
 
-    entry := newEnterEntry()
+	entry := newEscEntry()
 
-    w.SetContent(entry)
-    w.ShowAndRun()
+	w.SetContent(entry)
+	w.ShowAndRun()
 }
-
 ```
 

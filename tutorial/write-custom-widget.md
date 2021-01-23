@@ -66,7 +66,6 @@ type WidgetRenderer interface {
 	MinSize() Size
 
 	Refresh()
-	BackgroundColor() color.Color
 	Objects() []CanvasObject
 	Destroy()
 }
@@ -75,7 +74,6 @@ type WidgetRenderer interface {
 As you can see the `Layout(Size)` and `MinSize()` functions are similar to the
 `fyne.Layout` interface, without the `[]fyne.CanvasObject` parameter - this is because a widget does need to be laid out but it controls which objects will be included.
 
-The `BackgroundColor()` function sets the colour that will be drawn under the widget.
 The `Refresh()` method is triggered when the widget this renderer draws has changed or if the theme is altered.
 In either situation we may need to make adjustments to how it looks.
 Lastly the `Destroy()` method is called when this renderer is no longer needed so it should clear any resources that would otherwise leak.
