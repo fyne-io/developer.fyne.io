@@ -8,14 +8,14 @@ import (
 	"path/filepath"
 	"time"
 
-	"fyne.io/fyne"
-	"fyne.io/fyne/canvas"
-	"fyne.io/fyne/driver/desktop"
-	"fyne.io/fyne/layout"
-	"fyne.io/fyne/storage"
-	"fyne.io/fyne/test"
-	"fyne.io/fyne/theme"
-	"fyne.io/fyne/widget"
+	"fyne.io/fyne/v2"
+	"fyne.io/fyne/v2/canvas"
+	"fyne.io/fyne/v2/container"
+	"fyne.io/fyne/v2/driver/desktop"
+	"fyne.io/fyne/v2/storage"
+	"fyne.io/fyne/v2/test"
+	"fyne.io/fyne/v2/theme"
+	"fyne.io/fyne/v2/widget"
 )
 
 type drawItem struct {
@@ -32,26 +32,26 @@ func makeDrawList() []drawItem {
 	prop.SetMinSize(fyne.NewSize(100, 0))
 	se := widget.NewSelectEntry([]string{"1", "2"})
 	se.SetPlaceHolder("Select one or type")
+	se.Wrapping = fyne.TextWrapOff
 	return []drawItem{
 		{"accordion", widget.NewAccordion(
 			&widget.AccordionItem{Title: "A", Detail: widget.NewLabel("Hidden")},
 			widget.NewAccordionItem("B", widget.NewLabel("Shown item")),
 			widget.NewAccordionItem("C", widget.NewLabel("2")))},
-		{"apptabs", widget.NewTabContainer(
-			widget.NewTabItemWithIcon("Tab1", theme.HomeIcon(), canvas.NewRectangle(color.Transparent)),
-			widget.NewTabItemWithIcon("Tab2", theme.MailSendIcon(), canvas.NewRectangle(color.Transparent)))},
+		{"apptabs", container.NewAppTabs(
+			container.NewTabItemWithIcon("Tab1", theme.HomeIcon(), canvas.NewRectangle(color.Transparent)),
+			container.NewTabItemWithIcon("Tab2", theme.MailSendIcon(), canvas.NewRectangle(color.Transparent)))},
 		{"button", widget.NewButtonWithIcon("Cancel", theme.CancelIcon(), func() {})},
 		{"card", &widget.Card{Title: "Card Title", Subtitle: "Subtitle", Image: canvas.NewImageFromResource(theme.FyneLogo())}},
 		{"check", &widget.Check{Text: "Check", Checked: true}},
-		{"entry", &widget.Entry{PlaceHolder: "Entry"}},
+		{"entry", &widget.Entry{PlaceHolder: "Entry", Wrapping: fyne.TextWrapOff}},
 		{"entry-invalid", makeInvalidEntry()},
-		{"entry-valid", &widget.Entry{Validator: func(_ string) error { return nil }, Text: "Valid"}},
-		{"fileicon", widget.NewFileIcon(storage.NewURI("../images/logo.png"))},
+		{"entry-valid", &widget.Entry{Validator: func(_ string) error { return nil }, Text: "Valid", Wrapping: fyne.TextWrapOff}},
+		{"fileicon", widget.NewFileIcon(storage.NewFileURI("../images/logo.png"))},
 		{"form", &widget.Form{Items: []*widget.FormItem{
 			{Text: "Username", Widget: widget.NewEntry()},
 			{Text: "Password", Widget: widget.NewPasswordEntry()}},
 			OnSubmit: func() {}, OnCancel: func() {}}},
-		{"group", widget.NewGroup("Group", prop)},
 		{"hyperlink", widget.NewHyperlink("fyne.io", nil)},
 		{"icon", widget.NewIcon(theme.ContentPasteIcon())},
 		{"label", widget.NewLabel("Text label")},
@@ -62,14 +62,14 @@ func makeDrawList() []drawItem {
 		{"popupmenu", makePopUpMenu()},
 		{"progress", &widget.ProgressBar{Value: 0.74}},
 		{"progressinf", widget.NewProgressBarInfinite()},
-		{"radio", &widget.Radio{Options: []string{"Item 1", "Item 2"}, OnChanged: func(string) {}, Selected: "Item 1"}},
-		{"scrollcontainer", widget.NewScrollContainer(widget.NewLabel("Scroll"))},
+		{"radiogroup", &widget.RadioGroup{Options: []string{"Item 1", "Item 2"}, OnChanged: func(string) {}, Selected: "Item 1"}},
+		{"scroll", container.NewScroll(widget.NewLabel("Scroll"))},
 		{"select", widget.NewSelect([]string{"1", "2"}, func(string) {})},
 		{"selectentry", se},
 		{"separator", widget.NewSeparator()},
 		{"slider", widget.NewSlider(-5, 25)},
-		{"splitcontainer", widget.NewHSplitContainer(widget.NewLabel("Line1\nLine2"),
-			widget.NewVSplitContainer(widget.NewLabel("Top"), widget.NewLabel("Bottom")))},
+		{"split", container.NewHSplit(widget.NewLabel("Line1\nLine2"),
+			container.NewVSplit(widget.NewLabel("Top"), widget.NewLabel("Bottom")))},
 		{"textgrid", makeTextGrid()},
 		{"toolbar", widget.NewToolbar(widget.NewToolbarAction(theme.MailComposeIcon(), func() {}),
 			widget.NewToolbarSeparator(),
@@ -84,6 +84,7 @@ func makeDrawList() []drawItem {
 func makeInvalidEntry() *widget.Entry {
 	e := widget.NewEntry()
 	e.Validator = func(_ string) error { return fmt.Errorf("reason") }
+	e.Wrapping = fyne.TextWrapOff
 	test.Type(e, "Invalid")
 	e.FocusLost()
 	return e
@@ -92,7 +93,7 @@ func makeInvalidEntry() *widget.Entry {
 func makeList() *widget.List {
 	l := widget.NewList(func() int { return 5 },
 		func() fyne.CanvasObject {
-			return fyne.NewContainerWithLayout(layout.NewHBoxLayout(), widget.NewIcon(theme.DocumentIcon()), widget.NewLabel("TemplateItm"))
+			return container.NewHBox(widget.NewIcon(theme.DocumentIcon()), widget.NewLabel("TemplateItm"))
 		},
 		func(i int, item fyne.CanvasObject) {
 			item.(*fyne.Container).Objects[1].(*widget.Label).SetText(fmt.Sprintf("List item %d", i+1))
@@ -159,7 +160,7 @@ func draw(obj fyne.CanvasObject, name string, c fyne.Canvas, themeName string) {
 		}
 	}
 
-	c.SetScale(2.0) // get HiDPI output so we can render nicely on fancy screens :)
+	c.(test.WindowlessCanvas).SetScale(2.0) // get HiDPI output so we can render nicely on fancy screens :)
 	c.SetContent(obj)
 	if name == "progressinf" {
 		time.Sleep(time.Second)
@@ -167,7 +168,7 @@ func draw(obj fyne.CanvasObject, name string, c fyne.Canvas, themeName string) {
 		c.(test.WindowlessCanvas).Resize(obj.MinSize().Add(fyne.NewSize(120+theme.Padding()*2, theme.Padding()*2)))
 	} else if name == "list" || name == "table" || name == "tree" || name == "accordion" {
 		c.(test.WindowlessCanvas).Resize(fyne.NewSize(136, 120))
-		test.TapCanvas(c, fyne.NewPos(50, 50))
+		test.TapCanvas(c, fyne.NewPos(50, 60))
 	}
 	img := c.Capture()
 	err = png.Encode(file, img)

@@ -86,11 +86,11 @@ ProgressBarInfinite widget creates a horizontal panel that indicates waiting ind
 
 {% include widget.html name="progressinf" %}
 
-### Radio
+### RadioGroup
 
-Radio widget has a list of text labels and radio check icons next to each.
+RadioGroup widget has a list of text labels and radio check icons next to each.
 
-{% include widget.html name="radio" %}
+{% include widget.html name="radiogroup" %}
 
 ### Select
 
@@ -165,14 +165,14 @@ AppTabs widget allows switching visible content from a list of TabItems. Each it
 
 {% include widget.html name="apptabs" %}
 
-### ScrollContainer
+### Scroll
 
 ScrollContainer defines a container that is smaller than the Content.
 
-{% include widget.html name="scrollcontainer" %}
+{% include widget.html name="scroll" %}
 
-### SplitContainer
+### Split
 
 SplitContainer defines a container whose size is split between two children.
 
-{% include widget.html name="splitcontainer" %}
+{% include widget.html name="split" %}
