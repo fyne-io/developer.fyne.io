@@ -91,6 +91,10 @@ entries:
       url: /tour/layout/
       output: web, pdf
 
+    - title: Container
+      url: /tour/container/
+      output: web, pdf
+
     - title: Widget
       url: /tour/widget/
       output: web, pdf

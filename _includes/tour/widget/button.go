@@ -3,9 +3,9 @@ package main
 import (
 	"log"
 
-	"fyne.io/fyne/app"
-	"fyne.io/fyne/widget"
-	//"fyne.io/fyne/theme"
+	"fyne.io/fyne/v2/app"
+	"fyne.io/fyne/v2/widget"
+	//"fyne.io/fyne/v2/theme"
 )
 
 func main() {

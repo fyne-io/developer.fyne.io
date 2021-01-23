@@ -3,8 +3,9 @@ package main
 import (
 	"log"
 
-	"fyne.io/fyne/app"
-	"fyne.io/fyne/widget"
+	"fyne.io/fyne/v2/app"
+	"fyne.io/fyne/v2/container"
+	"fyne.io/fyne/v2/widget"
 )
 
 func main() {
@@ -14,7 +15,7 @@ func main() {
 	input := widget.NewEntry()
 	input.SetPlaceHolder("Enter text...")
 
-	content := widget.NewVBox(input, widget.NewButton("Save", func() {
+	content := container.NewVBox(input, widget.NewButton("Save", func() {
 		log.Println("Content was:", input.Text)
 	}))
 

@@ -1,9 +1,9 @@
 package main
 
 import (
-	"fyne.io/fyne/app"
-	"fyne.io/fyne/canvas"
-	"fyne.io/fyne/theme"
+	"fyne.io/fyne/v2/app"
+	"fyne.io/fyne/v2/canvas"
+	"fyne.io/fyne/v2/theme"
 )
 
 func main() {
@@ -11,8 +11,10 @@ func main() {
 	w := myApp.NewWindow("Image")
 
 	image := canvas.NewImageFromResource(theme.FyneLogo())
-	// image := canvas.NewImageFromFile(fileName)
+	// image := canvas.NewImageFromURI(uri)
 	// image := canvas.NewImageFromImage(src)
+	// image := canvas.NewImageFromReader(reader, name)
+	// image := canvas.NewImageFromFile(fileName)
 	image.FillMode = canvas.ImageFillOriginal
 	w.SetContent(image)
 

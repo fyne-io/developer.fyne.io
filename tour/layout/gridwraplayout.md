@@ -14,7 +14,7 @@ then flows the content to as many rows as is needed to display the items.
 You create a grid wrap layout using `layout.NewGridWrapLayout(size)`
 where size specifies the size to apply to all child elements.
 This layout is then passed as the first parameter to
-`fyne.NewContainerWithLayout(...)`.
+`container.New(...)`.
 The number of columns and rows will be calculated based on the current
 size of the container.
 

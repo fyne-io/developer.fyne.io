@@ -14,7 +14,7 @@ this example - it will be used to return the colour of each pixel.
 
 The generator functions can be pixel based (as in this example where we 
 generate a new random colour for each pixel) or based on full images.
-Generating complete images (with `canvas.NewRaster()` is more efficient
+Generating complete images (with `canvas.NewRaster()`) is more efficient
 but sometimes controlling pixels directly is more convenient.
 
 If your pixel data is stored in an image you can load it through the

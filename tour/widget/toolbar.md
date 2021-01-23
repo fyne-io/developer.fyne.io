@@ -2,7 +2,7 @@
 layout: tour
 
 title: Toolbar
-order: 9
+order: 7
 
 ---
 

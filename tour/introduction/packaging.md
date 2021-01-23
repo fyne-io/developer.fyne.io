@@ -20,7 +20,8 @@ copying the created files from the current directory.
 
 For Windows it will create a `.exe` file with icons embedded. For a
 macOS computer it will create a `.app` bundle and for Linux it will
-generate a `.tar.xz` file that can be installed in the usual manner.
+generate a `.tar.xz` file that can be installed in the usual manner
+(or by running `make install` inside the extracted folder).
 
 Of course you can still run your applications using the standard Go
 tools if you prefer.

@@ -22,5 +22,5 @@ that you wish to leave empty.
 
 Note that all items in the center will expand to fill the space (as if
 they were in a [`layout.MaxLayout`](maxlayout.html) container). To manage
-the area yourself you can create a new `fyne.Container` and use any
+the area yourself you can create a new `fyne.Container` (using `container.New()`) and use any
 layout you wish.

@@ -3,10 +3,10 @@ package main
 import (
 	"image/color"
 
-	"fyne.io/fyne"
-	"fyne.io/fyne/app"
-	"fyne.io/fyne/canvas"
-	"fyne.io/fyne/layout"
+	"fyne.io/fyne/v2/app"
+	"fyne.io/fyne/v2/canvas"
+	"fyne.io/fyne/v2/container"
+	"fyne.io/fyne/v2/layout"
 )
 
 func main() {
@@ -17,8 +17,7 @@ func main() {
 	value1 := canvas.NewText("Value", color.White)
 	label2 := canvas.NewText("Label 2", color.Black)
 	value2 := canvas.NewText("Something", color.White)
-	grid := fyne.NewContainerWithLayout(layout.NewFormLayout(),
-		label1, value1, label2, value2)
+	grid := container.New(layout.NewFormLayout(), label1, value1, label2, value2)
 	myWindow.SetContent(grid)
 	myWindow.ShowAndRun()
 }
