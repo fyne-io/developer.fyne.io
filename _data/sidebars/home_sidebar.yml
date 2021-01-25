@@ -138,6 +138,19 @@ entries:
       output: web, pdf
 
 
+  - title: Frequently Asked Questions
+    output: web, pdf
+
+    folderitems:
+    - title: Layout and widget size
+      url: /faq/layout
+      output: web, pdf
+
+    - title: Customisation
+      url: /faq/theme
+      output: web, pdf
+
+
   - title: API Documentation
     output: web, pdf
 
