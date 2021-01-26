@@ -52,6 +52,8 @@ These items must be addressed when upgrading for your app to compile and run:
 * There is a new theme API, to use your current theme code change from `SetTheme(myTheme)` to `SetTheme(theme.FromLegacy(myTheme))`
 * Usage of `theme.NewThemedResource` should remove second, ignored, parameter
 * Old button code using `Style` or `HideShadow` should now use `Importance`
+* The `WidgetRenderer.BackgroundColor` method was removed
+  - to add backgrounds you should now place rectangles under the widget
 
 * The following deprecated types were removed, please move to replacements
   - `dialog.FileIcon` (now `widget.FileIcon`)
