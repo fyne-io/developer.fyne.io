@@ -23,10 +23,14 @@ install:
         title: Raspberry Pi
         source: rpi
     tab5:
+        name: bsd
+        title: BSD
+        source: bsd
+    tab6:
         name: android
         title: Android
         source: android
-    tab6:
+    tab7:
         name: ios
         title: iOS
         source: ios
@@ -98,6 +102,16 @@ Note that these steps are just required for development - your Fyne applications
 </div>
 </div>
 
+<div id="install__bsd" class="hidden">
+<div style="text-align: left" markdown="1">
+
+* You will need to install Go, gcc and the graphics library header files using the package manager.
+* **FreeBSD:**
+* `sudo pkg install go gcc xorg glfw pkgconf`
+
+</div>
+</div>
+
 <div id="install__android" class="hidden">
 <div style="text-align: left" markdown="1">
 
@@ -137,11 +151,12 @@ Note that these steps are just required for development - your Fyne applications
             clickTab("windows");
         } else if (os == "MacIntel") {
             clickTab("macos");
-        } else if (os == "Linux i686" || os == "Linux x86_64" ||
-                   os == "FreeBSD i386" || os == "FreeBSD amd64") {
+        } else if (os == "Linux i686" || os == "Linux x86_64") {
             clickTab("linux");
         } else if (os == "Linux armv7l") {
             clickTab("rpi");
+        } else if (os == "FreeBSD i386" || os == "FreeBSD amd64") {
+        	clickTab("bsd");
         }
     });
 </script> 
