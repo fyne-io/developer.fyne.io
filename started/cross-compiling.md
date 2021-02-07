@@ -21,7 +21,7 @@ There are many ways to install the required tools - and different tools that can
 | GOOS (target) | CC | provider | download | notes |
 |------|----|----------|----------|-------|
 | `darwin`  | `o32-clang` | osxcross | [from github.com](https://github.com/tpoechtrager/osxcross) | You will also need to install the macOS SDK (instructions at the download link) |
-| `windows` | `x86_64-w64-mingw32-gcc` | mingw64 | package manager | For macOS use [homebrew](https://brew.sh) |
+| `windows` | `x86_64-w64-mingw64-gcc` | mingw64 | package manager | For macOS use [homebrew](https://brew.sh) |
 | `linux`   | `gcc` or `x86_64-linux-musl-gcc` | gcc or musl-cross | [cygwin](https://www.cygwin.com/) or package manager | musl-cross is available from [homebrew](https://brew.sh) to provide the linux gcc. You will also need to install X11 and mesa headers for compilation. |
 
 With the environment variables above set you should be able to compile in the usual manner.
