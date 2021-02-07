@@ -21,7 +21,8 @@ An application should only have one runloop and so you should only
 call `Run()` once in your code. Calling it a second time will cause
 errors.
 
-An app can be quit directly by calling `App.Quit()` but this should
-only be called in response to a user event to avoid surprises.
+For desktop runtimes an app can be quit directly by calling `App.Quit()`
+(mobile apps do not support this) - normally not needed in developer code.
+An application will also quit once all the windows are closed.
 See also that functions executed after `Run()` will not be called
 until the application exits.
