@@ -2,7 +2,6 @@
 layout: page
 title: Using the Preferences API
 
-order: 60
 redirect_from: /develop/preferences-api.html
 ---
 

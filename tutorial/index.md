@@ -1,8 +1,6 @@
 ---
 layout: page
 title: Tutorials
-
-order: 10
 ---
 
 This section provides various Fyne Tutorials - stepping through some

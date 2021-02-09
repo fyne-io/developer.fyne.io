@@ -1,8 +1,6 @@
 ---
 layout: page
 title: Building a Layout
-
-order: 20
 ---
 
 ## Build a Custom Layout

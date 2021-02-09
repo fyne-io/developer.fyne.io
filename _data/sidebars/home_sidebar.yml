@@ -112,16 +112,16 @@ entries:
       url: /tutorial/custom-layout
       output: web, pdf
 
-    - title: Handle Key Presses in Entry
-      url: /tutorial/keypress-on-entry
-      output: web, pdf
-
     - title: Bundling resources
       url: /tutorial/bundle
       output: web, pdf
 
     - title: Write a Custom Widget
       url: /tutorial/write-custom-widget
+      output: web, pdf
+
+    - title: Handle Key Presses in Entry
+      url: /tutorial/keypress-on-entry
       output: web, pdf
 
     - title: Using the Preferences API

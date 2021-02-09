@@ -1,8 +1,6 @@
 ---
 layout: page
 title: Bundling resources 
-
-order: 40
 ---
 
 ## Bundling resources

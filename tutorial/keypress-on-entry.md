@@ -2,7 +2,6 @@
 layout: page
 title: Handle Key Presses in Entry
 
-order: 30
 redirect_from: /develop/keypress-on-entry.html
 ---
 

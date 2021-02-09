@@ -2,7 +2,6 @@
 layout: page
 title: Write a Custom Widget
 
-order: 50
 redirect_from: /develop/custom-widget.html
 ---
 

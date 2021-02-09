@@ -2,7 +2,6 @@
 layout: page
 title: Extending Widgets
 
-order: 10
 redirect_from: /develop/extending-widgets.html
 ---
 
