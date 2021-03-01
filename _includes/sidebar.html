@@ -9,10 +9,13 @@
       <ul>
           {% for folderitem in folder.folderitems %}
           {% assign folderitemurlhtml = folderitem.url | append: ".html" %}
+          {% assign urllen = folderitem.url | size %}
+          {% assign urlstart = page.url | slice: 0, urllen %}
+
           {% if folderitem.output contains "web" %}
           {% if folderitem.external_url %}
           <li><a title="{{folderitem.title}}" href="{{folderitem.external_url}}" target="_blank" rel="noopener">{{folderitem.title}}</a></li>
-          {% elsif page.url == folderitem.url or page.url == folderitemurlhtml %}
+          {% elsif urlstart == folderitem.url or page.url == folderitemurlhtml %}
           <li class="active"><a title="{{folderitem.title}}" href="{{folderitem.url}}">{{folderitem.title}}</a></li>
           {% elsif folderitem.type == "empty" %}
           <li><a title="{{folderitem.title}}" href="{{folderitem.url}}">{{folderitem.title}}</a></li>
