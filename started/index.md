@@ -16,7 +16,7 @@ install:
         source: macos
     tab3:
         name: linux
-        title: Linux and BSD
+        title: Linux
         source: linux
     tab4:
         name: rpi
@@ -107,8 +107,7 @@ Note that these steps are just required for development - your Fyne applications
 
 * You will need to install Go, gcc and the graphics library header files using the package manager.
 * **FreeBSD:**
-* `sudo pkg install go gcc xorg glfw pkgconf`
-
+`sudo pkg install go gcc xorg glfw pkgconf`
 </div>
 </div>
 
