@@ -137,8 +137,12 @@ entries:
     output: web, pdf
 
     folderitems:
-    - title: Scaling & Geometry
+    - title: Geometry
       url: /architecture/geometry
+      output: web, pdf
+
+    - title: Scaling
+      url: /architecture/scaling
       output: web, pdf
 
 
