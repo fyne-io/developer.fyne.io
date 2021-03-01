@@ -145,6 +145,10 @@ entries:
       url: /architecture/scaling
       output: web, pdf
 
+    - title: Widgets
+      url: /architecture/widgets
+      output: web, pdf
+
 
   - title: Frequently Asked Questions
     output: web, pdf
