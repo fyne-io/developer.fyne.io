@@ -10,8 +10,6 @@ import (
 	"fyne.io/fyne/v2/widget"
 )
 
-var data = []string{"a", "string", "list"}
-
 func main() {
 	myApp := app.New()
 	myWindow := myApp.NewWindow("List Data")
