@@ -11,23 +11,27 @@ button.copyCode {
 #tourNav {
     width: 100%;
     margin: 0;
-    position: sticky;
     bottom: 4pt;
+    left: 0;
     text-align: center;
     clear: both;
+
+    bottom: 12pt;
+    position: fixed;
+    z-index: 100;
 }
 
 #tourNav span {
     font-size: large;
     padding: 5pt;
-    background-color: rgba(125, 125, 125, 0.12);
+    background-color: rgb(225, 225, 225);
 }
 
 #tourNav a {
     padding: 5pt;
 }
 
-#tourNav a:visited {
+#tourNav span span {
     background-color: transparent;
 }
 
@@ -38,6 +42,7 @@ div.deprecated {
 
 #sourceCode pre {
     margin: 0;
+    tab-size: 4;
     white-space: pre !important;
 }
 
