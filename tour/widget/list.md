@@ -24,3 +24,5 @@ will be re-used with real data when the widget is presented.
 The `MinSize` of this object will influence the `List` minimum size.
 Lastly `UpdateItem` is called to apply an item of data to a 
 cached template. Use this to set the content ready for display.
+
+If you want to read more we will move on to [data binding](/tour/binding/).

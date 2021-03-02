@@ -99,6 +99,10 @@ entries:
       url: /tour/widget/
       output: web, pdf
 
+    - title: Data Binding
+      url: /tour/binding/
+      output: web, pdf
+
 
   - title: Tutorials
     output: web, pdf
