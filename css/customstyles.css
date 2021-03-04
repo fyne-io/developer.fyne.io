@@ -379,6 +379,7 @@ li.dropdownActive a {
 }
 
 footer {
+    clear: both;
     font-size: smaller;
 }
 
