@@ -26,5 +26,5 @@ func showAnother(a fyne.App) {
 	win.Show()
 
 	time.Sleep(time.Second * 2)
-	win.Hide()
+	win.Close()
 }
