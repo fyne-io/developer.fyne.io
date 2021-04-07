@@ -5,9 +5,6 @@ title: Handle Key Presses in Entry
 redirect_from: /develop/keypress-on-entry.html
 ---
 
-## Respond to Specific Key Presses in Entry
----
-
 In the traditional sense, GUI programs have used callbacks to customize actions for widgets. Fyne does not expose inserting custom callbacks to capture events on widgets, but it does not need to. The Go language is plenty extensible to make this work.
 
 Instead we can simply use Type Embedding and extend the widget, and add a method to run when the escape key is pressed.

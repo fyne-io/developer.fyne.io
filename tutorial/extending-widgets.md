@@ -5,9 +5,6 @@ title: Extending Widgets
 redirect_from: /develop/extending-widgets.html
 ---
 
-## Extending Existing Widgets
----
-
 The standard Fyne widgets provide the minimum functionality and customisation
 to support most use-cases. It may be required at certain times to have more
 advanced functionality. Rather than have developers build their own widgets

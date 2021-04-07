@@ -1,12 +1,8 @@
 ---
 layout: page
-title: Write a Custom Widget
+title: Writing a Custom Widget
 
 redirect_from: /develop/custom-widget.html
----
-
-## Writing a Custom Widget
-
 ---
 
 The standard widgets included with Fyne are designed to support standard user interactions and requirements.

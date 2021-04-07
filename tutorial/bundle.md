@@ -3,9 +3,6 @@ layout: page
 title: Bundling resources 
 ---
 
-## Bundling resources
----
-
 Go based applications are usually built as a single binary executable, and this is the same for Fyne applications.
 A single file makes it easier to distribute install our software. Unfortunately GUI
 applications typically require additional resources to render the user interface.

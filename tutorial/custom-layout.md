@@ -1,9 +1,6 @@
 ---
 layout: page
-title: Building a Layout
----
-
-## Build a Custom Layout
+title: Building a Custom Layout
 ---
 
 In a Fyne application each `Container` arranges it's child elements using a simple layout algorithm.
