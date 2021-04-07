@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Adding shortcuts to an app
+title: Adding Shortcuts to an App
 ---
 
 Shortcuts are common tasks that can be triggered by keyboard combinations or context menus. Shortcuts, much like keyboard events, can be attached to a focused element or registered on the `Canvas` to always be available in a `Window`.

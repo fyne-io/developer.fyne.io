@@ -128,6 +128,10 @@ entries:
       url: /tutorial/keypress-on-entry
       output: web, pdf
 
+    - title: Handling Shortcuts
+      url: /tutorial/shortcuts
+      output: web, pdf
+
     - title: Using the Preferences API
       url: /tutorial/preferences-api
       output: web, pdf
