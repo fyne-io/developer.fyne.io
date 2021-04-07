@@ -35,7 +35,7 @@ type myEntry struct {
 
 func (m *myEntry) TypedShortcut(s fyne.Shortcut) {
 	if _, ok := s.(*desktop.CustomShortcut); !ok {
-		m.TypedShortcut(s)
+		m.Entry.TypedShortcut(s)
 		return
 	}
 
