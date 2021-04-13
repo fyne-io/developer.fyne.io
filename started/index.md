@@ -60,6 +60,17 @@ Note that these steps are just required for development - your Fyne applications
     * Cygwin - [cygwin.com](https://www.cygwin.com/)
 3. In Windows your graphics driver will already be installed, but it is recommended to ensure they are up to date.
 
+The steps for installing with MSYS2 (recommended) are as follows:
+* Install MSYS2 from [msys2.org](https://www.msys2.org/)
+* Once installed do not use the MSYS terminal that opens
+* Open "MSYS2 MinGW 64-bit" from the start menu
+* Execute the following commands:
+
+        $ pacman -Syu
+        $ pacman -S git mingw-w64-x86_64-toolchain
+
+* Add /c/Program\ Files/Go/bin to your PATH in .bashrc
+
 </div>
 </div>
 
@@ -108,6 +119,8 @@ Note that these steps are just required for development - your Fyne applications
 * You will need to install Go, gcc and the graphics library header files using the package manager.
 * **FreeBSD:**
 `sudo pkg install go gcc xorg glfw pkgconf`
+* **OpenBSD:**
+`sudo pkg_add go glfw`
 </div>
 </div>
 
