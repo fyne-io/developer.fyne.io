@@ -25,6 +25,7 @@ button.copyCode {
     font-size: large;
     padding: 5pt;
     background-color: rgb(225, 225, 225);
+    color: #121212;
 }
 
 #tourNav a {
