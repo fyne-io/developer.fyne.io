@@ -6,6 +6,16 @@ body {
 
 button.copyCode {
     float: right !important;
+    background-color: rgb(202, 202, 202);
+    border:solid black 2px;
+    color:black;
+    border-radius: 2mm;
+
+}
+
+button.copyCode:active{
+    color:white;
+    background-color: rgba(0,0,0,0.75);
 }
 
 #tourNav {
@@ -41,10 +51,14 @@ div.deprecated {
     background-color: rgba(125, 125, 125, 0.12);
 }
 
+
 #sourceCode pre {
     margin: 0;
     tab-size: 4;
+    background-color: rgb(29, 29, 29);
     white-space: pre !important;
+    
+    
 }
 
 div.intro-row {
@@ -864,11 +878,14 @@ table code {background-color: transparent;}
 
 .highlight pre .lineno{
     border-right: 1px solid #ccc;
+    color:rgb(180,180,180)
 }
 
 .highlight rouge-table {
     border: none;
 }
+
+
 
 table p {
     margin-top: 12px;
@@ -1159,6 +1176,12 @@ ol li ul li ol li ul li{
 
 .post-content table th {
     vertical-align: top;
+}
+
+.highlighter-rouge{
+    background-color:#009c75;
+    color: white;
+    
 }
 
 table thead th code.highlighter-rouge {

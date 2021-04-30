@@ -2,7 +2,7 @@
 .highlight table pre { margin: 0; }
 .highlight, .highlight .w {
   color: #d0d0d0;
-  background-color: #151515;
+  background-color:black;
 }
 .highlight .err {
   color: #151515;
@@ -75,4 +75,7 @@
 }
 .highlight .ss {
   color: #90a959;
+}
+.highlight .n{
+    color:rgb(182, 182, 182);
 }

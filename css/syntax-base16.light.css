@@ -75,3 +75,19 @@
 .highlight .ss {
   color: #90a959;
 }
+
+.highlight .n{
+    color:rgb(182, 182, 182);
+}
+button.copyCode {
+    float: right !important;
+    background-color: rgb(216, 216, 216);
+    border:solid 2px black;
+    border-radius: 2mm;
+
+}
+
+button.copyCode:active{
+    color:white;
+    background-color: rgba(83, 83, 83, 0.75);
+}
