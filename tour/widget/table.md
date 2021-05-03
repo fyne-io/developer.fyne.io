@@ -17,6 +17,6 @@ The other two relate to the content templates.
 
 The `CreateItem` callback returns a new template object, just like list.
 The difference being that `MinSize` will define the standard size of each cell, and the minimum size of the table (it shows at least one cell).
-AAs previously the `UpdateItem` is called to apply data to a cell template. The index passed in is the same `(row, col)` int pair.
+As previously the `UpdateItem` is called to apply data to a cell template. The index passed in is the same `(row, col)` int pair.
 
 In the next tour section we explore [data bindings](/tour/binding/).
