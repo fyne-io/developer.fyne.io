@@ -30,7 +30,7 @@
   <body>
 {% include topnav.html %}
 <!-- Page Content -->
-<div class="container">
+<div class="container" style="padding-bottom: 50px">
   <div id="main">
     <!-- Content Row -->
     <div class="row">
@@ -75,7 +75,7 @@
     {% assign url_parts = page.url | split: '/' %}
     {% assign base_url = url_parts[2] %}
 
-    <footer id="tourNav">
+    <div id="tourNav">
       <span>
 
       {% assign count = 0 %}
@@ -115,9 +115,7 @@
         <span class="disabled">&gt;</span>
       {% endif %}
       </span>
-    </footer>
-
-{% include footer.html %}
+    </div>
 
     <!-- /.row -->
     </div>
@@ -126,6 +124,7 @@
 <!-- /.container -->
 </div>
 
+{% include footer.html %}
 </body>
 {% if site.google_analytics %}
 {% include google_analytics.html %}

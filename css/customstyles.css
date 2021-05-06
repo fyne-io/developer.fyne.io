@@ -11,12 +11,12 @@ button.copyCode {
 #tourNav {
     width: 100%;
     margin: 0;
-    bottom: 4pt;
+    bottom: 12pt;
     left: 0;
     text-align: center;
     clear: both;
 
-    bottom: 12pt;
+    bottom: 50pt;
     position: fixed;
     z-index: 100;
 }
@@ -381,12 +381,19 @@ li.dropdownActive a {
 
 footer {
     clear: both;
-    font-size: smaller;
+    background-color: #222;
+    color: white;
+    height: 50px;
+
+    display: block;
+    bottom: 0;
+    width: 100%;
+    position: fixed;
 }
 
-footer img {
-    float: right;
-    padding-left:  4pt;
+footer p {
+    margin: 14px 0;
+    text-align: center;
 }
 
 /* FAQ page */
