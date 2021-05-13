@@ -1400,14 +1400,14 @@ ViewRestoreIcon returns a resource containing the standard exit fullscreen icon 
 ```go
 func VisibilityIcon() fyne.Resource
 ```
-VisibilityIcon returns a resource containing the standard visibity icon for the current theme
+VisibilityIcon returns a resource containing the standard visibility icon for the current theme
 
 #### func  VisibilityOffIcon
 
 ```go
 func VisibilityOffIcon() fyne.Resource
 ```
-VisibilityOffIcon returns a resource containing the standard visibity off icon for the current theme
+VisibilityOffIcon returns a resource containing the standard visibility off icon for the current theme
 
 #### func  VolumeDownIcon
 

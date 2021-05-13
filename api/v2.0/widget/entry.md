@@ -146,7 +146,7 @@ fyne.DoubleTappable</code></div>
 ```go
 func (e *Entry) DragEnd()
 ```
-DragEnd is called at end of a drag event. It does nothing.
+DragEnd is called at end of a drag event.
 
 
 <div class="implements">Implements: <code>

@@ -36,28 +36,28 @@ NewRectangle returns a new Rectangle instance
 ```go
 func (r *Rectangle) Hide()
 ```
-Hide will set this object to not be visible
+Hide will set this object to not be visible.
 
 #### func (*Rectangle) MinSize
 
 ```go
 func (r *Rectangle) MinSize() fyne.Size
 ```
-MinSize returns the specified minimum size, if set, or {1, 1} otherwise
+MinSize returns the specified minimum size, if set, or {1, 1} otherwise.
 
 #### func (*Rectangle) Move
 
 ```go
 func (r *Rectangle) Move(pos fyne.Position)
 ```
-Move the rectangle object to a new position, relative to its parent / canvas
+Move the object to a new position, relative to its parent.
 
 #### func (*Rectangle) Position
 
 ```go
 func (r *Rectangle) Position() fyne.Position
 ```
-CurrentPosition gets the current position of this rectangle object, relative to its parent / canvas
+CurrentPosition gets the current position of this canvas object, relative to its parent.
 
 #### func (*Rectangle) Refresh
 
@@ -78,25 +78,25 @@ Resize on a rectangle updates the new size of this object. If it has a stroke wi
 ```go
 func (r *Rectangle) SetMinSize(size fyne.Size)
 ```
-SetMinSize specifies the smallest size this object should be
+SetMinSize specifies the smallest size this object should be.
 
 #### func (*Rectangle) Show
 
 ```go
 func (r *Rectangle) Show()
 ```
-Show will set this object to be visible
+Show will set this object to be visible.
 
 #### func (*Rectangle) Size
 
 ```go
 func (r *Rectangle) Size() fyne.Size
 ```
-CurrentSize returns the current size of this rectangle object
+CurrentSize returns the current size of this canvas object.
 
 #### func (*Rectangle) Visible
 
 ```go
 func (r *Rectangle) Visible() bool
 ```
-IsVisible returns true if this object is visible, false otherwise
+IsVisible returns true if this object is visible, false otherwise.

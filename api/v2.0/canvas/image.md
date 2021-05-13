@@ -85,28 +85,28 @@ Alpha is a convenience function that returns the alpha value for an image based 
 ```go
 func (r *Image) Hide()
 ```
-Hide will set this object to not be visible
+Hide will set this object to not be visible.
 
 #### func (*Image) MinSize
 
 ```go
 func (r *Image) MinSize() fyne.Size
 ```
-MinSize returns the specified minimum size, if set, or {1, 1} otherwise
+MinSize returns the specified minimum size, if set, or {1, 1} otherwise.
 
 #### func (*Image) Move
 
 ```go
 func (r *Image) Move(pos fyne.Position)
 ```
-Move the rectangle object to a new position, relative to its parent / canvas
+Move the object to a new position, relative to its parent.
 
 #### func (*Image) Position
 
 ```go
 func (r *Image) Position() fyne.Position
 ```
-CurrentPosition gets the current position of this rectangle object, relative to its parent / canvas
+CurrentPosition gets the current position of this canvas object, relative to its parent.
 
 #### func (*Image) Refresh
 
@@ -120,32 +120,32 @@ Refresh causes this object to be redrawn in it's current state
 ```go
 func (i *Image) Resize(s fyne.Size)
 ```
-Resize on an image will usually scale the content or reposition it according to FillMode.. If the content of the File or Resource is an SVG file, however, this will cause a Refresh.
+Resize on an image will scale the content or reposition it according to FillMode. It will normally cause a Refresh to ensure the pixels are recalculated.
 
 #### func (*Image) SetMinSize
 
 ```go
 func (r *Image) SetMinSize(size fyne.Size)
 ```
-SetMinSize specifies the smallest size this object should be
+SetMinSize specifies the smallest size this object should be.
 
 #### func (*Image) Show
 
 ```go
 func (r *Image) Show()
 ```
-Show will set this object to be visible
+Show will set this object to be visible.
 
 #### func (*Image) Size
 
 ```go
 func (r *Image) Size() fyne.Size
 ```
-CurrentSize returns the current size of this rectangle object
+CurrentSize returns the current size of this canvas object.
 
 #### func (*Image) Visible
 
 ```go
 func (r *Image) Visible() bool
 ```
-IsVisible returns true if this object is visible, false otherwise
+IsVisible returns true if this object is visible, false otherwise.

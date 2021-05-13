@@ -63,28 +63,28 @@ Alpha is a convenience function that returns the alpha value for a raster based 
 ```go
 func (r *Raster) Hide()
 ```
-Hide will set this object to not be visible
+Hide will set this object to not be visible.
 
 #### func (*Raster) MinSize
 
 ```go
 func (r *Raster) MinSize() fyne.Size
 ```
-MinSize returns the specified minimum size, if set, or {1, 1} otherwise
+MinSize returns the specified minimum size, if set, or {1, 1} otherwise.
 
 #### func (*Raster) Move
 
 ```go
 func (r *Raster) Move(pos fyne.Position)
 ```
-Move the rectangle object to a new position, relative to its parent / canvas
+Move the object to a new position, relative to its parent.
 
 #### func (*Raster) Position
 
 ```go
 func (r *Raster) Position() fyne.Position
 ```
-CurrentPosition gets the current position of this rectangle object, relative to its parent / canvas
+CurrentPosition gets the current position of this canvas object, relative to its parent.
 
 #### func (*Raster) Refresh
 
@@ -105,25 +105,25 @@ Resize on a raster image causes the new size to be set and then calls Refresh. T
 ```go
 func (r *Raster) SetMinSize(size fyne.Size)
 ```
-SetMinSize specifies the smallest size this object should be
+SetMinSize specifies the smallest size this object should be.
 
 #### func (*Raster) Show
 
 ```go
 func (r *Raster) Show()
 ```
-Show will set this object to be visible
+Show will set this object to be visible.
 
 #### func (*Raster) Size
 
 ```go
 func (r *Raster) Size() fyne.Size
 ```
-CurrentSize returns the current size of this rectangle object
+CurrentSize returns the current size of this canvas object.
 
 #### func (*Raster) Visible
 
 ```go
 func (r *Raster) Visible() bool
 ```
-IsVisible returns true if this object is visible, false otherwise
+IsVisible returns true if this object is visible, false otherwise.

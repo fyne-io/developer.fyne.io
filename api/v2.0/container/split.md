@@ -59,6 +59,17 @@ func (s *Split) CreateRenderer() fyne.WidgetRenderer
 ```
 CreateRenderer is a private method to Fyne which links this widget to its renderer
 
+#### func (*Split) ExtendBaseWidget
+
+```go
+func (s *Split) ExtendBaseWidget(wid fyne.Widget)
+```
+ExtendBaseWidget is used by an extending widget to make use of BaseWidget functionality.
+
+
+<div class="deprecated">
+Deprecated: Support for extending containers is being removed</div>
+
 #### func (*Split) SetOffset
 
 ```go

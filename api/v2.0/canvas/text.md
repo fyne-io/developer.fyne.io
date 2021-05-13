@@ -39,7 +39,7 @@ NewText returns a new Text implementation
 ```go
 func (r *Text) Hide()
 ```
-Hide will set this object to not be visible
+Hide will set this object to not be visible.
 
 #### func (*Text) MinSize
 
@@ -53,14 +53,14 @@ MinSize returns the minimum size of this text object based on its font size and 
 ```go
 func (r *Text) Move(pos fyne.Position)
 ```
-Move the rectangle object to a new position, relative to its parent / canvas
+Move the object to a new position, relative to its parent.
 
 #### func (*Text) Position
 
 ```go
 func (r *Text) Position() fyne.Position
 ```
-CurrentPosition gets the current position of this rectangle object, relative to its parent / canvas
+CurrentPosition gets the current position of this canvas object, relative to its parent.
 
 #### func (*Text) Refresh
 
@@ -74,7 +74,7 @@ Refresh causes this object to be redrawn in it's current state
 ```go
 func (r *Text) Resize(size fyne.Size)
 ```
-Resize sets a new size for the rectangle object
+Resize sets a new size for the canvas object.
 
 #### func (*Text) SetMinSize
 
@@ -88,18 +88,18 @@ SetMinSize has no effect as the smallest size this canvas object can be is based
 ```go
 func (r *Text) Show()
 ```
-Show will set this object to be visible
+Show will set this object to be visible.
 
 #### func (*Text) Size
 
 ```go
 func (r *Text) Size() fyne.Size
 ```
-CurrentSize returns the current size of this rectangle object
+CurrentSize returns the current size of this canvas object.
 
 #### func (*Text) Visible
 
 ```go
 func (r *Text) Visible() bool
 ```
-IsVisible returns true if this object is visible, false otherwise
+IsVisible returns true if this object is visible, false otherwise.

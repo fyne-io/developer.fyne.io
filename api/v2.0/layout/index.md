@@ -61,7 +61,7 @@ NewGridLayoutWithColumns returns a new grid layout that specifies a column count
 ```go
 func NewGridLayoutWithRows(rows int) fyne.Layout
 ```
-NewGridLayoutWithRows returns a new grid layout that specifies a row count that creates new columns as required.
+NewGridLayoutWithRows returns a new grid layout that specifies a row count that creates new rows as required.
 
 #### func  NewGridWrapLayout
 

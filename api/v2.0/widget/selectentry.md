@@ -73,6 +73,17 @@ MinSize returns the minimal size of the select entry.
 <div class="implements">Implements: <code>
 fyne.Widget</code></div>
 
+#### func (*SelectEntry) Move
+
+```go
+func (e *SelectEntry) Move(pos fyne.Position)
+```
+Move changes the relative position of the select entry.
+
+
+<div class="implements">Implements: <code>
+fyne.Widget</code></div>
+
 #### func (*SelectEntry) Resize
 
 ```go

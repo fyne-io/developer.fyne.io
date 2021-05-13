@@ -74,7 +74,7 @@ NewGridWithColumns creates a new container with the specified objects and using 
 ```go
 func NewGridWithRows(rows int, objects ...fyne.CanvasObject) *fyne.Container
 ```
-NewGridWithRows creates a new container with the specified objects and using the grid layout with a specified number of columns. The number of columns will depend on how many children are in the container.
+NewGridWithRows creates a new container with the specified objects and using the grid layout with a specified number of rows. The number of columns will depend on how many children are in the container.
 
 
 <div class="since">Since: <code>

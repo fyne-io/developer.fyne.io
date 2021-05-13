@@ -68,6 +68,17 @@ func (c *AppTabs) CurrentTabIndex() int
 ```
 CurrentTabIndex returns the index of the currently selected TabItem.
 
+#### func (*AppTabs) ExtendBaseWidget
+
+```go
+func (c *AppTabs) ExtendBaseWidget(wid fyne.Widget)
+```
+ExtendBaseWidget is used by an extending widget to make use of BaseWidget functionality.
+
+
+<div class="deprecated">
+Deprecated: Support for extending containers is being removed</div>
+
 #### func (*AppTabs) MinSize
 
 ```go

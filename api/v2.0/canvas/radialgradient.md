@@ -46,28 +46,28 @@ Generate calculates an image of the gradient with the specified width and height
 ```go
 func (r *RadialGradient) Hide()
 ```
-Hide will set this object to not be visible
+Hide will set this object to not be visible.
 
 #### func (*RadialGradient) MinSize
 
 ```go
 func (r *RadialGradient) MinSize() fyne.Size
 ```
-MinSize returns the specified minimum size, if set, or {1, 1} otherwise
+MinSize returns the specified minimum size, if set, or {1, 1} otherwise.
 
 #### func (*RadialGradient) Move
 
 ```go
 func (r *RadialGradient) Move(pos fyne.Position)
 ```
-Move the rectangle object to a new position, relative to its parent / canvas
+Move the object to a new position, relative to its parent.
 
 #### func (*RadialGradient) Position
 
 ```go
 func (r *RadialGradient) Position() fyne.Position
 ```
-CurrentPosition gets the current position of this rectangle object, relative to its parent / canvas
+CurrentPosition gets the current position of this canvas object, relative to its parent.
 
 #### func (*RadialGradient) Refresh
 
@@ -81,32 +81,32 @@ Refresh causes this object to be redrawn in it's current state
 ```go
 func (r *RadialGradient) Resize(size fyne.Size)
 ```
-Resize sets a new size for the rectangle object
+Resize sets a new size for the canvas object.
 
 #### func (*RadialGradient) SetMinSize
 
 ```go
 func (r *RadialGradient) SetMinSize(size fyne.Size)
 ```
-SetMinSize specifies the smallest size this object should be
+SetMinSize specifies the smallest size this object should be.
 
 #### func (*RadialGradient) Show
 
 ```go
 func (r *RadialGradient) Show()
 ```
-Show will set this object to be visible
+Show will set this object to be visible.
 
 #### func (*RadialGradient) Size
 
 ```go
 func (r *RadialGradient) Size() fyne.Size
 ```
-CurrentSize returns the current size of this rectangle object
+CurrentSize returns the current size of this canvas object.
 
 #### func (*RadialGradient) Visible
 
 ```go
 func (r *RadialGradient) Visible() bool
 ```
-IsVisible returns true if this object is visible, false otherwise
+IsVisible returns true if this object is visible, false otherwise.

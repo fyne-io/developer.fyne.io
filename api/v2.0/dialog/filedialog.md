@@ -65,7 +65,7 @@ Refresh causes this dialog to be updated
 ```go
 func (f *FileDialog) Resize(size fyne.Size)
 ```
-Resize dialog, call this function after dialog show
+Resize dialog to the requested size, if there is sufficient space. If the parent window is not large enough then the size will be reduced to fit.
 
 #### func (*FileDialog) SetDismissText
 
