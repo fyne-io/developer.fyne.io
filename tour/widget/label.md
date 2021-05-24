@@ -12,8 +12,8 @@ redirect_from:
 ---
 
 Widgets are the main components of a Fyne application GUI, they can be
-used in an place that a basic `fyne.CanvasObject` can. They manage user
-interactions but also will always match the current theme.
+used in any place that a basic `fyne.CanvasObject` can. They manage user
+interactions and they will always match the current theme.
 
 The Label widget is the simplest of them - it presents text to the user.
 Unlike `canvas.Text` it can handle some simple formatting (such as `\n`)
