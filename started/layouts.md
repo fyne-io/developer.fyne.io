@@ -27,7 +27,7 @@ and objects will be top-aligned at their minimum height.
 
 ### Center
 
-Center layout positions all container elements into the center of the container.
+Center layout positions all container elements in the center of the container.
 Every object will be set to it's minimum size.
 
 {% include layout.html name="center" %}
@@ -44,9 +44,9 @@ You should always add an even number of elements to a form layout.
 ### Grid
 
 Grid layout arranges items equally in the available space.
-A number of columns is specified, objects will be positioned horizontally
+A number of columns is specified, with objects being positioned horizontally
 until the number of columns is reached at which point a new row is started.
-All objectts have the same size, that is width divided by column total and
+All objects have the same size, that is width divided by column total and
 the height will be total height divided by the number of rows required. Minus padding.
 
 {% include layout.html name="grid" %}
