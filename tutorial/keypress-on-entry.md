@@ -26,7 +26,7 @@ func (e * escapeEntry) onEsc() {
 }
 ```
 
-As mentioned in [Extending existing widgets](https://fyne.io/develop/extending-widgets.html), we follow good practice and create a constructor function and extend the `BaseWidget`.
+As mentioned in [Extending existing widgets](https://developer.fyne.io/tutorial/extending-widgets), we follow good practice and create a constructor function and extend the `BaseWidget`.
 
 ```go
 func newEscapeEntry() * escapeEntry {
