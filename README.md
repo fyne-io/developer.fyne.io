@@ -12,3 +12,6 @@ gem install bundler jekyll
 bundle exec jekyll serve
 ```
 
+## Localize
+
+[russian](./ru/READMY.md)
