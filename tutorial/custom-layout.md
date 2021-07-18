@@ -9,8 +9,8 @@ If you look at the code you will see that they all implement the `Layout` interf
 
 ```go
 type Layout interface {
-	Layout([]CanvasObject, Size)
-	MinSize(objects []CanvasObject) Size
+	Layout([]fyne.CanvasObject, fyne.Size)
+	MinSize(objects []fyne.CanvasObject) fyne.Size
 }
 ```
 
