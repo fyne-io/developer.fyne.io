@@ -1,59 +1,76 @@
 ---
 layout: page
-title: Handle Key Presses in Entry
+title: Numerical Entry
 
 redirect_from: /develop/keypress-on-entry.html
 ---
 
 In the traditional sense, GUI programs have used callbacks to customize actions for widgets. Fyne does not expose inserting custom callbacks to capture events on widgets, but it does not need to. The Go language is plenty extensible to make this work.
 
-Instead we can simply use Type Embedding and extend the widget, and add a method to run when the escape key is pressed.
+Instead we can simply use Type Embedding and extend the widget to only make it possible to enter numerical values.
 
-First create a new type struct, we will call it `escapeEntry`.
+First create a new type struct, we will call it `numericalEntry`.
 
 ```go
-type escapeEntry struct {
+type numericalEntry struct {
     widget.Entry
 }
 ```
 
-Next up we need to create our `onEnter` method for the `enterEntry` struct. This will later be used to run when the enter key is pressed to print out the written text and then clear the text.
+As mentioned in [Extending existing widgets](https://developer.fyne.io/tutorial/extending-widgets), we follow good practice and create a constructor function that extends the `BaseWidget`.
 
 ```go
-func (e * escapeEntry) onEsc() {
-    fmt.Println(e.Entry.Text)
-    e.Entry.SetText("")
-}
-```
-
-As mentioned in [Extending existing widgets](https://developer.fyne.io/tutorial/extending-widgets), we follow good practice and create a constructor function and extend the `BaseWidget`.
-
-```go
-func newEscapeEntry() * escapeEntry {
-    entry := & escapeEntry{}
+func newNumericalEntry() *numericalEntry {
+    entry := &numericalEntry{}
     entry.ExtendBaseWidget(entry)
     return entry
 }
 ```
 
-Then override the `TypedKey()` method that's part of the `fyne.Focusable` interface,
-this will allow us to intercept the standard key handling and pass through if we want.
-Inside this method, we will use a conditional to check if the `key.Name` value matches the `Escape` key using the `fyne.KeyEscape` variable and if that is the case, we run our `onEsc` method.
-We need to have a default case that calls `e.Entry.TypedKey(key)` to maintain the behavior of other keys in the entry.
-This implementation can easily be extended to check for other keys in the future if necessary.
+Now we need to make the entry accept only numbers. This can be done by overriding the `TypedRune(rune)` method that's part of the `fyne.Focusable` interface.
+This will allow us to intercept the standard handling of runes received from key presses and only pass through those that we want.
+Inside this method, we will use a conditional to check if the rune matches any of the numbers between zero and nine. If they do, we delegate it to the standard `TypedRune(rune)` method of the embeded entry. If they do not, we just ignore the inputs.
+This implementation will only allow integers to be entered, but can easily be extended to check for other keys in the future if necessary.
 
 ```go
-func (e *escapeEntry) TypedKey(key *fyne.KeyEvent) {
-    switch key.Name {
-    case fyne.KeyEscape:
-        e.onEsc()
-    default:
-        e.Entry.TypedKey(key)
-    }
+func (e *numericalEntry) TypedRune(r rune) {
+	switch r {
+	case '0', '1', '2', '3', '4', '5', '6', '7', '8', '9':
+		e.Entry.TypedRune(r)
+	}
 }
 ```
 
-With this, the entry now performs a custom action that will be executed when the `TypedKey()` event occurs in our GUI program.
+If we want to update the implementation to allow for decimal numers as well, we can simply add `.` and `,` to the list of allowed runes (some languages use commas over dots for decimal notations).
+
+```go
+func (e *numericalEntry) TypedRune(r rune) {
+	switch r {
+	case '0', '1', '2', '3', '4', '5', '6', '7', '8', '9', '.', ',':
+		e.Entry.TypedRune(r)
+	}
+}
+```
+
+With this, the entry now only allows the user to enter numerical values when keys are pressed. However, the paste shortcut will still allow text to be entered.
+To fix this, we can overwrite the `TypedShortcut(fyne.Shortcut)` method that is part of the `fyne.Shortcutable` interface.
+First we need to do a type assertion to check if the given shortcut is of the type `*fyne.ShortcutPaste`. If it is not, we can just delegate the shortcut back to the embeded entry.
+If it is, we check if the clipboard content is numerical, by using `strconv.ParseFloat()` (if you want to only allow integers, `strconv.Atoi()` will be just fine), and then delegating the shortcut back to the embeded entry if the clipboard content could be parsed without errors.
+
+```go
+func (e *numericalEntry) TypedShortcut(shortcut fyne.Shortcut) {
+	paste, ok := shortcut.(*fyne.ShortcutPaste)
+	if !ok {
+		e.Entry.TypedShortcut(shortcut)
+		return
+	}
+
+	content := paste.Clipboard.Content()
+	if _, err := strconv.ParseFloat(content, 64); err == nil {
+		e.Entry.TypedShortcut(shortcut)
+	}
+}
+```
 
 In the end, the resulting code could look something like this:
 
@@ -61,45 +78,50 @@ In the end, the resulting code could look something like this:
 package main
 
 import (
-	"fmt"
+	"strconv"
 
 	"fyne.io/fyne/v2"
 	"fyne.io/fyne/v2/app"
 	"fyne.io/fyne/v2/widget"
 )
 
-type escapeEntry struct {
+type numericalEntry struct {
 	widget.Entry
 }
 
-func (e *escapeEntry) onEsc() {
-	fmt.Println(e.Entry.Text)
-	e.Entry.SetText("")
-}
-
-func newEscEntry() *escapeEntry {
-	entry := &escapeEntry{}
+func newNumericalEntry() *numericalEntry {
+	entry := &numericalEntry{}
 	entry.ExtendBaseWidget(entry)
 	return entry
 }
 
-func (e *escapeEntry) TypedKey(key *fyne.KeyEvent) {
-	switch key.Name {
-	case fyne.KeyEscape:
-		e.onEsc()
-	default:
-		e.Entry.TypedKey(key)
+func (e *numericalEntry) TypedRune(r rune) {
+	switch r {
+	case '0', '1', '2', '3', '4', '5', '6', '7', '8', '9', '.', ',':
+		e.Entry.TypedRune(r)
+	}
+}
+
+func (e *numericalEntry) TypedShortcut(shortcut fyne.Shortcut) {
+	paste, ok := shortcut.(*fyne.ShortcutPaste)
+	if !ok {
+		e.Entry.TypedShortcut(shortcut)
+		return
+	}
+
+	content := paste.Clipboard.Content()
+	if _, err := strconv.ParseFloat(content, 64); err == nil {
+		e.Entry.TypedShortcut(shortcut)
 	}
 }
 
 func main() {
 	a := app.New()
-	w := a.NewWindow("Messenger")
+	w := a.NewWindow("Numerical")
 
-	entry := newEscEntry()
+	entry := newNumericalEntry()
 
 	w.SetContent(entry)
 	w.ShowAndRun()
 }
 ```
-
