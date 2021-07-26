@@ -124,8 +124,8 @@ entries:
       url: /tutorial/write-custom-widget
       output: web, pdf
 
-    - title: Handle Key Presses in Entry
-      url: /tutorial/keypress-on-entry
+    - title: Numerical Entry
+      url: /tutorial/numerical-entry
       output: web, pdf
 
     - title: Handling Shortcuts
