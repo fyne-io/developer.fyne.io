@@ -72,6 +72,15 @@ func (e *numericalEntry) TypedShortcut(shortcut fyne.Shortcut) {
 }
 ```
 
+As a bonus, we can also make sure that mobile operating systems open the numerical keyboard instead of the default keyboard. This can be done by by first importng the `fyne.io/fyne/v2/driver/mobile` package and
+overwriting the `Keyboard() mobile.KeyboardType` method that is part of the `m̀obile.Keyboardable` interface. Inside the function, we then simply return the `m̀obile.NumberKeyboard` type.
+
+```
+func (e *numericalEntry) Keyboard() mobile.KeyboardType {
+	return mobile.NumberKeyboard
+}
+```
+
 In the end, the resulting code could look something like this:
 
 ```go
@@ -82,6 +91,7 @@ import (
 
 	"fyne.io/fyne/v2"
 	"fyne.io/fyne/v2/app"
+	"fyne.io/fyne/v2/driver/mobile"
 	"fyne.io/fyne/v2/widget"
 )
 
@@ -115,6 +125,10 @@ func (e *numericalEntry) TypedShortcut(shortcut fyne.Shortcut) {
 	}
 }
 
+func (e *numericalEntry) Keyboard() mobile.KeyboardType {
+	return mobile.NumberKeyboard
+}
+
 func main() {
 	a := app.New()
 	w := a.NewWindow("Numerical")
@@ -124,4 +138,5 @@ func main() {
 	w.SetContent(entry)
 	w.ShowAndRun()
 }
+
 ```
