@@ -67,6 +67,7 @@ import (
 	"fyne.io/fyne/v2"
 	"fyne.io/fyne/v2/app"
 	"fyne.io/fyne/v2/widget"
+	"fyne.io/fyne/v2/container"
 )
 
 func main() {
@@ -77,7 +78,7 @@ func main() {
 	text2 := widget.NewLabel("Middle Label")
 	text3 := widget.NewLabel("bottomright")
 
-	w.SetContent(fyne.NewContainerWithLayout(&diagonal{}, text1, text2, text3))
+	w.SetContent(container.New(&diagonal{}, text1, text2, text3))
 	w.ShowAndRun()
 }
 ```
