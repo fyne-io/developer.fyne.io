@@ -56,7 +56,7 @@ func (d *diagonal) Layout(objects []fyne.CanvasObject, containerSize fyne.Size) 
 ```
 
 That's all there is to creating a custom layout.
-Now that the code is all written we can use it as the `layout` parameter to `NewContainerWithLayout`.
+Now that the code is all written we can use it as the `layout` parameter to `container.New`.
 The code below sets up 3 `Label` widgets and place them in a container with our new layout.
 If you run this application you will see the diagonal widget arrangement and, upon resizing the window, they will align to the bottom left of the available space.
 
@@ -66,8 +66,8 @@ package main
 import (
 	"fyne.io/fyne/v2"
 	"fyne.io/fyne/v2/app"
-	"fyne.io/fyne/v2/widget"
 	"fyne.io/fyne/v2/container"
+	"fyne.io/fyne/v2/widget"
 )
 
 func main() {
