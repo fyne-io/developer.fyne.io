@@ -8,7 +8,7 @@ permalink: /tour/binding/simple
 
 ---
 
-The simplest for of binding a widget is to pass it
+The simplest form of binding a widget is to pass it
 a bound item as a value instead of a static value.
 Many widgets provide a `WithData` constructor that will
 accept a typed data binding item. To set up the binding
