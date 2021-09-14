@@ -10,7 +10,7 @@ permalink: /tour/binding/twoway
 
 So far we have looked at data binding as a way of keeping
 our user interface elements up to date. Far more common,
-however, is the need to update valules from the UI
+however, is the need to update values from the UI
 widgets and keep the data up to date everywhere.
 Thankfully the bindings provided in Fyne are "two-way"
 which means that values can be pushed into them as well
