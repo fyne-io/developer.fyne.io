@@ -1,4 +1,4 @@
 ---
 permalink: /api/app/
-redirect_to: /api/v2.0/app/
+redirect_to: /api/v2.1/app/
 ---
