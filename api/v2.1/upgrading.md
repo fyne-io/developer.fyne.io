@@ -35,6 +35,8 @@ Any apps without a module file will now use the 2.1 release.
 Although this release is backwards compatible so your code will compile and
 run as expected, there are some changes which you may notice.
 
+* Focusable items are no longer focused automatically on Tap - you need to handle this in a Tapped function, calling:
+  `Canvas.Focus(myObj)` if it should gain focus
 * Padding in the collection widgets (List, Table, Tree) has been removed, so cells will be the size of the containing widget
 * theme.LightTheme() and DarkTheme() have been deprecated, in preference to theme.DefaultTheme()
   if you require overriding user choice you can create a custom theme that extends DefaultTheme

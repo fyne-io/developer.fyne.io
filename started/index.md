@@ -1,4 +1,4 @@
----
+-u-
 layout: page
 title: Getting Started
 
@@ -69,7 +69,8 @@ The steps for installing with MSYS2 (recommended) are as follows:
         $ pacman -Syu
         $ pacman -S git mingw-w64-x86_64-toolchain
 
-* Add /c/Program\ Files/Go/bin to your PATH in .bashrc
+* Add /c/Program\ Files/Go/bin and ~/Go/bin to your PATH in .bashrc, you can use the command:
+    `echo 'export PATH=$PATH:/c/Program\ Files/Go/bin:~/Go/bin` >> ~/.bashrc`
 
 </div>
 </div>
