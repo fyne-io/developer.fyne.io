@@ -14,7 +14,7 @@ If your project has a `go.mod` file then you can edit the `require` line to use
 version `v2.1.0`, or you can execute the following command inside the directory:
 
 ```bash
-go get fyne.io/fyne@v2.1.0
+go get fyne.io/fyne/v2@v2.1.0
 ```
 
 The next time you build or run your app it will be using the 2.1 release
@@ -25,7 +25,7 @@ If you are not using modules then you will need to update the Fyne checkout in
 your go source code. To do this execute the following command:
 
 ```bash
-go get -u fyne.io/fyne
+go get -u fyne.io/fyne/v2
 ```
 
 Any apps without a module file will now use the 2.1 release.
