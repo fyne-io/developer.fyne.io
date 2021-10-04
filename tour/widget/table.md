@@ -15,8 +15,8 @@ There are 3 main callbacks, `Length`, `CreateCell` and `UpdateCell`. The Length 
 it returns how many items are in the data to be presented, the two ints it returns represent the row and colum count.
 The other two relate to the content templates.
 
-The `CreateItem` callback returns a new template object, just like list.
+The `CreateCell` callback returns a new template object, just like list.
 The difference being that `MinSize` will define the standard size of each cell, and the minimum size of the table (it shows at least one cell).
-As previously the `UpdateItem` is called to apply data to a cell template. The index passed in is the same `(row, col)` int pair.
+As previously the `UpdateCell` is called to apply data to a cell template. The index passed in is the same `(row, col)` int pair.
 
 In the next tour section we explore [data bindings](/tour/binding/).
