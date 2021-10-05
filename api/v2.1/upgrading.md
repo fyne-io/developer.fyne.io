@@ -30,6 +30,18 @@ go get -u fyne.io/fyne/v2
 
 Any apps without a module file will now use the 2.1 release.
 
+## Fyne command
+
+After a major release of the Fyne toolkit it is advisable to upgrade the `fyne` commandline tool as well.
+This will bring new functionality and packaging options, and may be required to deliver certain bug fixes.
+You can make the upgrade by using the `go get` command similarly to above:
+
+```bash
+go get -u fyne.io/fyne/v2/cmd/fyne
+```
+
+After that completes, check you have the new version installed by running `fyne version`.
+
 ## Changes
 
 Although this release is backwards compatible so your code will compile and
