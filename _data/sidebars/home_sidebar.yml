@@ -65,6 +65,10 @@ entries:
       url: /started/compiling
       output: web, pdf
 
+    - title: App Metadata
+      url: /started/metadata
+      output: web, pdf
+
     - title: Cross Compiling
       url: /started/cross-compiling
       output: web, pdf
