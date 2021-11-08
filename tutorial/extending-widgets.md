@@ -33,6 +33,8 @@ func newTappableIcon(res fyne.Resource) *tappableIcon {
 }
 ```
 
+> **Note:** a widget constructor like `widget.NewIcon` may not be used for extension since it already calls `ExtendBaseWidget`.
+
 We then add new functions to implement the `fyne.Tappable` interface, with
 those functions added the new `Tapped` function will be called every time the
 user taps our new icon.  The interface required has two functions,
