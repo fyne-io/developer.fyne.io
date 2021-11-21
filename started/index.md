@@ -176,20 +176,45 @@ The steps for installing with MSYS2 (recommended) are as follows:
 
 ## Downloading
 
-After installing any prerequisites the following command will do everything to get Fyne installed:
+When using Go modules (required with Go 1.16 and later), you will need to set up the module before you can use the package.
+If you are not using modules or you already have your module initialized, you can skip this to the next step.
+Run the following command and replace `MODULE_NAME` with your preferred module name.
+
+    $ go mod init MODULE_NAME
+    
+You now need to download the Fyne module. This will be done using the following command: 
 
     $ go get fyne.io/fyne/v2
 
-Once that command completes you will have the full Fyne development package installed
-in your GOPATH.
+To finish your module's set up, you now need to tidy the module file to correctly reference Fyne as a dependency.
+You do this by using the following command (can be skipped if you are not using modules):
 
-## Run demo
+    $ go mod tidy
 
-If you want to see the Fyne toolkit in action before you start to code your own application
-then you can see our demo app running on your computer by executing:
+If you are unsure of how Go modules work, consider reading [Tutorial: Create a Go module](https://golang.org/doc/tutorial/create-module).
+
+## Run the demo
+
+If you want to see the Fyne toolkit in action before you start to code your own application,
+you can see our demo app running on your computer by executing:
+
+    $ go run fyne.io/fyne/v2/cmd/fyne_demo
+
+### Installing
+
+If you want to, you can also install the demo using the following command (requires Go 1.16 or later):
+
+    $ go install fyne.io/fyne/v2/cmd/fyne_demo@latest
+
+For earlier versions of Go, you need to use the following command instead:
 
     $ go get fyne.io/fyne/v2/cmd/fyne_demo
+    
+If your `GOBIN` environment has been added to path (should be by default on macOS and Windows), you can then run the demo:
+
     $ fyne_demo
+
+Please note that the first run has to compile some C-code and can thus take longer than usual. Subsequent builds reuse the cache and will be much faster.  
 
 And that's all there is to it! Now you can write your own Fyne application in your IDE of choice. If you want to see some Fyne code in action then you can read [your first application](/started/firstapp.html). Alternatively you could check out our tour of the Fyne toolkit using the button below.
 
