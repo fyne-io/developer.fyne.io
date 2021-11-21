@@ -178,7 +178,7 @@ The steps for installing with MSYS2 (recommended) are as follows:
 
 When using Go modules (required with Go 1.16 and later), you will need to set up the module before you can use the package.
 If you are not using modules or you already have your module initialized, you can skip this to the next step.
-Run the following command and replace `MODULE_NAME` with your preferred module name.
+Run the following command and replace `MODULE_NAME` with your preferred module name (this should be called in a new folder specific for your application).
 
     $ go mod init MODULE_NAME
     
