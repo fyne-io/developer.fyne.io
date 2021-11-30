@@ -108,6 +108,10 @@ are well suited to that location but user state would not be. A widget that is
 hidden may have it's renderer destroyed and if it is shown again the new renderer
 must be able to reflect the same widget state.
 
+### Example Widget
+
+The following covers in detail the creation of a simple Widget and it's Renderer.
+
 #### Create a Widget
 
 So the widget requires the`widget.BaseWidget`. For example:
