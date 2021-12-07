@@ -119,9 +119,7 @@ The steps for installing with MSYS2 (recommended) are as follows:
 
 * You will need to install Go, gcc and the graphics library header files using the package manager.
 * **FreeBSD:**
-`sudo pkg install go gcc xorg glfw pkgconf`
-* **OpenBSD:**
-`sudo pkg_add go glfw`
+`sudo pkg install go gcc xorg pkgconf`
 </div>
 </div>
 
@@ -168,7 +166,7 @@ The steps for installing with MSYS2 (recommended) are as follows:
             clickTab("linux");
         } else if (os == "Linux armv7l") {
             clickTab("rpi");
-        } else if (os == "FreeBSD i386" || os == "FreeBSD amd64") {
+        } else if (os == "FreeBSD i386" || os == "FreeBSD amd64" || os == "OpenBSD i386" || os == "OpenBSD amd64" || os == "NetBSD i386" || os == "NetBSD amd64") {
         	clickTab("bsd");
         }
     });
