@@ -160,60 +160,56 @@ func (w *MyWidget) CreateRenderer() fyne.WidgetRenderer {
 
 The widget is now almost complete except for the ```newMyWidgetRenderer()``` function which creates your new widget renderer. 
 
-**Warning**: Do not keep a reference to the widget renderer in the widget (or any other part of your application). The fyne application caches the renderer and may destroy it at any time.
-
-The fyne application will call ```CreateRenderer()``` again if it requires a new renderer instance.
-
-It is ok for the widget renderer to refer to the widget but not the other way round.
+**Warning**: Do not keep a reference to the widget renderer in the widget (or any other part of your application). The fyne application caches the renderer and may destroy it at any time. The fyne application will call ```CreateRenderer()``` again if it requires a new renderer instance. It is ok for the widget renderer to refer to the widget but not the other way round.
 
 #### Create a Widget Renderer
 
 The Widget Renderer is how we tell the fyne application what to draw and how to lay it out.
 
-The Widget Renderer has it's own state and methods (see ```fyne.WidgetRenderer``` interface) but this should only be concerned with drawing (rendering) the widget.
+The Widget Renderer has it's own state and methods (see ```fyne.WidgetRenderer``` interface) but it should only be concerned with drawing (rendering) the widget.
 
 The Widget Renderer is responsible for:
 
-1) The objects that are to be drawn. These are returned by the ```Objects() []fyne.CanvasObject``` method. Notice that you can return any object as long as it implements the ```fyne.CanvasObject``` interface.
-2) Each object returned by the Objects() method will need to be created by the Widget Renderer and initialised before returning.
-3) The fyne application will then call the renderers Layout() method. This is where the size and position of each object is detirmined.
+1) Defining the objects that are to be drawn. These are returned by the ```Objects() []fyne.CanvasObject``` method. Each object returned will need to be created by the Widget Renderer and initialised before being returned.
+3) The position and size of all canvas items within the space passed in to the Layout method.
+3) Ensuring that the display is refreshed with changes to the state of the widget. 
 
 Our example renderer could be stored in the following struct:
 
 ```
 type myWidgetRenderer struct {
-	widget *MyWidget
-	rect   *canvas.Rectangle
-	text   *canvas.Text
+	widget     *MyWidget
+	background *canvas.Rectangle
+	text       *canvas.Text
 }
 ```
 
 As you can see it is all about canvas objects that the fyne application will render.
 
-For this example we need a canvas.Rectangle as a background and a canvas.Text to display the widget text data.
+For this example we need a canvas.Rectangle as a background and a canvas.Text to display the widget text.
 
-We hold a reference to the widget so we can refer to the data it holds. If the data in the widget changes then we want the renderer to refresh the canvas.Text so the display changes. See the Refresh() method below.
+We hold a reference to the widget so we can refer to the data it holds. If the data in the widget changes we want the renderer to be able to refresh the display. See the Refresh() method below.
 
 When we construct the renderer we pass in a reference to the widget and store it.
 
 ```go
 func newMyWidgetRenderer(myWidget *MyWidget) *myWidgetRenderer {
 	return &myWidgetRenderer{
-		widget: myWidget,
-		rect:   canvas.NewRectangle(theme.BackgroundColor()),
-		text:   canvas.NewText(myWidget.text, theme.ForegroundColor()),
+		widget:     myWidget,
+		background: canvas.NewRectangle(theme.BackgroundColor()),
+		text:       canvas.NewText(myWidget.text, theme.ForegroundColor()),
 	}
 }
 ```
 
 Notice that the size and position of the canvas objects are not defined here, only initial colours and text properties.
 
-The Objects() method should return the canvas objects as a list as follows:
+The Objects() method should return the canvas objects in a list as follows:
 
 ```go
 func (r *myWidgetRenderer) Objects() []fyne.CanvasObject {
     // The order is critical, rect is drawn first then text
-	return []fyne.CanvasObject{r.rect, r.text}
+	return []fyne.CanvasObject{r.background, r.text}
 }
 ```
 
@@ -223,15 +219,15 @@ Each object returned will need to be sized and positioned in the Layout() method
 func (r *myWidgetRenderer) Layout(s fyne.Size) {
 	ts := fyne.MeasureText(r.text.Text, r.text.TextSize, r.text.TextStyle)
 	r.text.Move(fyne.Position{X: (s.Width - ts.Width) / 2, Y: (s.Height - ts.Height) / 2})
-	r.rect.Resize(s)
+	r.background.Resize(s)
 }
 ```
 
-1. The size of the canvas.Text object is measured so we can center it. 
-2. The position of the canvas.Text object is centered
-3. The size of the canvas.Rectangle (background) is set to the same size as the widget.
+1. The size of the canvas.Text (r.text) object is measured so we can center it. 
+2. The position of the canvas.Text (r.text) object is centered
+3. The size of the canvas.Rectangle (r.background) is set to the same size as the widget.
 
-We need to define the minimum size of our widget. 
+We also need to define the minimum size of our widget. 
 
 We do this in the renderer because only the renderer knows the size of the canvas objects it contains.
 
@@ -245,7 +241,7 @@ For this example the size is detirmined by the size of the canvas.Text object.
 
 The Refresh() method will be called (by the application logic) if the application changes the state of the widget. 
 
-For example if we change the text property of the widget:
+For example if we change the text property of the widget we would then call Refresh() as follows:
 
 ```go
 myWidget.text = "Update Widget"
@@ -261,7 +257,7 @@ func (r *myWidgetRenderer) Refresh() {
 }
 ```
 
-This updates required any canvas objects and calls their respective Refresh() methods to force them to re-display the data.
+This updates the canvas objects and calls their respective Refresh() methods to force them to re-display the data.
 
 We finish with the remaining methods of the ```fyne.WidgetRenderer``` interface
 
