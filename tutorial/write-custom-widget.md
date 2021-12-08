@@ -125,7 +125,6 @@ We add an Anonymous `widget.BaseWidget` as follows:
 ```go
 type MyWidget struct {
 	widget.BaseWidget           // Inherit from BaseWidget
-	minSize           fyne.Size // The minimum size of the widget
 	text              string	// The text to display in the widget
 }
 ```
@@ -133,17 +132,16 @@ type MyWidget struct {
 To construct the widget create a New<widgetname> function. The example we are using is called MyWidget so by convention the following function name would be used to construct the widget:
 
 ```go
-func NewMyWidget(W, H float32, text string) *MyWidget {
-	w := &MyWidget{ 							 // Initialise the widget storage
-		text:    text,                           // Save the text
-		minSize: fyne.Size{Width: W, Height: H}, // Set the size
+func NewMyWidget(text string) *MyWidget {
+	w := &MyWidget{
+		text: text,
 	}
-	w.ExtendBaseWidget(w) // Required to initialise the base widget
+	w.ExtendBaseWidget(w)
 	return w
 }
 ```
 
-Note : It is not necessary to override the Resize method (shown above) but if you need to change the Resize behaviour of your widget and you add a ```Resize(s fyne.Size)``` method then you **must** include the ```w.BaseWidget.Resize(s)```. in the code.
+Note : It is not necessary to override the Resize method (shown below) but if you need to change the Resize behaviour of your widget and you override the ```Resize(s fyne.Size)``` method then you **must** include the ```w.BaseWidget.Resize(s)```. in the code.
 
 ```go
 func (w *MyWidget) Resize(s fyne.Size) { // See note below
@@ -152,7 +150,7 @@ func (w *MyWidget) Resize(s fyne.Size) { // See note below
 ```
 
 
-The final code to add is the ```CreateRenderer() fyne.WidgetRenderer``` method:
+The final code to add is the ```CreateRenderer() fyne.WidgetRenderer``` method as follows:
 
 ```go
 func (w *MyWidget) CreateRenderer() fyne.WidgetRenderer {
@@ -160,53 +158,57 @@ func (w *MyWidget) CreateRenderer() fyne.WidgetRenderer {
 }
 ```
 
+The widget is now almost complete except for the ```newMyWidgetRenderer()``` function which creates your new widget renderer. 
+
 **Warning**: Do not keep a reference to the widget renderer in the widget (or any other part of your application). The fyne application caches the renderer and may destroy it at any time.
 
 The fyne application will call ```CreateRenderer()``` again if it requires a new renderer instance.
 
 It is ok for the widget renderer to refer to the widget but not the other way round.
 
-The widget is now almost complete except for the ```newMyWidgetRenderer()``` function which creates your new widget renderer. 
-
 #### Create a Widget Renderer
 
-The widget renderer is how we tell the fyne application what to draw and how to lay it out.
+The Widget Renderer is how we tell the fyne application what to draw and how to lay it out.
 
-The widget renderer has it's own state and methods (see ```fyne.WidgetRenderer``` interface) but this should only be concerned with drawing (rendering) the widget.
+The Widget Renderer has it's own state and methods (see ```fyne.WidgetRenderer``` interface) but this should only be concerned with drawing (rendering) the widget.
 
-The renderer is responsible for:
+The Widget Renderer is responsible for:
 
 1) The objects that are to be drawn. These are returned by the ```Objects() []fyne.CanvasObject``` method. Notice that you can return any object as long as it implements the ```fyne.CanvasObject``` interface.
-2) Each object returned by the Objects() method will need to be created by the widget renderer and initialised before returning.
+2) Each object returned by the Objects() method will need to be created by the Widget Renderer and initialised before returning.
 3) The fyne application will then call the renderers Layout() method. This is where the size and position of each object is detirmined.
 
 Our example renderer could be stored in the following struct:
 
 ```
 type myWidgetRenderer struct {
-	minSize fyne.Size // The size of the widget
-	rect    *canvas.Rectangle
-	text    *canvas.Text
+	widget *MyWidget
+	rect   *canvas.Rectangle
+	text   *canvas.Text
 }
 ```
 
-As you can see it is about canvas objects that the fyne application will render. A lower case name is used as the renderer code is private and only created by the Widget. 
+As you can see it is all about canvas objects that the fyne application will render.
 
-The constructor is the place to pass in properties like minimum size, text values and other data.
+For this example we need a canvas.Rectangle as a background and a canvas.Text to display the widget text data.
+
+We hold a reference to the widget so we can refer to the data it holds. If the data in the widget changes then we want the renderer to refresh the canvas.Text so the display changes. See the Refresh() method below.
+
+When we construct the renderer we pass in a reference to the widget and store it.
 
 ```go
-func newMyWidgetRenderer(size fyne.Size, text string) *myWidgetRenderer {
+func newMyWidgetRenderer(myWidget *MyWidget) *myWidgetRenderer {
 	return &myWidgetRenderer{
-		minSize: size,  // For the MinSize() method
-		rect:    canvas.NewRectangle(theme.BackgroundColor()),
-		text:    canvas.NewText(text, theme.ForegroundColor()),
+		widget: myWidget,
+		rect:   canvas.NewRectangle(theme.BackgroundColor()),
+		text:   canvas.NewText(myWidget.text, theme.ForegroundColor()),
 	}
 }
 ```
 
-Notice that the size and position of the canvas objects are not defined here, only colours, text and other properties. It might be appropriate to pass in a reference to the widget instead of lots of different parameters. This is left to your design requirements.
+Notice that the size and position of the canvas objects are not defined here, only initial colours and text properties.
 
-The Objects() method can now return the canvas objects as a list:
+The Objects() method should return the canvas objects as a list as follows:
 
 ```go
 func (r *myWidgetRenderer) Objects() []fyne.CanvasObject {
@@ -215,26 +217,56 @@ func (r *myWidgetRenderer) Objects() []fyne.CanvasObject {
 }
 ```
 
-Each object returned here will need to be sized and positioned in the Layout() method:
+Each object returned will need to be sized and positioned in the Layout() method as follows:
 
 ```go
 func (r *myWidgetRenderer) Layout(s fyne.Size) {
-	// Measure the size of the text so we can Center it
-	si := fyne.MeasureText(r.text.Text, r.text.TextSize, r.text.TextStyle)
-	r.text.Move(fyne.Position{X: (s.Width - si.Width) / 2, Y: (s.Height - si.Height) / 2})
-	// Resize the background
+	ts := fyne.MeasureText(r.text.Text, r.text.TextSize, r.text.TextStyle)
+	r.text.Move(fyne.Position{X: (s.Width - ts.Width) / 2, Y: (s.Height - ts.Height) / 2})
 	r.rect.Resize(s)
 }
 ```
+
+1. The size of the canvas.Text object is measured so we can center it. 
+2. The position of the canvas.Text object is centered
+3. The size of the canvas.Rectangle (background) is set to the same size as the widget.
+
+We need to define the minimum size of our widget. 
+
+We do this in the renderer because only the renderer knows the size of the canvas objects it contains.
+
+```go
+func (r *myWidgetRenderer) MinSize() fyne.Size {
+	return fyne.MeasureText(r.text.Text, r.text.TextSize, r.text.TextStyle)
+}
+```
+
+For this example the size is detirmined by the size of the canvas.Text object.
+
+The Refresh() method will be called (by the application logic) if the application changes the state of the widget. 
+
+For example if we change the text property of the widget:
+
+```go
+myWidget.text = "Update Widget"
+myWidget.Refresh()
+```
+
+ For this to work we need to define the Refresh() method of the renderer as follows:
+
+```go
+func (r *myWidgetRenderer) Refresh() {
+	r.text.Text = r.widget.text
+	r.text.Refresh()
+}
+```
+
+This updates required any canvas objects and calls their respective Refresh() methods to force them to re-display the data.
 
 We finish with the remaining methods of the ```fyne.WidgetRenderer``` interface
 
 ```go
 func (r *myWidgetRenderer) Destroy() {} // Called when the renderer is destroyed
-func (r *myWidgetRenderer) Refresh() {} // This does not seem to be used!
-func (r *myWidgetRenderer) MinSize() fyne.Size {
-	return r.minSize // Return the minimum size of the widget
-}
 ```
 
 #### Finally
@@ -260,27 +292,3 @@ func main() {
 ```
 
 If you stretch the widget the text will remain centered.
-
-#### Next Steps
-
-Simply add the Tapped method from the fyne.Tappable interface
-
-```go
-var _ fyne.Tappable = (*MyWidget)(nil) // This just checks the Tappable interface
-
-func (w *MyWidget) Tapped(*fyne.PointEvent) {
-	fmt.Println("MyWidget has been tapped")
-}
-```
-
-You can now  LEFT click on your widget :-)
-
-See also:
-
-```
-SecondaryTappable
-DoubleTappable
-Disableable
-```
-
-Note: Implementing the DoubleTappable interface introduces a slight delay of about 0.5 seconds before the Tapped() method is called. This is to allow for the next tap to be recognised.
