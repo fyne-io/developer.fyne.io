@@ -124,8 +124,8 @@ We add an Anonymous `widget.BaseWidget` as follows:
 
 ```go
 type MyWidget struct {
-	widget.BaseWidget           // Inherit from BaseWidget
-	text              string	// The text to display in the widget
+	widget.BaseWidget        // Inherit from BaseWidget
+	text              string // The text to display in the widget
 }
 ```
 
@@ -176,7 +176,7 @@ The Widget Renderer is responsible for:
 
 Our example renderer could be stored in the following struct:
 
-```
+```go
 type myWidgetRenderer struct {
 	widget     *MyWidget
 	background *canvas.Rectangle
@@ -208,7 +208,7 @@ The Objects() method should return the canvas objects in a list as follows:
 
 ```go
 func (r *myWidgetRenderer) Objects() []fyne.CanvasObject {
-    // The order is critical, rect is drawn first then text
+	// The order is critical, rect is drawn first then text
 	return []fyne.CanvasObject{r.background, r.text}
 }
 ```
@@ -223,8 +223,10 @@ func (r *myWidgetRenderer) Layout(s fyne.Size) {
 }
 ```
 
+As you can see in the code sample above, our Layout() method arranges the objects by doing:
+	
 1. The size of the canvas.Text (r.text) object is measured so we can center it. 
-2. The position of the canvas.Text (r.text) object is centered
+2. The position of the canvas.Text (r.text) object is centered.
 3. The size of the canvas.Rectangle (r.background) is set to the same size as the widget.
 
 We also need to define the minimum size of our widget. 
@@ -269,7 +271,7 @@ func (r *myWidgetRenderer) Destroy() {} // Called when the renderer is destroyed
 
 If you are unsure that the interface requirements of the renderer have been met you can include the following code at the top of the widget. This is useful if you accidentally change a method or another developer comes along later and makes changes. 
 
-```
+```go
 var _ fyne.WidgetRenderer = (*myWidgetRenderer)(nil)
 ```
 
