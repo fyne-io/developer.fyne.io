@@ -144,7 +144,7 @@ func NewMyWidget(text string) *MyWidget {
 Note : It is not necessary to override the Resize method (shown below) but if you need to change the Resize behaviour of your widget and you override the ```Resize(s fyne.Size)``` method then you **must** include the ```w.BaseWidget.Resize(s)```. in the code.
 
 ```go
-func (w *MyWidget) Resize(s fyne.Size) { // See note below
+func (w *MyWidget) Resize(s fyne.Size) { // See note above
 	w.BaseWidget.Resize(s)
 }
 ```
