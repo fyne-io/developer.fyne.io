@@ -116,9 +116,9 @@ The following covers in detail the creation of a simple Widget and its Renderer.
 
 As described above, we need to inherit from the `widget.BaseWidget` type.
 
-Go provides an simple mechanism for inheriting behaviour from other types. Adding an Anonymous type as a field in the widget structure means that the widget inherits the behaviour of that Anonymous type.
+Go provides an simple mechanism for inheriting behaviour from other types. Adding an Anonymous type as a field (without a name) in the widget structure means that the widget inherits the behaviour of that Anonymous type.
 
-This also means that your widget now implements all of the public methods and properties define by the  `widget.BaseWidget` type.
+This also means that your widget now implements all of the public methods and inherits all of the public properties define by the  `widget.BaseWidget` type.
 
 We add an Anonymous `widget.BaseWidget` as follows:
 
@@ -154,7 +154,7 @@ The final code to add is the ```CreateRenderer() fyne.WidgetRenderer``` method a
 
 ```go
 func (w *MyWidget) CreateRenderer() fyne.WidgetRenderer {
-	return newMyWidgetRenderer(w.minSize, w.text)
+	return newMyWidgetRenderer(w)
 }
 ```
 
