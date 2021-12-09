@@ -281,7 +281,7 @@ If ```myWidgetRenderer``` does NOT implement the ```fyne.WidgetRenderer``` inter
 func main() {
 	app := app.New()
 	w := app.NewWindow("My Widget")
-	mw := NewMyWidget(100, 100, "Widget")
+	mw := NewMyWidget("Widget")
 	w.SetContent(mw)
 	w.ShowAndRun()
 }
