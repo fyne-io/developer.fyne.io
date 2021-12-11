@@ -116,7 +116,7 @@ The following covers in detail the creation of a simple Widget and its Renderer.
 
 As described above, we need to inherit from the `widget.BaseWidget` type.
 
-Go provides an simple mechanism for inheriting behaviour from other types. Adding an Anonymous type as a field (without a name) in the widget structure means that the widget inherits the behaviour of that Anonymous type.
+Go provides a simple mechanism for inheriting behaviour from other types. Adding an Anonymous type as a field (without a name) in the widget structure means that the widget inherits the behaviour of that Anonymous type.
 
 This also means that your widget now implements all of the public methods and inherits all of the public properties define by the  `widget.BaseWidget` type.
 
@@ -141,7 +141,7 @@ func NewMyWidget(text string) *MyWidget {
 }
 ```
 
-Note : It is not necessary to override the Resize method (shown below) but if you need to change the Resize behaviour of your widget and you override the ```Resize(s fyne.Size)``` method then you **must** include the ```w.BaseWidget.Resize(s)```. in the code.
+Note: It is not necessary to override the Resize method (shown below) but if you need to change the Resize behaviour of your widget and you override the `Resize(s fyne.Size)` method then you **must** include the `w.BaseWidget.Resize(s)`. in the code.
 
 ```go
 func (w *MyWidget) Resize(s fyne.Size) { // See note above
@@ -150,7 +150,7 @@ func (w *MyWidget) Resize(s fyne.Size) { // See note above
 ```
 
 
-The final code to add is the ```CreateRenderer() fyne.WidgetRenderer``` method as follows:
+The final code to add is the `CreateRenderer() fyne.WidgetRenderer` method as follows:
 
 ```go
 func (w *MyWidget) CreateRenderer() fyne.WidgetRenderer {
@@ -158,19 +158,19 @@ func (w *MyWidget) CreateRenderer() fyne.WidgetRenderer {
 }
 ```
 
-The widget is now almost complete except for the ```newMyWidgetRenderer()``` function which creates your new widget renderer. 
+The widget is now almost complete except for the `newMyWidgetRenderer()` function which creates your new widget renderer. 
 
-**Warning**: Do not keep a reference to the widget renderer in the widget (or any other part of your application). The fyne application caches the renderer and may destroy it at any time. The fyne application will call ```CreateRenderer()``` again if it requires a new renderer instance. It is ok for the widget renderer to refer to the widget but not the other way round.
+**Warning**: Do not keep a reference to the widget renderer in the widget (or any other part of your application). The fyne application caches the renderer and may destroy it at any time. The fyne application will call `CreateRenderer()` again if it requires a new renderer instance. It is ok for the widget renderer to refer to the widget but not the other way round.
 
 #### Create a Widget Renderer
 
 The Widget Renderer is how we tell the fyne application what to draw and how to lay it out.
 
-The Widget Renderer has it's own state and methods (see ```fyne.WidgetRenderer``` interface) but it should only be concerned with drawing (rendering) the widget.
+The Widget Renderer has it's own state and methods (see `fyne.WidgetRenderer` interface) but it should only be concerned with drawing (rendering) the widget.
 
 The Widget Renderer is responsible for:
 
-1) Defining the objects that are to be drawn. These are returned by the ```Objects() []fyne.CanvasObject``` method. Each object returned will need to be created by the Widget Renderer and initialised before being returned.
+1) Defining the objects that are to be drawn. These are returned by the `Objects() []fyne.CanvasObject` method. Each object returned will need to be created by the Widget Renderer and initialised before being returned.
 3) The position and size of all canvas items within the space passed in to the Layout method.
 3) Ensuring that the display is refreshed with changes to the state of the widget. 
 
@@ -261,7 +261,7 @@ func (r *myWidgetRenderer) Refresh() {
 
 This updates the canvas objects and calls their respective Refresh() methods to force them to re-display the data.
 
-We finish with the remaining methods of the ```fyne.WidgetRenderer``` interface
+We finish with the remaining methods of the `fyne.WidgetRenderer` interface
 
 ```go
 func (r *myWidgetRenderer) Destroy() {} // Called when the renderer is destroyed
@@ -275,7 +275,7 @@ If you are unsure that the interface requirements of the renderer have been met 
 var _ fyne.WidgetRenderer = (*myWidgetRenderer)(nil)
 ```
 
-If ```myWidgetRenderer``` does NOT implement the ```fyne.WidgetRenderer``` interface this line will be in error!
+If `myWidgetRenderer` does NOT implement the `fyne.WidgetRenderer` interface this line will be in error!
 
 #### Use your Widget
 
