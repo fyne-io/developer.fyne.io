@@ -235,7 +235,9 @@ We do this in the renderer because only the renderer knows the size of the canva
 
 ```go
 func (r *myWidgetRenderer) MinSize() fyne.Size {
-	return fyne.MeasureText(r.text.Text, r.text.TextSize, r.text.TextStyle)
+	// Measure the size of the text so we can calculate an indent.
+	ts := fyne.MeasureText(r.text.Text, r.text.TextSize, r.text.TextStyle)
+	return fyne.NewSize(ts.Width+20, ts.Height+20)
 }
 ```
 
@@ -288,5 +290,8 @@ func main() {
 	w.ShowAndRun()
 }
 ```
+The widget should look like this:
+	
+![widgetDemoScreenSmall](https://user-images.githubusercontent.com/94919638/145826575-53ae12fc-e6d0-4976-9037-dbdaaea9f4de.png)
 
-If you stretch the widget the text will remain centered.
+	The widget can be resized and the text will remain centered.
