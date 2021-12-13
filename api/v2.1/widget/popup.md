@@ -72,7 +72,7 @@ Move the widget to a new position. A PopUp position is absolute to the top, left
 ```go
 func (p *PopUp) Resize(size fyne.Size)
 ```
-Resize changes the size of the PopUp. PopUps always have the size of their canvas. However, Resize changes the size of the PopUp's content.
+Resize changes the size of the PopUp's content. PopUps always have the size of their canvas, but this call updates the size of the content portion.
 
 
 <div class="implements">Implements: <code>

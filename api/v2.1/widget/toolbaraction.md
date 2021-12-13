@@ -17,7 +17,7 @@ import "fyne.io/fyne/v2/widget"
 ```go
 type ToolbarAction struct {
 	Icon        fyne.Resource
-	OnActivated func()
+	OnActivated func() `json:"-"`
 }
 ```
 
