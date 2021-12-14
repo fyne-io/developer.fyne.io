@@ -69,8 +69,9 @@ The steps for installing with MSYS2 (recommended) are as follows:
         $ pacman -Syu
         $ pacman -S git mingw-w64-x86_64-toolchain
 
-* Add /c/Program\ Files/Go/bin and ~/Go/bin to your PATH in .bashrc, you can use the command:
-    `echo 'export PATH=$PATH:/c/Program\ Files/Go/bin:~/Go/bin` >> ~/.bashrc`
+* You will need to add /c/Program\ Files/Go/bin and ~/Go/bin to your PATH, for MSYS2 you can paste the following command into your terminal:
+
+        $ echo \'export PATH=$PATH:/c/Program\ Files/Go/bin:~/Go/bin\` >> ~/.bashrc
 
 </div>
 </div>
@@ -180,6 +181,7 @@ When using Go modules (required with Go 1.16 and later), you will need to set up
 If you are not using modules or you already have your module initialized, you can skip this to the next step.
 Run the following command and replace `MODULE_NAME` with your preferred module name (this should be called in a new folder specific for your application).
 
+    $ cd myapp
     $ go mod init MODULE_NAME
     
 You now need to download the Fyne module. This will be done using the following command: 
@@ -199,6 +201,8 @@ If you want to see the Fyne toolkit in action before you start to code your own 
 you can see our demo app running on your computer by executing:
 
     $ go run fyne.io/fyne/v2/cmd/fyne_demo
+    
+Please note that the first run has to compile some C-code and can thus take longer than usual. Subsequent builds reuse the cache and will be much faster.
 
 ### Installing
 
@@ -213,8 +217,6 @@ For earlier versions of Go, you need to use the following command instead:
 If your `GOBIN` environment has been added to path (should be by default on macOS and Windows), you can then run the demo:
 
     $ fyne_demo
-
-Please note that the first run has to compile some C-code and can thus take longer than usual. Subsequent builds reuse the cache and will be much faster.  
 
 And that's all there is to it! Now you can write your own Fyne application in your IDE of choice. If you want to see some Fyne code in action then you can read [your first application](/started/firstapp.html). Alternatively you could check out our tour of the Fyne toolkit using the button below.
 
