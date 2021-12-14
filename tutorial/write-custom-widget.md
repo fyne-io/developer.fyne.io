@@ -19,11 +19,10 @@ interface there is not much that must be implemented.
 
 ```go
 type Widget interface {
-	CanvasObject
+    CanvasObject
 
-	CreateRenderer() WidgetRenderer
+    CreateRenderer() WidgetRenderer
 }
-
 ```
 
 As a widget needs to be used like any other canvas item we inherit from the same interface.
@@ -37,12 +36,12 @@ For example, look at the `widget.Button` type:
 
 ```go
 type Button struct {
-	BaseWidget
-	Text  string
-	Style ButtonStyle
-	Icon  fyne.Resource
+    BaseWidget
+    Text  string
+    Style ButtonStyle
+    Icon  fyne.Resource
 
-	OnTapped func()
+    OnTapped func()
 }
 ```
 
@@ -57,12 +56,12 @@ Every widget must provide a renderer, but it is entirely possible to re-use a re
 
 ```go
 type WidgetRenderer interface {
-	Layout(Size)
-	MinSize() Size
+    Layout(Size)
+    MinSize() Size
 
-	Refresh()
-	Objects() []CanvasObject
-	Destroy()
+    Refresh()
+    Objects() []CanvasObject
+    Destroy()
 }
 ```
 
@@ -77,12 +76,12 @@ Compare again with the button widget - it's `fyne.WidgetRenderer` implementation
 
 ```go
 type buttonRenderer struct {
-	icon   *canvas.Image
-	label  *canvas.Text
-	shadow *fyne.CanvasObject
+    icon   *canvas.Image
+    label  *canvas.Text
+    shadow *fyne.CanvasObject
 
-	objects []fyne.CanvasObject
-	button  *Button
+    objects []fyne.CanvasObject
+    button  *Button
 }
 ```
 
@@ -124,8 +123,8 @@ We add an Anonymous `widget.BaseWidget` as follows:
 
 ```go
 type MyWidget struct {
-	widget.BaseWidget        // Inherit from BaseWidget
-	text              string // The text to display in the widget
+    widget.BaseWidget        // Inherit from BaseWidget
+    text              string // The text to display in the widget
 }
 ```
 
@@ -133,11 +132,11 @@ To construct the widget create a New<widgetname> function. The example we are us
 
 ```go
 func NewMyWidget(text string) *MyWidget {
-	w := &MyWidget{
-		text: text,
-	}
-	w.ExtendBaseWidget(w)
-	return w
+    w := &MyWidget{
+        text: text,
+    }
+    w.ExtendBaseWidget(w)
+    return w
 }
 ```
 
@@ -145,16 +144,15 @@ Note: It is not necessary to override the Resize method (shown below) but if you
 
 ```go
 func (w *MyWidget) Resize(s fyne.Size) { // See note above
-	w.BaseWidget.Resize(s)
+    w.BaseWidget.Resize(s)
 }
 ```
-
 
 The final code to add is the `CreateRenderer() fyne.WidgetRenderer` method as follows:
 
 ```go
 func (w *MyWidget) CreateRenderer() fyne.WidgetRenderer {
-	return newMyWidgetRenderer(w)
+    return newMyWidgetRenderer(w)
 }
 ```
 
@@ -171,16 +169,16 @@ The Widget Renderer has it's own state and methods (see `fyne.WidgetRenderer` in
 The Widget Renderer is responsible for:
 
 1) Defining the objects that are to be drawn. These are returned by the `Objects() []fyne.CanvasObject` method. Each object returned will need to be created by the Widget Renderer and initialised before being returned.
-3) The position and size of all canvas items within the space passed in to the Layout method.
+2) The position and size of all canvas items within the space passed in to the Layout method.
 3) Ensuring that the display is refreshed with changes to the state of the widget. 
 
 Our example renderer could be stored in the following struct:
 
 ```go
 type myWidgetRenderer struct {
-	widget     *MyWidget
-	background *canvas.Rectangle
-	text       *canvas.Text
+    widget     *MyWidget
+    background *canvas.Rectangle
+    text       *canvas.Text
 }
 ```
 
@@ -194,11 +192,11 @@ When we construct the renderer we pass in a reference to the widget and store it
 
 ```go
 func newMyWidgetRenderer(myWidget *MyWidget) *myWidgetRenderer {
-	return &myWidgetRenderer{
-		widget:     myWidget,
-		background: canvas.NewRectangle(theme.BackgroundColor()),
-		text:       canvas.NewText(myWidget.text, theme.ForegroundColor()),
-	}
+    return &myWidgetRenderer{
+        widget:     myWidget,
+        background: canvas.NewRectangle(theme.BackgroundColor()),
+        text:       canvas.NewText(myWidget.text, theme.ForegroundColor()),
+    }
 }
 ```
 
@@ -208,8 +206,8 @@ The Objects() method should return the canvas objects in a list as follows:
 
 ```go
 func (r *myWidgetRenderer) Objects() []fyne.CanvasObject {
-	// The order is critical, rect is drawn first then text
-	return []fyne.CanvasObject{r.background, r.text}
+    // The order is critical, rect is drawn first then text
+    return []fyne.CanvasObject{r.background, r.text}
 }
 ```
 
@@ -217,14 +215,14 @@ Each object returned will need to be sized and positioned in the Layout() method
 
 ```go
 func (r *myWidgetRenderer) Layout(s fyne.Size) {
-	ts := fyne.MeasureText(r.text.Text, r.text.TextSize, r.text.TextStyle)
-	r.text.Move(fyne.Position{X: (s.Width - ts.Width) / 2, Y: (s.Height - ts.Height) / 2})
-	r.background.Resize(s)
+    ts := fyne.MeasureText(r.text.Text, r.text.TextSize, r.text.TextStyle)
+    r.text.Move(fyne.Position{X: (s.Width - ts.Width) / 2, Y: (s.Height - ts.Height) / 2})
+    r.background.Resize(s)
 }
 ```
 
 As you can see in the code sample above, our Layout() method arranges the objects by doing:
-	
+
 1. The size of the canvas.Text (r.text) object is measured so we can center it. 
 2. The position of the canvas.Text (r.text) object is centered.
 3. The size of the canvas.Rectangle (r.background) is set to the same size as the widget.
@@ -235,9 +233,9 @@ We do this in the renderer because only the renderer knows the size of the canva
 
 ```go
 func (r *myWidgetRenderer) MinSize() fyne.Size {
-	// Measure the size of the text so we can calculate an indent.
-	ts := fyne.MeasureText(r.text.Text, r.text.TextSize, r.text.TextStyle)
-	return fyne.NewSize(ts.Width+20, ts.Height+20)
+    // Measure the size of the text so we can calculate an indent.
+    ts := fyne.MeasureText(r.text.Text, r.text.TextSize, r.text.TextStyle)
+    return fyne.NewSize(ts.Width+theme.Padding()*5, ts.Height+theme.Padding()*5)
 }
 ```
 
@@ -256,8 +254,8 @@ myWidget.Refresh()
 
 ```go
 func (r *myWidgetRenderer) Refresh() {
-	r.text.Text = r.widget.text
-	r.text.Refresh()
+    r.text.Text = r.widget.text
+    r.text.Refresh()
 }
 ```
 
@@ -283,15 +281,178 @@ If `myWidgetRenderer` does NOT implement the `fyne.WidgetRenderer` interface thi
 
 ```go
 func main() {
-	app := app.New()
-	w := app.NewWindow("My Widget")
-	mw := NewMyWidget("Widget")
-	w.SetContent(mw)
-	w.ShowAndRun()
+    app := app.New()
+    w := app.NewWindow("My Widget")
+    mw := NewMyWidget("Widget")
+    w.SetContent(mw)
+    w.ShowAndRun()
 }
 ```
-The widget should look like this:
-	
-![widgetDemoScreenSmall](https://user-images.githubusercontent.com/94919638/145826575-53ae12fc-e6d0-4976-9037-dbdaaea9f4de.png)
 
-	The widget can be resized and the text will remain centered.
+The widget should look like this:
+
+![](../images/widgets/customWidgetSimple.png)
+
+The widget can be resized and the text will remain centered.
+
+### The complete Widget
+
+Note that some minor additions have be made to the code below:
+
+1. The SetText(s string) method was added to ensure that the Refresh() method is called when the widget text changes.
+
+2. The Refresh() method has been updated to ensure that  the foreground and background colours are read from the current theme and displayed correctly.
+
+A small section of demo code has also been added below to demonstrate the behaviour of the widget when the theme is changed. 
+
+```go
+package main
+
+import (
+    "fyne.io/fyne/v2"
+    "fyne.io/fyne/v2/canvas"
+    "fyne.io/fyne/v2/theme"
+    "fyne.io/fyne/v2/widget"
+)
+
+//
+// Widget code starts here.
+//
+// A Theamed text widget.
+//
+type MyWidget struct {
+    widget.BaseWidget        // Inherit from BaseWidget
+    text              string // The text to display in the widget
+}
+
+//
+// Create a Widget and Extend (initialiase) the BaseWidget
+//
+func NewMyWidget(text string) *MyWidget {
+    w := &MyWidget{ // Create this widget with an initial text value
+        text: text,
+    }
+    w.ExtendBaseWidget(w) // Initialiase the BaseWidget
+    return w
+}
+
+//
+// Create the renderer. This is called by the fyne application
+//
+func (w *MyWidget) CreateRenderer() fyne.WidgetRenderer {
+    // Pass this widget to the renderer so it can access the widget properties
+    return newMyWidgetRenderer(w)
+}
+
+//
+// Change the text and refresh the widget display
+//
+func (w *MyWidget) SetText(text string) {
+    w.text = text
+    w.Refresh()
+}
+
+//
+// Widget Renderer code starts here
+//
+// Ensure myWidgetRenderer extends fyne.fyne.WidgetRenderer
+var _ fyne.WidgetRenderer = (*myWidgetRenderer)(nil)
+
+type myWidgetRenderer struct {
+    widget     *MyWidget         // Reference to the widget holding the current state
+    background *canvas.Rectangle // A background rectangle
+    text       *canvas.Text      // The text
+}
+
+//
+// Create the renderer with a reference to the widget
+// Note: The background and foreground colours are set from the current theme.
+//          Do not size or move the canvas objects here.
+//
+func newMyWidgetRenderer(myWidget *MyWidget) *myWidgetRenderer {
+    return &myWidgetRenderer{
+        widget:     myWidget,
+        background: canvas.NewRectangle(theme.BackgroundColor()),
+        text:       canvas.NewText(myWidget.text, theme.ForegroundColor()),
+    }
+}
+
+//
+// The Refresh() method should be called if the state
+//   of the widget changes or the theme is changed
+//
+// Note: The background and foreground colours are set from the current theme
+//
+func (r *myWidgetRenderer) Refresh() {
+    r.text.Text = r.widget.text
+    r.text.Color = theme.ForegroundColor()
+    r.background.FillColor = theme.BackgroundColor()
+    r.background.Refresh() // Redraw the background first
+    r.text.Refresh()       // Redraw the text on top
+}
+
+//
+// Given the size required by the fyne application.
+//    Move and size the canvas items.
+//
+func (r *myWidgetRenderer) Layout(s fyne.Size) {
+    // Measure the size of the text so we can calculate the center offset.
+    ts := fyne.MeasureText(r.text.Text, r.text.TextSize, r.text.TextStyle)
+    // Move the text to the center.
+    r.text.Move(fyne.Position{X: (s.Width - ts.Width) / 2, Y: (s.Height - ts.Height) / 2})
+    // Make sure the border fills the widget
+    r.background.Resize(s)
+}
+
+//
+// Create a minimum size for the widget.
+// The minimum size is the size of the text plus padding
+// defined by the current theme.
+//
+func (r *myWidgetRenderer) MinSize() fyne.Size {
+    // Measure the size of the text so we can calculate decide on an border size.
+    ts := fyne.MeasureText(r.text.Text, r.text.TextSize, r.text.TextStyle)
+    // Return the size of the text plus padding.
+    return fyne.NewSize(ts.Width+theme.Padding()*5, ts.Height+theme.Padding()*5)
+}
+
+//
+// Return a list of each canvas object to be drawn.
+//
+func (r *myWidgetRenderer) Objects() []fyne.CanvasObject {
+    return []fyne.CanvasObject{r.background, r.text}
+}
+
+//
+// Cleanup if resources have been allocated
+//
+func (r *myWidgetRenderer) Destroy() {}
+```
+
+### Demo Code
+
+This code displays the widget and a button. When the dutton is pressed the theme is changed and the widget changes accordingly.
+
+![](../images/widgets/customWidgetThemeDemo.png)
+
+```go
+func main() {
+    light := false
+    app := app.New()
+    w := app.NewWindow("Themed Widget Demo")
+    fyne.CurrentApp().Settings().SetTheme(theme.DarkTheme())
+    mw := NewMyWidget("Dark Themed Widget")
+    button := widget.NewButton("Change Theme:", func() {
+        if light {
+            fyne.CurrentApp().Settings().SetTheme(theme.DarkTheme())
+            mw.SetText("Dark Themed Widget")
+        } else {
+            fyne.CurrentApp().Settings().SetTheme(theme.LightTheme())
+            mw.SetText("Light Themed Widget")
+        }
+        light = !light
+    })
+    w.SetContent(container.NewHBox(lt, mw))
+    w.ShowAndRun()
+}
+```
