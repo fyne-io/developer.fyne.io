@@ -4,8 +4,6 @@ layout: tour
 title: Data Binding
 order: 1
 
-permalink: /tour/binding/
-
 ---
 
 Data binding is a powerful new addition to the Fyne toolkit

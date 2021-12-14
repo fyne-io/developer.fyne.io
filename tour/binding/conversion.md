@@ -4,8 +4,6 @@ layout: tour
 title: Data Conversion
 order: 4
 
-permalink: /tour/binding/conversion
-
 ---
 
 So far we have used data binding where the type of

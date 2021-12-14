@@ -4,8 +4,6 @@ layout: tour
 title: Two-Way Binding
 order: 3
 
-permalink: /tour/binding/twoway
-
 ---
 
 So far we have looked at data binding as a way of keeping

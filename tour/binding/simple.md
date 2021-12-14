@@ -4,8 +4,6 @@ layout: tour
 title: Binding Simple Widgets
 order: 2
 
-permalink: /tour/binding/simple
-
 ---
 
 The simplest form of binding a widget is to pass it

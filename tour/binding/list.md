@@ -4,8 +4,6 @@ layout: tour
 title: List Data
 order: 5
 
-permalink: /tour/binding/list
-
 ---
 
 To demonstrate how more complex types can be connected

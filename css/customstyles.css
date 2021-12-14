@@ -463,12 +463,12 @@ a.accordion-toggle, a.accordion-collapsed {
     border-left: 4pt solid transparent;
 }
 
-.nav li li.active a {
+.nav li li.active > a {
     border-left: 4pt solid #03a9f4;
 }
 
-.nav>li>a:focus, .nav>li>a:hover {
-    background-color: transparent;
+.nav>li>a:focus, .nav>li>a:hover, .nav li li.subfolders > a {
+    border-left-color: transparent;
 }
 
 .nav li a {
@@ -497,7 +497,7 @@ ul#mysidebar {
 }
 
 .nav ul li ul li a {
-    padding-left:40px;
+    padding-left:64px;
 }
 
 .nav li.thirdlevel > a {
@@ -513,7 +513,7 @@ ul#mysidebar {
 }
 
 .nav ul li a {
-    padding-left: 36pt;
+    padding-left: 32pt;
 }
 /* end sidebar */
 
@@ -1142,7 +1142,7 @@ span.label.label-primary {
     background-color: whitesmoke;
     font-weight: bold;
     color: black;
-    }
+}
 
 a code {
     color: #248EC2;

@@ -16,10 +16,7 @@
           <li><a title="{{folderitem.title}}" href="{{folderitem.external_url}}" target="_blank" rel="noopener">{{folderitem.title}}</a></li>
           {% elsif page.url == folderitemurlhtml or page.url == folderitem.url | apped: ".html" %}
           <li class="active"><a title="{{folderitem.title}}" href="{{folderitem.url}}">{{folderitem.title}}</a></li>
-          {% elsif folderitem.type == "empty" %}
-          <li><a title="{{folderitem.title}}" href="{{folderitem.url}}">{{folderitem.title}}</a></li>
-
-          {% else %}
+          {% elsif folderitem.title | not | empty %}
           <li><a title="{{folderitem.title}}" href="{{folderitem.url}}">{{folderitem.title}}</a></li>
           {% endif %}
           {% for subfolders in folderitem.subfolders %}
