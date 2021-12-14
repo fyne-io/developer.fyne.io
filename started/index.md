@@ -64,7 +64,7 @@ The steps for installing with MSYS2 (recommended) are as follows:
 * Install MSYS2 from [msys2.org](https://www.msys2.org/)
 * Once installed do not use the MSYS terminal that opens
 * Open "MSYS2 MinGW 64-bit" from the start menu
-* Execute the following commands:
+* Execute the following commands (if asked for install options be sure to choose "all"):
 
         $ pacman -Syu
         $ pacman -S git mingw-w64-x86_64-toolchain
