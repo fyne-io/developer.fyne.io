@@ -10,11 +10,15 @@
           {% for folderitem in folder.folderitems %}
           {% assign folderitemurlhtml = folderitem.url | append: ".html" %}
           {% assign urllen = folderitem.url | size %}
+          {% assign urlstart = page.url | slice: 0, urllen %}
+
 
           {% if folderitem.output contains "web" %}
           {% if folderitem.external_url %}
           <li><a title="{{folderitem.title}}" href="{{folderitem.external_url}}" target="_blank" rel="noopener">{{folderitem.title}}</a></li>
-          {% elsif page.url == folderitemurlhtml or page.url == folderitem.url | apped: ".html" %}
+          {% elsif page.url == folderitemurlhtml or page.url == folderitem.url | append: ".html" %}
+          <li class="active"><a title="{{folderitem.title}}" href="{{folderitem.url}}">{{folderitem.title}}</a></li>
+          {% elsif urlstart == folderitem.url and forloop.first == false %}
           <li class="active"><a title="{{folderitem.title}}" href="{{folderitem.url}}">{{folderitem.title}}</a></li>
           {% elsif folderitem.title | not | empty %}
           <li><a title="{{folderitem.title}}" href="{{folderitem.url}}">{{folderitem.title}}</a></li>
