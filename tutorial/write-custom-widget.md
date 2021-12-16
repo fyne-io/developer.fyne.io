@@ -233,13 +233,12 @@ We do this in the renderer because only the renderer knows the size of the canva
 
 ```go
 func (r *myWidgetRenderer) MinSize() fyne.Size {
-    // Measure the size of the text so we can calculate an indent.
     ts := fyne.MeasureText(r.text.Text, r.text.TextSize, r.text.TextStyle)
     return fyne.NewSize(ts.Width+theme.Padding()*5, ts.Height+theme.Padding()*5)
 }
 ```
 
-For this example the size is detirmined by the size of the canvas.Text object.
+For this example the size is detirmined by the size of the canvas.Text object plus padding defined by the current theme.
 
 The Refresh() method will be called (by the application logic) if the application changes the state of the widget. 
 
@@ -254,12 +253,17 @@ myWidget.Refresh()
 
 ```go
 func (r *myWidgetRenderer) Refresh() {
-    r.text.Text = r.widget.text
-    r.text.Refresh()
+	r.text.Text = r.widget.text
+	r.text.Color = theme.ForegroundColor()
+	r.background.FillColor = theme.BackgroundColor()
+	r.background.Refresh() // Redraw the background first
+	r.text.Refresh()       // Redraw the text on top
 }
 ```
 
-This updates the canvas objects and calls their respective Refresh() methods to force them to re-display the data.
+The Refresh() method updates the canvas objects and calls their respective Refresh() methods to ensure the display is updated correctly.
+
+The Foreground and Background colours are updated so that the widget will respond correctly to changes in the current theme.
 
 We finish with the remaining methods of the `fyne.WidgetRenderer` interface
 
@@ -282,7 +286,7 @@ If `myWidgetRenderer` does NOT implement the `fyne.WidgetRenderer` interface thi
 ```go
 func main() {
     app := app.New()
-    w := app.NewWindow("My Widget")
+    w := app.NewWindow("Widget Demo")
     mw := NewMyWidget("Widget")
     w.SetContent(mw)
     w.ShowAndRun()
@@ -295,24 +299,18 @@ The widget should look like this:
 
 The widget can be resized and the text will remain centered.
 
-### The complete Widget
+### The Complete Code
 
 Note that some minor additions have be made to the code below:
-
-1. The SetText(s string) method was added to ensure that the Refresh() method is called when the widget text changes.
-
-2. The Refresh() method has been updated to ensure that  the foreground and background colours are read from the current theme and displayed correctly.
-
-A small section of demo code has also been added below to demonstrate the behaviour of the widget when the theme is changed. 
 
 ```go
 package main
 
 import (
-    "fyne.io/fyne/v2"
-    "fyne.io/fyne/v2/canvas"
-    "fyne.io/fyne/v2/theme"
-    "fyne.io/fyne/v2/widget"
+	"fyne.io/fyne/v2"
+	"fyne.io/fyne/v2/canvas"
+	"fyne.io/fyne/v2/theme"
+	"fyne.io/fyne/v2/widget"
 )
 
 //
@@ -321,35 +319,28 @@ import (
 // A Theamed text widget.
 //
 type MyWidget struct {
-    widget.BaseWidget        // Inherit from BaseWidget
-    text              string // The text to display in the widget
+	widget.BaseWidget        // Inherit from BaseWidget
+	text              string // The text to display in the widget
 }
 
 //
 // Create a Widget and Extend (initialiase) the BaseWidget
 //
 func NewMyWidget(text string) *MyWidget {
-    w := &MyWidget{ // Create this widget with an initial text value
-        text: text,
-    }
-    w.ExtendBaseWidget(w) // Initialiase the BaseWidget
-    return w
+	w := &MyWidget{ // Create this widget with an initial text value
+		text: text,
+	}
+	w.ExtendBaseWidget(w) // Initialiase the BaseWidget
+	return w
 }
 
 //
 // Create the renderer. This is called by the fyne application
 //
 func (w *MyWidget) CreateRenderer() fyne.WidgetRenderer {
-    // Pass this widget to the renderer so it can access the widget properties
-    return newMyWidgetRenderer(w)
-}
-
-//
-// Change the text and refresh the widget display
-//
-func (w *MyWidget) SetText(text string) {
-    w.text = text
-    w.Refresh()
+	// Pass this widget to the renderer so it
+	// can access the widget properties
+	return newMyWidgetRenderer(w)
 }
 
 //
@@ -359,36 +350,38 @@ func (w *MyWidget) SetText(text string) {
 var _ fyne.WidgetRenderer = (*myWidgetRenderer)(nil)
 
 type myWidgetRenderer struct {
-    widget     *MyWidget         // Reference to the widget holding the current state
-    background *canvas.Rectangle // A background rectangle
-    text       *canvas.Text      // The text
+	widget     *MyWidget         // Reference to the widget
+	background *canvas.Rectangle // A background rectangle
+	text       *canvas.Text      // The text
 }
 
 //
 // Create the renderer with a reference to the widget
+//
 // Note: The background and foreground colours are set from the current theme.
-//          Do not size or move the canvas objects here.
+//   Do not size or move the canvas objects here.
 //
 func newMyWidgetRenderer(myWidget *MyWidget) *myWidgetRenderer {
-    return &myWidgetRenderer{
-        widget:     myWidget,
-        background: canvas.NewRectangle(theme.BackgroundColor()),
-        text:       canvas.NewText(myWidget.text, theme.ForegroundColor()),
-    }
+	return &myWidgetRenderer{
+		widget:     myWidget,
+		background: canvas.NewRectangle(theme.BackgroundColor()),
+		text:       canvas.NewText(myWidget.text, theme.ForegroundColor()),
+	}
 }
 
 //
 // The Refresh() method should be called if the state
 //   of the widget changes or the theme is changed
 //
-// Note: The background and foreground colours are set from the current theme
+// Note: The background and foreground colours are
+//   set from the current theme
 //
 func (r *myWidgetRenderer) Refresh() {
-    r.text.Text = r.widget.text
-    r.text.Color = theme.ForegroundColor()
-    r.background.FillColor = theme.BackgroundColor()
-    r.background.Refresh() // Redraw the background first
-    r.text.Refresh()       // Redraw the text on top
+	r.text.Text = r.widget.text
+	r.text.Color = theme.ForegroundColor()
+	r.background.FillColor = theme.BackgroundColor()
+	r.background.Refresh() // Redraw the background first
+	r.text.Refresh()       // Redraw the text on top
 }
 
 //
@@ -396,12 +389,12 @@ func (r *myWidgetRenderer) Refresh() {
 //    Move and size the canvas items.
 //
 func (r *myWidgetRenderer) Layout(s fyne.Size) {
-    // Measure the size of the text so we can calculate the center offset.
-    ts := fyne.MeasureText(r.text.Text, r.text.TextSize, r.text.TextStyle)
-    // Move the text to the center.
-    r.text.Move(fyne.Position{X: (s.Width - ts.Width) / 2, Y: (s.Height - ts.Height) / 2})
-    // Make sure the border fills the widget
-    r.background.Resize(s)
+	// Measure the size of the text so we can center it.
+	ts := fyne.MeasureText(r.text.Text, r.text.TextSize, r.text.TextStyle)
+	// Move the text to the center.
+	r.text.Move(fyne.Position{X: (s.Width - ts.Width) / 2, Y: (s.Height - ts.Height) / 2})
+	// Make sure the background fills the widget
+	r.background.Resize(s)
 }
 
 //
@@ -410,49 +403,21 @@ func (r *myWidgetRenderer) Layout(s fyne.Size) {
 // defined by the current theme.
 //
 func (r *myWidgetRenderer) MinSize() fyne.Size {
-    // Measure the size of the text so we can calculate decide on an border size.
-    ts := fyne.MeasureText(r.text.Text, r.text.TextSize, r.text.TextStyle)
-    // Return the size of the text plus padding.
-    return fyne.NewSize(ts.Width+theme.Padding()*5, ts.Height+theme.Padding()*5)
+	// Measure the size of the text so we can add padding.
+	ts := fyne.MeasureText(r.text.Text, r.text.TextSize, r.text.TextStyle)
+	// Return the size of the text plus padding.
+	return fyne.NewSize(ts.Width+theme.Padding()*4, ts.Height+theme.Padding()*4)
 }
 
 //
 // Return a list of each canvas object to be drawn.
 //
 func (r *myWidgetRenderer) Objects() []fyne.CanvasObject {
-    return []fyne.CanvasObject{r.background, r.text}
+	return []fyne.CanvasObject{r.background, r.text}
 }
 
 //
 // Cleanup if resources have been allocated
 //
 func (r *myWidgetRenderer) Destroy() {}
-```
-
-### Demo Code
-
-This code displays the widget and a button. When the dutton is pressed the theme is changed and the widget changes accordingly.
-
-![](../images/widgets/customWidgetThemeDemo.png)
-
-```go
-func main() {
-    light := false
-    app := app.New()
-    w := app.NewWindow("Themed Widget Demo")
-    fyne.CurrentApp().Settings().SetTheme(theme.DarkTheme())
-    mw := NewMyWidget("Dark Themed Widget")
-    button := widget.NewButton("Change Theme:", func() {
-        if light {
-            fyne.CurrentApp().Settings().SetTheme(theme.DarkTheme())
-            mw.SetText("Dark Themed Widget")
-        } else {
-            fyne.CurrentApp().Settings().SetTheme(theme.LightTheme())
-            mw.SetText("Light Themed Widget")
-        }
-        light = !light
-    })
-    w.SetContent(container.NewHBox(lt, mw))
-    w.ShowAndRun()
-}
 ```
