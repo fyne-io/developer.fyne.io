@@ -1,9 +1,9 @@
 ---
-layout: tour
-
 title: GUI Overview
 order: 4
 
+redirect_from:
+- /tour/introduction/guis
 ---
 
 Graphical applications are often more complicated to create than web
@@ -17,6 +17,24 @@ to user input and updates the screen as our code runs.
 This example creates a new application with a single window with the 
 title "Hello". Inside this window we place a single label containing
 the text "Hello Fyne!".
+
+```go
+package main
+
+import (
+	"fyne.io/fyne/v2/app"
+	"fyne.io/fyne/v2/widget"
+)
+
+func main() {
+	myApp := app.New()
+	myWindow := myApp.NewWindow("Hello")
+
+	myWindow.SetContent(widget.NewLabel("Hello Fyne!"))
+
+	myWindow.ShowAndRun()
+}
+```
 
 Once the window content is set we show it and run the application
 (`Window.ShowAndRun()` is a shortcut for `Window.Show()` && `App.Run()`).

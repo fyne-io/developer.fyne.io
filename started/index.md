@@ -4,6 +4,12 @@ title: Getting Started
 
 order: 10
 
+redirect_from:
+- /tour/introduction/
+- /tour/introduction/hello
+- /tour/introduction/learning
+- /tour/introduction/samples
+
 install:
     tab1:
         name: windows

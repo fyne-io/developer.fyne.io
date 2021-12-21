@@ -88,18 +88,6 @@ entries:
         - title: Welcome
           url: /tour/introduction/
           output: web
- 
-        - title: Programming with Go
-          url: /tour/introduction/golang.html
-          output: web
-
-        - title: Building Code Samples
-          url: /tour/introduction/samples.html
-          output: web
-
-        - title: GUI Overview
-          url: /tour/introduction/guis.html
-          output: web
 
         - title: Organisation and Packages
           url: /tour/introduction/organisation.html
@@ -107,10 +95,6 @@ entries:
 
         - title: Packaging and Distribution
           url: /tour/introduction/packaging.html
-          output: web
-
-        - title: Beginner to Expert
-          url: /tour/introduction/learning.html
           output: web
 
     - output: web, pdf
