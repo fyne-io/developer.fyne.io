@@ -1,10 +1,10 @@
 ---
-layout: tour
-
 title: Gradient
-order: 7
 
 since: 1.1
+
+redirect_from:
+  - /tour/canvas/gradient
 ---
 
 The last canvas primitive type is Gradient, available as
@@ -18,6 +18,26 @@ in between is calculated by the canvas. In this example we use
 `color.Transparent` to show how a gradient (or any other type) could
 use an alpha value to be semi-transparent over the content behind.
 
-That's it for our tour of the canvas elements in Fyne. Next take some 
-time to learn about the [`Layout`s](../layout/) available to arrange
-interface elements.
+```go
+package main
+
+import (
+	"image/color"
+
+	"fyne.io/fyne/v2"
+	"fyne.io/fyne/v2/app"
+	"fyne.io/fyne/v2/canvas"
+)
+
+func main() {
+	myApp := app.New()
+	w := myApp.NewWindow("Gradient")
+
+	gradient := canvas.NewHorizontalGradient(color.White, color.Transparent)
+	//gradient := canvas.NewRadialGradient(color.White, color.Transparent)
+	w.SetContent(gradient)
+
+	w.Resize(fyne.NewSize(100, 100))
+	w.ShowAndRun()
+}
+```

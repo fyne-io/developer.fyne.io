@@ -1,9 +1,8 @@
 ---
-layout: tour
-
 title: Image
-order: 5
 
+redirect_from:
+  - /tour/canvas/image
 ---
 
 A `canvas.Image` represents a scalable image resource in Fyne.
@@ -17,6 +16,31 @@ the aspect ratio is maintained and the image is within the bounds.
 Further to this you can use `canvas.ImageFillOriginal` (as used
 in the example here) which ensures that it will also have a minimum size
 equal to that of the original image size.
+
+```go
+package main
+
+import (
+	"fyne.io/fyne/v2/app"
+	"fyne.io/fyne/v2/canvas"
+	"fyne.io/fyne/v2/theme"
+)
+
+func main() {
+	myApp := app.New()
+	w := myApp.NewWindow("Image")
+
+	image := canvas.NewImageFromResource(theme.FyneLogo())
+	// image := canvas.NewImageFromURI(uri)
+	// image := canvas.NewImageFromImage(src)
+	// image := canvas.NewImageFromReader(reader, name)
+	// image := canvas.NewImageFromFile(fileName)
+	image.FillMode = canvas.ImageFillOriginal
+	w.SetContent(image)
+
+	w.ShowAndRun()
+}
+```
 
 Images can be bitmap based (like PNG and JPEG) or vector based
 (such as SVG). Where possible we recommend scalable images as they will

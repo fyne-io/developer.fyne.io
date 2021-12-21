@@ -69,15 +69,15 @@ entries:
     folderitems:
 
     - title: Canvas and CanvasObject
-      url: /explore/canvas.html
+      url: /explore/canvas
       output: web
 
     - title: Container and Layouts
-      url: /explore/container.html
+      url: /explore/container
       output: web
 
     - title: Widgets
-      url: /explore/widget.html
+      url: /explore/widget
       output: web
 
     - title: Widget List
@@ -104,43 +104,41 @@ entries:
       url: /explore/compiling
       output: web, pdf
 
+  - title: Drawing and Animation
+    output: web
+    folderitems:
+
+    - title: Rectangle
+      url: /canvas/rectangle
+      output: web
+
+    - title: Text
+      url: /canvas/text
+      output: web
+
+    - title: Line
+      url: /canvas/line
+      output: web
+
+    - title: Circle
+      url: /canvas/circle
+      output: web
+
+    - title: Image
+      url: /canvas/image
+      output: web
+
+    - title: Raster
+      url: /canvas/raster
+      output: web
+
+    - title: Gradient
+      url: /canvas/gradient
+      output: web
+
   - title: Tour
     output: web, pdf
     folderitems:
-
-    - output: web, pdf
-      subfolders:   
-      - title: Canvas
-        output: web
-        subfolderitems:
-
-        - title: Rectangle
-          url: /tour/canvas/
-          output: web
-
-        - title: Text
-          url: /tour/canvas/text.html
-          output: web
-
-        - title: Line
-          url: /tour/canvas/line.html
-          output: web
-
-        - title: Circle
-          url: /tour/canvas/circle.html
-          output: web
-
-        - title: Image
-          url: /tour/canvas/image.html
-          output: web
-
-        - title: Raster
-          url: /tour/canvas/raster.html
-          output: web
-
-        - title: Gradient
-          url: /tour/canvas/gradient.html
-          output: web
 
     - output: web, pdf
       subfolders:   

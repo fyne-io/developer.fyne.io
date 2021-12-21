@@ -4,6 +4,7 @@ title: Canvas and CanvasObject
 redirect_from:
 - /tour/basics/canvas
 - /tour/basics/widget
+- /explore/
 ---
 
 In Fyne a `Canvas` is the area which an application is drawn within.
