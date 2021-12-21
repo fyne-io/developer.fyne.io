@@ -32,18 +32,13 @@ entries:
       url: /started/firstapp
       output: web, pdf
 
-    - title: Widget List
-      url: /started/widgets
-      output: web, pdf
+    - title: Application and RunLoop
+      url: /started/apprun
+      output: web
 
-    - title: Layout List
-      url: /started/layouts
-      output: web, pdf
-
-    - title: Dialog List
-      url: /started/dialogs
-      output: web, pdf
-
+    - title: Window Handling
+      url: /started/windows
+      output: web
 
     - title: Testing
       url: /started/testing
@@ -61,10 +56,6 @@ entries:
       url: /started/distribution
       output: web, pdf
  
-    - title: Compile Options
-      url: /started/compiling
-      output: web, pdf
-
     - title: App Metadata
       url: /started/metadata
       output: web, pdf
@@ -73,7 +64,25 @@ entries:
       url: /started/cross-compiling
       output: web, pdf
 
+  - title: Exploring Fyne
+    output: web, pdf
+    folderitems:
 
+    - title: Widget List
+      url: /explore/widgets
+      output: web, pdf
+
+    - title: Layout List
+      url: /explore/layouts
+      output: web, pdf
+
+    - title: Dialog List
+      url: /explore/dialogs
+      output: web, pdf
+
+    - title: Compile Options
+      url: /explore/compiling
+      output: web, pdf
 
   - title: Tour
     output: web, pdf
@@ -102,14 +111,6 @@ entries:
       - title: Basics
         output: web
         subfolderitems:
-
-        - title: Application and RunLoop
-          url: /tour/basics/
-          output: web
-
-        - title: Window Handling
-          url: /tour/basics/windows.html
-          output: web
 
         - title: Canvas and CanvasObject
           url: /tour/basics/canvas.html

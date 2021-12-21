@@ -2,7 +2,8 @@
 layout: page
 title: Dialog List
 
-order: 45
+redirect_from:
+- /started/dialogs
 ---
 
 ## Standard Dialogs

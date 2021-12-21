@@ -2,7 +2,8 @@
 layout: page
 title: Layout List
 
-order: 35
+redirect_from:
+- /started/layouts
 ---
 
 ## Standard Layouts

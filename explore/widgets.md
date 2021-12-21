@@ -2,7 +2,8 @@
 layout: page
 title: Widget List
 
-order: 30
+redirect_from:
+- /started/widgets
 ---
 
 ## Standard Widgets (in `widget` package)

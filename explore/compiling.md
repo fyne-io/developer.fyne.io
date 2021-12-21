@@ -2,7 +2,8 @@
 layout: page
 title: Compile Options
 
-order: 70
+redirect_from:
+- /started/compiling
 ---
 
 ## Build tags
