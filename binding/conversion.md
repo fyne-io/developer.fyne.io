@@ -1,9 +1,8 @@
 ---
-layout: tour
-
 title: Data Conversion
-order: 4
 
+redirect_from:
+- /tour/binding/conversion
 ---
 
 So far we have used data binding where the type of
@@ -28,4 +27,33 @@ a `Float` to `String` but by using a `WithFormat` helper
 we can pass a format string (similar to the `fmt` package)
 to provide a custom output.
 
-Lastly in this section we will look at [list](/tour/binding/list) data.
+```go
+package main
+
+import (
+	"fyne.io/fyne/v2/app"
+	"fyne.io/fyne/v2/container"
+	"fyne.io/fyne/v2/data/binding"
+	"fyne.io/fyne/v2/widget"
+)
+
+func main() {
+	myApp := app.New()
+	w := myApp.NewWindow("Conversion")
+
+	f := binding.NewFloat()
+	str := binding.FloatToString(f)
+	short := binding.FloatToStringWithFormat(f, "%0.0f%%")
+	f.Set(25.0)
+
+	w.SetContent(container.NewVBox(
+		widget.NewSliderWithData(0, 100.0, f),
+		widget.NewLabelWithData(str),
+		widget.NewLabelWithData(short),
+	))
+
+	w.ShowAndRun()
+}
+```
+
+Lastly in this section we will look at [list](/binding/list) data.

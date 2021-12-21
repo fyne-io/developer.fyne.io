@@ -1,9 +1,8 @@
 ---
-layout: tour
-
 title: Two-Way Binding
-order: 3
 
+redirect_from:
+- /tour/binding/twoway
 ---
 
 So far we have looked at data binding as a way of keeping
@@ -28,4 +27,30 @@ capturing your data as a set of bound values your
 user interface can be completely separate code.
 Cleaner to read and easier to manage.
 
-Next we will look at how to add [conversions](/tour/binding/conversion) in our data.
+```go
+package main
+
+import (
+	"fyne.io/fyne/v2/app"
+	"fyne.io/fyne/v2/container"
+	"fyne.io/fyne/v2/data/binding"
+	"fyne.io/fyne/v2/widget"
+)
+
+func main() {
+	myApp := app.New()
+	w := myApp.NewWindow("Two Way")
+
+	str := binding.NewString()
+	str.Set("Hi!")
+
+	w.SetContent(container.NewVBox(
+		widget.NewLabelWithData(str),
+		widget.NewEntryWithData(str),
+	))
+
+	w.ShowAndRun()
+}
+```
+
+Next we will look at how to add [conversions](/binding/conversion) in our data.

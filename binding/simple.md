@@ -1,9 +1,8 @@
 ---
-layout: tour
-
 title: Binding Simple Widgets
-order: 2
 
+redirect_from:
+- /tour/binding/simple
 ---
 
 The simplest form of binding a widget is to pass it
@@ -20,5 +19,35 @@ You will notice how we did not need to call `Refresh()`
 on the `Label` widget or even keep a reference to it
 and yet it updates appropriately.
 
+```go
+package main
+
+import (
+	"time"
+
+	"fyne.io/fyne/v2/app"
+	"fyne.io/fyne/v2/data/binding"
+	"fyne.io/fyne/v2/widget"
+)
+
+func main() {
+	myApp := app.New()
+	w := myApp.NewWindow("Simple")
+
+	str := binding.NewString()
+	str.Set("Initial value")
+
+	text := widget.NewLabelWithData(str)
+	w.SetContent(text)
+
+	go func() {
+		time.Sleep(time.Second * 2)
+		str.Set("A new string")
+	}()
+
+	w.ShowAndRun()
+}
+```
+
 In the next step we look at how to set up widgets 
-that edit values through [two way](/tour/binding/twoway) binding.
+that edit values through [two way](/binding/twoway) binding.

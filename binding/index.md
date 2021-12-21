@@ -1,9 +1,8 @@
 ---
-layout: tour
-
 title: Data Binding
-order: 1
 
+redirect_from:
+- /tour/binding
 ---
 
 Data binding is a powerful new addition to the Fyne toolkit
@@ -20,5 +19,26 @@ variable we can configure widgets and functions to respond to any changes automa
 If you change the external data directly, be sure to call `Reload`()
 to ensure that the binding system reads the new value.
 
-We start learning about [simple values](/tour/binding/simple) widget
+```go
+package main
+
+import (
+	"log"
+
+	"fyne.io/fyne/v2/data/binding"
+)
+
+func main() {
+	boundString := binding.NewString()
+	s, _ := boundString.Get()
+	log.Printf("Bound = '%s'", s)
+
+	myInt := 5
+	boundInt := binding.BindInt(&myInt)
+	i, _ := boundInt.Get()
+	log.Printf("Source = %d, bound = %d", myInt, i)
+}
+```
+
+We start learning about [simple values](/binding/simple) widget
 binding next.

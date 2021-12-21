@@ -136,6 +136,30 @@ entries:
       url: /canvas/gradient
       output: web
 
+  - title: Data Binding
+    output: web
+    folderitems:
+
+    - title: Introduction
+      url: /binding/
+      output: web
+
+    - title: Binding Simple Widgets
+      url: /binding/simple
+      output: web
+
+    - title: Two-Way Binding
+      url: /binding/twoway
+      output: web
+
+    - title: Data Conversion
+      url: /binding/conversion
+      output: web
+
+    - title: List Data
+      url: /binding/list
+      output: web
+
   - title: Tour
     output: web, pdf
     folderitems:
@@ -228,33 +252,6 @@ entries:
 
         - title: Table
           url: /tour/widget/table.html
-          output: web
-
-
-    - output: web, pdf
-      subfolders:   
-      - title: Data Binding
-        output: web
-        subfolderitems:
-
-        - title: Introduction
-          url: /tour/binding/
-          output: web
-
-        - title: Binding Simple Widgets
-          url: /tour/binding/simple.html
-          output: web
-
-        - title: Two-Way Binding
-          url: /tour/binding/twoway.html
-          output: web
-
-        - title: Data Conversion
-          url: /tour/binding/conversion.html
-          output: web
-
-        - title: List Data
-          url: /tour/binding/list.html
           output: web
 
 
