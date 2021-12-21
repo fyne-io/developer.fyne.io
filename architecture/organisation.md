@@ -1,9 +1,8 @@
 ---
-layout: tour
-
 title: Organisation and Packages
-order: 5
 
+redirect_from:
+- /tour/introduction/organisation
 ---
 
 The Fyne project is split into many packages, each providing different

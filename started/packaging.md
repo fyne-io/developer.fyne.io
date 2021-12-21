@@ -43,3 +43,22 @@ fyne install -icon myapp.png
 All of these commands also support a default icon file of `Icon.png` so that you
 can avoid typing the parameter for each execution.
 
+// TODO merge this in
+Packaging for multiple operating systems can be a complex task.
+Graphical applications typically have icons and metadata associated
+with them as well as specific formats required to integrate with each
+environment.
+
+The `fyne` command provides support for preparing applications to be
+distributed across all the platforms the toolkit supports.
+Running "fyne package" will create an application ready to be installed
+on your computer and to be distributed to other computers by simply
+copying the created files from the current directory.
+
+For Windows it will create a `.exe` file with icons embedded. For a
+macOS computer it will create a `.app` bundle and for Linux it will
+generate a `.tar.xz` file that can be installed in the usual manner
+(or by running `make install` inside the extracted folder).
+
+Of course you can still run your applications using the standard Go
+tools if you prefer.

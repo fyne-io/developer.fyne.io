@@ -68,6 +68,18 @@ entries:
     output: web, pdf
     folderitems:
 
+    - title: Canvas and CanvasObject
+      url: /explore/canvas.html
+      output: web
+
+    - title: Container and Layouts
+      url: /explore/container.html
+      output: web
+
+    - title: Widgets
+      url: /explore/widget.html
+      output: web
+
     - title: Widget List
       url: /explore/widgets
       output: web, pdf
@@ -80,6 +92,14 @@ entries:
       url: /explore/dialogs
       output: web, pdf
 
+    - title: Handling Shortcuts
+      url: /explore/shortcuts
+      output: web, pdf
+
+    - title: Using the Preferences API
+      url: /explore/preferences
+      output: web, pdf
+
     - title: Compile Options
       url: /explore/compiling
       output: web, pdf
@@ -87,42 +107,6 @@ entries:
   - title: Tour
     output: web, pdf
     folderitems:
-
-    - output: web, pdf
-      subfolders:   
-      - title: Introduction
-        output: web
-        subfolderitems:
-
-        - title: Welcome
-          url: /tour/introduction/
-          output: web
-
-        - title: Organisation and Packages
-          url: /tour/introduction/organisation.html
-          output: web
-
-        - title: Packaging and Distribution
-          url: /tour/introduction/packaging.html
-          output: web
-
-    - output: web, pdf
-      subfolders:   
-      - title: Basics
-        output: web
-        subfolderitems:
-
-        - title: Canvas and CanvasObject
-          url: /tour/basics/canvas.html
-          output: web
-
-        - title: Container and Layouts
-          url: /tour/basics/container.html
-          output: web
-
-        - title: Widgets
-          url: /tour/basics/widget.html
-          output: web
 
     - output: web, pdf
       subfolders:   
@@ -300,14 +284,6 @@ entries:
       url: /tutorial/numerical-entry
       output: web, pdf
 
-    - title: Handling Shortcuts
-      url: /tutorial/shortcuts
-      output: web, pdf
-
-    - title: Using the Preferences API
-      url: /tutorial/preferences-api
-      output: web, pdf
-
     - title: Add a Custom Theme
       url: /tutorial/custom-theme
       output: web, pdf
@@ -329,6 +305,9 @@ entries:
       url: /architecture/widgets
       output: web, pdf
 
+    - title: Organisation and Packages
+      url: /architecture/organisation.html
+      output: web
 
   - title: Frequently Asked Questions
     output: web, pdf
