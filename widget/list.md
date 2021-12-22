@@ -8,7 +8,7 @@ redirect_from:
 The `List` widget is one of the toolkit's collection widgets.
 These widgets are designed to help build really performant
 interfaces when lots of data is being presented.
-You can also see the [Table](/tour/widget/table) and `Tree` widgets which have a
+You can also see the [Table](/widget/table) and `Tree` widgets which have a
 similar API. Because of this design they are a little more
 complicated to use.
 

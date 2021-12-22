@@ -14,7 +14,7 @@ the standard `List` widget. To do so we use the
 `widget.NewListWithData` constructor, much like other
 widgets.
 
-Comparing this code to the [list tour](/tour/widget/list)
+Comparing this code to the [list tour](/widget/list)
 You will see 2 main changes, the first is that we pass
 the data type as the first parameter instead of a length
 callback function. The second change is the last parameter,
