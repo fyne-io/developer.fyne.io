@@ -236,34 +236,33 @@ entries:
       url: /binding/list
       output: web
 
-  - title: Tutorials
+  - title: Extending Fyne
     output: web, pdf
 
     folderitems:
-    - title: Extending Widgets
-      url: /tutorial/extending-widgets
-      output: web, pdf
-
     - title: Building a Layout
-      url: /tutorial/custom-layout
-      output: web, pdf
-
-    - title: Bundling resources
-      url: /tutorial/bundle
+      url: /extend/custom-layout
       output: web, pdf
 
     - title: Write a Custom Widget
-      url: /tutorial/write-custom-widget
+      url: /extend/custom-widget
       output: web, pdf
 
-    - title: Numerical Entry
-      url: /tutorial/numerical-entry
+    - title: Bundling resources
+      url: /extend/bundle
       output: web, pdf
 
     - title: Add a Custom Theme
-      url: /tutorial/custom-theme
+      url: /extend/custom-theme
       output: web, pdf
 
+    - title: Extending Widgets
+      url: /extend/extending-widgets
+      output: web, pdf
+
+    - title: Numerical Entry
+      url: /extend/numerical-entry
+      output: web, pdf
 
   - title: Architecture
     output: web, pdf

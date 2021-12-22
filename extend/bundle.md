@@ -1,6 +1,9 @@
 ---
 layout: page
 title: Bundling resources 
+
+redirect_from:
+ - /tutorial/bundle
 ---
 
 Go based applications are usually built as a single binary executable, and this is the same for Fyne applications.

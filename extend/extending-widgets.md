@@ -2,7 +2,9 @@
 layout: page
 title: Extending Widgets
 
-redirect_from: /develop/extending-widgets.html
+redirect_from:
+ - /develop/extending-widgets.html
+ - /tutorial/extending-widgets
 ---
 
 The standard Fyne widgets provide the minimum functionality and customisation

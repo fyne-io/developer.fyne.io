@@ -1,6 +1,9 @@
 ---
 layout: page
 title: Creating a Custom Theme
+
+redirect_from:
+ - /tutorial/custom-theme
 ---
 
 Applications are able to load custom themes that can apply small changes to the standard theme or provide a completely unique look. A theme will need to implement the functions of `fyne.Theme` interface, which is defined as follows:
