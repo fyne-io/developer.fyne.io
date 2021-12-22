@@ -136,6 +136,42 @@ entries:
       url: /canvas/gradient
       output: web
 
+  - title: Containers and Layout
+    output: web
+    folderitems:
+
+    - title: Box
+      url: /container/box
+      output: web
+
+    - title: Grid
+      url: /container/grid
+      output: web
+
+    - title: Grid Wrap
+      url: /container/gridwrap
+      output: web
+
+    - title: Border
+      url: /container/border
+      output: web
+
+    - title: Form
+      url: /container/form
+      output: web
+
+    - title: Center
+      url: /container/center
+      output: web
+
+    - title: Max
+      url: /container/max
+      output: web
+
+    - title: AppTabs
+      url: /container/apptabs
+      output: web
+
   - title: Widgets
     output: web
     folderitems:
@@ -199,58 +235,6 @@ entries:
     - title: List Data
       url: /binding/list
       output: web
-
-  - title: Tour
-    output: web, pdf
-    folderitems:
-
-    - output: web, pdf
-      subfolders:   
-      - title: Layout
-        output: web
-        subfolderitems:
-
-        - title: Box Layout
-          url: /tour/layout/
-          output: web
-
-        - title: Grid Layout
-          url: /tour/layout/gridlayout.html
-          output: web
-
-        - title: Grid Wrap Layout
-          url: /tour/layout/gridwraplayout.html
-          output: web
-
-        - title: Border Layout
-          url: /tour/layout/borderlayout.html
-          output: web
-
-        - title: Form Layout
-          url: /tour/layout/formlayout.html
-          output: web
-
-        - title: Center Layout
-          url: /tour/layout/centerlayout.html
-          output: web
-
-        - title: Max Layout
-          url: /tour/layout/maxlayout.html
-          output: web
-
-    - output: web, pdf
-      subfolders:   
-      - title: Container
-        output: web
-        subfolderitems:
-
-        - title: AppTabs
-          url: /tour/container/
-          output: web
-
-        - title: Box
-          url: /tour/container/box.html
-          output: web
 
   - title: Tutorials
     output: web, pdf

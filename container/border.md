@@ -1,9 +1,8 @@
 ---
-layout: tour
+title: Border
 
-title: Border Layout
-order: 4
-
+redirect_from:
+- /tour/layout/borderlayout
 ---
 
 The border layout is possibly the most widely used to construct user
@@ -19,6 +18,32 @@ Any items passed to the container that do not appear in specific border
 locations will be positioned to the central area and will expand to
 fill the space available. You can also pass `nil` to border parameters
 that you wish to leave empty.
+
+```go
+package main
+
+import (
+	"image/color"
+
+	"fyne.io/fyne/v2/app"
+	"fyne.io/fyne/v2/canvas"
+	"fyne.io/fyne/v2/container"
+	"fyne.io/fyne/v2/layout"
+)
+
+func main() {
+	myApp := app.New()
+	myWindow := myApp.NewWindow("Border Layout")
+
+	top := canvas.NewText("top bar", color.White)
+	left := canvas.NewText("left", color.White)
+	middle := canvas.NewText("content", color.White)
+	content := container.New(layout.NewBorderLayout(top, nil, left, nil),
+		top, left, middle)
+	myWindow.SetContent(content)
+	myWindow.ShowAndRun()
+}
+```
 
 Note that all items in the center will expand to fill the space (as if
 they were in a [`layout.MaxLayout`](maxlayout.html) container). To manage

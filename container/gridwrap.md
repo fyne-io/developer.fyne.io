@@ -1,9 +1,8 @@
 ---
-layout: tour
+title: Grid Wrap
 
-title: Grid Wrap Layout
-order: 3
-
+redirect_from:
+- /tour/layout/gridwraplayout
 ---
 
 Like the previous grid layout, the grid wrap layout creates an arrangement
@@ -21,3 +20,32 @@ size of the container.
 Initially a grid wrap layout will have a single column, if you resize it
 (as illustrated in the code comment to the right) it will rearrange
 the child elements to fill the space.
+
+```go
+package main
+
+import (
+	"image/color"
+
+	"fyne.io/fyne/v2"
+	"fyne.io/fyne/v2/app"
+	"fyne.io/fyne/v2/canvas"
+	"fyne.io/fyne/v2/container"
+	"fyne.io/fyne/v2/layout"
+)
+
+func main() {
+	myApp := app.New()
+	myWindow := myApp.NewWindow("Grid Wrap Layout")
+
+	text1 := canvas.NewText("1", color.White)
+	text2 := canvas.NewText("2", color.White)
+	text3 := canvas.NewText("3", color.White)
+	grid := container.New(layout.NewGridWrapLayout(fyne.NewSize(50, 50)),
+		text1, text2, text3)
+	myWindow.SetContent(grid)
+
+	// myWindow.Resize(fyne.NewSize(180, 75))
+	myWindow.ShowAndRun()
+}
+```

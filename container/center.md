@@ -1,3 +1,15 @@
+---
+title: Center
+
+redirect_from:
+- /tour/layout/centerlayout
+---
+
+`layout.CenterLayout` organises all items in its container to be
+centered in the available space. The objects will be drawn in the order
+the are passed to the container, with the last being drawn top-most.
+
+```go
 package main
 
 import (
@@ -22,3 +34,8 @@ func main() {
 	myWindow.SetContent(content)
 	myWindow.ShowAndRun()
 }
+```
+
+The center layout causes all items to stay at their minimum size, if
+you wish to expand items to fill the space then see
+[`layout.MaxLayout`](max).
