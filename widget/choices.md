@@ -1,9 +1,8 @@
 ---
-layout: tour
-
 title: Choices
-order: 4
 
+redirect_from:
+  - /tour/widget/choices
 ---
 
 There are various widgets available to present the user with
@@ -29,3 +28,33 @@ as the radio widget. Calling `widget.NewSelect(...)` will
 instead show a button that displays a popup when tapped from
 which the user can make a selection. This is better for long
 lists of options.
+
+```go
+package main
+
+import (
+	"log"
+
+	"fyne.io/fyne/v2/app"
+	"fyne.io/fyne/v2/container"
+	"fyne.io/fyne/v2/widget"
+)
+
+func main() {
+	myApp := app.New()
+	myWindow := myApp.NewWindow("Choice Widgets")
+
+	check := widget.NewCheck("Optional", func(value bool) {
+		log.Println("Check set to", value)
+	})
+	radio := widget.NewRadioGroup([]string{"Option 1", "Option 2"}, func(value string) {
+		log.Println("Radio set to", value)
+	})
+	combo := widget.NewSelect([]string{"Option 1", "Option 2"}, func(value string) {
+		log.Println("Select set to", value)
+	})
+
+	myWindow.SetContent(container.NewVBox(check, radio, combo))
+	myWindow.ShowAndRun()
+}
+```

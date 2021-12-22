@@ -136,6 +136,46 @@ entries:
       url: /canvas/gradient
       output: web
 
+  - title: Widgets
+    output: web
+    folderitems:
+
+    - title: Label
+      url: /widget/label
+      output: web
+
+    - title: Button
+      url: /widget/button
+      output: web
+
+    - title: Entry
+      url: /widget/entry
+      output: web
+
+    - title: Choices
+      url: /widget/choices
+      output: web
+
+    - title: Form
+      url: /widget/form
+      output: web
+
+    - title: ProgressBar
+      url: /widget/progressbar
+      output: web
+
+    - title: Toolbar
+      url: /widget/toolbar
+      output: web
+
+    - title: List
+      url: /widget/list
+      output: web
+
+    - title: Table
+      url: /widget/table
+      output: web
+
   - title: Data Binding
     output: web
     folderitems:
@@ -211,49 +251,6 @@ entries:
         - title: Box
           url: /tour/container/box.html
           output: web
-
-    - output: web, pdf
-      subfolders:   
-      - title: Widget
-        output: web
-        subfolderitems:
-
-        - title: Label
-          url: /tour/widget/
-          output: web
-
-        - title: Button
-          url: /tour/widget/button.html
-          output: web
-
-        - title: Entry
-          url: /tour/widget/entry.html
-          output: web
-
-        - title: Choices
-          url: /tour/widget/choices.html
-          output: web
-
-        - title: Form
-          url: /tour/widget/form.html
-          output: web
-
-        - title: ProgressBar
-          url: /tour/widget/progressbar.html
-          output: web
-
-        - title: Toolbar
-          url: /tour/widget/toolbar.html
-          output: web
-
-        - title: List
-          url: /tour/widget/list.html
-          output: web
-
-        - title: Table
-          url: /tour/widget/table.html
-          output: web
-
 
   - title: Tutorials
     output: web, pdf

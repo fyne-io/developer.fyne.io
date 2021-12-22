@@ -1,9 +1,8 @@
 ---
-layout: tour
-
 title: Toolbar
-order: 7
 
+redirect_from:
+  - /tour/widget/toolbar
 ---
 
 The toolbar widget creates a row of action buttons using
@@ -28,3 +27,39 @@ after the spacer.
 A toolbar should always be at the top of the content area
 so it's normal to add it to a `fyne.Container` using the
 `layout.BorderLayout` to align it above other content.
+
+```go
+package main
+
+import (
+	"log"
+
+	"fyne.io/fyne/v2/app"
+	"fyne.io/fyne/v2/container"
+	"fyne.io/fyne/v2/theme"
+	"fyne.io/fyne/v2/widget"
+)
+
+func main() {
+	myApp := app.New()
+	myWindow := myApp.NewWindow("Toolbar Widget")
+
+	toolbar := widget.NewToolbar(
+		widget.NewToolbarAction(theme.DocumentCreateIcon(), func() {
+			log.Println("New document")
+		}),
+		widget.NewToolbarSeparator(),
+		widget.NewToolbarAction(theme.ContentCutIcon(), func() {}),
+		widget.NewToolbarAction(theme.ContentCopyIcon(), func() {}),
+		widget.NewToolbarAction(theme.ContentPasteIcon(), func() {}),
+		widget.NewToolbarSpacer(),
+		widget.NewToolbarAction(theme.HelpIcon(), func() {
+			log.Println("Display help")
+		}),
+	)
+
+	content := container.NewBorder(toolbar, nil, nil, nil, widget.NewLabel("Content"))
+	myWindow.SetContent(content)
+	myWindow.ShowAndRun()
+}
+```

@@ -1,13 +1,13 @@
 ---
-layout: tour
-
 title: Table
-order: 9
----
 
-The `Table` widget is like the `List` widget (another of the toolkit's collection widgets) with a two-dimensional index. 
+redirect_from:
+  - /tour/widget/table
+--- 
+
+The `Table` widget is like the `List` widget (another of the toolkit's collection widgets) with a two-dimensional index.
 Like `List` this is designed to help build really performant
-interfaces when lots of data is being presented. 
+interfaces when lots of data is being presented.
 Because of this the widget is not created with all the data embedded, but instead calls out to the data source when needed.
 
 The `Table` uses callback functions to ask for data when it is required.
@@ -19,4 +19,34 @@ The `CreateCell` callback returns a new template object, just like list.
 The difference being that `MinSize` will define the standard size of each cell, and the minimum size of the table (it shows at least one cell).
 As previously the `UpdateCell` is called to apply data to a cell template. The index passed in is the same `(row, col)` int pair.
 
-In the next tour section we explore [data bindings](/tour/binding/).
+```go
+package main
+
+import (
+	"fyne.io/fyne/v2"
+	"fyne.io/fyne/v2/app"
+	"fyne.io/fyne/v2/widget"
+)
+
+var data = [][]string{[]string{"top left", "top right"},
+	[]string{"bottom left", "bottom right"}}
+
+func main() {
+	myApp := app.New()
+	myWindow := myApp.NewWindow("Table Widget")
+
+	list := widget.NewTable(
+		func() (int, int) {
+			return len(data), len(data[0])
+		},
+		func() fyne.CanvasObject {
+			return widget.NewLabel("wide content")
+		},
+		func(i widget.TableCellID, o fyne.CanvasObject) {
+			o.(*widget.Label).SetText(data[i.Row][i.Col])
+		})
+
+	myWindow.SetContent(list)
+	myWindow.ShowAndRun()
+}
+```

@@ -1,14 +1,10 @@
 ---
-layout: tour
-
 title: Label
-order: 1
-
-permalink: /tour/widget/
 
 redirect_from:
-- /tour/widget/label
-
+  - /widget/
+  - /tour/widget/label
+  - /tour/widget/
 ---
 
 Widgets are the main components of a Fyne application GUI, they can be
@@ -20,3 +16,22 @@ Unlike `canvas.Text` it can handle some simple formatting (such as `\n`)
 and wrapping (by setting the `Wrapping` field).
 You can create a label by calling `widget.NewLabel("some text")`, the
 result can be assigned to a variable or passed directly into a container.
+
+```go
+package main
+
+import (
+	"fyne.io/fyne/v2/app"
+	"fyne.io/fyne/v2/widget"
+)
+
+func main() {
+	myApp := app.New()
+	myWindow := myApp.NewWindow("Label Widget")
+
+	content := widget.NewLabel("text")
+
+	myWindow.SetContent(content)
+	myWindow.ShowAndRun()
+}
+```
