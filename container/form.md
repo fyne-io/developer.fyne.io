@@ -5,7 +5,7 @@ redirect_from:
 - /tour/layout/formlayout
 ---
 
-The `layout.FormLayout` is like a 2 column [grid layout](gridlayout.html)
+The `layout.FormLayout` is like a 2 column [grid layout](/container/grid)
 but tweaked to lay out forms in an application.
 The height of each item will be the larger of the two minimum heights
 in each row. The width of the left item will be the largest minimum

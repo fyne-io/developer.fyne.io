@@ -76,10 +76,6 @@ entries:
       url: /explore/container
       output: web
 
-    - title: Widgets
-      url: /explore/widget
-      output: web
-
     - title: Widget List
       url: /explore/widgets
       output: web, pdf
