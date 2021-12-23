@@ -14,7 +14,9 @@ Fyne's API is designed to make testing applications easy. By separating componen
 
 ### Example
 
-The fyne repository and it's examples all have test code at various levels. To show how to test a complete application look at the following code from the calculator example.
+The fyne repository and it's example applications all have test code at various levels.
+To show how to test a complete application look at the following code from the
+[calculator project](https://github.com/fyne-io/calculator).
 
 ```go
 package calculator
@@ -43,4 +45,3 @@ func TestAdd(t *testing.T) {
 Using the "test" package we load a test application, rather than a regular desktop app (`test.NewApp()` instead of `app.New()`). Then the `test.Tap()` function simulates user action and finally we check the text of the output for the correct answer.
 
 A simple `go test .` will run this as a unit test, loading and testing the application, without ever having to load a window on the screen.
-

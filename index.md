@@ -3,7 +3,7 @@ title: "Fyne toolkit documentation for developers"
 permalink: index.html
 ---
 
-This site is home to the documentation and tutorials for developers working with the
+This site is home to the documentation and examples for developers working with the
 Fyne toolkit. We have details for people just getting started, building their first
 graphical app through to detailed walkthroughs of complex topics related to building
 leading cross platform apps.
@@ -12,7 +12,7 @@ leading cross platform apps.
 
 <div class="intro-row">
     <div class="col-lg-4 text-center">
-        <p>If you can't wait to start coding your first Fyne app then you can dive right in at our developer documentation.</p>
+        <p>If you can't wait to start coding your first Fyne app, you can dive right in at our developer documentation.</p>
 
         <a href="/started/" class="btn btn-default btn-xl">Get Started</a>
 
@@ -20,7 +20,7 @@ leading cross platform apps.
         here with a question in mind then you may find an answer in the <a href="/faq/">FAQs</a>.</p>
     </div>
     <div class="col-lg-4 text-center">
-        <p>If you are new to the Go language we recommend running through the Go tour
+        <p>If you are new to the Go language, we recommend running through the Go tour
         before returning to the Fyne documentation.</p>
 
         <a href="https://go.dev/tour/" class="btn btn-default btn-xl" style="visibility: visible;">Take the Go Tour</a>
@@ -48,11 +48,11 @@ If you have not used Fyne before then the following steps will get you up and ru
 1. Install Gcc
 1. `go get fyne.io/fyne/v2`
 
-For more details including the exact commands for your operating system see 
+For more details including the exact commands for your operating system see
 the [getting started](/started/) page.
 
 ## Diving Right In
 
-To explore more detailed topics you can check out our growing list of
-[tutorials](/tutorial/). If you would like to request addditional examples or
+To explore more detailed topics you can check out the [explore](/explore/)
+section of this site. If you would like to request addditional examples or
 some support for your project you can [get in touch](https://fyne.io/support/).
