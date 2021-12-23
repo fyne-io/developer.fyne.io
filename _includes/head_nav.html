@@ -73,7 +73,7 @@ if ($("#tg-sb-icon").hasClass('fa-toggle-on')) {
           .matchMedia('(prefers-color-scheme: dark)')
           .addEventListener('change', darkModeListener);
 
-        setDark(window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches);
+        setDark(isDarkPreference());
     </script>
     {% if page.datatable == true %}
     <!-- Include the standard DataTables bits -->
