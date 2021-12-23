@@ -12,7 +12,7 @@ leading cross platform apps.
 
 <div class="intro-row">
     <div class="col-lg-4 text-center">
-        <p>If you can't wait to start coding your first Fyne app, you can dive right in at our developer documentation.</p>
+        <p>If you can't wait to start building your first Fyne app, you should follow our getting started guide.</p>
 
         <a href="/started/" class="btn btn-default btn-xl">Get Started</a>
 
