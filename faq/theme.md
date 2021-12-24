@@ -12,7 +12,7 @@ In this page we answer some common questions about the design of Fyne themes and
 **Q: How can I change the colour of text for a `Label` widget?**
 
 **A:** All of the standard widgets use the current `Theme` definition to set the colour, font and sizes. To make changes to your application consider using a 
-[custom theme](/tutorial/custom-theme).
+[custom theme](/extend/custom-theme).
 
 If your application requires text that is a different colour you can use the `canvas.Text` type instead.
 That allows directly setting the colour and size of the text. Be careful when doing this because a user can choose between light or dark theme variations, so you should test with both.

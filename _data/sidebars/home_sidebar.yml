@@ -32,18 +32,13 @@ entries:
       url: /started/firstapp
       output: web, pdf
 
-    - title: Widget List
-      url: /started/widgets
-      output: web, pdf
+    - title: Application and RunLoop
+      url: /started/apprun
+      output: web
 
-    - title: Layout List
-      url: /started/layouts
-      output: web, pdf
-
-    - title: Dialog List
-      url: /started/dialogs
-      output: web, pdf
-
+    - title: Window Handling
+      url: /started/windows
+      output: web
 
     - title: Testing
       url: /started/testing
@@ -61,10 +56,6 @@ entries:
       url: /started/distribution
       output: web, pdf
  
-    - title: Compile Options
-      url: /started/compiling
-      output: web, pdf
-
     - title: App Metadata
       url: /started/metadata
       output: web, pdf
@@ -73,260 +64,201 @@ entries:
       url: /started/cross-compiling
       output: web, pdf
 
-
-
-  - title: Tour
+  - title: Exploring Fyne
     output: web, pdf
     folderitems:
 
-    - output: web, pdf
-      subfolders:   
-      - title: Introduction
-        output: web
-        subfolderitems:
+    - title: Canvas and CanvasObject
+      url: /explore/canvas
+      output: web
 
-        - title: Welcome
-          url: /tour/introduction/
-          output: web
- 
-        - title: Programming with Go
-          url: /tour/introduction/golang.html
-          output: web
+    - title: Container and Layouts
+      url: /explore/container
+      output: web
 
-        - title: Building Code Samples
-          url: /tour/introduction/samples.html
-          output: web
-
-        - title: GUI Overview
-          url: /tour/introduction/guis.html
-          output: web
-
-        - title: Organisation and Packages
-          url: /tour/introduction/organisation.html
-          output: web
-
-        - title: Packaging and Distribution
-          url: /tour/introduction/packaging.html
-          output: web
-
-        - title: Beginner to Expert
-          url: /tour/introduction/learning.html
-          output: web
-
-    - output: web, pdf
-      subfolders:   
-      - title: Basics
-        output: web
-        subfolderitems:
-
-        - title: Application and RunLoop
-          url: /tour/basics/
-          output: web
-
-        - title: Window Handling
-          url: /tour/basics/windows.html
-          output: web
-
-        - title: Canvas and CanvasObject
-          url: /tour/basics/canvas.html
-          output: web
-
-        - title: Container and Layouts
-          url: /tour/basics/container.html
-          output: web
-
-        - title: Widgets
-          url: /tour/basics/widget.html
-          output: web
-
-    - output: web, pdf
-      subfolders:   
-      - title: Canvas
-        output: web
-        subfolderitems:
-
-        - title: Rectangle
-          url: /tour/canvas/
-          output: web
-
-        - title: Text
-          url: /tour/canvas/text.html
-          output: web
-
-        - title: Line
-          url: /tour/canvas/line.html
-          output: web
-
-        - title: Circle
-          url: /tour/canvas/circle.html
-          output: web
-
-        - title: Image
-          url: /tour/canvas/image.html
-          output: web
-
-        - title: Raster
-          url: /tour/canvas/raster.html
-          output: web
-
-        - title: Gradient
-          url: /tour/canvas/gradient.html
-          output: web
-
-    - output: web, pdf
-      subfolders:   
-      - title: Layout
-        output: web
-        subfolderitems:
-
-        - title: Box Layout
-          url: /tour/layout/
-          output: web
-
-        - title: Grid Layout
-          url: /tour/layout/gridlayout.html
-          output: web
-
-        - title: Grid Wrap Layout
-          url: /tour/layout/gridwraplayout.html
-          output: web
-
-        - title: Border Layout
-          url: /tour/layout/borderlayout.html
-          output: web
-
-        - title: Form Layout
-          url: /tour/layout/formlayout.html
-          output: web
-
-        - title: Center Layout
-          url: /tour/layout/centerlayout.html
-          output: web
-
-        - title: Max Layout
-          url: /tour/layout/maxlayout.html
-          output: web
-
-    - output: web, pdf
-      subfolders:   
-      - title: Container
-        output: web
-        subfolderitems:
-
-        - title: AppTabs
-          url: /tour/container/
-          output: web
-
-        - title: Box
-          url: /tour/container/box.html
-          output: web
-
-    - output: web, pdf
-      subfolders:   
-      - title: Widget
-        output: web
-        subfolderitems:
-
-        - title: Label
-          url: /tour/widget/
-          output: web
-
-        - title: Button
-          url: /tour/widget/button.html
-          output: web
-
-        - title: Entry
-          url: /tour/widget/entry.html
-          output: web
-
-        - title: Choices
-          url: /tour/widget/choices.html
-          output: web
-
-        - title: Form
-          url: /tour/widget/form.html
-          output: web
-
-        - title: ProgressBar
-          url: /tour/widget/progressbar.html
-          output: web
-
-        - title: Toolbar
-          url: /tour/widget/toolbar.html
-          output: web
-
-        - title: List
-          url: /tour/widget/list.html
-          output: web
-
-        - title: Table
-          url: /tour/widget/table.html
-          output: web
-
-
-    - output: web, pdf
-      subfolders:   
-      - title: Data Binding
-        output: web
-        subfolderitems:
-
-        - title: Introduction
-          url: /tour/binding/
-          output: web
-
-        - title: Binding Simple Widgets
-          url: /tour/binding/simple.html
-          output: web
-
-        - title: Two-Way Binding
-          url: /tour/binding/twoway.html
-          output: web
-
-        - title: Data Conversion
-          url: /tour/binding/conversion.html
-          output: web
-
-        - title: List Data
-          url: /tour/binding/list.html
-          output: web
-
-
-  - title: Tutorials
-    output: web, pdf
-
-    folderitems:
-    - title: Extending Widgets
-      url: /tutorial/extending-widgets
+    - title: Widget List
+      url: /explore/widgets
       output: web, pdf
 
-    - title: Building a Layout
-      url: /tutorial/custom-layout
+    - title: Layout List
+      url: /explore/layouts
       output: web, pdf
 
-    - title: Bundling resources
-      url: /tutorial/bundle
-      output: web, pdf
-
-    - title: Write a Custom Widget
-      url: /tutorial/write-custom-widget
-      output: web, pdf
-
-    - title: Numerical Entry
-      url: /tutorial/numerical-entry
+    - title: Dialog List
+      url: /explore/dialogs
       output: web, pdf
 
     - title: Handling Shortcuts
-      url: /tutorial/shortcuts
+      url: /explore/shortcuts
       output: web, pdf
 
     - title: Using the Preferences API
-      url: /tutorial/preferences-api
+      url: /explore/preferences
+      output: web, pdf
+
+    - title: Compile Options
+      url: /explore/compiling
+      output: web, pdf
+
+  - title: Drawing and Animation
+    output: web
+    folderitems:
+
+    - title: Rectangle
+      url: /canvas/rectangle
+      output: web
+
+    - title: Text
+      url: /canvas/text
+      output: web
+
+    - title: Line
+      url: /canvas/line
+      output: web
+
+    - title: Circle
+      url: /canvas/circle
+      output: web
+
+    - title: Image
+      url: /canvas/image
+      output: web
+
+    - title: Raster
+      url: /canvas/raster
+      output: web
+
+    - title: Gradient
+      url: /canvas/gradient
+      output: web
+
+  - title: Containers and Layout
+    output: web
+    folderitems:
+
+    - title: Box
+      url: /container/box
+      output: web
+
+    - title: Grid
+      url: /container/grid
+      output: web
+
+    - title: Grid Wrap
+      url: /container/gridwrap
+      output: web
+
+    - title: Border
+      url: /container/border
+      output: web
+
+    - title: Form
+      url: /container/form
+      output: web
+
+    - title: Center
+      url: /container/center
+      output: web
+
+    - title: Max
+      url: /container/max
+      output: web
+
+    - title: AppTabs
+      url: /container/apptabs
+      output: web
+
+  - title: Widgets
+    output: web
+    folderitems:
+
+    - title: Label
+      url: /widget/label
+      output: web
+
+    - title: Button
+      url: /widget/button
+      output: web
+
+    - title: Entry
+      url: /widget/entry
+      output: web
+
+    - title: Choices
+      url: /widget/choices
+      output: web
+
+    - title: Form
+      url: /widget/form
+      output: web
+
+    - title: ProgressBar
+      url: /widget/progressbar
+      output: web
+
+    - title: Toolbar
+      url: /widget/toolbar
+      output: web
+
+    - title: List
+      url: /widget/list
+      output: web
+
+    - title: Table
+      url: /widget/table
+      output: web
+
+  - title: Data Binding
+    output: web
+    folderitems:
+
+    - title: Introduction
+      url: /binding/
+      output: web
+
+    - title: Binding Simple Widgets
+      url: /binding/simple
+      output: web
+
+    - title: Two-Way Binding
+      url: /binding/twoway
+      output: web
+
+    - title: Data Conversion
+      url: /binding/conversion
+      output: web
+
+    - title: List Data
+      url: /binding/list
+      output: web
+
+  - title: Extending Fyne
+    output: web, pdf
+
+    folderitems:
+    - title: Building a Layout
+      url: /extend/custom-layout
+      output: web, pdf
+
+    - title: Write a Custom Widget
+      url: /extend/custom-widget
+      output: web, pdf
+
+    - title: Bundling resources
+      url: /extend/bundle
       output: web, pdf
 
     - title: Add a Custom Theme
-      url: /tutorial/custom-theme
+      url: /extend/custom-theme
       output: web, pdf
 
+    - title: Extending Widgets
+      url: /extend/extending-widgets
+      output: web, pdf
+
+    - title: Numerical Entry
+      url: /extend/numerical-entry
+      output: web, pdf
 
   - title: Architecture
     output: web, pdf
@@ -344,6 +276,9 @@ entries:
       url: /architecture/widgets
       output: web, pdf
 
+    - title: Organisation and Packages
+      url: /architecture/organisation.html
+      output: web
 
   - title: Frequently Asked Questions
     output: web, pdf

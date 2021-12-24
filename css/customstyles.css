@@ -2,40 +2,6 @@ body {
     font-size:15px;
 }
 
-/* tour styles */
-
-button.copyCode {
-    float: right !important;
-}
-
-#tourNav {
-    width: 100%;
-    margin: 0;
-    bottom: 12pt;
-    left: 0;
-    text-align: center;
-    clear: both;
-
-    bottom: 50pt;
-    position: fixed;
-    z-index: 100;
-}
-
-#tourNav span {
-    font-size: large;
-    padding: 5pt;
-    background-color: rgb(225, 225, 225);
-    color: #121212;
-}
-
-#tourNav a {
-    padding: 5pt;
-}
-
-#tourNav span span {
-    background-color: transparent;
-}
-
 div.deprecated {
     padding: 7pt;
     background-color: rgba(125, 125, 125, 0.12);

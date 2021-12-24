@@ -50,6 +50,7 @@ fyne-cross allows to build binaries and create distribution packages for the fol
 | android | arm |
 | ios | |
 | freebsd | amd64 |
+| freebsd | arm64 |
 
 > Note: iOS compilation is supported only on darwin hosts.
 

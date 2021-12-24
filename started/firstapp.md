@@ -54,8 +54,3 @@ If you prefer a light theme then just set the environment variable `FYNE_THEME=l
 
 That's all there is to getting started. To learn more you can read the full
 [API documentation](http://developer.fyne.io/api/).
-If you prefer a curated process we have prepared a tour of the toolkit that you can launch using the button below.
-
-<a href="https://tour.fyne.io" class="btn btn-primary btn-xl" style="visibility: visible;">Take the Tour</a>
-
-

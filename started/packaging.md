@@ -9,9 +9,11 @@ order: 50
 
 ---
 
-Packaging a graphical app for distribution can be complex - Windows executables
-need embedded icons, macOS apps are bundles and with Linux there are various
-metadata files that should get installed. What a hassle!
+Packaging a graphical app for distribution can be complex.
+Graphical applications typically have icons and metadata associated
+with them as well as specific formats required to integrate with each
+environment. Windows executables need embedded icons, macOS apps are bundles and
+with Linux there are various metadata files that should get installed. What a hassle!
 
 Thankfully the "fyne" app has a "package" command that can handle this automatically. Just specifying the target OS and any required metadata (such as icon) will generate the appropriate package. The icon conversion will be done automatically for .icns or .ico so just provide a .png file :). All you need is to have the application already built for the target platform...
 
@@ -41,5 +43,8 @@ fyne install -icon myapp.png
 ```
 
 All of these commands also support a default icon file of `Icon.png` so that you
-can avoid typing the parameter for each execution.
+can avoid typing the parameter for each execution. Since Fyne 2.1 there is also a
+[metadata file](/started/metadata) where you can set default options for your project.
 
+Of course you can still run your applications using the standard Go
+tools if you prefer.
