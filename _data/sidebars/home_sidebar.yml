@@ -96,6 +96,10 @@ entries:
       url: /explore/preferences
       output: web, pdf
 
+    - title: Data Binding
+      url: /explore/binding
+      output: web, pdf
+
     - title: Compile Options
       url: /explore/compiling
       output: web, pdf
@@ -130,6 +134,10 @@ entries:
 
     - title: Gradient
       url: /canvas/gradient
+      output: web
+
+    - title: Animation
+      url: /canvas/animation
       output: web
 
   - title: Containers and Layout
