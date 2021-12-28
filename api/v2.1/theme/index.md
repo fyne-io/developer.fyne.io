@@ -2,6 +2,7 @@
 layout: page
 tags: [api]
 title: Fyne API "theme"
+package: fyne.io/fyne/v2/theme
 ---
 
 # theme

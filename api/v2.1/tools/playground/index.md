@@ -2,6 +2,7 @@
 layout: page
 tags: [api]
 title: Fyne API "playground"
+package: fyne.io/fyne/v2/tools/playground
 ---
 
 # playground

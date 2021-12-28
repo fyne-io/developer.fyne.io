@@ -2,6 +2,7 @@
 layout: page
 tags: [api]
 title: Fyne API "canvas.Rectangle"
+package: fyne.io/fyne/v2/canvas
 ---
 
 # canvas.Rectangle

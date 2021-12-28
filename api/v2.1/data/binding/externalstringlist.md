@@ -2,6 +2,7 @@
 layout: page
 tags: [api]
 title: Fyne API "binding.ExternalStringList"
+package: fyne.io/fyne/v2/data/binding
 ---
 
 # binding.ExternalStringList

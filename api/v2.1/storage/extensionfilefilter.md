@@ -2,6 +2,7 @@
 layout: page
 tags: [api]
 title: Fyne API "storage.ExtensionFileFilter"
+package: fyne.io/fyne/v2/storage
 ---
 
 # storage.ExtensionFileFilter

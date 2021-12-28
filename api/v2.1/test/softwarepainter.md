@@ -2,6 +2,7 @@
 layout: page
 tags: [api]
 title: Fyne API "test.SoftwarePainter"
+package: fyne.io/fyne/v2/test
 ---
 
 # test.SoftwarePainter

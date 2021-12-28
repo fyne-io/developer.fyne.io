@@ -2,6 +2,7 @@
 layout: page
 tags: [api]
 title: Fyne API "software"
+package: fyne.io/fyne/v2/driver/software
 ---
 
 # software

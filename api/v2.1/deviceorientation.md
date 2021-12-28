@@ -2,6 +2,7 @@
 layout: page
 tags: [api]
 title: Fyne API "fyne.DeviceOrientation"
+package: fyne.io/fyne/v2
 ---
 
 # fyne.DeviceOrientation

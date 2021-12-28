@@ -2,6 +2,7 @@
 layout: page
 tags: [api]
 title: Fyne API "container.Split"
+package: fyne.io/fyne/v2/container
 ---
 
 # container.Split

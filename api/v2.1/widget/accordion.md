@@ -2,6 +2,7 @@
 layout: page
 tags: [api]
 title: Fyne API "widget.Accordion"
+package: fyne.io/fyne/v2/widget
 ---
 
 # widget.Accordion

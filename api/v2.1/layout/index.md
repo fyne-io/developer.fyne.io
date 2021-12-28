@@ -2,6 +2,7 @@
 layout: page
 tags: [api]
 title: Fyne API "layout"
+package: fyne.io/fyne/v2/layout
 ---
 
 # layout

@@ -1,0 +1,40 @@
+{% assign sidebar = site.pages | group_by: "package" %}
+
+  <li>
+      <a title="API Documentation" href="#">API Documentation</a>
+      <ul>
+          {% for entry in sidebar | sort: 'name' %}
+          {% assign folder = entry.name %}
+          {% if folder.size == 0 %}{% continue %}{% endif %}
+
+          <li class="subfolders">
+              {% assign name = folder | remove: "fyne.io/fyne/v2/" %}
+              {% assign remove = name %}
+              {% if name == "fyne.io/fyne/v2" %}
+              {% assign name = "Fyne API v2.1" %}
+              {% assign remove = "fyne" %}
+              {% endif %}
+
+              <a title="{{ name }}" href="/api/v2.1/{{ name }}">{{ name }}</a>
+              {% assign items = name | split: '/' %}
+              {% if items.size > 1 %}
+              {% assign name = items[1] %}
+              {% assign remove = name %}
+              {% endif %}
+              <ul>
+                  {% for subfolderitem in entry.items | sort: 'url' %}
+                  {% assign strip = remove | append: "." %}
+                  {% assign title = subfolderitem.title | remove: '"' | remove: 'Fyne API ' | remove: strip %}
+                  {% if title == remove %}{% assign title = "package global" %}{% endif %}
+                  {% if page.url == subfolderitem.url %}
+                  <li class="active"><a title="{{title}}" href="{{subfolderitem.url}}">{{title}}</a></li>
+                  {% else %}
+                  <li><a title="{{title}}" href="{{subfolderitem.url}}">{{title}}</a></li>
+                  {% endif %}
+                  {% endfor %}
+              </ul>
+          </li>
+
+          {% endfor %}
+      </ul>
+  </li>

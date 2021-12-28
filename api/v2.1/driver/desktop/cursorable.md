@@ -2,6 +2,7 @@
 layout: page
 tags: [api]
 title: Fyne API "desktop.Cursorable"
+package: fyne.io/fyne/v2/driver/desktop
 ---
 
 # desktop.Cursorable
