@@ -10,12 +10,14 @@
           <li class="subfolders">
               {% assign name = folder | remove: "fyne.io/fyne/v2/" %}
               {% assign remove = name %}
+              {% assign link = name | append: "/" %}
               {% if name == "fyne.io/fyne/v2" %}
               {% assign name = "Fyne API v2.1" %}
               {% assign remove = "fyne" %}
+              {% assign link = "" %}
               {% endif %}
 
-              <a title="{{ name }}" href="/api/v2.1/{{ name }}/">{{ name }}</a>
+              <a title="{{ name }}" href="/api/v2.1/{{ link }}">{{ name }}</a>
               {% assign items = name | split: '/' %}
               {% if items.size > 1 %}
               {% assign name = items[1] %}
