@@ -15,7 +15,7 @@
               {% assign remove = "fyne" %}
               {% endif %}
 
-              <a title="{{ name }}" href="/api/v2.1/{{ name }}">{{ name }}</a>
+              <a title="{{ name }}" href="/api/v2.1/{{ name }}/">{{ name }}</a>
               {% assign items = name | split: '/' %}
               {% if items.size > 1 %}
               {% assign name = items[1] %}
