@@ -22,7 +22,7 @@ EOT
 
 # generate API docs
 
-DIRS=`find $ROOT -type d | grep -v .git | grep -v vendor | grep -v internal | grep -v testdata | grep -v cmd`
+DIRS=`find $ROOT -type d | grep -v .git | grep -v vendor | grep -v internal | grep -v testdata | grep -v cmd | grep -v tools`
 PREFIX="api/$VERSION"
 mkdir $PREFIX 2>&1 > /dev/null
 
