@@ -1,8 +1,9 @@
 ---
 layout: page
-title: Your First App
+title: Hello World
 
-order: 20
+redirect_from:
+- /started/firstapp
 ---
 
 
@@ -20,37 +21,31 @@ package main
 
 import (
 	"fyne.io/fyne/v2/app"
-	"fyne.io/fyne/v2/container"
 	"fyne.io/fyne/v2/widget"
 )
 
 func main() {
 	a := app.New()
-	w := a.NewWindow("Hello")
+	w := a.NewWindow("Hello World")
 
-	hello := widget.NewLabel("Hello Fyne!")
-	w.SetContent(container.NewVBox(
-		hello,
-		widget.NewButton("Hi!", func() {
-			hello.SetText("Welcome :)")
-		}),
-	))
-
+	w.SetContent(widget.NewLabel("Hello World!"))
 	w.ShowAndRun()
 }
 ```
 </div>
 </div>
 
-The code above can be built using the command `go build hello.go` and then executed either by running the `hello` command or by double clicking the icon. You could also bypass the compiling step and just run the code directly using `go run hello.go`.
+The code above can be built using the command `go build .` and then executed either by running the `hello` command or by double clicking the icon. You could also bypass the compiling step and just run the code directly using `go run .`.
 
 Either approach will show a window that looks just like this:
 
-<img src="/images/architecture/hello-normal.png" width="207" alt="Hello Window" />
+<img src="/images/started/hello-dark.png" style="width: 120px; border: 1px solid #999; margin: 10pt" alt="Hello Window" />
 
 If you prefer a light theme then just set the environment variable `FYNE_THEME=light` and you'll get:
 
-<img src="/images/architecture/hello-light.png" width="207" alt="Hello Light Theme" />
+<img src="/images/started/hello-light.png" style="width: 120px; border: 1px solid #999; margin: 10pt" alt="Hello Light Theme" />
 
 That's all there is to getting started. To learn more you can read the full
 [API documentation](http://developer.fyne.io/api/).
+
+{% include youtube.html id="S3T9l9QUa9I" %}
