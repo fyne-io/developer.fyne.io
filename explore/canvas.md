@@ -63,7 +63,7 @@ func setContentToText(c fyne.Canvas) {
 	green := color.NRGBA{R: 0, G: 180, B: 0, A: 255}
 	text := canvas.NewText("Text", green)
 	text.TextStyle.Bold = true
-	myCanvas.SetContent(text)
+	c.SetContent(text)
 }
 
 func setContentToCircle(c fyne.Canvas) {
