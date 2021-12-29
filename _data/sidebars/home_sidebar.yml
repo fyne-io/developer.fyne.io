@@ -28,8 +28,8 @@ entries:
       url: /started/
       output: web, pdf
 
-    - title: Your First App
-      url: /started/firstapp
+    - title: Hello World
+      url: /started/hello
       output: web, pdf
 
     - title: Application and RunLoop
