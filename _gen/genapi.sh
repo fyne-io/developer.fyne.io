@@ -40,3 +40,7 @@ for DIR in $DIRS; do
  
   godocdown -template="_gen/api.md" -outputDir "$PREFIX/$PKG/" $DIR 2>&1 | grep -v "Could not find package"
 done
+
+# Theme iconography
+mkdir -p _includes/theme/icons && cp -r $ROOT/theme/icons/*.svg _includes/theme/icons/
+mkdir -p images/theme/icons && cp -r $ROOT/theme/icons/*.svg images/theme/icons/
