@@ -88,6 +88,10 @@ entries:
       url: /explore/dialogs
       output: web, pdf
 
+    - title: Icon List
+      url: /explore/icons
+      output: web, pdf
+
     - title: Handling Shortcuts
       url: /explore/shortcuts
       output: web, pdf

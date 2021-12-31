@@ -1297,3 +1297,41 @@ h4.panel-title {
         display:block !important;
     }
 }
+
+
+.theme-icon-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.icon-item {
+    list-style: none;
+    padding: 1rem;
+    text-align: center;
+    min-width: 48%;
+}
+.icon-item figcaption {
+    max-width: 100%;
+}
+.theme-icon-list > .icon-item svg {
+    transform: scale(2);
+}
+.theme-icon-list > .icon-item svg,
+.theme-icon-list > .icon-item svg path:not([fill="none"]) {
+    fill: var(--foreground-color, black) !important;
+}
+@media (min-width: 36rem) {
+    .icon-item {
+        min-width: 32%;
+    }
+}
+@media (min-width: 48rem) {
+    .icon-item {
+        min-width: 24%;
+    }
+}
+@media (prefers-color-scheme: dark) {
+    :root {
+        --foreground-color: white;
+    }
+}
