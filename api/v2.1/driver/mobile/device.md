@@ -2,6 +2,7 @@
 layout: page
 tags: [api]
 title: Fyne API "mobile.Device"
+package: fyne.io/fyne/v2/driver/mobile
 ---
 
 # mobile.Device

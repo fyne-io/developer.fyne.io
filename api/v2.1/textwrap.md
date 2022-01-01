@@ -2,6 +2,7 @@
 layout: page
 tags: [api]
 title: Fyne API "fyne.TextWrap"
+package: fyne.io/fyne/v2
 ---
 
 # fyne.TextWrap

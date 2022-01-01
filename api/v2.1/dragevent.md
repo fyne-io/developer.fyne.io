@@ -2,6 +2,7 @@
 layout: page
 tags: [api]
 title: Fyne API "fyne.DragEvent"
+package: fyne.io/fyne/v2
 ---
 
 # fyne.DragEvent

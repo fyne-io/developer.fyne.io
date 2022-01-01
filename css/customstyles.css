@@ -2,40 +2,6 @@ body {
     font-size:15px;
 }
 
-/* tour styles */
-
-button.copyCode {
-    float: right !important;
-}
-
-#tourNav {
-    width: 100%;
-    margin: 0;
-    bottom: 12pt;
-    left: 0;
-    text-align: center;
-    clear: both;
-
-    bottom: 50pt;
-    position: fixed;
-    z-index: 100;
-}
-
-#tourNav span {
-    font-size: large;
-    padding: 5pt;
-    background-color: rgb(225, 225, 225);
-    color: #121212;
-}
-
-#tourNav a {
-    padding: 5pt;
-}
-
-#tourNav span span {
-    background-color: transparent;
-}
-
 div.deprecated {
     padding: 7pt;
     background-color: rgba(125, 125, 125, 0.12);
@@ -463,12 +429,12 @@ a.accordion-toggle, a.accordion-collapsed {
     border-left: 4pt solid transparent;
 }
 
-.nav li li.active a {
+.nav li li.active > a {
     border-left: 4pt solid #03a9f4;
 }
 
-.nav>li>a:focus, .nav>li>a:hover {
-    background-color: transparent;
+.nav>li>a:focus, .nav>li>a:hover, .nav li li.subfolders > a {
+    border-left-color: transparent;
 }
 
 .nav li a {
@@ -497,7 +463,7 @@ ul#mysidebar {
 }
 
 .nav ul li ul li a {
-    padding-left:40px;
+    padding-left:64px;
 }
 
 .nav li.thirdlevel > a {
@@ -513,7 +479,7 @@ ul#mysidebar {
 }
 
 .nav ul li a {
-    padding-left: 36pt;
+    padding-left: 32pt;
 }
 /* end sidebar */
 
@@ -1142,7 +1108,7 @@ span.label.label-primary {
     background-color: whitesmoke;
     font-weight: bold;
     color: black;
-    }
+}
 
 a code {
     color: #248EC2;

@@ -2,6 +2,7 @@
 layout: page
 tags: [api]
 title: Fyne API "mobile.TouchEvent"
+package: fyne.io/fyne/v2/driver/mobile
 ---
 
 # mobile.TouchEvent

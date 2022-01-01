@@ -2,6 +2,7 @@
 layout: page
 tags: [api]
 title: Fyne API "widget.CustomTextGridStyle"
+package: fyne.io/fyne/v2/widget
 ---
 
 # widget.CustomTextGridStyle

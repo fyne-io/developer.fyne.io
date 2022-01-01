@@ -15,7 +15,6 @@
 <link rel="stylesheet" href="/css/boxshadowproperties.css">
 <!-- most color styles are extracted out to here -->
 
-<link rel="stylesheet" href="/css/theme-light.css">
 <link rel="stylesheet" href="/css/theme-common.css">
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -31,6 +30,22 @@
 <script src="{{ "/js/toc.js" }}"></script>
 <script src="{{ "/js/customscripts.js" }}"></script>
 <script src="{{ "/js/cookie.js" }}"></script>
+<script>
+    function isDarkPreference() {
+        return window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
+    }
+
+    var ss = document.createElement("link");
+    ss.type = "text/css";
+    ss.rel = "stylesheet";
+
+    if (isDarkPreference()) {
+        ss.href = "/css/theme-dark.css";
+    } else {
+        ss.href = "/css/theme-light.css";
+    }
+    document.getElementsByTagName("head")[0].appendChild(ss);
+</script>
 
 <link rel="shortcut icon" href="{{ "/images/favicon.png"  }}">
 

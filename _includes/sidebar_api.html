@@ -1,0 +1,56 @@
+{% assign sidebar = site.pages | group_by: "package" | sort: "name" %}
+
+  <li>
+      <a title="API Documentation" href="#">API Documentation</a>
+      <ul>
+          {% assign pkglink = "/api/v2.1/upgrading.html" %}
+          {% if page.url == pkglink %}
+          <li class="active"><a title="package {{ remove }}" href="{{ pkglink }}">Upgrade to v2.1</a></li>
+          {% else %}
+          <li><a title="package {{ remove }}" href="{{ pkglink }}">Upgrade to v2.1</a></li>
+          {% endif %}
+
+          {% for entry in sidebar %}
+          {% assign folder = entry.name %}
+          {% if folder.size == 0 %}{% continue %}{% endif %}
+
+          <li class="subfolders">
+              {% assign name = folder | remove: "fyne.io/fyne/v2/" %}
+              {% assign remove = name %}
+              {% assign link = name | append: "/" %}
+              {% if name == "fyne.io/fyne/v2" %}
+              {% assign name = "Fyne API v2.1" %}
+              {% assign remove = "fyne" %}
+              {% assign link = "" %}
+              {% endif %}
+
+              <a title="{{ name }}" href="/api/v2.1/{{ link }}">{{ name }}</a>
+              {% assign items = name | split: '/' %}
+              {% if items.size > 1 %}
+              {% assign name = items[1] %}
+              {% assign remove = name %}
+              {% endif %}
+              <ul>
+                  {% assign pkglink = "/api/v2.1/" | append: link %}
+                  {% if page.url == pkglink %}
+                  <li class="active"><a title="package {{ remove }}" href="{{ pkglink }}">package {{ remove }}</a></li>
+                  {% else %}
+                  <li><a title="package {{ remove }}" href="{{ pkglink }}">package {{ remove }}</a></li>
+                  {% endif %}
+
+                  {% for subfolderitem in entry.items | sort: 'url' %}
+                  {% assign strip = remove | append: "." %}
+                  {% assign title = subfolderitem.title | remove: '"' | remove: 'Fyne API ' | remove: strip %}
+                  {% if title == remove %}{% continue %}{% endif %}
+                  {% if page.url == subfolderitem.url %}
+                  <li class="active"><a title="{{title}}" href="{{subfolderitem.url}}">{{title}}</a></li>
+                  {% else %}
+                  <li><a title="{{title}}" href="{{subfolderitem.url}}">{{title}}</a></li>
+                  {% endif %}
+                  {% endfor %}
+              </ul>
+          </li>
+
+          {% endfor %}
+      </ul>
+  </li>

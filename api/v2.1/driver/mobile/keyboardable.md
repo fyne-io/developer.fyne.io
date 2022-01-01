@@ -2,6 +2,7 @@
 layout: page
 tags: [api]
 title: Fyne API "mobile.Keyboardable"
+package: fyne.io/fyne/v2/driver/mobile
 ---
 
 # mobile.Keyboardable

@@ -2,6 +2,7 @@
 layout: page
 tags: [api]
 title: Fyne API "fyne.Tappable"
+package: fyne.io/fyne/v2
 ---
 
 # fyne.Tappable

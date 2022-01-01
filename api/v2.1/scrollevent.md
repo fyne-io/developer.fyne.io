@@ -2,6 +2,7 @@
 layout: page
 tags: [api]
 title: Fyne API "fyne.ScrollEvent"
+package: fyne.io/fyne/v2
 ---
 
 # fyne.ScrollEvent

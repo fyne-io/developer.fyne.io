@@ -2,6 +2,7 @@
 layout: page
 tags: [api]
 title: Fyne API "validation"
+package: fyne.io/fyne/v2/data/validation
 ---
 
 # validation

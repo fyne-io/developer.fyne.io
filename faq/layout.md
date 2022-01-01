@@ -11,9 +11,9 @@ Intro
 
 **Q: How can I move my widget to a different position or resize it?**
 
-**A:** The position and size of elements in a Fyne app are controlled by the layout of the container that they are within. If the elements of your UI are too small consider using a different [layout](/started/layout/) or container.
+**A:** The position and size of elements in a Fyne app are controlled by the layout of the container that they are within. If the elements of your UI are too small consider using a different [layout](/started/layouts) or container.
 
-A new `Window` will expand whatever element is passed to `SetContent()` to fill it's size. Each time you add a container to this it will divide up the available space according to the layout. Layouts like `HBox` and `VBox` will shrink content to it's `MinSize()` in one dimension or another to pack contents in. Layouts like `Max` or `Border` will expand content to fill the space. By writing a [custom layout](/tutorial/custom-layout) you could fully controll the items within a container.
+A new `Window` will expand whatever element is passed to `SetContent()` to fill it's size. Each time you add a container to this it will divide up the available space according to the layout. Layouts like `HBox` and `VBox` will shrink content to it's `MinSize()` in one dimension or another to pack contents in. Layouts like `Max` or `Border` will expand content to fill the space. By writing a [custom layout](/extend/custom-layout) you could fully controll the items within a container.
 
 **Q: Why is my image so small?**
 

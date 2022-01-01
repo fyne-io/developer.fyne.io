@@ -2,6 +2,7 @@
 layout: page
 tags: [api]
 title: Fyne API "fyne.Device"
+package: fyne.io/fyne/v2
 ---
 
 # fyne.Device

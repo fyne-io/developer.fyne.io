@@ -2,6 +2,7 @@
 layout: page
 tags: [api]
 title: Fyne API "dialog.ProgressDialog"
+package: fyne.io/fyne/v2/dialog
 ---
 
 # dialog.ProgressDialog

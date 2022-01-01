@@ -2,6 +2,7 @@
 layout: page
 tags: [api]
 title: Fyne API "binding.ExternalBool"
+package: fyne.io/fyne/v2/data/binding
 ---
 
 # binding.ExternalBool

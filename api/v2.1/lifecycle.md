@@ -2,6 +2,7 @@
 layout: page
 tags: [api]
 title: Fyne API "fyne.Lifecycle"
+package: fyne.io/fyne/v2
 ---
 
 # fyne.Lifecycle
