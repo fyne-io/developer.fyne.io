@@ -4,6 +4,12 @@ title: Getting Started
 
 order: 10
 
+redirect_from:
+- /tour/introduction/
+- /tour/introduction/hello
+- /tour/introduction/learning
+- /tour/introduction/samples
+
 install:
     tab1:
         name: windows
@@ -64,13 +70,14 @@ The steps for installing with MSYS2 (recommended) are as follows:
 * Install MSYS2 from [msys2.org](https://www.msys2.org/)
 * Once installed do not use the MSYS terminal that opens
 * Open "MSYS2 MinGW 64-bit" from the start menu
-* Execute the following commands:
+* Execute the following commands (if asked for install options be sure to choose "all"):
 
         $ pacman -Syu
         $ pacman -S git mingw-w64-x86_64-toolchain
 
-* Add /c/Program\ Files/Go/bin and ~/Go/bin to your PATH in .bashrc, you can use the command:
-    `echo 'export PATH=$PATH:/c/Program\ Files/Go/bin:~/Go/bin` >> ~/.bashrc`
+* You will need to add /c/Program\ Files/Go/bin and ~/Go/bin to your PATH, for MSYS2 you can paste the following command into your terminal:
+
+        $ echo "export PATH=$PATH:/c/Program\ Files/Go/bin:~/Go/bin" >> ~/.bashrc
 
 </div>
 </div>
@@ -91,14 +98,16 @@ The steps for installing with MSYS2 (recommended) are as follows:
 <div style="text-align: left" markdown="1">
 
 * You will need to install Go, gcc and the graphics library header files using your package manager, one of the following commands will probably work.
-* **Ubuntu / Debian:**
+* **Debian / Ubuntu:**
 `sudo apt-get install golang gcc libgl1-mesa-dev xorg-dev`
 * **Fedora:**
 `sudo dnf install golang gcc libXcursor-devel libXrandr-devel mesa-libGL-devel libXi-devel libXinerama-devel libXxf86vm-devel`
-* **Solus:**
-`sudo eopkg it -c system.devel golang mesalib-devel libxrandr-devel libxcursor-devel libxi-devel libxinerama-devel`
 * **Arch Linux:**
 `sudo pacman -S go xorg-server-devel`
+* **Solus:**
+`sudo eopkg it -c system.devel golang mesalib-devel libxrandr-devel libxcursor-devel libxi-devel libxinerama-devel`
+* **openSUSE:**
+`sudo zypper install go gcc libXcursor-devel libXrandr-devel Mesa-libGL-devel libXi-devel libXinerama-devel libXxf86vm-devel`
 * **Void Linux:**
 `sudo xbps-install -S go base-devel xorg-server-devel libXrandr-devel libXcursor-devel libXinerama-devel`
 
@@ -119,9 +128,7 @@ The steps for installing with MSYS2 (recommended) are as follows:
 
 * You will need to install Go, gcc and the graphics library header files using the package manager.
 * **FreeBSD:**
-`sudo pkg install go gcc xorg glfw pkgconf`
-* **OpenBSD:**
-`sudo pkg_add go glfw`
+`sudo pkg install go gcc xorg pkgconf`
 </div>
 </div>
 
@@ -168,7 +175,7 @@ The steps for installing with MSYS2 (recommended) are as follows:
             clickTab("linux");
         } else if (os == "Linux armv7l") {
             clickTab("rpi");
-        } else if (os == "FreeBSD i386" || os == "FreeBSD amd64") {
+        } else if (os == "FreeBSD i386" || os == "FreeBSD amd64" || os == "OpenBSD i386" || os == "OpenBSD amd64" || os == "NetBSD i386" || os == "NetBSD amd64") {
         	clickTab("bsd");
         }
     });
@@ -180,8 +187,9 @@ When using Go modules (required with Go 1.16 and later), you will need to set up
 If you are not using modules or you already have your module initialized, you can skip this to the next step.
 Run the following command and replace `MODULE_NAME` with your preferred module name (this should be called in a new folder specific for your application).
 
+    $ cd myapp
     $ go mod init MODULE_NAME
-    
+
 You now need to download the Fyne module. This will be done using the following command: 
 
     $ go get fyne.io/fyne/v2
@@ -200,6 +208,8 @@ you can see our demo app running on your computer by executing:
 
     $ go run fyne.io/fyne/v2/cmd/fyne_demo
 
+Please note that the first run has to compile some C-code and can thus take longer than usual. Subsequent builds reuse the cache and will be much faster.
+
 ### Installing
 
 If you want to, you can also install the demo using the following command (requires Go 1.16 or later):
@@ -209,13 +219,9 @@ If you want to, you can also install the demo using the following command (requi
 For earlier versions of Go, you need to use the following command instead:
 
     $ go get fyne.io/fyne/v2/cmd/fyne_demo
-    
+
 If your `GOBIN` environment has been added to path (should be by default on macOS and Windows), you can then run the demo:
 
     $ fyne_demo
 
-Please note that the first run has to compile some C-code and can thus take longer than usual. Subsequent builds reuse the cache and will be much faster.  
-
-And that's all there is to it! Now you can write your own Fyne application in your IDE of choice. If you want to see some Fyne code in action then you can read [your first application](/started/firstapp.html). Alternatively you could check out our tour of the Fyne toolkit using the button below.
-
-<a href="/tour/" class="btn btn-primary btn-xl" style="visibility: visible;">Take the Tour</a>
+And that's all there is to it! Now you can write your own Fyne application in your IDE of choice. If you want to see some Fyne code in action then you can read [your first application](/started/firstapp).

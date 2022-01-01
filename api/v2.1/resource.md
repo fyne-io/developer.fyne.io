@@ -2,6 +2,7 @@
 layout: page
 tags: [api]
 title: Fyne API "fyne.Resource"
+package: fyne.io/fyne/v2
 ---
 
 # fyne.Resource

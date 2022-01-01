@@ -2,6 +2,7 @@
 layout: page
 tags: [api]
 title: Fyne API "widget.HyperlinkSegment"
+package: fyne.io/fyne/v2/widget
 ---
 
 # widget.HyperlinkSegment

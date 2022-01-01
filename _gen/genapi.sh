@@ -1,6 +1,7 @@
-#!/bin/sh
+#!/bin/bash
 
 ROOT="`go env GOPATH`/src/fyne.io/fyne/v2"
+bash -c "cd $ROOT; git checkout master; git pull"
 VERSION="v2.1"
 
 cd "$(dirname "$0")"
@@ -21,7 +22,7 @@ EOT
 
 # generate API docs
 
-DIRS=`find $ROOT -type d | grep -v .git | grep -v vendor | grep -v internal | grep -v testdata | grep -v cmd`
+DIRS=`find $ROOT -type d | grep -v .git | grep -v vendor | grep -v internal | grep -v testdata | grep -v cmd | grep -v tools`
 PREFIX="api/$VERSION"
 mkdir $PREFIX 2>&1 > /dev/null
 
@@ -32,10 +33,10 @@ for DIR in $DIRS; do
   PKG=`echo $DIR | cut -c$((${#ROOT}+2))-`
 
   if [[ ! -z "$PKG" ]]; then
-    mkdir -p `dirname "api/$PKG"`
+    mkdir -p `dirname "api/$PKG"` 2>&1 > /dev/null
     redirect "api/$PKG.md" "$PKG/"
   fi
-  mkdir -p "$PREFIX/$PKG"
+  mkdir -p "$PREFIX/$PKG" 2>&1 > /dev/null
  
   godocdown -template="_gen/api.md" -outputDir "$PREFIX/$PKG/" $DIR 2>&1 | grep -v "Could not find package"
 done

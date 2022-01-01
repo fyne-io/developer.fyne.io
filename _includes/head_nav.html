@@ -54,21 +54,26 @@ if ($("#tg-sb-icon").hasClass('fa-toggle-on')) {
             if (readCookie("nonav") == "true") {
                 $("#tg-sb-link").click();
             };
-            $("#tg-dark-link").click(function() {
-if ($("#tg-dark-icon").hasClass('fa-toggle-on')) {
-    $('link[href="/css/theme-dark.css"]').attr('href','/css/theme-light.css');
-    createCookie("dark", "false", 365);
-} else {
-    $('link[href="/css/theme-light.css"]').attr('href','/css/theme-dark.css');
-    createCookie("dark", "true", 365);
-}
-                $("#tg-dark-icon").toggleClass('fa-toggle-on');
-                $("#tg-dark-icon").toggleClass('fa-toggle-off');
-            });
-            if (readCookie("dark") == "true") {
-                $("#tg-dark-link").click();
-            };
+
         });
+
+        function setDark(on) {
+          if (on) {
+            $('link[href="/css/theme-light.css"]').attr('href','/css/theme-dark.css');
+          } else {
+            $('link[href="/css/theme-dark.css"]').attr('href','/css/theme-light.css');
+          }
+        }
+
+        const darkModeListener = (event) => {
+          setDark(event.matches);
+        };
+
+        window
+          .matchMedia('(prefers-color-scheme: dark)')
+          .addEventListener('change', darkModeListener);
+
+        setDark(isDarkPreference());
     </script>
     {% if page.datatable == true %}
     <!-- Include the standard DataTables bits -->

@@ -2,6 +2,7 @@
 layout: page
 tags: [api]
 title: Fyne API "desktop.Hoverable"
+package: fyne.io/fyne/v2/driver/desktop
 ---
 
 # desktop.Hoverable

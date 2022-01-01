@@ -2,6 +2,7 @@
 layout: page
 tags: [api]
 title: Fyne API "repository.ListableRepository"
+package: fyne.io/fyne/v2/storage/repository
 ---
 
 # repository.ListableRepository

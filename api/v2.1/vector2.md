@@ -2,6 +2,7 @@
 layout: page
 tags: [api]
 title: Fyne API "fyne.Vector2"
+package: fyne.io/fyne/v2
 ---
 
 # fyne.Vector2

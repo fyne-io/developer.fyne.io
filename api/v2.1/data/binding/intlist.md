@@ -2,6 +2,7 @@
 layout: page
 tags: [api]
 title: Fyne API "binding.IntList"
+package: fyne.io/fyne/v2/data/binding
 ---
 
 # binding.IntList

@@ -2,6 +2,7 @@
 layout: page
 tags: [api]
 title: Fyne API "widget.Entry"
+package: fyne.io/fyne/v2/widget
 ---
 
 # widget.Entry
@@ -31,13 +32,13 @@ type Entry struct {
 
 	// Set a validator that this entry will check against
 	// Since: 1.4
-	Validator fyne.StringValidator
+	Validator fyne.StringValidator `json:"-"`
 
 	CursorRow, CursorColumn int
 	OnCursorChanged         func() `json:"-"`
 
 	// ActionItem is a small item which is displayed at the outer right of the entry (like a password revealer)
-	ActionItem fyne.CanvasObject
+	ActionItem fyne.CanvasObject `json:"-"`
 }
 ```
 
@@ -335,7 +336,7 @@ SetValidationError manually updates the validation status until the next input c
 ```go
 func (e *Entry) Tapped(ev *fyne.PointEvent)
 ```
-Tapped is called when this entry has been tapped so we should update the cursor position.
+Tapped is called when this entry has been tapped. We update the cursor position in device-specific callbacks (MouseDown() and TouchDown()).
 
 
 <div class="implements">Implements: <code>
@@ -372,7 +373,7 @@ mobile.Touchable</code></div>
 #### func (*Entry) TouchDown
 
 ```go
-func (e *Entry) TouchDown(*mobile.TouchEvent)
+func (e *Entry) TouchDown(ev *mobile.TouchEvent)
 ```
 TouchDown is called when this entry gets a touch down event on mobile device, we ensure we have focus.
 

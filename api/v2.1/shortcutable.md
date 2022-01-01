@@ -2,6 +2,7 @@
 layout: page
 tags: [api]
 title: Fyne API "fyne.Shortcutable"
+package: fyne.io/fyne/v2
 ---
 
 # fyne.Shortcutable
