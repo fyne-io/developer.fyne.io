@@ -3,6 +3,7 @@ layout: page
 title: Theme Icons
 
 ---
+## Icons
 
 Each of the following icons is available via the `theme` package as a function. 
 For example `theme.InfoIcon()`.
