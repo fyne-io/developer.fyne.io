@@ -296,7 +296,7 @@ func main() {
 
 The widget should look like this:
 
-![](../images/widgets/customWidgetSimple.png)
+![](../images/widgets/customWidget.png)
 
 The widget can be resized and the text will remain centered.
 
