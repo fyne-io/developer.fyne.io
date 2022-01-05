@@ -111,7 +111,7 @@ must be able to reflect the same widget state.
 
 ### Example Widget
 
-The following covers in detail the creation of a simple Widget and its Renderer.
+The following covers in detail the creation of a simple Widget and its Widget Renderer.
 
 #### Create a Widget
 
