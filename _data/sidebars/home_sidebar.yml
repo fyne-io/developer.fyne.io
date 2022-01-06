@@ -36,6 +36,10 @@ entries:
       url: /started/apprun
       output: web
 
+    - title: Updating Content
+      url: /started/updating
+      output: web
+
     - title: Window Handling
       url: /started/windows
       output: web
