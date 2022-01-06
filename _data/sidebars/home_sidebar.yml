@@ -53,7 +53,7 @@ entries:
       output: web, pdf
  
     - title: Mobile Packaging
-      url: /started/packaging-mobile
+      url: /started/mobile
       output: web, pdf
 
     - title: Distribution

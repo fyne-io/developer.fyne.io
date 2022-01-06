@@ -2,15 +2,20 @@
 layout: page
 title: Mobile Packaging
 
-order: 55
+redirect-from:
+- /started/packaging-mobile
 ---
 
 ## Packaging Mobile Apps
 
 ---
 
-Packaging on mobile is very similar with Fyne but it will require additional
-tools installed. For Android builds you must have the Android SDK and NDK
+Your Fyne app code will work out of the box as mobile apps, just as it did for desktop.
+However it is a little more complex to package the code for distribution.
+This page will explore the process to do just that to get your app on iOS and Android.
+
+Firstly you will need some more development tools installed for mobile packaging
+to complete. For Android builds you must have the Android SDK and NDK
 installed with appropriate environment set up so that the tools (such as `adb`)
 can be found on the command line. To build iOS apps you will need Xcode installed
 on your macOS computer as well as the command line tools optional package.
