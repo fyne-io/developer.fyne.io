@@ -48,3 +48,5 @@ can avoid typing the parameter for each execution. Since Fyne 2.1 there is also 
 
 Of course you can still run your applications using the standard Go
 tools if you prefer.
+
+{% include youtube.html id="zIV3Pv5QbeM" %}
