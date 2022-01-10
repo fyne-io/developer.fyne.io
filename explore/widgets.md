@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Widget List
+readonly: true
 
 redirect_from:
 - /started/widgets

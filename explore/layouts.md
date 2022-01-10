@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Layout List
+readonly: true
 
 redirect_from:
 - /started/layouts

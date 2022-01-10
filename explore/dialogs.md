@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Dialog List
+readonly: true
 
 redirect_from:
 - /started/dialogs
