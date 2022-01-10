@@ -83,7 +83,7 @@ fyne.Focusable</code></div>
 
 
 <div class="deprecated">
-Deprecated: internal detail, don’t use</div>
+Deprecated: internal detail, don't use</div>
 
 #### func (*Select) Hide
 

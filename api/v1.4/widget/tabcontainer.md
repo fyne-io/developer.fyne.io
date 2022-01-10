@@ -104,7 +104,7 @@ SelectTabIndex sets the TabItem at the specific index to be selected and its con
 ```go
 func (c *TabContainer) SetItems(items []*TabItem)
 ```
-SetItems sets the container’s items and refreshes.
+SetItems sets the container's items and refreshes.
 
 #### func (*TabContainer) SetTabLocation
 

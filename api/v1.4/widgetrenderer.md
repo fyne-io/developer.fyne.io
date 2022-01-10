@@ -16,7 +16,7 @@ import "fyne.io/fyne"
 
 ```go
 type WidgetRenderer interface {
-	// BackgroundColor returns the color that should be used to draw the background of this renderer’s widget.
+	// BackgroundColor returns the color that should be used to draw the background of this renderer's widget.
 	//
 	// Deprecated: Widgets will no longer have a background to support hover and selection indication in collection widgets.
 	// If a widget requires a background color or image, this can be achieved by using a canvas.Rect or canvas.Image

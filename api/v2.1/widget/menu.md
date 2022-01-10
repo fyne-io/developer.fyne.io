@@ -113,7 +113,7 @@ fyne.Widget</code></div>
 ```go
 func (m *Menu) Tapped(*fyne.PointEvent)
 ```
-Tapped catches taps on separators and the menu background. It doesn’t perform any action.
+Tapped catches taps on separators and the menu background. It doesn't perform any action.
 
 
 <div class="implements">Implements: <code>

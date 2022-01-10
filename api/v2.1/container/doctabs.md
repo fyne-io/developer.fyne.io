@@ -133,7 +133,7 @@ SelectedIndex returns the index of the currently selected TabItem.
 ```go
 func (t *DocTabs) SetItems(items []*TabItem)
 ```
-SetItems sets the container’s items and refreshes.
+SetItems sets the container's items and refreshes.
 
 #### func (*DocTabs) SetTabLocation
 
