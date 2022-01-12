@@ -1,4 +1,4 @@
-# Developer.yne.io Website
+# developer.fyne.io Website
 
 This repository contains the source of the https://developer.fyne.io website.
 
