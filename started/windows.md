@@ -9,45 +9,68 @@ Windows are created using `App.NewWindow()` and need to be shown using
 the `Show()` function. The helper method `ShowAndRun()` on `fyne.Window`
 allows you to show your window and run the application at the same time.
 
+By default a window will be the right size to show its content
+by checking the `MinSize()` function (more on that in later examples).
+You can set a larger size by calling the `Window.Resize()` method.
+Into this is passed a `fyne.Size` which contains a width and height using
+device independent pixels (meaning that it will be the same across different
+devices), for example to make a window square by default we could:
+
+```go
+	w.Resize(Fyne.NewSize(100, 100))
+```
+
+Be aware that the desktop environment may have constraints that cause
+windows to be smaller than requested. Mobile devices will typically
+ignore this as they are only displayed at full-screen.
+
 If you wish to show a second window you must only call the `Show()`
-function. This is illustrated in the `showAnother` function.
+function. It can also be helpful to split `Window.Show()` from `App.Run()`
+if you want to open multiple windows when your application starts.
+The example below shows how to load two windows when starting.
 
 ```go
 package main
 
 import (
-	"time"
-
 	"fyne.io/fyne/v2"
 	"fyne.io/fyne/v2/app"
 	"fyne.io/fyne/v2/widget"
 )
 
 func main() {
-	myApp := app.New()
-	myWindow := myApp.NewWindow("Hello")
-	myWindow.SetContent(widget.NewLabel("Hello"))
+	a := app.New()
+	w := a.NewWindow("Hello World")
 
-	go showAnother(myApp)
-	myWindow.ShowAndRun()
-}
+	w.SetContent(widget.NewLabel("Hello World!"))
+	w.Show()
 
-func showAnother(a fyne.App) {
-	time.Sleep(time.Second * 5)
+	w2 := a.NewWindow("Larger")
+	w2.SetContent(widget.NewLabel("More content"))
+	w2.Resize(fyne.NewSize(100, 100))
+	w2.Show()
 
-	win := a.NewWindow("Shown later")
-	win.SetContent(widget.NewLabel("5 seconds later"))
-	win.Resize(fyne.NewSize(200, 200))
-	win.Show()
-
-	time.Sleep(time.Second * 2)
-	win.Close()
+	a.Run()
 }
 ```
 
-By default a window will be the right size to show its content
-by checking the `MinSize()` function (more on that in later examples).
-You can set a larger size by calling the `Window.Resize()` function.
+The above application will exit when both windows are closed. If your app
+is arranged so one window is main and the others are accessory views you
+can set one window to be "master" so that the app exists if that window
+is closed. To do this use the `SetMaster()` function on `Window`.
 
-Be aware that the desktop environment may have constraints that cause
-windows to be smaller than requested.
+Windows can be created at any time, we could change the code above so that
+the content of the second window (`w2`) is a button that opens a new
+window. You could also load windows from more complex workflows, but be
+careful because new windows will normally appear abuve the current active
+content.
+
+```go
+	w2.SetContent(widget.NewButton("Open new", func() {
+		w3 := a.NewWindow("Third")
+		w3.SetContent(widget.NewLabel("Third"))
+		w3.Show()
+	}))
+```
+
+{% include youtube.html id="nM54LsMyBQY" %}
