@@ -17,7 +17,7 @@ device independent pixels (meaning that it will be the same across different
 devices), for example to make a window square by default we could:
 
 ```go
-	w.Resize(Fyne.NewSize(100, 100))
+	w.Resize(fyne.NewSize(100, 100))
 ```
 
 Be aware that the desktop environment may have constraints that cause
