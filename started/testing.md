@@ -82,7 +82,7 @@ func makeUI() (*widget.Label, *widget.Entry) {
 	in := widget.NewEntry()
 
 	in.OnChanged = func(content string) {
-		out.SetText("Hello " + content + )
+		out.SetText("Hello " + content + "!")
 	}
 	return out, in
 }
