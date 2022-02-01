@@ -31,7 +31,7 @@ leading cross platform apps.
     <div class="col-lg-4 text-center">
         <p>For developers who prefer to learn from videos we have a collection of getting started tutorials on YouTube.</p>
 
-        <a href="https://www.youtube.com/watch?v=-v1vz_NcWng&list=PLjpijTpXl1_po-ld8jORR9k5NornDNKQk" class="btn btn-default btn-xl">Tutorial Playlist</a>
+        <a href="https://www.youtube.com/playlist?list=PLjpijTpXl1_po-ld8jORR9k5NornDNKQk" class="btn btn-default btn-xl">Tutorial Playlist</a>
 
         <p>If you have questions about the videos or want to let us know that one is missing then
         please <a   title="Submit feedback" href="https://fyne.io/support/">get in touch</a>.</p>
