@@ -56,7 +56,7 @@ func main() {
 
 The above application will exit when both windows are closed. If your app
 is arranged so one window is main and the others are accessory views you
-can set one window to be "master" so that the app exists if that window
+can set one window to be "master" so that the app exits if that window
 is closed. To do this use the `SetMaster()` function on `Window`.
 
 Windows can be created at any time, we could change the code above so that
