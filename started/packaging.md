@@ -21,7 +21,7 @@ Thankfully the "fyne" app has a "package" command that can handle this automatic
 go install fyne.io/fyne/v2/cmd/fyne@latest
 fyne package -os darwin -icon myapp.png
 ```
-If you're using an older version of Go (<1.14), you should install fyne using `go get`
+If you're using an older version of Go (<1.16), you should install fyne using `go get`
 
 ```
 go get fyne.io/fyne/v2/cmd/fyne
