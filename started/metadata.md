@@ -8,7 +8,7 @@ order: 75
 ## App Metadata
 
 Since release v2.1.0 of the `fyne` command we support a metadata file that allows you to store
-information about your appliacation in the repository.
+information about your application in the repository.
 This file is optional, but can help to avoid having to remember specific build parameters for
 each package and release command.
 
