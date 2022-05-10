@@ -206,7 +206,7 @@ If you are unsure of how Go modules work, consider reading [Tutorial: Create a G
 If you want to see the Fyne toolkit in action before you start to code your own application,
 you can see our demo app running on your computer by executing:
 
-    $ go run fyne.io/fyne/v2/cmd/fyne_demo
+    $ go run fyne.io/fyne/v2/cmd/fyne_demo@latest
 
 Please note that the first run has to compile some C-code and can thus take longer than usual. Subsequent builds reuse the cache and will be much faster.
 
