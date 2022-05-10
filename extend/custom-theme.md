@@ -201,7 +201,6 @@ func (myTheme) Size(s fyne.ThemeSizeName) float32 {
 func main() {
 	a := app.New()
 
-	//Let's use custom theme
 	a.Settings().SetTheme(&myTheme{})
 
 	w := a.NewWindow("Hello World")
