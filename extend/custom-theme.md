@@ -105,7 +105,7 @@ app.Settings().SetTheme(&myTheme{})
 With these changes you can apply your own style, to make small tweaks or
 provide a completely custom looking application!
 
-### Workable Example
+In the end, the resulting code could look something like this:
 ```
 package main
 
