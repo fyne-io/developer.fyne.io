@@ -106,7 +106,7 @@ With these changes you can apply your own style, to make small tweaks or
 provide a completely custom looking application!
 
 In the end, the resulting code could look something like this:
-```
+```go
 package main
 
 import (
