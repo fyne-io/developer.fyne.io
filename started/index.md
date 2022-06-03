@@ -201,10 +201,10 @@ You do this by using the following command (can be skipped if you are not using 
 
 If you are unsure of how Go modules work, consider reading [Tutorial: Create a Go module](https://golang.org/doc/tutorial/create-module).
 
-## Run the demo
+## Run the [demo](https://github.com/fyne-io/fyne/tree/master/cmd/fyne_demo)
 
 If you want to see the Fyne toolkit in action before you start to code your own application,
-you can see our demo app running on your computer by executing:
+you can see our [demo app](https://github.com/fyne-io/fyne/tree/master/cmd/fyne_demo) running on your computer by executing:
 
     $ go run fyne.io/fyne/v2/cmd/fyne_demo
 
