@@ -7,7 +7,7 @@ redirect_from:
 ---
 
 Go based applications are usually built as a single binary executable, and this is the same for Fyne applications.
-A single file makes it easier to distribute install our software. Unfortunately GUI
+A single file makes it easier to distribute and install our software. Unfortunately GUI
 applications typically require additional resources to render the user interface.
 To manage this challenge a Go application can bundle assets into the binary itself. The Fyne toolkit prefers the use of "fyne bundle" as it has various benefits that we will explore below.
 
