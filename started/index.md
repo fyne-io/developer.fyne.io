@@ -129,6 +129,10 @@ The steps for installing with MSYS2 (recommended) are as follows:
 * You will need to install Go, gcc and the graphics library header files using the package manager.
 * **FreeBSD:**
 `sudo pkg install go gcc xorg pkgconf`
+* **OpenBSD:**
+`sudo pkg_add go`
+* **NetBSD:**
+`sudo pkgin install go pkgconf`
 </div>
 </div>
 
