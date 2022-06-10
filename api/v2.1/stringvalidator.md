@@ -2,7 +2,6 @@
 layout: page
 tags: [api]
 title: Fyne API "fyne.StringValidator"
-package: fyne.io/fyne/v2
 ---
 
 # fyne.StringValidator

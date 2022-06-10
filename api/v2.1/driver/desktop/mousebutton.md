@@ -2,7 +2,6 @@
 layout: page
 tags: [api]
 title: Fyne API "desktop.MouseButton"
-package: fyne.io/fyne/v2/driver/desktop
 ---
 
 # desktop.MouseButton

@@ -2,7 +2,6 @@
 layout: page
 tags: [api]
 title: Fyne API "dialog.FileDialog"
-package: fyne.io/fyne/v2/dialog
 ---
 
 # dialog.FileDialog

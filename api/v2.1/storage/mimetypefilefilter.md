@@ -2,7 +2,6 @@
 layout: page
 tags: [api]
 title: Fyne API "storage.MimeTypeFileFilter"
-package: fyne.io/fyne/v2/storage
 ---
 
 # storage.MimeTypeFileFilter

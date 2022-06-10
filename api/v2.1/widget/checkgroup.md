@@ -2,7 +2,6 @@
 layout: page
 tags: [api]
 title: Fyne API "widget.CheckGroup"
-package: fyne.io/fyne/v2/widget
 ---
 
 # widget.CheckGroup

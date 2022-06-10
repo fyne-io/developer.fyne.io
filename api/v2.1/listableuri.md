@@ -2,7 +2,6 @@
 layout: page
 tags: [api]
 title: Fyne API "fyne.ListableURI"
-package: fyne.io/fyne/v2
 ---
 
 # fyne.ListableURI
