@@ -3,11 +3,11 @@
   <li>
       <a title="API Documentation" href="#">API Documentation</a>
       <ul>
-          {% assign pkglink = "/api/v2.1/upgrading.html" %}
+          {% assign pkglink = "/api/v2.2/upgrading.html" %}
           {% if page.url == pkglink %}
-          <li class="active"><a title="package {{ remove }}" href="{{ pkglink }}">Upgrade to v2.1</a></li>
+          <li class="active"><a title="package {{ remove }}" href="{{ pkglink }}">Upgrade to v2.2</a></li>
           {% else %}
-          <li><a title="package {{ remove }}" href="{{ pkglink }}">Upgrade to v2.1</a></li>
+          <li><a title="package {{ remove }}" href="{{ pkglink }}">Upgrade to v2.2</a></li>
           {% endif %}
 
           {% for entry in sidebar %}
@@ -19,19 +19,19 @@
               {% assign remove = name %}
               {% assign link = name | append: "/" %}
               {% if name == "fyne.io/fyne/v2" %}
-              {% assign name = "Fyne API v2.1" %}
+              {% assign name = "Fyne API v2.2" %}
               {% assign remove = "fyne" %}
               {% assign link = "" %}
               {% endif %}
 
-              <a title="{{ name }}" href="/api/v2.1/{{ link }}">{{ name }}</a>
+              <a title="{{ name }}" href="/api/v2.2/{{ link }}">{{ name }}</a>
               {% assign items = name | split: '/' %}
               {% if items.size > 1 %}
               {% assign name = items[1] %}
               {% assign remove = name %}
               {% endif %}
               <ul>
-                  {% assign pkglink = "/api/v2.1/" | append: link %}
+                  {% assign pkglink = "/api/v2.2/" | append: link %}
                   {% if page.url == pkglink %}
                   <li class="active"><a title="package {{ remove }}" href="{{ pkglink }}">package {{ remove }}</a></li>
                   {% else %}
