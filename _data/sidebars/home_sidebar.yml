@@ -100,6 +100,10 @@ entries:
       url: /explore/preferences
       output: web, pdf
 
+    - title: System Tray
+      url: /explore/systray
+      output: web, pdf
+
     - title: Data Binding
       url: /explore/binding
       output: web, pdf
