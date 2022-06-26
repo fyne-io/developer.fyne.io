@@ -10,17 +10,17 @@ Shortcuts are common tasks that can be triggered by keyboard combinations or con
 
 ## Registering with a Canvas
 
-There are many standard shortcuts defined (such as `fyne.ShortcutCopy`) which are connected to standard keyboard shortcuts and right-click menus. The first step to adding a new `Shortcut` is to define the shortcut. For most uses this will be a keyboard triggered shortcut, which is a desktop extension. To do this we use `desktop.CustomShortcut`, for example to use the Tab key and Control modifier you might do the following:
+There are many standard shortcuts defined (such as `fyne.ShortcutCopy`) which are connected to standard keyboard shortcuts and right-click menus. The first step to adding a new `Shortcut` is to define the shortcut. For most uses this will be a keyboard triggered shortcut, which is a desktop extension. To do this we use `fyne.KeyModifierControl`, for example to use the Tab key and Control modifier you might do the following:
 
 ```go
-	ctrlTab := desktop.CustomShortcut{KeyName: fyne.KeyTab, Modifier: desktop.ControlModifier}
+	ctrlTab := desktop.CustomShortcut{KeyName: fyne.KeyTab, Modifier: fyne.KeyModifierControl}
 ```
 
 Notice that this shortcut can be re-used so you could attach it to menus or other items as well. For this example we want it to be always available, so we register it with our window's `Canvas` as follows:
 
 ```go
-	ctrlTab := desktop.CustomShortcut{KeyName: fyne.KeyTab, Modifier: desktop.ControlModifier}
-	w.Canvas().AddShortcut(&ctrlTab, func(shortcut fyne.Shortcut) {
+	ctrlTab := &desktop.CustomShortcut{KeyName: fyne.KeyTab, Modifier: fyne.KeyModifierControl}
+	w.Canvas().AddShortcut(ctrlTab, func(shortcut fyne.Shortcut) {
 		log.Println("We tapped Ctrl+Tab")
 	})
 ```
