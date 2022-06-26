@@ -96,3 +96,5 @@ For example a horizontal box for a header, a vertical box for a left side file p
 wrap layout in the content area - all inside a container using a border layout can build the result illustrated below.
 
 {% include layout.html name="combined" %}
+
+{% include youtube.html id="LWn1403gY9E" %}
