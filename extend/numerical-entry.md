@@ -36,8 +36,7 @@ This implementation will only allow integers to be entered, but can easily be ex
 
 ```go
 func (e *numericalEntry) TypedRune(r rune) {
-	switch r {
-	case '0', '1', '2', '3', '4', '5', '6', '7', '8', '9':
+	if r >= '0' && r <= '9' {
 		e.Entry.TypedRune(r)
 	}
 }
@@ -47,9 +46,8 @@ If we want to update the implementation to allow for decimal numers as well, we 
 
 ```go
 func (e *numericalEntry) TypedRune(r rune) {
-	switch r {
-	case '0', '1', '2', '3', '4', '5', '6', '7', '8', '9', '.', ',':
-		e.Entry.TypedRune(r)
+	if (r >= '0' && r <= '9') || r == '.' || r == ',' {
+			e.Entry.TypedRune(r)
 	}
 }
 ```
@@ -107,8 +105,7 @@ func newNumericalEntry() *numericalEntry {
 }
 
 func (e *numericalEntry) TypedRune(r rune) {
-	switch r {
-	case '0', '1', '2', '3', '4', '5', '6', '7', '8', '9', '.', ',':
+	if (r >= '0' && r <= '9') || r == '.' || r == ',' {
 		e.Entry.TypedRune(r)
 	}
 }
