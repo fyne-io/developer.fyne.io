@@ -14,7 +14,7 @@ The position (10, 10) may be 10 pixels right and down from the origin on, for ex
 
 Every position referenced by a CanvasObject is relative to it's parent.
 This is important for layout algorithms but also for developers in situations such as the `Tappable.Tapped(PointEvent)` handlers.
-Here the the X/Y coordinates will be calculated from the top left of the button not the overall canvas.
+Here the X/Y coordinates will be calculated from the top left of the button not the overall canvas.
 This is designed to allow code to be as self-contained as possible.
 
 ## Pixel size
