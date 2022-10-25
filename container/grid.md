@@ -34,11 +34,13 @@ func main() {
 	myApp := app.New()
 	myWindow := myApp.NewWindow("Grid Layout")
 
-	text1 := canvas.NewText("1", color.White)
-	text2 := canvas.NewText("2", color.White)
-	text3 := canvas.NewText("3", color.White)
+	text1 := canvas.NewText("1", color.Black)
+	text2 := canvas.NewText("2", color.Black)
+	text3 := canvas.NewText("3", color.Black)
 	grid := container.New(layout.NewGridLayout(2), text1, text2, text3)
 	myWindow.SetContent(grid)
 	myWindow.ShowAndRun()
 }
 ```
+## Preview on Mac OSX
+![Grid preview](https://res.cloudinary.com/denj7z5ec/image/upload/v1666692577/Screenshot_2022-10-25_at_11.09.25_AM_o3rfha.png)

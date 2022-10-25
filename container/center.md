@@ -28,13 +28,15 @@ func main() {
 
 	img := canvas.NewImageFromResource(theme.FyneLogo())
 	img.FillMode = canvas.ImageFillOriginal
-	text := canvas.NewText("Overlay", color.Black)
+	text := canvas.NewText("Overlay", color.White)
 	content := container.New(layout.NewCenterLayout(), img, text)
 
 	myWindow.SetContent(content)
 	myWindow.ShowAndRun()
 }
 ```
+## Preview on Mac OSX
+![Center preview](https://res.cloudinary.com/denj7z5ec/image/upload/v1666693078/Screenshot_2022-10-25_at_11.17.49_AM_p7ctku.png)
 
 The center layout causes all items to stay at their minimum size, if
 you wish to expand items to fill the space then see

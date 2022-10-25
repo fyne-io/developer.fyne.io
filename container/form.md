@@ -33,11 +33,13 @@ func main() {
 	myWindow := myApp.NewWindow("Form Layout")
 
 	label1 := canvas.NewText("Label 1", color.Black)
-	value1 := canvas.NewText("Value", color.White)
+	value1 := canvas.NewText("Value", color.Black)
 	label2 := canvas.NewText("Label 2", color.Black)
-	value2 := canvas.NewText("Something", color.White)
+	value2 := canvas.NewText("Something", color.Black)
 	grid := container.New(layout.NewFormLayout(), label1, value1, label2, value2)
 	myWindow.SetContent(grid)
 	myWindow.ShowAndRun()
 }
 ```
+## Preview on Mac OSX
+![Form preview](https://res.cloudinary.com/denj7z5ec/image/upload/v1666692950/Screenshot_2022-10-25_at_11.15.30_AM_iw9hsu.png)

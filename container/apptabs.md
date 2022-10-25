@@ -45,6 +45,8 @@ func main() {
 	myWindow.ShowAndRun()
 }
 ```
+## Preview on Mac OSX
+![AppTabs preview](https://res.cloudinary.com/denj7z5ec/image/upload/v1666691760/Screenshot_2022-10-25_at_10.53.04_AM_n6jcab.png)
 
 When loaded on a mobile device the tab location may be ignored.
 In a portrait orientation a leading or trailing position will

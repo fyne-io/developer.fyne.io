@@ -34,14 +34,16 @@ func main() {
 	myApp := app.New()
 	myWindow := myApp.NewWindow("Border Layout")
 
-	top := canvas.NewText("top bar", color.White)
-	left := canvas.NewText("left", color.White)
-	middle := canvas.NewText("content", color.White)
+	top := canvas.NewText("top bar", color.Black)
+	left := canvas.NewText("left", color.Black)
+	middle := canvas.NewText("content", color.Black)
 	content := container.NewBorder(top, nil, left, nil, middle)
 	myWindow.SetContent(content)
 	myWindow.ShowAndRun()
 }
 ```
+## Preview on Mac OSX
+![Border preview](https://res.cloudinary.com/denj7z5ec/image/upload/v1666692796/Screenshot_2022-10-25_at_11.13.00_AM_wsxyd0.png)
 
 Note that all items in the center will expand to fill the space (as if
 they were in a [`layout.MaxLayout`](/container/max) container).
