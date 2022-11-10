@@ -13,13 +13,13 @@ Intro
 
 **A:** The position and size of elements in a Fyne app are controlled by the layout of the container that they are within. If the elements of your UI are too small consider using a different [layout](/started/layouts) or container.
 
-A new `Window` will expand whatever element is passed to `SetContent()` to fill it's size. Each time you add a container to this it will divide up the available space according to the layout. Layouts like `HBox` and `VBox` will shrink content to it's `MinSize()` in one dimension or another to pack contents in. Layouts like `Max` or `Border` will expand content to fill the space. By writing a [custom layout](/extend/custom-layout) you could fully controll the items within a container.
+A new `Window` will expand whatever element is passed to `SetContent()` to fill its size. Each time you add a container to this it will divide up the available space according to the layout. Layouts like `HBox` and `VBox` will shrink content to its `MinSize()` in one dimension or another to pack contents in. Layouts like `Max` or `Border` will expand content to fill the space. By writing a [custom layout](/extend/custom-layout) you could fully controll the items within a container.
 
 **Q: Why is my image so small?**
 
 **A:** One of the difficulties in using a fully scalable user interface toolkit such as Fyne is that the coordinate system is device independent. This allows apps to draw at the right resolution or pixel density to get the best results based on the hardware connected. What this means for pixel based images is that their size could vary based on details not known at compile time.
 
-Due to this complication an image loaded using `canvas.NewImageFromFile()` or similar calls will not have a size set, leading to it being very small or appearing to be hidden by default. When placed in an appropriate layout the image will stretch according to it's `FillMode` property. If you desire the image to always be set to a certain size (or larger) you can call `Image.SetMinSize()` and specify a device independent size for the image.
+Due to this complication an image loaded using `canvas.NewImageFromFile()` or similar calls will not have a size set, leading to it being very small or appearing to be hidden by default. When placed in an appropriate layout the image will stretch according to its `FillMode` property. If you desire the image to always be set to a certain size (or larger) you can call `Image.SetMinSize()` and specify a device independent size for the image.
 
 ## Containers and Layout 
 
