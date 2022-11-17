@@ -10,7 +10,7 @@ many widgets to a data source that will update over time.
 the `data/binding` package has many helpful bindings that can manage most standard
 types that will be used in an application.
 A data binding can be managed using the binding API (for example `NewString`)
-or it can be connected to an external item of data like (`BindInt(*int)).
+or it can be connected to an external item of data like (`BindInt(*int)`).
 
 Widgets that support binding typically have a `...WithData` constructor to
 set up the binding when creating the widget. You can also call `Bind()` and
