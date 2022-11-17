@@ -27,7 +27,7 @@ types of functionality. They are as follows:
 : The binding package contains ways of binding data sources to widgets.
 
 `fyne.io/fyne/v2/data/validation`
-: The validation package provides tolling for validating data inside widgets.
+: The validation package provides tooling for validating data inside widgets.
 
 `fyne.io/fyne/v2/dialog`
 : The dialog package contains dialogs such as confirm, error and file save/open.
