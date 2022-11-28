@@ -50,3 +50,9 @@ When loaded on a mobile device the tab location may be ignored.
 In a portrait orientation a leading or trailing position will
 be changed to bottom. When in landscape orientation, the top or bottom
 positions will be moved to leading.
+
+
+Example:
+
+<img width="1002" alt="image" src="https://user-images.githubusercontent.com/96031819/204345870-230a4e10-c75b-40f2-a80c-6da41a871ad7.png">
+
