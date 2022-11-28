@@ -110,6 +110,8 @@ The steps for installing with MSYS2 (recommended) are as follows:
 `sudo zypper install go gcc libXcursor-devel libXrandr-devel Mesa-libGL-devel libXi-devel libXinerama-devel libXxf86vm-devel`
 * **Void Linux:**
 `sudo xbps-install -S go base-devel xorg-server-devel libXrandr-devel libXcursor-devel libXinerama-devel`
+* **Alpine Linux**
+`sudo apk add go gcc libxcursor-dev libxrandr-dev libxinerama-dev libxi-dev mesa-dev`
 
 </div>
 </div>
