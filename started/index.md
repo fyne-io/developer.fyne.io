@@ -111,7 +111,7 @@ The steps for installing with MSYS2 (recommended) are as follows:
 * **Void Linux:**
 `sudo xbps-install -S go base-devel xorg-server-devel libXrandr-devel libXcursor-devel libXinerama-devel`
 * **Alpine Linux**
-`sudo apk add go gcc libxcursor-dev libxrandr-dev libxinerama-dev libxi-dev mesa-dev`
+`sudo apk add go gcc libxcursor-dev libxrandr-dev libxinerama-dev libxi-dev linux-headers mesa-dev`
 
 </div>
 </div>
