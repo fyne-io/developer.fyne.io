@@ -54,5 +54,5 @@ the [getting started](/started/) page.
 ## Diving Right In
 
 To explore more detailed topics you can check out the [explore](/explore/)
-section of this site. If you would like to request addditional examples or
+section of this site. If you would like to request additional examples or
 some support for your project you can [get in touch](https://fyne.io/support/).
