@@ -12,6 +12,8 @@ topnav_dropdowns:
   folders:
     - title: Versions
       folderitems:
+        - title: 2.3
+          url: /api/v2.3/
         - title: 2.2
           url: /api/v2.2/
         - title: 2.1
