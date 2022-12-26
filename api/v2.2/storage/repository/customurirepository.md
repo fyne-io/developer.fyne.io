@@ -2,7 +2,6 @@
 layout: page
 tags: [api]
 title: Fyne API "repository.CustomURIRepository"
-package: fyne.io/fyne/v2/storage/repository
 ---
 
 # repository.CustomURIRepository

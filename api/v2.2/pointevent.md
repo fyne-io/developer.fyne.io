@@ -2,7 +2,6 @@
 layout: page
 tags: [api]
 title: Fyne API "fyne.PointEvent"
-package: fyne.io/fyne/v2
 ---
 
 # fyne.PointEvent
