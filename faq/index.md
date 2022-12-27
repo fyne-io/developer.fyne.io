@@ -11,6 +11,7 @@ The content is grouped into the following areas.
 
 * [Layout and widget size](/faq/layout)
 * [Theme and customisation](/faq/theme)
+* [Platforms](/faq/platforms)
 
 ---
 
