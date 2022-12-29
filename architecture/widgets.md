@@ -46,25 +46,23 @@ that seems desirable.
 
 The standard widgets use the theme specified padding to make
 appropriate space around their graphical components.
-In the `v2.0.0` release the height and baseline of most widgets
-was standardised to ensure that standard layouts will align well
-by default. If you are building a custom widget it is recommended
-to follow these guidelines.
+The `widget` package uses a standard height and baseline to ensure that
+provided layouts will align well by default. 
+If you are building a custom widget it is recommended to follow these guidelines.
 
 The value of `theme.Padding()` is used in layouts to space elements
-of a container, it creates a standardised space around the various 
+of a container, it creates a consistent space around the various 
 parts of an application. Some widgets, however, have content that
 should be inset from the edges of the extents. Consider `Entry`,
-It has a background and an underline that go out to the edges, but
-it's content should be inset. And so we have standardised the
-amount of spacing used to inset so that alignment matches.
+It has a background and a border that go out to the edges, but its content
+should be inset. And so we have standardised the amount of spacing used to
+inset so that alignment matches.
 
-The standard inset, or content padding, of a widget is currently
-defined as `2*theme.Padding()`. The standard value of padding is
-`4` which means the standard inset is `8`. You can see in `Label`
-and `Entry` how the (text) content is inset by this much so that
-their content will align horizontally and vertically when placed
-next to each other.
+The standard inset, or content padding, of a widget is defined as 
+`theme.InnerPadding()`. The standard value of padding is `4` and the inner
+padding is `8`. You can see in `Label` and `Entry` how the (text) content
+is inset by this much so that their content will align horizontally and
+vertically when placed next to each other.
 
 <p style="text-align: center;" markdown="1">
 ![](/images/architecture/widget-inset.png)
@@ -72,3 +70,4 @@ next to each other.
 
 It is recommended that custom widgets include similar dimensions 
 so that they fit well alongside the standard widgets.
+
