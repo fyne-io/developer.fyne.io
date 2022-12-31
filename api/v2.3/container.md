@@ -19,7 +19,8 @@ import "fyne.io/fyne/v2"
 type Container struct {
 	Hidden bool // Is this Container hidden
 
-	Layout  Layout         // The Layout algorithm for arranging child CanvasObjects
+	Layout Layout // The Layout algorithm for arranging child CanvasObjects
+
 	Objects []CanvasObject // The set of CanvasObjects this container holds
 }
 ```

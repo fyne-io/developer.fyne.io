@@ -64,6 +64,50 @@ CreateRenderer is a private method to Fyne which links this widget to its render
 <div class="implements">Implements: <code>
 fyne.Widget</code></div>
 
+#### func (*DocTabs) DisableIndex
+
+```go
+func (t *DocTabs) DisableIndex(i int)
+```
+DisableIndex disables the TabItem at the specified index.
+
+
+<div class="since">Since: <code>
+2.3</code></div>
+
+#### func (*DocTabs) DisableItem
+
+```go
+func (t *DocTabs) DisableItem(item *TabItem)
+```
+DisableItem disables the specified TabItem.
+
+
+<div class="since">Since: <code>
+2.3</code></div>
+
+#### func (*DocTabs) EnableIndex
+
+```go
+func (t *DocTabs) EnableIndex(i int)
+```
+EnableIndex enables the TabItem at the specified index.
+
+
+<div class="since">Since: <code>
+2.3</code></div>
+
+#### func (*DocTabs) EnableItem
+
+```go
+func (t *DocTabs) EnableItem(item *TabItem)
+```
+EnableItem enables the specified TabItem.
+
+
+<div class="since">Since: <code>
+2.3</code></div>
+
 #### func (*DocTabs) Hide
 
 ```go

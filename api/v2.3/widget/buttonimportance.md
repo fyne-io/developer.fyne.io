@@ -33,5 +33,14 @@ const (
 	HighImportance
 	// LowImportance applies a subtle appearance.
 	LowImportance
+
+	// DangerImportance applies an error theme to the button.
+	//
+	// Since 2.3
+	DangerImportance
+	// WarningImportance applies an error theme to the button.
+	//
+	// Since 2.3
+	WarningImportance
 )
 ```

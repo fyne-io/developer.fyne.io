@@ -544,6 +544,21 @@ const (
 	// Since: 2.0
 	ColorNameInputBackground fyne.ThemeColorName = "inputBackground"
 
+	// ColorNameInputBorder is the name of theme lookup for border color of an input field.
+	//
+	// Since: 2.3
+	ColorNameInputBorder fyne.ThemeColorName = "inputBorder"
+
+	// ColorNameMenuBackground is the name of theme lookup for background color of menus.
+	//
+	// Since: 2.3
+	ColorNameMenuBackground fyne.ThemeColorName = "menuBackground"
+
+	// ColorNameOverlayBackground is the name of theme lookup for background color of overlays like dialogs.
+	//
+	// Since: 2.3
+	ColorNameOverlayBackground fyne.ThemeColorName = "overlayBackground"
+
 	// ColorNamePlaceHolder is the name of theme lookup for placeholder text color.
 	//
 	// Since: 2.0
@@ -569,10 +584,25 @@ const (
 	// Since: 2.1
 	ColorNameSelection fyne.ThemeColorName = "selection"
 
+	// ColorNameSeparator is the name of theme lookup for separator bars.
+	//
+	// Since: 2.3
+	ColorNameSeparator fyne.ThemeColorName = "separator"
+
 	// ColorNameShadow is the name of theme lookup for shadow color.
 	//
 	// Since: 2.0
 	ColorNameShadow fyne.ThemeColorName = "shadow"
+
+	// ColorNameSuccess is the name of theme lookup for foreground success color.
+	//
+	// Since: 2.3
+	ColorNameSuccess fyne.ThemeColorName = "success"
+
+	// ColorNameWarning is the name of theme lookup for foreground warning color.
+	//
+	// Since: 2.3
+	ColorNameWarning fyne.ThemeColorName = "warning"
 
 	// SizeNameCaptionText is the name of theme lookup for helper text size, normally smaller than regular text size.
 	//
@@ -583,6 +613,16 @@ const (
 	//
 	// Since: 2.0
 	SizeNameInlineIcon fyne.ThemeSizeName = "iconInline"
+
+	// SizeNameInnerPadding is the name of theme lookup for internal widget padding size.
+	//
+	// Since: 2.3
+	SizeNameInnerPadding fyne.ThemeSizeName = "innerPadding"
+
+	// SizeNameLineSpacing is the name of theme lookup for between text line spacing.
+	//
+	// Since: 2.3
+	SizeNameLineSpacing fyne.ThemeSizeName = "lineSpacing"
 
 	// SizeNamePadding is the name of theme lookup for padding size.
 	//
@@ -920,7 +960,7 @@ DownloadIcon returns a resource containing the standard download icon for the cu
 ```go
 func ErrorColor() color.Color
 ```
-ErrorColor returns the theme's error text color.
+ErrorColor returns the theme's error foreground color.
 
 
 <div class="since">Since: <code>
@@ -1103,12 +1143,34 @@ func InfoIcon() fyne.Resource
 ```
 InfoIcon returns a resource containing the standard dialog info icon for the current theme
 
+#### func  InnerPadding
+
+```go
+func InnerPadding() float32
+```
+InnerPadding is the standard gap between element content and the outside edge of a widget.
+
+
+<div class="since">Since: <code>
+2.3</code></div>
+
 #### func  InputBackgroundColor
 
 ```go
 func InputBackgroundColor() color.Color
 ```
 InputBackgroundColor returns the color used to draw underneath input elements.
+
+#### func  InputBorderColor
+
+```go
+func InputBorderColor() color.Color
+```
+InputBorderColor returns the color used to draw underneath input elements.
+
+
+<div class="since">Since: <code>
+2.3</code></div>
 
 #### func  InputBorderSize
 
@@ -1131,6 +1193,17 @@ LightTheme defines the built-in light theme colors and sizes.
 
 <div class="deprecated">
 Deprecated: This method ignores user preference and should not be used, it will be removed in v3.0.</div>
+
+#### func  LineSpacing
+
+```go
+func LineSpacing() float32
+```
+LineSpacing is the default gap between multiple lines of text.
+
+
+<div class="since">Since: <code>
+2.3</code></div>
 
 #### func  ListIcon
 
@@ -1291,6 +1364,17 @@ MediaVideoIcon returns a resource containing the standard media video icon for t
 <div class="since">Since: <code>
 2.1</code></div>
 
+#### func  MenuBackgroundColor
+
+```go
+func MenuBackgroundColor() color.Color
+```
+MenuBackgroundColor returns the theme's background color for menus.
+
+
+<div class="since">Since: <code>
+2.3</code></div>
+
 #### func  MenuDropDownIcon
 
 ```go
@@ -1360,6 +1444,17 @@ NavigateBackIcon returns a resource containing the standard backward navigation 
 func NavigateNextIcon() fyne.Resource
 ```
 NavigateNextIcon returns a resource containing the standard forward navigation icon for the current theme
+
+#### func  OverlayBackgroundColor
+
+```go
+func OverlayBackgroundColor() color.Color
+```
+OverlayBackgroundColor returns the theme's background color for overlays like dialogs.
+
+
+<div class="since">Since: <code>
+2.3</code></div>
 
 #### func  Padding
 
@@ -1482,6 +1577,17 @@ SelectionColor returns the color for a selected element.
 <div class="since">Since: <code>
 2.1</code></div>
 
+#### func  SeparatorColor
+
+```go
+func SeparatorColor() color.Color
+```
+SeparatorColor returns the color for the separator element.
+
+
+<div class="since">Since: <code>
+2.3</code></div>
+
 #### func  SeparatorThicknessSize
 
 ```go
@@ -1513,6 +1619,17 @@ ShadowColor returns the color (and translucency) for shadows used for indicating
 func StorageIcon() fyne.Resource
 ```
 StorageIcon returns a resource containing the standard storage icon for the current theme
+
+#### func  SuccessColor
+
+```go
+func SuccessColor() color.Color
+```
+SuccessColor returns the theme's success foreground color.
+
+
+<div class="since">Since: <code>
+2.3</code></div>
 
 #### func  TextBoldFont
 
@@ -1651,6 +1768,17 @@ VolumeMuteIcon returns a resource containing the standard volume mute icon for t
 func VolumeUpIcon() fyne.Resource
 ```
 VolumeUpIcon returns a resource containing the standard volume up icon for the current theme
+
+#### func  WarningColor
+
+```go
+func WarningColor() color.Color
+```
+WarningColor returns the theme's warning foreground color.
+
+
+<div class="since">Since: <code>
+2.3</code></div>
 
 #### func  WarningIcon
 

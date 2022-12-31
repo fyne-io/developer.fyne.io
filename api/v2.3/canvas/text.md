@@ -73,9 +73,9 @@ Refresh causes this object to be redrawn in it's current state
 #### func (*Text) Resize
 
 ```go
-func (o *Text) Resize(size fyne.Size)
+func (t *Text) Resize(s fyne.Size)
 ```
-Resize sets a new size for the canvas object.
+Resize on a text updates the new size of this object, which may not result in a visual change, depending on alignment.
 
 #### func (*Text) SetMinSize
 

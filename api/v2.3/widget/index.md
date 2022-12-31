@@ -168,6 +168,7 @@ ShowPopUpMenuAtPosition creates a PopUp menu populated with items from the passe
  * [Hyperlink](hyperlink.html)
  * [HyperlinkSegment](hyperlinksegment.html)
  * [Icon](icon.html)
+ * [ImageSegment](imagesegment.html)
  * [Label](label.html)
  * [List](list.html)
  * [ListItemID](listitemid.html)

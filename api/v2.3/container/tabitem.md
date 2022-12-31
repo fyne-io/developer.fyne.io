@@ -50,3 +50,14 @@ NewTabItemWithIcon creates a new item for a tabbed widget - each item specifies 
 
 <div class="since">Since: <code>
 1.4</code></div>
+
+#### func (*TabItem) Disabled
+
+```go
+func (ti *TabItem) Disabled() bool
+```
+Disabled returns whether or not the TabItem is disabled.
+
+
+<div class="since">Since: <code>
+2.3</code></div>

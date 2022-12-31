@@ -16,6 +16,20 @@ Package storage provides storage access and management functionality.
 ## Usage
 
 ```go
+var (
+	// ErrAlreadyExists may be thrown by docs. E.g., save a document twice.
+	//
+	// Since: 2.3
+	ErrAlreadyExists = errors.New("document already exists")
+
+	// ErrNotExists may be thrown by docs. E.g., save an unknown document.
+	//
+	// Since: 2.3
+	ErrNotExists = errors.New("document does not exist")
+)
+```
+
+```go
 var URIRootError = repository.ErrURIRoot
 ```
 URIRootError is a wrapper for repository.URIRootError
@@ -31,30 +45,20 @@ CanList will determine if the URI is listable or not.
 
 This method may fail in several ways:
 
-* Different permissions or credentials are required to check if the
-
 ```go
-    URI supports listing.
-```
+    - Different permissions or credentials are required to check if the
+      URI supports listing.
 
-* This URI scheme could represent some resources that can be listed,
+    - This URI scheme could represent some resources that can be listed,
+      but this specific URI is not one of them (e.g. a file on a
+      filesystem, as opposed to a directory).
 
-```go
-    but this specific URI is not one of them (e.g. a file on a
-    filesystem, as opposed to a directory).
-```
+    - Checking for listability depended on a lower level operation
+      such as network or filesystem access that has failed in some way.
 
-* Checking for listability depended on a lower level operation
-
-```go
-    such as network or filesystem access that has failed in some way.
-```
-
-* If the scheme of the given URI does not have a registered
-
-```go
-    ListableRepository instance, then this method will fail with a
-    repository.ErrOperationNotSupported.
+    - If the scheme of the given URI does not have a registered
+      ListableRepository instance, then this method will fail with a
+      repository.ErrOperationNotSupported.
 ```
 
 CanList is backed by the repository system - this function calls into a scheme-specific implementation from a registered repository.
@@ -98,27 +102,20 @@ Child returns a URI referencing a resource nested hierarchically below the given
 
 This can fail in several ways:
 
-* If the URI refers to a resource which does not exist in a hierarchical
-
 ```go
-    context (e.g. the URI references something which does not have a
-    semantically meaningful "child"), the Child() implementation may return an
-    error.
-```
+    - If the URI refers to a resource which does not exist in a hierarchical
+      context (e.g. the URI references something which does not have a
+      semantically meaningful "child"), the Child() implementation may return an
+      error.
 
-* If generating a reference to a child of the referenced resource requires
+    - If generating a reference to a child of the referenced resource requires
+      interfacing with some external system, failures may propagate through the
+      Child() implementation. It is expected that this case would occur very
+      rarely if ever.
 
-```go
-    interfacing with some external system, failures may propagate through the
-    Child() implementation. It is expected that this case would occur very
-    rarely if ever.
-```
-
-* If the scheme of the given URI does not have a registered
-
-```go
-    HierarchicalRepository instance, then this method will fail with a
-    repository.ErrOperationNotSupported.
+    - If the scheme of the given URI does not have a registered
+      HierarchicalRepository instance, then this method will fail with a
+      repository.ErrOperationNotSupported.
 ```
 
 NOTE: since v2.0.0, Child() is backed by the repository system - this function is a helper which calls into an appropriate repository instance for the scheme of the URI it is given.
@@ -136,30 +133,20 @@ Copy given two URIs, 'src', and 'dest' both of the same scheme, will copy one to
 
 This method may fail in several ways:
 
-* Different permissions or credentials are required to perform the
-
 ```go
-    copy operation.
-```
+    - Different permissions or credentials are required to perform the
+      copy operation.
 
-* This URI scheme could represent some resources that can be copied,
+    - This URI scheme could represent some resources that can be copied,
+      but either the source, destination, or both are not resources
+      that support copying.
 
-```go
-    but either the source, destination, or both are not resources
-    that support copying.
-```
+    - Performing the copy operation depended on a lower level operation
+      such as network or filesystem access that has failed in some way.
 
-* Performing the copy operation depended on a lower level operation
-
-```go
-    such as network or filesystem access that has failed in some way.
-```
-
-* If the scheme of the given URI does not have a registered
-
-```go
-    CopyableRepository instance, then this method will fail with a
-    repository.ErrOperationNotSupported.
+    - If the scheme of the given URI does not have a registered
+      CopyableRepository instance, then this method will fail with a
+      repository.ErrOperationNotSupported.
 ```
 
 Copy is backed by the repository system - this function calls into a scheme-specific implementation from a registered repository.
@@ -183,23 +170,16 @@ CreateListable should generally fail if the parent of it's operand does not exis
 
 This method may fail in several ways:
 
-* Different permissions or credentials are required to create the requested
-
 ```go
-    resource.
-```
+    - Different permissions or credentials are required to create the requested
+      resource.
 
-* Creating the resource depended on a lower level operation such as network
+    - Creating the resource depended on a lower level operation such as network
+      or filesystem access that has failed in some way.
 
-```go
-    or filesystem access that has failed in some way.
-```
-
-* If the scheme of the given URI does not have a registered
-
-```go
-    ListableRepository instance, then this method will fail with a
-    repository.ErrOperationNotSupported.
+    - If the scheme of the given URI does not have a registered
+      ListableRepository instance, then this method will fail with a
+      repository.ErrOperationNotSupported.
 ```
 
 CreateListable is backed by the repository system - this function either calls into a scheme-specific implementation from a registered repository, or fails with a URIOperationNotSupported error.
@@ -217,24 +197,17 @@ Delete destroys, deletes, or otherwise removes the resource referenced by the UR
 
 This can fail in several ways:
 
-* If removing the resource requires interfacing with some external system,
-
 ```go
-    failures may propagate through Destroy(). For example, deleting a file may
-    fail with a permissions error.
-```
+    - If removing the resource requires interfacing with some external system,
+      failures may propagate through Destroy(). For example, deleting a file may
+      fail with a permissions error.
 
-* If the referenced resource does not exist, attempting to destroy it should
+    - If the referenced resource does not exist, attempting to destroy it should
+      throw an error.
 
-```go
-    throw an error.
-```
-
-* If the scheme of the given URI does not have a registered
-
-```go
-    WritableRepository instance, then this method will fail with a
-    repository.ErrOperationNotSupported.
+    - If the scheme of the given URI does not have a registered
+      WritableRepository instance, then this method will fail with a
+      repository.ErrOperationNotSupported.
 ```
 
 Delete is backed by the repository system - this function calls into a scheme-specific implementation from a registered repository.
@@ -252,12 +225,11 @@ Exists determines if the resource referenced by the URI exists.
 
 This can fail in several ways:
 
-* If checking the existence of a resource requires interfacing with some
-
 ```go
-    external system, then failures may propagate through Exists(). For
-    example, checking the existence of a resource requires reading a directory
-    may result in a permissions error.
+    - If checking the existence of a resource requires interfacing with some
+      external system, then failures may propagate through Exists(). For
+      example, checking the existence of a resource requires reading a directory
+      may result in a permissions error.
 ```
 
 It is understood that a non-nil error value signals that the existence or non-existence of the resource cannot be determined and is undefined.
@@ -279,31 +251,21 @@ List returns a list of URIs that reference resources which are nested below the 
 
 This method may fail in several ways:
 
-* Different permissions or credentials are required to obtain a
-
 ```go
-    listing for the given URI.
-```
+    - Different permissions or credentials are required to obtain a
+      listing for the given URI.
 
-* This URI scheme could represent some resources that can be listed,
+    - This URI scheme could represent some resources that can be listed,
+      but this specific URI is not one of them (e.g. a file on a
+      filesystem, as opposed to a directory). This can be tested in advance
+      using the Listable() function.
 
-```go
-    but this specific URI is not one of them (e.g. a file on a
-    filesystem, as opposed to a directory). This can be tested in advance
-    using the Listable() function.
-```
+    - Obtaining the listing depended on a lower level operation such as
+      network or filesystem access that has failed in some way.
 
-* Obtaining the listing depended on a lower level operation such as
-
-```go
-    network or filesystem access that has failed in some way.
-```
-
-* If the scheme of the given URI does not have a registered
-
-```go
-    ListableRepository instance, then this method will fail with a
-    repository.ErrOperationNotSupported.
+    - If the scheme of the given URI does not have a registered
+      ListableRepository instance, then this method will fail with a
+      repository.ErrOperationNotSupported.
 ```
 
 List is backed by the repository system - this function either calls into a scheme-specific implementation from a registered repository, or fails with a URIOperationNotSupported error.
@@ -341,30 +303,20 @@ If the source and destination are of different schemes, then the Move implementa
 
 This method may fail in several ways:
 
-* Different permissions or credentials are required to perform the
-
 ```go
-    rename operation.
-```
+    - Different permissions or credentials are required to perform the
+      rename operation.
 
-* This URI scheme could represent some resources that can be renamed,
+    - This URI scheme could represent some resources that can be renamed,
+      but either the source, destination, or both are not resources
+      that support renaming.
 
-```go
-    but either the source, destination, or both are not resources
-    that support renaming.
-```
+    - Performing the rename operation depended on a lower level operation
+      such as network or filesystem access that has failed in some way.
 
-* Performing the rename operation depended on a lower level operation
-
-```go
-    such as network or filesystem access that has failed in some way.
-```
-
-* If the scheme of the given URI does not have a registered
-
-```go
-    MovableRepository instance, then this method will fail with a
-    repository.ErrOperationNotSupported.
+    - If the scheme of the given URI does not have a registered
+      MovableRepository instance, then this method will fail with a
+      repository.ErrOperationNotSupported.
 ```
 
 Move is backed by the repository system - this function calls into a scheme-specific implementation from a registered repository.
@@ -413,34 +365,24 @@ NOTE: it is not a given that Parent() return a parent URI with the same Scheme()
 
 This can fail in several ways:
 
-* If the URI refers to a filesystem root, then the Parent() implementation
-
 ```go
-    must return (nil, URIRootError).
-```
+    - If the URI refers to a filesystem root, then the Parent() implementation
+      must return (nil, URIRootError).
 
-* If the URI refers to a resource which does not exist in a hierarchical
+    - If the URI refers to a resource which does not exist in a hierarchical
+      context (e.g. the URI references something which does not have a
+      semantically meaningful "parent"), the Parent() implementation may return
+      an error.
 
-```go
-    context (e.g. the URI references something which does not have a
-    semantically meaningful "parent"), the Parent() implementation may return
-    an error.
-```
+    - If determining the parent of the referenced resource requires
+      interfacing with some external system, failures may propagate
+      through the Parent() implementation. For example if determining
+      the parent of a file:// URI requires reading information from
+      the filesystem, it could fail with a permission error.
 
-* If determining the parent of the referenced resource requires
-
-```go
-    interfacing with some external system, failures may propagate
-    through the Parent() implementation. For example if determining
-    the parent of a file:// URI requires reading information from
-    the filesystem, it could fail with a permission error.
-```
-
-* If the scheme of the given URI does not have a registered
-
-```go
-    HierarchicalRepository instance, then this method will fail with a
-    repository.ErrOperationNotSupported.
+    - If the scheme of the given URI does not have a registered
+      HierarchicalRepository instance, then this method will fail with a
+      repository.ErrOperationNotSupported.
 ```
 
 NOTE: since v2.0.0, Parent() is backed by the repository system - this function is a helper which calls into an appropriate repository instance for the scheme of the URI it is given.
@@ -473,24 +415,17 @@ Reader returns URIReadCloser set up to read from the resource that the URI refer
 
 This method can fail in several ways:
 
-* Different permissions or credentials are required to read the
-
 ```go
-    referenced resource.
-```
+    - Different permissions or credentials are required to read the
+      referenced resource.
 
-* This URI scheme could represent some resources that can be read,
+    - This URI scheme could represent some resources that can be read,
+      but this particular URI references a resources that is not
+      something that can be read.
 
-```go
-    but this particular URI references a resources that is not
-    something that can be read.
-```
-
-* Attempting to set up the reader depended on a lower level
-
-```go
-    operation such as a network or filesystem access that has failed
-    in some way.
+    - Attempting to set up the reader depended on a lower level
+      operation such as a network or filesystem access that has failed
+      in some way.
 ```
 
 Reader is backed by the repository system - this function calls into a scheme-specific implementation from a registered repository.
@@ -521,31 +456,21 @@ Writing to a non-extant resource should create that resource if possible (and if
 
 This method can fail in several ways:
 
-* Different permissions or credentials are required to write to the
-
 ```go
-    referenced resource.
-```
+    - Different permissions or credentials are required to write to the
+      referenced resource.
 
-* This URI scheme could represent some resources that can be
+    - This URI scheme could represent some resources that can be
+      written, but this particular URI references a resources that is
+      not something that can be written.
 
-```go
-    written, but this particular URI references a resources that is
-    not something that can be written.
-```
+    - Attempting to set up the writer depended on a lower level
+      operation such as a network or filesystem access that has failed
+      in some way.
 
-* Attempting to set up the writer depended on a lower level
-
-```go
-    operation such as a network or filesystem access that has failed
-    in some way.
-```
-
-* If the scheme of the given URI does not have a registered
-
-```go
-    WritableRepository instance, then this method will fail with a
-    repository.ErrOperationNotSupported.
+    - If the scheme of the given URI does not have a registered
+      WritableRepository instance, then this method will fail with a
+      repository.ErrOperationNotSupported.
 ```
 
 Writer is backed by the repository system - this function calls into a scheme-specific implementation from a registered repository.

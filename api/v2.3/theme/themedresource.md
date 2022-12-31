@@ -17,6 +17,11 @@ import "fyne.io/fyne/v2/theme"
 
 ```go
 type ThemedResource struct {
+
+	// ColorName specifies which theme colour should be used to theme the resource
+	//
+	// Since: 2.3
+	ColorName fyne.ThemeColorName
 }
 ```
 

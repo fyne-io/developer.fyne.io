@@ -33,7 +33,7 @@ WindowlessCanvas provides functionality for a canvas to operate without a window
 ```go
 func NewCanvas() WindowlessCanvas
 ```
-NewCanvas returns a single use in-memory canvas used for testing
+NewCanvas returns a single use in-memory canvas used for testing. This canvas has no painter so calls to Capture() will return a blank image.
 
 #### func  NewCanvasWithPainter
 

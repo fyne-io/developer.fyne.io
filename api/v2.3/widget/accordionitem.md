@@ -23,7 +23,7 @@ type AccordionItem struct {
 }
 ```
 
-AccordionItem represents a single item in an Accordion.
+AccordionItem represents a single item in an Acc rdion.
 
 #### func  NewAccordionItem
 

@@ -27,7 +27,7 @@ type Table struct {
 }
 ```
 
-Table widget is a grid of items that can be scrolled and a cell selected. It's performance is provided by caching cell templates created with CreateCell and re-using them with UpdateCell. The size of the content rows/columns is returned by the Length callback.
+Table widget is a grid of items that can be scrolled and a cell selected. Its performance is provided by caching cell templates created with CreateCell and re-using them with UpdateCell. The size of the content rows/columns is returned by the Length callback.
 
 
 <div class="since">Since: <code>
@@ -127,6 +127,17 @@ SetColumnWidth supports changing the width of the specified column. Columns norm
 
 <div class="since">Since: <code>
 1.4.1</code></div>
+
+#### func (*Table) SetRowHeight
+
+```go
+func (t *Table) SetRowHeight(id int, height float32)
+```
+SetRowHeight supports changing the height of the specified row. Rows normally take the height of the template cell returned from the CreateCell callback. The height parameter uses the same units as a fyne.Size type and refers to the internal content height not including the divider size.
+
+
+<div class="since">Since: <code>
+2.3</code></div>
 
 #### func (*Table) Unselect
 

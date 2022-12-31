@@ -75,6 +75,17 @@ Refresh causes this widget to be redrawn in it's current state.
 <div class="implements">Implements: <code>
 fyne.CanvasObject</code></div>
 
+#### func (*CheckGroup) Remove
+
+```go
+func (r *CheckGroup) Remove(option string) bool
+```
+Remove removes the first occurrence of the specified option found from a CheckGroup widget. Return true if an option was removed.
+
+
+<div class="since">Since: <code>
+2.3</code></div>
+
 #### func (*CheckGroup) SetSelected
 
 ```go

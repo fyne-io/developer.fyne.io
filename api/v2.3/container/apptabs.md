@@ -85,6 +85,50 @@ CurrentTabIndex returns the index of the currently selected TabItem.
 <div class="deprecated">
 Deprecated: Use `AppTabs.SelectedIndex() int` instead.</div>
 
+#### func (*AppTabs) DisableIndex
+
+```go
+func (t *AppTabs) DisableIndex(i int)
+```
+DisableIndex disables the TabItem at the specified index.
+
+
+<div class="since">Since: <code>
+2.3</code></div>
+
+#### func (*AppTabs) DisableItem
+
+```go
+func (t *AppTabs) DisableItem(item *TabItem)
+```
+DisableItem disables the specified TabItem.
+
+
+<div class="since">Since: <code>
+2.3</code></div>
+
+#### func (*AppTabs) EnableIndex
+
+```go
+func (t *AppTabs) EnableIndex(i int)
+```
+EnableIndex enables the TabItem at the specified index.
+
+
+<div class="since">Since: <code>
+2.3</code></div>
+
+#### func (*AppTabs) EnableItem
+
+```go
+func (t *AppTabs) EnableItem(item *TabItem)
+```
+EnableItem enables the specified TabItem.
+
+
+<div class="since">Since: <code>
+2.3</code></div>
+
 #### func (*AppTabs) ExtendBaseWidget
 
 ```go

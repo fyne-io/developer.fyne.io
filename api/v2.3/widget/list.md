@@ -116,6 +116,17 @@ func (l *List) Select(id ListItemID)
 ```
 Select add the item identified by the given ID to the selection.
 
+#### func (*List) SetItemHeight
+
+```go
+func (l *List) SetItemHeight(id ListItemID, height float32)
+```
+SetItemHeight supports changing the height of the specified list item. Items normally take the height of the template returned from the CreateItem callback. The height parameter uses the same units as a fyne.Size type and refers to the internal content height not including the divider size.
+
+
+<div class="since">Since: <code>
+2.3</code></div>
+
 #### func (*List) Unselect
 
 ```go
