@@ -7,9 +7,9 @@ title: Run Fyne Demo
 If you want to see the Fyne toolkit in action before you start to code your own application,
 you can see our [demo app](https://github.com/fyne-io/fyne/tree/master/cmd/fyne_demo) application.
 
-### Running
+### Running
 
-If you want to, you can also install the demo using the following command (requires Go 1.16 or later):
+If you want to, you can run the demo directly using the following command (requires Go 1.16 or later):
 
     $ go run fyne.io/fyne/v2/cmd/fyne_demo@latest
 
