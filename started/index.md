@@ -198,12 +198,7 @@ Run the following command and replace `MODULE_NAME` with your preferred module n
 
 You now need to download the Fyne module. This will be done using the following command: 
 
-    $ go get fyne.io/fyne/v2
-
-To finish your module's set up, you now need to tidy the module file to correctly reference Fyne as a dependency.
-You do this by using the following command (can be skipped if you are not using modules):
-
-    $ go mod tidy
+    $ go get fyne.io/fyne/v2/...
 
 If you are unsure of how Go modules work, consider reading [Tutorial: Create a Go module](https://golang.org/doc/tutorial/create-module).
 
