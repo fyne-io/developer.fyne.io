@@ -18,7 +18,7 @@ file to bundle will be converted into Go source code that can be built into your
 ```bash
 $ ls
 image.png	main.go
-$ fyne bundle image.png >> bundled.go
+$ fyne bundle -o bundled.go image.png
 $ ls
 bundled.go	image.png	main.go
 $ 
@@ -42,15 +42,15 @@ img := canvas.NewImageFromResource(resourceImagePng)
 ```
 
 A fyne resource is just a collection of bytes with a unique name, so this could be
-a font, a sound file or any other data you wish to load. Also you can bundle many resources into a single file using the `-append` parameter. If you will be bundling many files it is recommended to save the commands in a shell script, for example this file `gen.sh`:
+a font, a sound file or any other data you wish to load. Also you can bundle many resources into a single file using the `-append` parameter.
+If you will be bundling many files it is recommended to save the commands in a go:generate header in one of your go files (not bundled.go):
 
 ```go
-#!/bin/bash
-fyne bundle image1.png > bundled.go
-fyne bundle -append image2.png >> bundled.go
+//go:generate fyne bundle -o bundled.go image1.png
+//go:generate fyne bundle -o bundled.go -append image2.png
 ```
 
-If you then change any assets or add new ones then you can update this file and run it once to update your `bundled.go` file.
+If you then change any assets or add new ones then you can update this header and run it with "go generate" to update your `bundled.go` file.
 You should then add `bundled.go` to version control so others can build your app
-without needing to run "fyne bundle". It is also a good idea to add `gen.sh` as well
-so that others can re-generate the bundled resources if required.
+without needing to run "fyne bundle".
+
