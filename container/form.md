@@ -39,3 +39,7 @@ func main() {
 	myWindow.ShowAndRun()
 }
 ```
+
+
+Example: <img width="885" alt="image" src="https://user-images.githubusercontent.com/96031819/204346069-ba9ea31e-2019-41c9-b45f-8a5fbb1e6e61.png">
+
