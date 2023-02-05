@@ -39,3 +39,8 @@ func main() {
 The center layout causes all items to stay at their minimum size, if
 you wish to expand items to fill the space then see
 [`layout.MaxLayout`](max).
+
+
+Example: 
+
+<img width="970" alt="image" src="https://user-images.githubusercontent.com/96031819/204343893-0dcfc9f7-de71-47e2-9b26-489b92da99c3.png">
