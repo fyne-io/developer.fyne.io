@@ -39,3 +39,8 @@ func main() {
 	myWindow.ShowAndRun()
 }
 ```
+
+Screenshot:
+
+<img width="1048" alt="image" src="https://user-images.githubusercontent.com/96031819/204343162-f2546f0c-db9a-42f4-887e-332f4586efbb.png">
+
