@@ -62,7 +62,7 @@ fyne-cross allows to build binaries and create distribution packages for the fol
 #### Installation
 
 ```
-go get github.com/fyne-io/fyne-cross
+go install github.com/fyne-io/fyne-cross@latest
 ```
 
 #### Usage
