@@ -43,9 +43,6 @@ install:
 
 ---
 
-## Getting Started
----
-
 Using the Fyne toolkit to build cross platform applications is very simple but does require some tools to be installed before you can begin. If your computer is set up for development with Go then the following steps may not be required, but we advise reading the tips for your operating system just in case. If later steps in this tutorial fail then you should re-visit the prerequisites below.
 
 ## Prerequisites
@@ -206,28 +203,5 @@ You do this by using the following command (can be skipped if you are not using 
     $ go mod tidy
 
 If you are unsure of how Go modules work, consider reading [Tutorial: Create a Go module](https://golang.org/doc/tutorial/create-module).
-
-## Run the demo
-
-If you want to see the Fyne toolkit in action before you start to code your own application,
-you can see our [demo app](https://github.com/fyne-io/fyne/tree/master/cmd/fyne_demo) running on your computer by executing:
-
-    $ go run fyne.io/fyne/v2/cmd/fyne_demo
-
-Please note that the first run has to compile some C-code and can thus take longer than usual. Subsequent builds reuse the cache and will be much faster.
-
-### Installing
-
-If you want to, you can also install the demo using the following command (requires Go 1.16 or later):
-
-    $ go install fyne.io/fyne/v2/cmd/fyne_demo@latest
-
-For earlier versions of Go, you need to use the following command instead:
-
-    $ go get fyne.io/fyne/v2/cmd/fyne_demo
-
-If your `GOBIN` environment has been added to path (should be by default on macOS and Windows), you can then run the demo:
-
-    $ fyne_demo
 
 And that's all there is to it! Now you can write your own Fyne application in your IDE of choice. If you want to see some Fyne code in action then you can read [your first application](/started/firstapp).

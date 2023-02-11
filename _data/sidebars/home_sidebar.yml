@@ -32,6 +32,10 @@ entries:
       url: /started/hello
       output: web, pdf
 
+    - title: Run Fyne Demo
+      url: /started/demo
+      output: web, pdf
+
     - title: Application and RunLoop
       url: /started/apprun
       output: web
