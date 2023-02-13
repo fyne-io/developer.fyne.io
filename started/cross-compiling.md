@@ -70,7 +70,7 @@ go install github.com/fyne-io/fyne-cross@latest
 For earlier versions of Go, you need to use the following command instead:
 
 ```
-go get  github.com/fyne-io/fyne-cross
+go get github.com/fyne-io/fyne-cross
 ```
 
 #### Usage
