@@ -67,7 +67,7 @@ You can install `fyne-cross` using the following command (requires Go 1.16 or la
 go install github.com/fyne-io/fyne-cross@latest
 ```
 
-For Go installations below Go 1.16, you can use this command:
+For earlier versions of Go, you need to use the following command instead:
 
 ```
 go get  github.com/fyne-io/fyne-cross
