@@ -61,6 +61,14 @@ fyne-cross allows to build binaries and create distribution packages for the fol
 
 #### Installation
 
+You can install `fyne-cross` using the following command (requires Go 1.16 or later):
+
+```
+go install github.com/fyne-io/fyne-cross@latest
+```
+
+For earlier versions of Go, you need to use the following command instead:
+
 ```
 go get github.com/fyne-io/fyne-cross
 ```
