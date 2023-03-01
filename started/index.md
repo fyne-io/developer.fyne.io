@@ -187,6 +187,9 @@ The steps for installing with MSYS2 (recommended) are as follows:
 ## Downloading
 
 When using Go modules (required with Go 1.16 and later), you will need to set up the module before you can use the package.
+
+### Go modules (for Go 1.16 or newer)
+
 If you are not using modules or you already have your module initialized, you can skip this to the next step.
 Run the following command and replace `MODULE_NAME` with your preferred module name (this should be called in a new folder specific for your application).
 
@@ -195,13 +198,48 @@ Run the following command and replace `MODULE_NAME` with your preferred module n
 
 You now need to download the Fyne module. This will be done using the following command: 
 
-    $ go get fyne.io/fyne/v2
-
-To finish your module's set up, you now need to tidy the module file to correctly reference Fyne as a dependency.
-You do this by using the following command (can be skipped if you are not using modules):
-
-    $ go mod tidy
+    $ go get fyne.io/fyne/v2@latest
 
 If you are unsure of how Go modules work, consider reading [Tutorial: Create a Go module](https://golang.org/doc/tutorial/create-module).
+
+### Older Go installations
+
+To install the Fyne toolkit using an older Go release simply execute the go get command:
+
+    $ go get fyne.io/fyne/v2
+
+## Check your installation
+
+Before coding an app or running an example you can check your install using the
+[Fyne Setup](https://geoffrey-artefacts.fynelabs.com/github/andydotxyz/fyne-io/setup/latest/) tool.
+Simply download the right app for your computer from the link and run it,
+you should see something like the following screen:
+
+<p style="text-align: center; margin: auto">
+<img src="/images/started/setup.png" style="width: 320px" />
+</p>
+
+## Run the demo
+
+If you want to see the Fyne toolkit in action before you start to code your own application,
+you can see our [demo app](https://github.com/fyne-io/fyne/tree/master/cmd/fyne_demo) running on your computer by executing:
+
+    $ go run fyne.io/fyne/v2/cmd/fyne_demo
+
+Please note that the first run has to compile some C-code and can thus take longer than usual. Subsequent builds reuse the cache and will be much faster.
+
+### Installing
+
+If you want to, you can also install the demo using the following command (requires Go 1.16 or later):
+
+    $ go install fyne.io/fyne/v2/cmd/fyne_demo@latest
+
+For earlier versions of Go, you need to use the following command instead:
+
+    $ go get fyne.io/fyne/v2/cmd/fyne_demo
+
+If your `GOBIN` environment has been added to path (should be by default on macOS and Windows), you can then run the demo:
+
+    $ fyne_demo
 
 And that's all there is to it! Now you can write your own Fyne application in your IDE of choice. If you want to see some Fyne code in action then you can read [your first application](/started/firstapp).
