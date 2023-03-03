@@ -219,6 +219,8 @@ you should see something like the following screen:
 <img src="/images/started/setup.png" style="width: 320px" />
 </p>
 
+If there are any problems with your installation see the [troubleshooting](/faq/troubleshoot) section for hints.
+
 ## Run the demo
 
 If you want to see the Fyne toolkit in action before you start to code your own application,

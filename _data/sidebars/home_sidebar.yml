@@ -311,3 +311,8 @@ entries:
     - title: Customisation
       url: /faq/theme
       output: web, pdf
+
+    - title: Troubleshooting
+      url: /faq/troubleshoot
+      output: web, pdf
+
