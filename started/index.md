@@ -196,17 +196,19 @@ Run the following command and replace `MODULE_NAME` with your preferred module n
     $ cd myapp
     $ go mod init MODULE_NAME
 
-You now need to download the Fyne module. This will be done using the following command: 
+You now need to download the Fyne module and helper tool. This will be done using the following commands: 
 
     $ go get fyne.io/fyne/v2@latest
+    $ go get fyne.io/fyne/v2/cmd/fyne@latest
 
 If you are unsure of how Go modules work, consider reading [Tutorial: Create a Go module](https://golang.org/doc/tutorial/create-module).
 
 ### Older Go installations
 
-To install the Fyne toolkit using an older Go release simply execute the go get command:
+To install the Fyne toolkit and helper using an older Go release simply execute the go get commands:
 
     $ go get fyne.io/fyne/v2
+    $ go get fyne.io/fyne/v2/cmd/fyne
 
 ## Check your installation
 
