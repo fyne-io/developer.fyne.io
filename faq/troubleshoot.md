@@ -13,8 +13,8 @@ Remember you can also check your configuration using the
 
 **Q: command not found: fyne**
 
-**A:** If you have installed the Fyne command using `go intall fyne.io/fyne/v2/cmd/fyne@latest` but you
-see an error when trying to run it then the most likely issus is that your Go install has not
+**A:** If you have installed the Fyne command using `go install fyne.io/fyne/v2/cmd/fyne@latest` but you
+see an error when trying to run it then the most likely issue is that your Go install has not
 set up your PATH environment variable correctly.
 
 Go will install tools to the `bin` directory inside the user's `GOPATH` location
