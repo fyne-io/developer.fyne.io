@@ -1,268 +1,179 @@
 themedIcons:
 - Name: Cancel
-  sourceIcon: cancelIconRes
   includePath: theme/icons/cancel.svg
 - Name: Confirm
-  sourceIcon: checkIconRes
   includePath: theme/icons/check.svg
 - Name: Delete
-  sourceIcon: deleteIconRes
   includePath: theme/icons/delete.svg
 - Name: Search
-  sourceIcon: searchIconRes
   includePath: theme/icons/search.svg
 - Name: SearchReplace
-  sourceIcon: searchreplaceIconRes
   includePath: theme/icons/search-replace.svg
 - Name: Menu
-  sourceIcon: menuIconRes
   includePath: theme/icons/menu.svg
 - Name: MenuExpand
-  sourceIcon: menuexpandIconRes
   includePath: theme/icons/menu-expand.svg
 - Name: CheckButton
-  sourceIcon: checkboxblankIconRes
   includePath: theme/icons/check-box-blank.svg
 - Name: CheckButtonChecked
-  sourceIcon: checkboxIconRes
   includePath: theme/icons/check-box.svg
 - Name: RadioButton
-  sourceIcon: radiobuttonIconRes
   includePath: theme/icons/radio-button.svg
 - Name: RadioButtonChecked
-  sourceIcon: radiobuttoncheckedIconRes
   includePath: theme/icons/radio-button-checked.svg
 - Name: ContentAdd
-  sourceIcon: contentaddIconRes
   includePath: theme/icons/content-add.svg
 - Name: ContentClear
-  sourceIcon: cancelIconRes
   includePath: theme/icons/cancel.svg
 - Name: ContentRemove
-  sourceIcon: contentremoveIconRes
   includePath: theme/icons/content-remove.svg
 - Name: ContentCut
-  sourceIcon: contentcutIconRes
   includePath: theme/icons/content-cut.svg
 - Name: ContentCopy
-  sourceIcon: contentcopyIconRes
   includePath: theme/icons/content-copy.svg
 - Name: ContentPaste
-  sourceIcon: contentpasteIconRes
   includePath: theme/icons/content-paste.svg
 - Name: ContentRedo
-  sourceIcon: contentredoIconRes
   includePath: theme/icons/content-redo.svg
 - Name: ContentUndo
-  sourceIcon: contentundoIconRes
   includePath: theme/icons/content-undo.svg
 - Name: ColorAchromatic
-  sourceIcon: colorachromaticIconRes
   includePath: theme/icons/color-achromatic.svg
 - Name: ColorChromatic
-  sourceIcon: colorchromaticIconRes
   includePath: theme/icons/color-chromatic.svg
 - Name: ColorPalette
-  sourceIcon: colorpaletteIconRes
   includePath: theme/icons/color-palette.svg
 - Name: Document
-  sourceIcon: documentIconRes
   includePath: theme/icons/document.svg
 - Name: DocumentCreate
-  sourceIcon: documentcreateIconRes
   includePath: theme/icons/document-create.svg
 - Name: DocumentPrint
-  sourceIcon: documentprintIconRes
   includePath: theme/icons/document-print.svg
 - Name: DocumentSave
-  sourceIcon: documentsaveIconRes
   includePath: theme/icons/document-save.svg
 - Name: MoreHorizontal
-  sourceIcon: morehorizontalIconRes
   includePath: theme/icons/more-horizontal.svg
 - Name: MoreVertical
-  sourceIcon: moreverticalIconRes
   includePath: theme/icons/more-vertical.svg
 - Name: Info
-  sourceIcon: infoIconRes
   includePath: theme/icons/info.svg
 - Name: Question
-  sourceIcon: questionIconRes
   includePath: theme/icons/question.svg
 - Name: Warning
-  sourceIcon: warningIconRes
   includePath: theme/icons/warning.svg
 - Name: Error
-  sourceIcon: errorIconRes
   includePath: theme/icons/error.svg
 - Name: MailAttachment
-  sourceIcon: mailattachmentIconRes
   includePath: theme/icons/mail-attachment.svg
 - Name: MailCompose
-  sourceIcon: mailcomposeIconRes
   includePath: theme/icons/mail-compose.svg
 - Name: MailForward
-  sourceIcon: mailforwardIconRes
   includePath: theme/icons/mail-forward.svg
 - Name: MailReply
-  sourceIcon: mailreplyIconRes
   includePath: theme/icons/mail-reply.svg
 - Name: MailReplyAll
-  sourceIcon: mailreplyallIconRes
   includePath: theme/icons/mail-reply_all.svg
 - Name: MailSend
-  sourceIcon: mailsendIconRes
   includePath: theme/icons/mail-send.svg
 - Name: MediaMusic
-  sourceIcon: mediamusicIconRes
   includePath: theme/icons/media-music.svg
 - Name: MediaPhoto
-  sourceIcon: mediaphotoIconRes
   includePath: theme/icons/media-photo.svg
 - Name: MediaVideo
-  sourceIcon: mediavideoIconRes
   includePath: theme/icons/media-video.svg
 - Name: MediaFastForward
-  sourceIcon: mediafastforwardIconRes
   includePath: theme/icons/media-fast-forward.svg
 - Name: MediaFastRewind
-  sourceIcon: mediafastrewindIconRes
   includePath: theme/icons/media-fast-rewind.svg
 - Name: MediaPause
-  sourceIcon: mediapauseIconRes
   includePath: theme/icons/media-pause.svg
 - Name: MediaPlay
-  sourceIcon: mediaplayIconRes
   includePath: theme/icons/media-play.svg
 - Name: MediaRecord
-  sourceIcon: mediarecordIconRes
   includePath: theme/icons/media-record.svg
 - Name: MediaReplay
-  sourceIcon: mediareplayIconRes
   includePath: theme/icons/media-replay.svg
 - Name: MediaSkipNext
-  sourceIcon: mediaskipnextIconRes
   includePath: theme/icons/media-skip-next.svg
 - Name: MediaSkipPrevious
-  sourceIcon: mediaskippreviousIconRes
   includePath: theme/icons/media-skip-previous.svg
 - Name: MediaStop
-  sourceIcon: mediastopIconRes
   includePath: theme/icons/media-stop.svg
 - Name: NavigateBack
-  sourceIcon: arrowbackIconRes
   includePath: theme/icons/arrow-back.svg
 - Name: MoveDown
-  sourceIcon: arrowdownIconRes
   includePath: theme/icons/arrow-down.svg
 - Name: NavigateNext
-  sourceIcon: arrowforwardIconRes
   includePath: theme/icons/arrow-forward.svg
 - Name: MoveUp
-  sourceIcon: arrowupIconRes
   includePath: theme/icons/arrow-up.svg
 - Name: ArrowDropDown
-  sourceIcon: arrowdropdownIconRes
   includePath: theme/icons/arrow-drop-down.svg
 - Name: ArrowDropUp
-  sourceIcon: arrowdropupIconRes
   includePath: theme/icons/arrow-drop-up.svg
 - Name: File
-  sourceIcon: fileIconRes
   includePath: theme/icons/file.svg
 - Name: FileApplication
-  sourceIcon: fileapplicationIconRes
   includePath: theme/icons/file-application.svg
 - Name: FileAudio
-  sourceIcon: fileaudioIconRes
   includePath: theme/icons/file-audio.svg
 - Name: FileImage
-  sourceIcon: fileimageIconRes
   includePath: theme/icons/file-image.svg
 - Name: FileText
-  sourceIcon: filetextIconRes
   includePath: theme/icons/file-text.svg
 - Name: FileVideo
-  sourceIcon: filevideoIconRes
   includePath: theme/icons/file-video.svg
 - Name: Folder
-  sourceIcon: folderIconRes
   includePath: theme/icons/folder.svg
 - Name: FolderNew
-  sourceIcon: foldernewIconRes
   includePath: theme/icons/folder-new.svg
 - Name: FolderOpen
-  sourceIcon: folderopenIconRes
   includePath: theme/icons/folder-open.svg
 - Name: Help
-  sourceIcon: helpIconRes
   includePath: theme/icons/help.svg
 - Name: History
-  sourceIcon: historyIconRes
   includePath: theme/icons/history.svg
 - Name: Home
-  sourceIcon: homeIconRes
   includePath: theme/icons/home.svg
 - Name: Settings
-  sourceIcon: settingsIconRes
   includePath: theme/icons/settings.svg
 - Name: ViewFullScreen
-  sourceIcon: viewfullscreenIconRes
   includePath: theme/icons/view-fullscreen.svg
 - Name: ViewRefresh
-  sourceIcon: viewrefreshIconRes
   includePath: theme/icons/view-refresh.svg
 - Name: ViewRestore
-  sourceIcon: viewzoomfitIconRes
   includePath: theme/icons/view-zoom-fit.svg
 - Name: ViewZoomFit
-  sourceIcon: viewzoomfitIconRes
   includePath: theme/icons/view-zoom-fit.svg
 - Name: ViewZoomIn
-  sourceIcon: viewzoominIconRes
   includePath: theme/icons/view-zoom-in.svg
 - Name: ViewZoomOut
-  sourceIcon: viewzoomoutIconRes
   includePath: theme/icons/view-zoom-out.svg
 - Name: Visibility
-  sourceIcon: visibilityIconRes
   includePath: theme/icons/visibility.svg
 - Name: VisibilityOff
-  sourceIcon: visibilityoffIconRes
   includePath: theme/icons/visibility-off.svg
 - Name: VolumeDown
-  sourceIcon: volumedownIconRes
   includePath: theme/icons/volume-down.svg
 - Name: VolumeMute
-  sourceIcon: volumemuteIconRes
   includePath: theme/icons/volume-mute.svg
 - Name: VolumeUp
-  sourceIcon: volumeupIconRes
   includePath: theme/icons/volume-up.svg
 - Name: Download
-  sourceIcon: downloadIconRes
   includePath: theme/icons/download.svg
 - Name: Computer
-  sourceIcon: computerIconRes
   includePath: theme/icons/computer.svg
 - Name: Storage
-  sourceIcon: storageIconRes
   includePath: theme/icons/storage.svg
 - Name: Upload
-  sourceIcon: uploadIconRes
   includePath: theme/icons/upload.svg
 - Name: Account
-  sourceIcon: accountIconRes
   includePath: theme/icons/account.svg
 - Name: Login
-  sourceIcon: loginIconRes
   includePath: theme/icons/login.svg
 - Name: Logout
-  sourceIcon: logoutIconRes
   includePath: theme/icons/logout.svg
 - Name: List
-  sourceIcon: listIconRes
   includePath: theme/icons/list.svg
 - Name: Grid
-  sourceIcon: gridIconRes
   includePath: theme/icons/grid.svg
