@@ -11,12 +11,7 @@ with the `Icon` method on a struct implementing `fyne.Theme`. For example `theme
 
 ## List
 
-<ul class="theme-icon-list">
-{% for icon in site.data.icons.themedIcons %}
-  {% capture svg %}{% include {{ icon.includePath }} %}{% endcapture %}
-  <li class="icon-item" data-icon-theme-method="{{ icon.Name }}Icon" data-icon-safeName="IconName{{ icon.Name }}" id="IconName{{ icon.Name }}"><figure>{{ svg | split: 'svg11.dtd">' | last }}<figcaption>{{ icon.Name }}Icon</figcaption></figure></li>
-{% endfor %}
-</ul>
+{% include iconlist.html %}
 
 ## Using other color sets
 
