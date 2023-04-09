@@ -44,8 +44,15 @@ adb install myapp.apk
 
 For iOS to install on device open Xcode and choose the "Devices and
 Simulators" menu item within the "Window" menu. Then find your phone and drag
-the `myapp.app` icon onto your app list. To install on a simulator you can 
-use the command line tools as follows:
+the `myapp.app` icon onto your app list. 
+
+If you want to install on a simulator make sure to package your application using `iossimulator` vs `ios` 
+
+```
+fyne package -os iossimulator -appID com.example.myapp -icon mobileIcon.png
+```
+
+Afterwards you can use the command line tools as follows:
 
 ```
 xcrun simctl install booted myapp.app
