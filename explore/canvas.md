@@ -7,7 +7,7 @@ redirect_from:
 - /explore/
 ---
 
-In Fyne a `Canvas` is the area which an application is drawn within.
+In Fyne a `Canvas` is the area within which an application is drawn.
 Each window has a canvas which you can access with `Window.Canvas()`
 but usually you will find functions on `Window` that avoid accessing
 the canvas.
