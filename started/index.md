@@ -40,6 +40,11 @@ install:
         name: ios
         title: iOS
         source: ios
+    tab8:
+        name: termux
+        title: Termux (for Android app)
+        source: termux
+        
 
 ---
 
@@ -154,6 +159,76 @@ The steps for installing with MSYS2 (recommended) are as follows:
 
 </div>
 </div>
+<div id="install__macos" class="hidden">
+<div style="text-align: left" markdown="1">
+
+1. Download Go from the [download page](https://golang.org/dl/) and follow instructions
+2. Install Xcode from the [Mac App Store](https://apps.apple.com/us/app/xcode/id497799835?mt=12)
+3. Set up the Xcode command line tools by opening a Terminal window and typing the following:
+    `xcode-select --install`
+4. In macOS the graphics drivers will already be installed.
+
+</div>
+</div>
+
+<div id="install__termux" class="hidden">
+<div style="text-align: left" markdown="1">
+This is way how to create Android aplication without pc 
+
+1. it reqire android 9 above
+2. Install [fdroid](https://f-droid.org/) and from them [termux](https://f-droid.org/packages/com.termux/) and follow the instructions (or [video](https://youtu.be/uGtVjf4_Ivo))
+3. Install git:
+        $ pkg install git
+4. Download and run script:
+        $ cd ~ && git clone https://github.com/MatejMagat305/fyne-termux.git 
+        $ cd ~/fyne-termux && chmod 1777 fyne_install.sh
+        $ ~/fyne-termux/fyne_install.sh    
+
+Create project in ~/go/src:
+
+        $ mkdir -p ~/go/src/EXAMPLE
+ Create main:
+```
+cat <<EOT >> ~/go/src/EXAMPLE/main.go
+package main
+
+import (
+	"fyne.io/fyne/v2/app"
+	"fyne.io/fyne/v2/container"
+	"fyne.io/fyne/v2/widget"
+)
+
+func main() {
+	a := app.New()
+	w := a.NewWindow("Hello")
+
+	hello := widget.NewLabel("Hello Fyne!")
+	w.SetContent(container.NewVBox(
+		hello,
+		widget.NewButton("Hi!", func() {
+			hello.SetText("Welcome :)")
+		}),
+	))
+
+	w.ShowAndRun()
+}
+EOT
+```
+Let build:
+        $ cd ~/go/src/EXAMPLE/ 
+        $ go mod init
+        $ go mod tidy
+ Download some icon.png to folder ... and run 
+        $ fyne package -os android/arm64 -icon EXAMPLE.png -name EXAMPLE -appID EXAMPLE.EXAMPLE.EXAMPLE
+ Put new apk to download:
+        $ termux-setup-storage # click yes
+        $ mv EXAMPLE.apk ~/storage/downloads/
+ If you have android 12+ you can have problem with phanthom killer processes, in this case you can follow [video](https://www.youtube.com/watch?v=eY7d2WZ1lN4)
+
+    
+</div>
+</div>
+
 
 <script type="text/javascript">
 
