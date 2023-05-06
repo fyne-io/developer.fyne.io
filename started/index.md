@@ -40,11 +40,6 @@ install:
         name: ios
         title: iOS
         source: ios
-    tab8:
-        name: termux
-        title: Termux (for Android app)
-        source: termux
-        
 
 ---
 
@@ -144,37 +139,11 @@ The steps for installing with MSYS2 (recommended) are as follows:
 
 <div id="install__android" class="hidden">
 <div style="text-align: left" markdown="1">
-
-* To develop apps for Android you will first need to install the tools for your current computer (Windows, macOS or Linux)
+* To develop apps for Android you can use PC (Linux, Windows, Mac) or you can use Android app Termux (without PC)
+* To develop apps for Android on your computer (Windows, macOS or Linux) you need install android tools 
 * Once complete you will need to install the Android SDK and Android NDK - the recommended approach is to install [Android Studio](https://developer.android.com/studio/index.html) and then go to **Tools > SDK Manager** and from **SDK Tools** install the **NDK (Side by side)** package.
 
-</div>
-</div>
-
-<div id="install__ios" class="hidden">
-<div style="text-align: left" markdown="1">
-
-* To develop apps for iOS you will need access to an Apple Mac computer, configured according to the **macOS** tab above.
-* You will also need to create an [Apple Developer account](https://developer.apple.com) and sign up to the developer program (costs apply) to obtain the necessary certificate to run your app on any devices.
-
-</div>
-</div>
-<div id="install__macos" class="hidden">
-<div style="text-align: left" markdown="1">
-
-1. Download Go from the [download page](https://golang.org/dl/) and follow instructions
-2. Install Xcode from the [Mac App Store](https://apps.apple.com/us/app/xcode/id497799835?mt=12)
-3. Set up the Xcode command line tools by opening a Terminal window and typing the following:
-    `xcode-select --install`
-4. In macOS the graphics drivers will already be installed.
-
-</div>
-</div>
-
-<div id="install__termux" class="hidden">
-<div style="text-align: left" markdown="1">
-This is way how to create Android aplication without pc 
-
+* To develop apps for Android directly on Android app termux, you can follow this instructions
 1. it reqire android 9 above
 2. Install [fdroid](https://f-droid.org/) and from them [termux](https://f-droid.org/packages/com.termux/) and follow the instructions (or [video](https://youtu.be/uGtVjf4_Ivo))
 3. Install git:
@@ -226,6 +195,16 @@ Let build:
  If you have android 12+ you can have problem with phanthom killer processes, in this case you can follow [video](https://www.youtube.com/watch?v=eY7d2WZ1lN4)
 
     
+</div>
+</div>
+
+
+<div id="install__ios" class="hidden">
+<div style="text-align: left" markdown="1">
+
+* To develop apps for iOS you will need access to an Apple Mac computer, configured according to the **macOS** tab above.
+* You will also need to create an [Apple Developer account](https://developer.apple.com) and sign up to the developer program (costs apply) to obtain the necessary certificate to run your app on any devices.
+
 </div>
 </div>
 
