@@ -147,49 +147,8 @@ The steps for installing with MSYS2 (recommended) are as follows:
 2. Install [fdroid](https://f-droid.org/) and from them [termux](https://f-droid.org/packages/com.termux/) and follow the instructions (or [video](https://youtu.be/uGtVjf4_Ivo))
 3. Install git:
         $ pkg install git
-4. Download and run script:
-        $ cd ~ && git clone https://github.com/MatejMagat305/fyne-termux.git 
-        $ cd ~/fyne-termux && chmod 1777 fyne_install.sh
-        $ ~/fyne-termux/fyne_install.sh
-Create project in ~/go/src:
-        $ mkdir -p ~/go/src/EXAMPLE
- Create main:
-```
-cat <<EOT >> ~/go/src/EXAMPLE/main.go
-package main
-
-import (
-	"fyne.io/fyne/v2/app"
-	"fyne.io/fyne/v2/container"
-	"fyne.io/fyne/v2/widget"
-)
-
-func main() {
-	a := app.New()
-	w := a.NewWindow("Hello")
-
-	hello := widget.NewLabel("Hello Fyne!")
-	w.SetContent(container.NewVBox(
-		hello,
-		widget.NewButton("Hi!", func() {
-			hello.SetText("Welcome :)")
-		}),
-	))
-
-	w.ShowAndRun()
-}
-EOT
-```
-Let build:
-        $ cd ~/go/src/EXAMPLE/ 
-        $ go mod init
-        $ go mod tidy
- Download some icon.png to folder ... and run 
-        $ fyne package -os android/arm64 -icon EXAMPLE.png -name EXAMPLE -appID EXAMPLE.EXAMPLE.EXAMPLE
- Put new apk to download:
-        $ termux-setup-storage # click yes
-        $ mv EXAMPLE.apk ~/storage/downloads/
- If you have android 12+ you can have problem with phanthom killer processes, in this case you can follow [video](https://www.youtube.com/watch?v=eY7d2WZ1lN4)    
+4. Download and setup NDK and SDK from web
+If you have android 12+ you can have problem with phanthom killer processes, in this case you can follow [video](https://www.youtube.com/watch?v=eY7d2WZ1lN4)    
 </div>
 </div>
 
