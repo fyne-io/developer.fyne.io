@@ -142,7 +142,6 @@ The steps for installing with MSYS2 (recommended) are as follows:
 * To develop apps for Android you can use PC (Linux, Windows, Mac) or you can use Android app Termux (without PC)
 * To develop apps for Android on your computer (Windows, macOS or Linux) you need install android tools 
 * Once complete you will need to install the Android SDK and Android NDK - the recommended approach is to install [Android Studio](https://developer.android.com/studio/index.html) and then go to **Tools > SDK Manager** and from **SDK Tools** install the **NDK (Side by side)** package.
-
 * To develop apps for Android directly on Android app termux, you can follow this instructions
 1. it reqire android 9 above
 2. Install [fdroid](https://f-droid.org/) and from them [termux](https://f-droid.org/packages/com.termux/) and follow the instructions (or [video](https://youtu.be/uGtVjf4_Ivo))
@@ -151,10 +150,8 @@ The steps for installing with MSYS2 (recommended) are as follows:
 4. Download and run script:
         $ cd ~ && git clone https://github.com/MatejMagat305/fyne-termux.git 
         $ cd ~/fyne-termux && chmod 1777 fyne_install.sh
-        $ ~/fyne-termux/fyne_install.sh    
-
+        $ ~/fyne-termux/fyne_install.sh
 Create project in ~/go/src:
-
         $ mkdir -p ~/go/src/EXAMPLE
  Create main:
 ```
@@ -192,12 +189,9 @@ Let build:
  Put new apk to download:
         $ termux-setup-storage # click yes
         $ mv EXAMPLE.apk ~/storage/downloads/
- If you have android 12+ you can have problem with phanthom killer processes, in this case you can follow [video](https://www.youtube.com/watch?v=eY7d2WZ1lN4)
-
-    
+ If you have android 12+ you can have problem with phanthom killer processes, in this case you can follow [video](https://www.youtube.com/watch?v=eY7d2WZ1lN4)    
 </div>
 </div>
-
 
 <div id="install__ios" class="hidden">
 <div style="text-align: left" markdown="1">
@@ -207,7 +201,6 @@ Let build:
 
 </div>
 </div>
-
 
 <script type="text/javascript">
 
