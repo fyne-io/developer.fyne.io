@@ -2,7 +2,6 @@
 layout: page
 title: Getting Started
 
-
 order: 10
 
 redirect_from:
@@ -43,7 +42,7 @@ install:
         source: ios
     tab8:
         name: termux
-        title: Termux (for Android app without PC)
+        title: Termux (create Android apk without PC - on Android)
         source: termux
 
 ---
