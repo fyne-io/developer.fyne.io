@@ -2,10 +2,6 @@
 layout: page
 title: Getting Started
 
-order: 10
----
-layout: page
-title: Getting Started
 
 order: 10
 
