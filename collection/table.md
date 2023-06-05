@@ -3,9 +3,10 @@ title: Table
 
 redirect_from:
   - /tour/widget/table
+  - /widget/table
 --- 
 
-The `Table` widget is like the `List` widget (another of the toolkit's collection widgets) with a two-dimensional index.
+The `Table` collection widget is like the [List](/collection/list) widget (another of the toolkit's collection widgets) with a two-dimensional index.
 Like `List` this is designed to help build really performant
 interfaces when lots of data is being presented.
 Because of this the widget is not created with all the data embedded, but instead calls out to the data source when needed.

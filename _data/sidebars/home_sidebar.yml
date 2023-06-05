@@ -224,12 +224,20 @@ entries:
       url: /widget/toolbar
       output: web
 
+  - title: Collections
+    output: web
+    folderitems:
+
     - title: List
-      url: /widget/list
+      url: /collection/list
       output: web
 
     - title: Table
-      url: /widget/table
+      url: /collection/table
+      output: web
+
+    - title: Tree
+      url: /collection/tree
       output: web
 
   - title: Data Binding
