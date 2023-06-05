@@ -272,15 +272,17 @@ ul#results-container a:hover {
 
 #search-input {
     padding: .5em;
-    margin-left:20px;
-    width:20em;
+    width: 18.8em;
     font-size: 0.8em;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
-    margin-top: 5pt;
     color: #333;
     border: 0;
+}
+
+#search-box-nav {
+    width: 14.5em;
 }
 /* end search */
 

@@ -48,17 +48,6 @@
                 </li>
                 {% endfor %}
                 {% endfor %}
-                {% if site.feedback_disable == null or site.feedback_disable == false %}
-			{% include feedback.html %}
-		{% endif %}
-                <li>
-                    <div id="search-demo-container">
-                        <form action="/search.html" id="search-input" method="get">
-                            <input type="text" id="search-box-nav" name="q">
-                            <input type="submit" value="&#x1F50D;">
-                        </form>
-                    </div>
-                </li>
             </ul>
         </div>
         </div>
