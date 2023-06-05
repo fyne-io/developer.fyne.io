@@ -19,7 +19,7 @@ Accordion displays a list of AccordionItems. Each item is represented by a butto
 
 ### Button
 
-Button widget has a text label and icon, both are optional.
+[Button](/widget/button) widget has a text label and icon, both are optional.
 
 {% include widget.html name="button" %}
 
@@ -37,7 +37,7 @@ Check widget has a text label and a checked (or unchecked) icon.
 
 ### Entry
 
-Entry widget allows simple text to be input when focused.
+[Entry](/widget/entry) widget allows simple text to be input when focused.
 
 {% include widget.html name="entry" %}
 {% include widget.html name="entry-valid" %}
@@ -56,7 +56,7 @@ It displays the type of file as an indicator icon and shows the extension of the
 
 ### Form
 
-Form widget is two column grid where each row has a label and a widget (usually an input). The last row of the grid will contain the appropriate form control buttons if any should be shown.
+[Form](/widget/form) widget is two column grid where each row has a label and a widget (usually an input). The last row of the grid will contain the appropriate form control buttons if any should be shown.
 
 {% include widget.html name="form" %}
 
@@ -74,13 +74,13 @@ Icon widget is a basic image component that load's its resource to match the the
 
 ### Label
 
-Label widget is a label component with appropriate padding and layout.
+[Label](/widget/label) widget is a label component with appropriate padding and layout.
 
 {% include widget.html name="label" %}
 
 ### Progress bar
 
-ProgressBar widget creates a horizontal panel that indicates progress.
+[ProgressBar](/widget/progressbar) widget creates a horizontal panel that indicates progress.
 
 {% include widget.html name="progress" %}
 
@@ -127,7 +127,7 @@ TextGrid is a monospaced grid of characters. This is designed to be used by a te
 
 ### Toolbar
 
-Toolbar widget creates a horizontal list of tool buttons.
+[Toolbar](/widget/toolbar) widget creates a horizontal list of tool buttons.
 
 {% include widget.html name="toolbar" %}
 
@@ -140,19 +140,19 @@ Each of these widgets uses a series of callbacks, the minimum set is defined by 
 
 ### List
 
-List provides a high performance vertical scroll of many sub-items.
+[List](/collection/list) provides a high performance vertical scroll of many sub-items.
 
 {% include widget.html name="list" %}
 
 ### Table
 
-Table provides a high performance scrolled two dimensional display of many sub-items.
+[Table](/collection/table) provides a high performance scrolled two dimensional display of many sub-items.
 
 {% include widget.html name="table" %}
 
 ### Tree
 
-Tree provides a high performance vertical scroll of items that can be expanded to reveal child elements..
+[Tree](/collection/tree) provides a high performance vertical scroll of items that can be expanded to reveal child elements..
 
 {% include widget.html name="tree" %}
 
@@ -163,7 +163,7 @@ Container widgets are like regular containers but they provide some additional f
 
 ### AppTabs
 
-AppTabs widget allows switching visible content from a list of TabItems. Each item is represented by a button at the top of the widget.
+[AppTabs](/container/apptabs) widget allows switching visible content from a list of TabItems. Each item is represented by a button at the top of the widget.
 
 {% include widget.html name="apptabs" %}
 
