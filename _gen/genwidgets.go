@@ -39,8 +39,8 @@ func makeDrawList() []drawItem {
 			widget.NewAccordionItem("B", widget.NewLabel("Shown item")),
 			widget.NewAccordionItem("C", widget.NewLabel("2")))},
 		{"apptabs", container.NewAppTabs(
-			container.NewTabItemWithIcon("Tab1", theme.HomeIcon(), canvas.NewRectangle(color.Transparent)),
-			container.NewTabItemWithIcon("Tab2", theme.MailSendIcon(), canvas.NewRectangle(color.Transparent)))},
+			container.NewTabItemWithIcon("Tab1", theme.HomeIcon(), widget.NewLabel("                         ")),
+			container.NewTabItemWithIcon("Tab2", theme.MailSendIcon(), widget.NewLabel("                         ")))},
 		{"button", widget.NewButtonWithIcon("Cancel", theme.CancelIcon(), func() {})},
 		{"card", &widget.Card{Title: "Card Title", Subtitle: "Subtitle", Image: canvas.NewImageFromResource(theme.FyneLogo())}},
 		{"check", &widget.Check{Text: "Check", Checked: true}},
