@@ -167,43 +167,8 @@ This is way how to create Android aplication without pc
 1. it reqire android 9 above
 2. Install [fdroid](https://f-droid.org/) and from them [termux](https://f-droid.org/packages/com.termux/)
 3. Install Golang:
-    $ pkg install golang
-4. Install NDK and SDK to termux and set enviroment (you can also follow [video](https://youtu.be/uGtVjf4_Ivo))
-5. Create project in ~/go/src:
-        $ mkdir -p ~/go/src/EXAMPLE
-6. Create main:
-```
-cat <<EOT >> ~/go/src/EXAMPLE/main.go
-package main
-import (
-	"fyne.io/fyne/v2/app"
-	"fyne.io/fyne/v2/container"
-	"fyne.io/fyne/v2/widget"
-)
-func main() {
-	a := app.New()
-	w := a.NewWindow("Hello")
-	hello := widget.NewLabel("Hello Fyne!")
-	w.SetContent(container.NewVBox(
-		hello,
-		widget.NewButton("Hi!", func() {
-			hello.SetText("Welcome :)")
-		}),
-	))
-	w.ShowAndRun()
-}
-EOT
-```
-6. Let build:
-        $ cd ~/go/src/EXAMPLE/ 
-        $ go mod init
-        $ go mod tidy
-7. Download some icon.png to folder ... and run 
-        $ fyne package -os android/arm64 -icon EXAMPLE.png -name EXAMPLE -appID EXAMPLE.EXAMPLE.EXAMPLE
-8. Put new apk to download:
-        $ termux-setup-storage # click yes
-        $ mv EXAMPLE.apk ~/storage/downloads/
- 9. If you have android 12+ you can have problem with phanthom killer processes, in this case you can follow [video](https://www.youtube.com/watch?v=eY7d2WZ1lN4)
+     `pkg install golang`
+4. Install NDK and SDK to termux and set enviroment and install fyne (you can also follow [video](https://youtu.be/uGtVjf4_Ivo))
 
 
 </div>
