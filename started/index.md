@@ -40,6 +40,10 @@ install:
         name: ios
         title: iOS
         source: ios
+    tab8:
+        name: termux
+        title: Termux (create Android apk without PC - on Android)
+        source: termux
 
 ---
 
@@ -155,6 +159,20 @@ The steps for installing with MSYS2 (recommended) are as follows:
 </div>
 </div>
 
+
+<div id="install__termux" class="hidden">
+<div style="text-align: left" markdown="1">
+This is way how to create Android aplication without pc 
+
+1. it reqire android 9 above
+2. Install [fdroid](https://f-droid.org/) and from them [termux](https://f-droid.org/packages/com.termux/)
+3. Install Golang:
+     `pkg install golang`
+4. Install NDK and SDK to termux and set enviroment and install fyne (you can also follow [video](https://youtu.be/uGtVjf4_Ivo))
+
+
+</div>
+</div>
 <script type="text/javascript">
 
     function clickTab(tab) {
