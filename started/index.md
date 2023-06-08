@@ -162,13 +162,13 @@ The steps for installing with MSYS2 (recommended) are as follows:
 
 <div id="install__termux" class="hidden">
 <div style="text-align: left" markdown="1">
-This is way how to create Android aplication without pc 
 
-1. it reqire android 9 above
-2. Install [fdroid](https://f-droid.org/) and from them [termux](https://f-droid.org/packages/com.termux/)
-3. Install Golang:
-     `pkg install golang`
-4. Install NDK and SDK to termux and set enviroment and install fyne (you can also follow [video](https://youtu.be/uGtVjf4_Ivo))
+Compiling Fyne apps on Android you will need Android 9 or above
+
+* Install [fdroid](https://f-droid.org/) and from there [termux](https://f-droid.org/packages/com.termux/)
+* Open Termux and install Go and Git:
+`pkg install golang git`
+* Install NDK and SDK to termux and set enviroment variables (you can also follow [video](https://youtu.be/uGtVjf4_Ivo))
 
 
 </div>
