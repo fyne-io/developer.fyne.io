@@ -97,7 +97,7 @@ func main() {
 	c := w.Canvas().(test.WindowlessCanvas)
 
 	pwd, _ := os.Getwd()
-	imgDir = filepath.Join(pwd, "images", "layouts")
+	imgDir = filepath.Join(pwd, "..", "images", "layouts")
 
 	fyne.CurrentApp().Settings().SetTheme(theme.LightTheme())
 	for _, item := range makeDrawList() {

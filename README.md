@@ -12,3 +12,14 @@ gem install bundler jekyll
 bundle exec jekyll serve
 ```
 
+## Run generator scripts
+
+To generate new images etc you can use the following commands:
+
+```bash
+cd _gen
+go run genwidgets.go # generate widget images
+go run genlayouts.go # generate layout images
+go run gendialogs.go # generate dialog images
+```
+
