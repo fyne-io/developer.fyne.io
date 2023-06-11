@@ -99,13 +99,41 @@ func main() {
 	pwd, _ := os.Getwd()
 	imgDir = filepath.Join(pwd, "..", "images", "layouts")
 
-	fyne.CurrentApp().Settings().SetTheme(theme.LightTheme())
+	fyne.CurrentApp().Settings().SetTheme(transparentBGTheme(theme.LightTheme()))
 	for _, item := range makeDrawList() {
 		draw(item.lay, item.name, c, "light")
 	}
 
-	fyne.CurrentApp().Settings().SetTheme(theme.DarkTheme())
+	fyne.CurrentApp().Settings().SetTheme(transparentBGTheme(theme.DarkTheme()))
 	for _, item := range makeDrawList() {
 		draw(item.lay, item.name, c, "dark")
 	}
+}
+
+type transparent struct {
+	th fyne.Theme
+}
+
+func transparentBGTheme(th fyne.Theme) fyne.Theme {
+	return &transparent{th: th}
+}
+
+func (t *transparent) Color(n fyne.ThemeColorName, v fyne.ThemeVariant) color.Color {
+	if n == theme.ColorNameBackground {
+		return color.Transparent
+	}
+
+	return t.th.Color(n, v)
+}
+
+func (t *transparent) Font(s fyne.TextStyle) fyne.Resource {
+	return t.th.Font(s)
+}
+
+func (t *transparent) Icon(n fyne.ThemeIconName) fyne.Resource {
+	return t.th.Icon(n)
+}
+
+func (t *transparent) Size(n fyne.ThemeSizeName) float32 {
+	return t.th.Size(n)
 }

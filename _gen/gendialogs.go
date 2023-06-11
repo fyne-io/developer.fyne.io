@@ -30,7 +30,8 @@ func makeDrawList() []drawItem {
 			dialog.ShowColorPicker("Choose a color", "Please pick a color...", func(color.Color) {}, w)
 		}},
 		{"confirm", func(w fyne.Window) { dialog.ShowConfirm("Please Confirm", "Are you sure..?", func(bool) {}, w) }},
-		{"fileopen", func(w fyne.Window) { dialog.ShowFileOpen(func(fyne.URIReadCloser, error) {}, w) }},
+		{"fileopen", func(w fyne.Window) {
+			dialog.ShowFileOpen(func(fyne.URIReadCloser, error) {}, w)}},
 		{"form", func(w fyne.Window) {
 			dialog.ShowForm("Form Input", "Enter", "Cancel",
 				[]*widget.FormItem{widget.NewFormItem("Enter a string...", widget.NewEntry())}, func(bool) {}, w)
@@ -64,8 +65,8 @@ func draw(scene func(fyne.Window), name string, w fyne.Window, c test.Windowless
 	c.SetContent(canvas.NewRectangle(theme.BackgroundColor()))
 	scene(w)
 	if name == "fileopen" {
-		w.Resize(fyne.NewSize(420, 320))
-		c.Overlays().Top().Resize(fyne.NewSize(412, 312))
+		w.Resize(fyne.NewSize(440, 320))
+		c.Overlays().Top().Resize(fyne.NewSize(432, 312))
 	} else {
 		min := c.Overlays().Top().MinSize()
 		w.Resize(min.Add(fyne.NewSize(theme.Padding()*2, theme.Padding()*2)))
