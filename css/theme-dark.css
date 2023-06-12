@@ -19,6 +19,10 @@ body {
     color: #ffffff;
     border-color: rgba(255, 255, 255, 0.3);
 }   
+
+.navbar li >a:hover {
+    border-color: transparent;
+}
     
 table > tbody > tr:nth-of-type(odd) {
     background-color: #363636;

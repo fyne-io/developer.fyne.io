@@ -127,6 +127,10 @@ padding-top: 60px;
 margin-top: -40px
 }
 
+#tg-sb-sidebar {
+    padding-top: 13.5pt;
+}
+
 .post-content img {
     margin: 12px 0px 3px 0px;
     width: auto;
@@ -386,9 +390,11 @@ a.accordion-toggle, a.accordion-collapsed {
 }
 
 .nav {
-    /* padding: 4px;*/
-    padding:0px;
-    margin: 0px;
+    padding: 0;
+}
+
+.navbar .nav {
+    padding: 10px;
 }
 
 .nav > li {
@@ -1039,7 +1045,8 @@ a[href^="http://"]:after, a[href^="https://"]:after {
 
 /* Strip the outbound icon when this class is present */
 a[href].noCrossRef::after,
-a.no_icon:after
+a.no_icon:after,
+.navbar a:after
  {
     content:"" !important;
     padding-left: 0;

@@ -11,7 +11,7 @@ a, h3, h4 {
 }
 
 .navbar-inverse .navbar-nav>li>a:hover, a.fa.fa-home.fa-lg.navbar-brand:hover {
-     color: rgba(255, 255, 255, 0.3);
+    color: rgba(255, 255, 255, 0.3);
 }
 
 #main ul.nav {
@@ -19,11 +19,12 @@ a, h3, h4 {
 }
 
 .nav li a {
-	background-color: transparent;
+    background-color: transparent;
 }
 
-div.navbar-collapse, .dropdown-menu > li > a:hover {
-     background-color: #03a9f4;
+.navbar-default {
+    background-color: black;
+    margin-right: -8px;
 }
 
 .nav li.thirdlevel > a {
