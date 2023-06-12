@@ -32,19 +32,6 @@ exclude:
   - gen.sh
 # these are the files and directories that jekyll will exclude from the build
 
-feedback_subject_line: Fyne develop site
-
-feedback_email: info@fyne.io
-
-# feedback_disable: true
-# if you uncomment the previous line, the Feedback link gets removed
-
-# feedback_text: "Need help?"
-# if you uncomment the previous line, it changes the Feedback text
-
-# feedback_link: "http://helpy.io/"
-# if you uncomment the previous line, it changes where the feedback link points to
-
 highlighter: rouge
 # library used for syntax highlighting
 

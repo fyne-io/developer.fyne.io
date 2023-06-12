@@ -1,6 +1,15 @@
 {% assign sidebar = site.data.sidebars[page.sidebar].entries %}
 
 <ul id="mysidebar" class="nav">
+   <li>
+      <div id="search-demo-container"> 
+          <form action="/search.html" id="search-input" method="get">
+              <input type="text" id="search-box-nav" name="q" placeholder="Search">
+              <input type="submit" value="&#x1F50D;">
+          </form>
+      </div>
+  </li>
+
   {% for entry in sidebar %}
   {% for folder in entry.folders %}
   {% if folder.output contains "web" %}
@@ -61,29 +70,6 @@
       <a href="/submit/" class="btn btn-primary btn-xl" style="visibility: visible; border-width: 1px;">List My App</a>
   </li>
 
-
-  <li>
-    {% if site.feedback_text %}
-      {% assign feedback_text = site.feedback_text %}
-    {% else %}
-      {% assign feedback_text = "Feedback" %}
-    {% endif %}
-
-    {% if site.feedback_link %}
-      <a class="email btn btn-xl" title="Submit feedback" href="{{site.feedback_link}}">{{feedback_text}}</a>
-    {% else %}
-      <a class="email btn btn-xl" title="Submit feedback" href="#" onclick="javascript:window.location='mailto:{{site.feedback_email}}?subject={{site.feedback_subject_line}} feedback&body=I have some feedback about the {{page.title}} page: ' + window.location.href;"><i class="fa fa-envelope-o"></i> {{feedback_text}}</a>
-    {% endif %}
-  </li>
-
-  <li>
-      <div id="search-demo-container"> 
-          <form action="/search.html" id="search-input" method="get">
-              <input type="text" id="search-box-nav" name="q" placeholder="Search">
-              <input type="submit" value="&#x1F50D;">
-          </form>
-      </div>
-  </li>
 
 </ul>
 
