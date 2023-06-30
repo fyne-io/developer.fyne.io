@@ -9,7 +9,7 @@ search: exclude
 
 [
 {% for page in site.pages %}
-{% unless page.search == "exclude" %}
+{% unless page.search == "exclude" or page.url contains 'v2.2' or page.url contains 'v2.1' or page.url contains 'v2.0' or page.url contains 'v1.4' or page.url contains 'v1.3' or page.url contains 'v1.2' %}
 {
 "title": "{{ page.title | escape }}",
 "tags": "{{ page.tags }}",

@@ -274,7 +274,7 @@ ul#results-container a:hover {
     color: black;
 }
 
-#search-input {
+#search-input, #search-box, #search-button {
     padding: .5em;
     width: 18.8em;
     font-size: 0.8em;
