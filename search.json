@@ -4,6 +4,9 @@ layout: none
 search: exclude
 ---
 
+{% capture newline %}
+{% endcapture %}
+
 [
 {% for page in site.pages %}
 {% unless page.search == "exclude" %}
@@ -13,7 +16,7 @@ search: exclude
 "keywords": "{{page.keywords}}",
 "url": "{{ page.url}}",
 "summary": "{{page.summary | strip }}",
- "body": "{{ page.content | strip_html | strip_newlines | replace: '\', '\\\\' | replace: '"', '\\"' | replace: '	', '    '  }}"
+ "body": "{{ page.content | strip_html | replace: '\', '\\\\' | replace: newline, ' ' | replace: '"', '\\"' | replace: '	', '    '  }}"
 }
 {% unless forloop.last and site.posts.size < 1 %},{% endunless %}
 {% endunless %}
