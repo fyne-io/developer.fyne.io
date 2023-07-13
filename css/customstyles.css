@@ -459,7 +459,7 @@ a.accordion-toggle, a.accordion-collapsed {
 .nav > li > a {
     font-size: 14px;
     line-height: 20px;
-    padding: 4px 8pt;
+    padding: 4px 10pt;
 }
 
 .nav > li > a:hover {
