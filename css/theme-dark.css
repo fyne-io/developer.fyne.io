@@ -35,8 +35,8 @@ a[data-toggle="tooltip"] {
 }
 
 .btn-default {
-    color: #ffffff;
-    Background-color: #303030;
+    color: #333;
+    Background-color: #ccc;
 }
 
 body.print h1 {color: #5b893c !important; font-size:28px;}
