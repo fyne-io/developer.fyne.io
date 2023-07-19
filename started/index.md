@@ -76,9 +76,11 @@ The steps for installing with MSYS2 (recommended) are as follows:
         $ pacman -Syu
         $ pacman -S git mingw-w64-x86_64-toolchain
 
-* You will need to add /c/Program\ Files/Go/bin and ~/Go/bin to your PATH, for MSYS2 you can paste the following command into your terminal:
+* You will need to add /c/Program\ Files/Go/bin and ~/Go/bin to your $PATH, for MSYS2 you can paste the following command into your terminal:
 
         $ echo "export PATH=\$PATH:/c/Program\ Files/Go/bin:~/Go/bin" >> ~/.bashrc
+
+* For the compiler to work on other terminals you will need to set up the windows %PATH% variable to find these tools. Go to the "Edit the system environment variables" control panel, tap "Advanced" and add "C:\msys64\mingw64\bin" to the Path list.
 
 </div>
 </div>
