@@ -2,7 +2,6 @@
 layout: page
 tags: [api]
 title: Fyne API "canvas.RadialGradient"
-package: fyne.io/fyne/v2/canvas
 ---
 
 # canvas.RadialGradient

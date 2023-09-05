@@ -2,7 +2,6 @@
 layout: page
 tags: [api]
 title: Fyne API "container.Scroll"
-package: fyne.io/fyne/v2/container
 ---
 
 # container.Scroll

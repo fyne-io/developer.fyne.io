@@ -2,7 +2,6 @@
 layout: page
 tags: [api]
 title: Fyne API "app.SettingsSchema"
-package: fyne.io/fyne/v2/app
 ---
 
 # app.SettingsSchema

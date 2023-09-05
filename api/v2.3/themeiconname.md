@@ -2,7 +2,6 @@
 layout: page
 tags: [api]
 title: Fyne API "fyne.ThemeIconName"
-package: fyne.io/fyne/v2
 ---
 
 # fyne.ThemeIconName

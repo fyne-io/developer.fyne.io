@@ -2,7 +2,6 @@
 layout: page
 tags: [api]
 title: Fyne API "mobile.Touchable"
-package: fyne.io/fyne/v2/driver/mobile
 ---
 
 # mobile.Touchable

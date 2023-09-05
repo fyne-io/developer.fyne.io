@@ -2,7 +2,6 @@
 layout: page
 tags: [api]
 title: Fyne API "binding.RuneList"
-package: fyne.io/fyne/v2/data/binding
 ---
 
 # binding.RuneList
