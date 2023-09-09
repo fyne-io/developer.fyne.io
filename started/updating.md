@@ -1,10 +1,6 @@
 ---
 layout: page
-title: Updating Content
----
-
-
-## Updating content in your GUI
+title: Updating Content in your GUI
 ---
 
 Having completed the [hello world](/started/hello) tutorial or other

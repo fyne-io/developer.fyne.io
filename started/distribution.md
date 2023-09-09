@@ -1,12 +1,8 @@
 ---
 layout: page
-title: Distribution	
+title: Distributing to App Stores	
 
 order: 60
----
-
-## Distributing to App Stores
-
 ---
 
 Packaging a graphical app as described in the [Packaging](/started/packaging)

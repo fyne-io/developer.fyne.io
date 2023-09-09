@@ -1,13 +1,9 @@
 ---
 layout: page
-title: Hello World
+title: Creating your first Fyne app
 
 redirect_from:
 - /started/firstapp
----
-
-
-## Create your first Fyne app
 ---
 
 Having completed the steps in the [getting started](/started/) document you're ready to build your first app. To illustrate the process we will build a simple hello world application.

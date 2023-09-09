@@ -6,10 +6,6 @@ redirect-from:
 - /started/packaging-mobile
 ---
 
-## Packaging Mobile Apps
-
----
-
 Your Fyne app code will work out of the box as mobile apps, just as it did for desktop.
 However it is a little more complex to package the code for distribution.
 This page will explore the process to do just that to get your app on iOS and Android.

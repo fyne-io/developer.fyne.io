@@ -1,10 +1,6 @@
 ---
 layout: page
-title: Testing
----
-
-## Testing Graphical Apps
-
+title: Testing Graphical Apps
 ---
 
 Part of a good test suite is being able to quickly write tests and run them on a regular basis.

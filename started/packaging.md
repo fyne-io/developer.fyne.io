@@ -1,12 +1,8 @@
 ---
 layout: page
-title: Packaging
+title: Packaging for Desktop
 
 order: 50
----
-
-## Packaging for Desktop
-
 ---
 
 Packaging a graphical app for distribution can be complex.
