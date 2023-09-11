@@ -47,7 +47,7 @@ func makeDrawList() []drawItem {
 		{"entry", &widget.Entry{PlaceHolder: "Entry", Wrapping: fyne.TextWrapOff}},
 		{"entry-invalid", makeInvalidEntry()},
 		{"entry-valid", &widget.Entry{Validator: func(_ string) error { return nil }, Text: "Valid", Wrapping: fyne.TextWrapOff}},
-		{"fileicon", widget.NewFileIcon(storage.NewFileURI("../images/logo.png"))},
+		{"fileicon", widget.NewFileIcon(storage.NewFileURI("../images/favicon.png"))},
 		{"form", &widget.Form{Items: []*widget.FormItem{
 			{Text: "Username", Widget: widget.NewEntry()},
 			{Text: "Password", Widget: widget.NewPasswordEntry()}},
