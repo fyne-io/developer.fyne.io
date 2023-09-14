@@ -35,3 +35,14 @@ To fix this be sure to set `CGO_ENABLED=1` in your compile command.
 This is normally because the wrong compiler is installed, or the configuration is incorrect.
 If you have followed our [installation instructions](/started/) for MSYS2 and MingW64 then make sure
 you are using the start menu launcher titled "MSYS2 MinGW 64-bit".
+
+## Distribution
+
+**Q: Apple macOS says my app is damaged when it is downloaded**
+
+**A:** When files are downloaded on a macOS computer they are marked with a "quarantine" flag so they are checked by the OS for problems. If your application is signed with a certificate purchased from Apple this is not a problem.
+However if you want to share your software without that cost this error may appear - and on M1/2 computers it is not possible to use the *System Settings* to allow the app to run.
+
+The fix is to remove the quarantine flag, which you can do by opening the *Terminal* and executing the following command:
+
+    xattr MyApp.app
