@@ -45,4 +45,4 @@ However if you want to share your software without that cost this error may appe
 
 The fix is to remove the quarantine flag, which you can do by opening the *Terminal* and executing the following command:
 
-    xattr MyApp.app
+    sudo xattr -r -d com.apple.quarantine MyApp.app
