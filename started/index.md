@@ -148,6 +148,7 @@ The steps for installing with MSYS2 (recommended) are as follows:
 
 * To develop apps for Android you will first need to install the tools for your current computer (Windows, macOS or Linux)
 * Once complete you will need to install the Android SDK and Android NDK - the recommended approach is to install [Android Studio](https://developer.android.com/studio/index.html) and then go to **Tools > SDK Manager** and from **SDK Tools** install the **NDK (Side by side)** package.
+* Alternatively you can download the [Standalone Android NDK](https://github.com/android/ndk/wiki#supported-downloads) which is a more lean approach. Extract the folder and point the `ANDROID_NDK_HOME` environment variable to it.
 
 </div>
 </div>
