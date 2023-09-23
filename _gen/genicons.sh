@@ -12,7 +12,7 @@ function srcFromRes() {
     | sed -e "s/mail/mail-/g" | sed -e "s/media/media-/g" | sed -e "s/fast/fast-/g" | sed -e "s/skip/skip-/g" \
     | sed -e "s/arrow/arrow-/g" | sed -e "s/drop/drop-/g" | sed -e "s/file/file-/" | sed -e "s/folder/folder-/g" \
     | sed -e "s/view/view-/g" | sed -e "s/zoom/zoom-/g" | sed -e "s/visibility/visibility-/g" | sed -e "s/volume/volume-/g" \
-    | sed -e "s/reply/reply_/g" | sed -e "s/-\./\./g" | sed -e "s/_\./\./g"
+    | sed -e "s/broken/broken-/g" | sed -e "s/reply/reply_/g" | sed -e "s/-\./\./g" | sed -e "s/_\./\./g"
 }
 
 function stripDTD() {
@@ -30,8 +30,11 @@ for LINE in $SORTED; do
   IFS='|'; parts=($LINE); unset IFS;
   ICON=${parts[0]}
   RES=${parts[1]}
-  SRC=$(srcFromRes $RES)
+  if [[ -z $RES ]]; then
+	  continue 
+  fi
 
+  SRC=$(srcFromRes $RES)
   echo "<li class=\"icon-item\" data-icon-theme-method=\"${ICON}Icon\" data-icon-safeName=\"IconName${ICON}\" id=\"IconName${ICON}\">" >> $OUT
   echo "<figure>" >> $OUT
   stripDTD "$ROOT/theme/icons/$SRC" >> $OUT
