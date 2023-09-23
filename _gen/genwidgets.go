@@ -30,23 +30,23 @@ var (
 func makeDrawList() []drawItem {
 	prop := canvas.NewRectangle(color.Transparent)
 	prop.SetMinSize(fyne.NewSize(100, 0))
-	se := widget.NewSelectEntry([]string{"1", "2"})
+	se := &widget.SelectEntry{}
+	se.Scroll = container.ScrollNone
+	se.SetOptions([]string{"1", "2"})
 	se.SetPlaceHolder("Select one or type")
-	se.Wrapping = fyne.TextWrapOff
 	return []drawItem{
 		{"accordion", widget.NewAccordion(
 			&widget.AccordionItem{Title: "A", Detail: widget.NewLabel("Hidden")},
-			widget.NewAccordionItem("B", widget.NewLabel("Shown item")),
-			widget.NewAccordionItem("C", widget.NewLabel("2")))},
+			widget.NewAccordionItem("B", widget.NewLabel("Shown item")))},
 		{"apptabs", container.NewAppTabs(
 			container.NewTabItemWithIcon("Tab1", theme.HomeIcon(), widget.NewLabel("                         ")),
 			container.NewTabItemWithIcon("Tab2", theme.MailSendIcon(), widget.NewLabel("                         ")))},
 		{"button", widget.NewButtonWithIcon("Cancel", theme.CancelIcon(), func() {})},
 		{"card", &widget.Card{Title: "Card Title", Subtitle: "Subtitle", Image: canvas.NewImageFromResource(theme.FyneLogo())}},
 		{"check", &widget.Check{Text: "Check", Checked: true}},
-		{"entry", &widget.Entry{PlaceHolder: "Entry", Wrapping: fyne.TextWrapOff}},
+		{"entry", &widget.Entry{PlaceHolder: "Entry", Scroll: container.ScrollNone}},
 		{"entry-invalid", makeInvalidEntry()},
-		{"entry-valid", &widget.Entry{Validator: func(_ string) error { return nil }, Text: "Valid", Wrapping: fyne.TextWrapOff}},
+		{"entry-valid", &widget.Entry{Validator: func(_ string) error { return nil }, Text: "Valid", Scroll: container.ScrollNone}},
 		{"fileicon", widget.NewFileIcon(storage.NewFileURI("../images/favicon.png"))},
 		{"form", &widget.Form{Items: []*widget.FormItem{
 			{Text: "Username", Widget: widget.NewEntry()},
@@ -58,7 +58,7 @@ func makeDrawList() []drawItem {
 		{"list", makeList()},
 		{"table", makeTable()},
 		{"tree", makeTree()},
-		{"password", &widget.Entry{PlaceHolder: "Password", Password: true}},
+		{"password", &widget.Entry{PlaceHolder: "Password", Password: true, Scroll: container.ScrollNone}},
 		{"popupmenu", makePopUpMenu()},
 		{"progress", &widget.ProgressBar{Value: 0.74}},
 		{"progressinf", widget.NewProgressBarInfinite()},
@@ -82,9 +82,8 @@ func makeDrawList() []drawItem {
 }
 
 func makeInvalidEntry() *widget.Entry {
-	e := widget.NewEntry()
+	e := &widget.Entry{Scroll: container.ScrollNone}
 	e.Validator = func(_ string) error { return fmt.Errorf("reason") }
-	e.Wrapping = fyne.TextWrapOff
 	test.Type(e, "Invalid")
 	e.FocusLost()
 	return e
