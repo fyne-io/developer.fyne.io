@@ -51,3 +51,125 @@ func main() {
 	myWindow.ShowAndRun()
 }
 ```
+
+The following code expands on this earlier example. It demonstrates how to enable and customize row and column headers.
+```go
+package main
+
+import (
+	"fmt"
+	"log"
+	"strconv"
+
+	"fyne.io/fyne/v2/app"
+	"fyne.io/fyne/v2/widget"
+	"fyne.io/fyne/v2"
+)
+
+const (
+	rowNum = 100
+	colNum = 5
+)
+
+func main() {
+	a := app.New()
+	w := a.NewWindow("Headed Table")
+	t := widget.NewTableWithHeaders(dataLength, dataCreate, dataUpdate)
+	t.CreateHeader = headerCreate
+	t.UpdateHeader = headerUpdate // Updating headers is mandatory when they have been created
+	t.SetColumnWidth(0, 155)
+	w.SetContent(t)
+	w.CenterOnScreen()
+	w.Resize(fyne.NewSize(1000, 600))
+	w.ShowAndRun()
+}
+
+type ActiveCell struct {
+	widget.Label
+	OnTapped func()
+}
+
+func newActiveCell(label string) *ActiveCell {
+	c := &ActiveCell{}
+	c.ExtendBaseWidget(c)
+	c.Label.SetText(label)
+	return c
+}
+
+func (h *ActiveCell) Tapped(_ *fyne.PointEvent) {
+	if h.OnTapped != nil {
+		h.OnTapped()
+	}
+}
+
+func (h *ActiveCell) TappedSecondary(_ *fyne.PointEvent) {
+}
+
+func dataLength() (int, int) {
+	return rowNum, colNum
+}
+
+func dataCreate() fyne.CanvasObject {
+	return newActiveCell("Cell 000, 000")
+}
+
+func dataUpdate(id widget.TableCellID, o fyne.CanvasObject) {
+	label := o.(*ActiveCell)
+	switch id.Col {
+	case 0:
+		label.SetText("A looooooooonger cell")
+	case 1, 2, 3:
+		label.SetText(fmt.Sprintf("Cell %d, %d", id.Row+1, id.Col+1))
+	case 4:
+		label.SetText(fmt.Sprintf("Tail cell %d", id.Row+1))
+	}
+	label.OnTapped = func() {
+		log.Printf("Cell tapped %d, %d\n", id.Row, id.Col)
+	}
+}
+
+type ActiveHeader struct {
+	widget.Label
+	OnTapped func()
+}
+
+func newActiveHeader(label string) *ActiveHeader {
+	h := &ActiveHeader{}
+	h.ExtendBaseWidget(h)
+	h.SetText(label)
+	return h
+}
+
+func (h *ActiveHeader) Tapped(_ *fyne.PointEvent) {
+	if h.OnTapped != nil {
+		h.OnTapped()
+	}
+}
+
+func (h *ActiveHeader) TappedSecondary(_ *fyne.PointEvent) {
+}
+
+func headerCreate() fyne.CanvasObject {
+	return newActiveHeader("000")
+}
+
+func headerUpdate(id widget.TableCellID, o fyne.CanvasObject) {
+	header := o.(*ActiveHeader)
+	header.TextStyle.Bold = true
+	switch id.Col {
+	case -1:
+		header.SetText(strconv.Itoa(id.Row + 1))
+	case 0:
+		header.SetText("A longer header")
+	case 1, 2, 3:
+		header.SetText(fmt.Sprintf("Header %d", id.Col+1))
+	case 4:
+		header.SetText("Nonsortable")
+	}
+
+	header.OnTapped = func() {
+		log.Printf("Header %d tapped\n", id.Col)
+	}
+}
+
+```
