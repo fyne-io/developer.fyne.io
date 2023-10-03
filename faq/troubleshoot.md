@@ -9,7 +9,7 @@ Some things can not go as expected during setup or in compiling your first app. 
 Remember you can also check your configuration using the
 [Fyne Setup](https://geoffrey-artefacts.fynelabs.com/github/andydotxyz/fyne-io/setup/latest/) tool.
 
-## Move and Resize
+## Compiler Issues
 
 **Q: command not found: fyne**
 
