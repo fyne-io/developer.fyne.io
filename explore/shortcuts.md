@@ -31,6 +31,8 @@ Notice that this shortcut can be re-used so you could attach it to menus or othe
 
 As you can see there are two parts to registering a shortcut in this way - passing the shortcut definition and also a callback function. If the user types the keyboard shortcut then the function will be called and the output printed.
 
+Shortcuts only work in combination with modifier keys. In order to react to keyboard input without modifiers use `canvas.OnTypedRune` or `canvas.OnTypedKey`.
+
 ## Adding shortcuts to an Entry
 
 It can also be helpful to have a shortcut apply only when the current item is focused. This approach can be used for any focusable widget, and is managed by extending that widget and adding a `TypedShortcut` handler. This is much like adding key handlers, except the value passed in will be a `fyne.Shortcut`.
