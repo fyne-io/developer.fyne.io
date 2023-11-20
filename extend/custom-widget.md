@@ -109,3 +109,28 @@ Take care not to keep any important state in your renderer - animation tickers
 are well suited to that location but user state would not be. A widget that is
 hidden may have it's renderer destroyed and if it is shown again the new renderer
 must be able to reflect the same widget state.
+
+#### Using SimpleRenderer for custom widgets
+
+The following pattern can used to wrap existing widgets using the
+`SimpleRenderer`. This allows for example to put a container in a custom widget
+and change the content dynamically, and many more things are possible following
+this approach.
+
+```go
+type MyCustomWidget struct
+    widget.BaseWidget
+    // all your widget's state, including its sub-widgets
+}
+
+func NewMyCustomWidget() *MyCustomWidget {
+    w := &MyCustomWidget{ /* init if needed*/ }
+    w.ExtendBaseWidget(w)
+    return w
+}
+
+func (w *MyCustomWidget) CreateRenderer() fyne.WidgetRenderer {
+    c := container.NewWhatever(...) // do your layout here
+    return widget.NewSimpleRenderer(c)
+}
+```
