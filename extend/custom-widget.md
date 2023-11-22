@@ -117,20 +117,32 @@ The following pattern can used to wrap existing widgets using the
 and change the content dynamically, and many more things are possible following
 this approach.
 
+Below example is a custom widget that can be used as item in a list view,
+showing a title on the left hand side that will be truncated when too long, and
+a comment on the right hand side. The constructor would be called from the
+`CreateItem` function of the list, and the title and comment changed in the
+`UpdateItem` function:
+
 ```go
-type MyCustomWidget struct
-    widget.BaseWidget
-    // all your widget's state, including its sub-widgets
+type MyListItemWidget struct {
+	widget.BaseWidget
+	Title   *widget.Label
+	Comment *widget.Label
 }
 
-func NewMyCustomWidget() *MyCustomWidget {
-    w := &MyCustomWidget{ /* init if needed*/ }
-    w.ExtendBaseWidget(w)
-    return w
+func NewMyListItemWidget(title, comment string) *MyListItemWidget {
+	item := &MyListItemWidget{
+		Title:   widget.NewLabel(title),
+		Comment: widget.NewLabel(comment),
+	}
+	item.Title.Truncation = fyne.TextTruncateEllipsis
+	item.ExtendBaseWidget(item)
+
+	return item
 }
 
-func (w *MyCustomWidget) CreateRenderer() fyne.WidgetRenderer {
-    c := container.NewWhatever(...) // do your layout here
-    return widget.NewSimpleRenderer(c)
+func (item *MyListItemWidget) CreateRenderer() fyne.WidgetRenderer {
+	c := container.NewBorder(nil, nil, nil, item.Comment, item.Title)
+	return widget.NewSimpleRenderer(c)
 }
 ```
