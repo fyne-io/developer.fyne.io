@@ -112,7 +112,7 @@ must be able to reflect the same widget state.
 
 #### Using SimpleRenderer for custom widgets
 
-Custom widgets built from a single `CanvasObject`, for example a container wrapping,
+Custom widgets built from a single `CanvasObject`, for example a container wrapping
 multiple builtin widgets, can be implemented using `SimpleRenderer`.
 Below example is a custom widget that can be used as item in a list view,
 showing a title on the left hand side that will be truncated when too long, and
