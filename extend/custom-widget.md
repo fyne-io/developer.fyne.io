@@ -109,3 +109,37 @@ Take care not to keep any important state in your renderer - animation tickers
 are well suited to that location but user state would not be. A widget that is
 hidden may have it's renderer destroyed and if it is shown again the new renderer
 must be able to reflect the same widget state.
+
+#### Using SimpleRenderer for custom widgets
+
+Custom widgets built from a single `CanvasObject`, for example a container wrapping
+multiple builtin widgets, can be implemented using `SimpleRenderer`.
+Below example is a custom widget that can be used as item in a list view,
+showing a title on the left hand side that will be truncated when too long, and
+a comment on the right hand side. The constructor would be called from the
+`CreateItem` function of the list, and the title and comment changed in the
+`UpdateItem` function:
+
+```go
+type MyListItemWidget struct {
+	widget.BaseWidget
+	Title   *widget.Label
+	Comment *widget.Label
+}
+
+func NewMyListItemWidget(title, comment string) *MyListItemWidget {
+	item := &MyListItemWidget{
+		Title:   widget.NewLabel(title),
+		Comment: widget.NewLabel(comment),
+	}
+	item.Title.Truncation = fyne.TextTruncateEllipsis
+	item.ExtendBaseWidget(item)
+
+	return item
+}
+
+func (item *MyListItemWidget) CreateRenderer() fyne.WidgetRenderer {
+	c := container.NewBorder(nil, nil, nil, item.Comment, item.Title)
+	return widget.NewSimpleRenderer(c)
+}
+```
