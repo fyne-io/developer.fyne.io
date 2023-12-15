@@ -23,7 +23,7 @@ fyne serve
 You will see, after a few moments, that a web server has been started on port :8080.
 Just open your web browser to https://localhost:8080 and you can use your app!
 
-The tools used in this process rae very sensitive to Go versions being used, so it is possible there will be an error relating to a mis-matched version.
+The tools used in this process are very sensitive to Go versions being used, so it is possible there will be an error relating to a mis-matched version.
 If you are using Go more recent than 1.18 you should ensure you have a copy of the 1.18 release
 and reference it in your environment, such as (for a [homebrew](https://brew.sh) based install):
 

@@ -37,5 +37,5 @@ func main() {
 }
 ```
 
-Other `fyne.CanvaObject` types have more configuration, let us look
+Other `fyne.CanvasObject` types have more configuration, let us look
 [next](text) at `canvas.Text`.
