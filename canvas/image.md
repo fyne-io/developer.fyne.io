@@ -47,5 +47,5 @@ Images can be bitmap based (like PNG and JPEG) or vector based
 continue to render well as sizes change.
 Be careful when using original image sizes as they may not
 behave exactly as expected with different user interface scales.
-As Fyne allows the entire user interface to scale a 25px image file
+As Fyne allows the entire user interface to scale, a 25px image file
 may not be the same height as a 25 height fyne object.
