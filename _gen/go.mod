@@ -1,4 +1,4 @@
-module github.com/fyne-io/developer.fyne.io/gen
+module github.com/fyne-io/docs.fyne.io/gen
 
 go 1.17
 

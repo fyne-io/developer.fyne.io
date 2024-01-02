@@ -1,6 +1,6 @@
-# developer.fyne.io Website
+# docs.fyne.io Website
 
-This repository contains the source of the https://developer.fyne.io website.
+This repository contains the source of the https://docs.fyne.io website.
 
 ## Running the website locally
 
