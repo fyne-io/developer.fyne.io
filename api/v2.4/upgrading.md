@@ -26,7 +26,7 @@ You should update the `fyne` tool for v2.4.0 to get some of the new features and
 You can make the upgrade by using the `go get` command similarly to above:
 
 ```bash
-go install -u fyne.io/fyne/v2/cmd/fyne@v2.4.0
+go install fyne.io/fyne/v2/cmd/fyne@v2.4.0
 ```
 
 After that completes, check you have the new version installed by running `fyne version`.
