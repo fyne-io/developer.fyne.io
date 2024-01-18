@@ -1,6 +1,6 @@
 ---
 redirect_to:
-  - https://docs.fyne.io/api/v1.3/shortcutable.md
+  - https://docs.fyne.io/api/v1.3/shortcutable
 
 layout: page
 tags: [api]

@@ -1,6 +1,6 @@
 ---
 redirect_to:
-  - https://docs.fyne.io/api/v2.1/themesizename.md
+  - https://docs.fyne.io/api/v2.1/themesizename
 
 layout: page
 tags: [api]

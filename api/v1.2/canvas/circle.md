@@ -1,6 +1,6 @@
 ---
 redirect_to:
-  - https://docs.fyne.io/api/v1.2/canvas/circle.md
+  - https://docs.fyne.io/api/v1.2/canvas/circle
 
 layout: page
 tags: [api]

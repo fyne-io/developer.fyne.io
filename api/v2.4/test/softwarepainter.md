@@ -1,6 +1,6 @@
 ---
 redirect_to:
-  - https://docs.fyne.io/_gen/api.md
+  - https://docs.fyne.io/api/v2.4/test/softwarepainter
 
 layout: page
 tags: [api]
@@ -9,6 +9,7 @@ package: fyne.io/fyne/v2/test
 ---
 # test.SoftwarePainter
 ---
+
 ```go
 import "fyne.io/fyne/v2/test"
 ```

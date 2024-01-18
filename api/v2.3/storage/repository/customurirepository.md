@@ -1,6 +1,6 @@
 ---
 redirect_to:
-  - https://docs.fyne.io/api/v2.3/storage/repository/customurirepository.md
+  - https://docs.fyne.io/api/v2.3/storage/repository/customurirepository
 
 layout: page
 tags: [api]

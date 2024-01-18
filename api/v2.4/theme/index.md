@@ -1,6 +1,6 @@
 ---
 redirect_to:
-  - https://docs.fyne.io/_gen/api.md
+  - https://docs.fyne.io/api/v2.4/theme/
 
 layout: page
 tags: [api]
@@ -9,6 +9,7 @@ package: fyne.io/fyne/v2/theme
 ---
 # theme
 ---
+
 ```go
 import "fyne.io/fyne/v2/theme"
 ```
@@ -699,12 +700,12 @@ const (
 
 ```go
 const (
-	// VariantDark is the version of a theme that satisfies a user preference for a dark look.
+	// VariantDark is the version of a theme that satisfies a user preference for a light look.
 	//
 	// Since: 2.0
 	VariantDark fyne.ThemeVariant = 0
 
-	// VariantLight is the version of a theme that satisfies a user preference for a light look.
+	// VariantLight is the version of a theme that satisfies a user preference for a dark look.
 	//
 	// Since: 2.0
 	VariantLight fyne.ThemeVariant = 1

@@ -1,6 +1,6 @@
 ---
 redirect_to:
-  - https://docs.fyne.io/api/v2.3/container/split.md
+  - https://docs.fyne.io/api/v2.3/container/split
 
 layout: page
 tags: [api]

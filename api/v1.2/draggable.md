@@ -1,6 +1,6 @@
 ---
 redirect_to:
-  - https://docs.fyne.io/api/v1.2/draggable.md
+  - https://docs.fyne.io/api/v1.2/draggable
 
 layout: page
 tags: [api]

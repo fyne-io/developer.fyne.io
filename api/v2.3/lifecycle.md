@@ -1,6 +1,6 @@
 ---
 redirect_to:
-  - https://docs.fyne.io/api/v2.3/lifecycle.md
+  - https://docs.fyne.io/api/v2.3/lifecycle
 
 layout: page
 tags: [api]

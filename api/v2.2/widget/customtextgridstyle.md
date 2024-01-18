@@ -1,6 +1,6 @@
 ---
 redirect_to:
-  - https://docs.fyne.io/api/v2.2/widget/customtextgridstyle.md
+  - https://docs.fyne.io/api/v2.2/widget/customtextgridstyle
 
 layout: page
 tags: [api]

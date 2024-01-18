@@ -1,6 +1,6 @@
 ---
 redirect_to:
-  - https://docs.fyne.io/api/v2.0/tappable.md
+  - https://docs.fyne.io/api/v2.0/tappable
 
 layout: page
 tags: [api]

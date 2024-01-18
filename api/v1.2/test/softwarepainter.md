@@ -1,6 +1,6 @@
 ---
 redirect_to:
-  - https://docs.fyne.io/api/v1.2/test/softwarepainter.md
+  - https://docs.fyne.io/api/v1.2/test/softwarepainter
 
 layout: page
 tags: [api]

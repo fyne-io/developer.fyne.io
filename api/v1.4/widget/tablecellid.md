@@ -1,6 +1,6 @@
 ---
 redirect_to:
-  - https://docs.fyne.io/api/v1.4/widget/tablecellid.md
+  - https://docs.fyne.io/api/v1.4/widget/tablecellid
 
 layout: page
 tags: [api]

@@ -1,6 +1,6 @@
 ---
 redirect_to:
-  - https://docs.fyne.io/api/v1.4/tools/playground/index.md
+  - https://docs.fyne.io/api/v1.4/tools/playground/
 
 layout: page
 tags: [api]

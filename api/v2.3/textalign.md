@@ -1,6 +1,6 @@
 ---
 redirect_to:
-  - https://docs.fyne.io/api/v2.3/textalign.md
+  - https://docs.fyne.io/api/v2.3/textalign
 
 layout: page
 tags: [api]

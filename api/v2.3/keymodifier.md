@@ -1,6 +1,6 @@
 ---
 redirect_to:
-  - https://docs.fyne.io/api/v2.3/keymodifier.md
+  - https://docs.fyne.io/api/v2.3/keymodifier
 
 layout: page
 tags: [api]

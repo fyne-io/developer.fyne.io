@@ -1,6 +1,6 @@
 ---
 redirect_to:
-  - https://docs.fyne.io/api/v2.0/driver/desktop/customshortcut.md
+  - https://docs.fyne.io/api/v2.0/driver/desktop/customshortcut
 
 layout: page
 tags: [api]

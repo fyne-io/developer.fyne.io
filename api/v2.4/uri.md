@@ -1,6 +1,6 @@
 ---
 redirect_to:
-  - https://docs.fyne.io/_gen/api.md
+  - https://docs.fyne.io/api/v2.4/uri
 
 layout: page
 tags: [api]
@@ -9,6 +9,7 @@ package: fyne.io/fyne/v2
 ---
 # fyne.URI
 ---
+
 ```go
 import "fyne.io/fyne/v2"
 ```
@@ -22,9 +23,9 @@ type URI interface {
 	fmt.Stringer
 
 	// Extension should return the file extension of the resource
-	// (including the dot) referenced by the URI. For example, the
-	// Extension() of 'file://foo/bar.baz' is '.baz'. May return an
-	// empty string if the referenced resource has none.
+	// referenced by the URI. For example, the Extension() of
+	// 'file://foo/bar.baz' is 'baz'. May return an empty string if the
+	// referenced resource has none.
 	Extension() string
 
 	// Name should return the base name of the item referenced by the URI.

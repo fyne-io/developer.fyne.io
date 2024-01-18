@@ -1,6 +1,6 @@
 ---
 redirect_to:
-  - https://docs.fyne.io/api/v2.2/device.md
+  - https://docs.fyne.io/api/v2.2/device
 
 layout: page
 tags: [api]

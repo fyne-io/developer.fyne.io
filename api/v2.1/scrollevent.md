@@ -1,6 +1,6 @@
 ---
 redirect_to:
-  - https://docs.fyne.io/api/v2.1/scrollevent.md
+  - https://docs.fyne.io/api/v2.1/scrollevent
 
 layout: page
 tags: [api]

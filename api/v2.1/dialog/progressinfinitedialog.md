@@ -1,6 +1,6 @@
 ---
 redirect_to:
-  - https://docs.fyne.io/api/v2.1/dialog/progressinfinitedialog.md
+  - https://docs.fyne.io/api/v2.1/dialog/progressinfinitedialog
 
 layout: page
 tags: [api]

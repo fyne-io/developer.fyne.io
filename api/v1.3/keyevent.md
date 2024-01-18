@@ -1,6 +1,6 @@
 ---
 redirect_to:
-  - https://docs.fyne.io/api/v1.3/keyevent.md
+  - https://docs.fyne.io/api/v1.3/keyevent
 
 layout: page
 tags: [api]

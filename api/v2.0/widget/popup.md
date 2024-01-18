@@ -1,6 +1,6 @@
 ---
 redirect_to:
-  - https://docs.fyne.io/api/v2.0/widget/popup.md
+  - https://docs.fyne.io/api/v2.0/widget/popup
 
 layout: page
 tags: [api]

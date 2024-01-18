@@ -1,6 +1,6 @@
 ---
 redirect_to:
-  - https://docs.fyne.io/api/v2.0/widget/textgridcell.md
+  - https://docs.fyne.io/api/v2.0/widget/textgridcell
 
 layout: page
 tags: [api]

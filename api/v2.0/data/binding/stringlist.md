@@ -1,6 +1,6 @@
 ---
 redirect_to:
-  - https://docs.fyne.io/api/v2.0/data/binding/stringlist.md
+  - https://docs.fyne.io/api/v2.0/data/binding/stringlist
 
 layout: page
 tags: [api]

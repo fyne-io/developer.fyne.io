@@ -1,6 +1,6 @@
 ---
 redirect_to:
-  - https://docs.fyne.io/api/v2.3/data/binding/intlist.md
+  - https://docs.fyne.io/api/v2.3/data/binding/intlist
 
 layout: page
 tags: [api]

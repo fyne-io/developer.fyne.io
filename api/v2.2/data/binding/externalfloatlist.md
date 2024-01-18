@@ -1,6 +1,6 @@
 ---
 redirect_to:
-  - https://docs.fyne.io/api/v2.2/data/binding/externalfloatlist.md
+  - https://docs.fyne.io/api/v2.2/data/binding/externalfloatlist
 
 layout: page
 tags: [api]

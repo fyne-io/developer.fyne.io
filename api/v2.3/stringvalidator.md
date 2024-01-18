@@ -1,6 +1,6 @@
 ---
 redirect_to:
-  - https://docs.fyne.io/api/v2.3/stringvalidator.md
+  - https://docs.fyne.io/api/v2.3/stringvalidator
 
 layout: page
 tags: [api]

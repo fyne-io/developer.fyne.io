@@ -1,6 +1,6 @@
 ---
 redirect_to:
-  - https://docs.fyne.io/api/v2.3/widget/richtextstyle.md
+  - https://docs.fyne.io/api/v2.3/widget/richtextstyle
 
 layout: page
 tags: [api]

@@ -1,6 +1,6 @@
 ---
 redirect_to:
-  - https://docs.fyne.io/api/v2.1/storage/repository/hierarchicalrepository.md
+  - https://docs.fyne.io/api/v2.1/storage/repository/hierarchicalrepository
 
 layout: page
 tags: [api]

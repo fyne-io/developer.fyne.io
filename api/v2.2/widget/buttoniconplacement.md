@@ -1,6 +1,6 @@
 ---
 redirect_to:
-  - https://docs.fyne.io/api/v2.2/widget/buttoniconplacement.md
+  - https://docs.fyne.io/api/v2.2/widget/buttoniconplacement
 
 layout: page
 tags: [api]

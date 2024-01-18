@@ -1,6 +1,6 @@
 ---
 redirect_to:
-  - https://docs.fyne.io/api/v2.3/cloudproviderpreferences.md
+  - https://docs.fyne.io/api/v2.3/cloudproviderpreferences
 
 layout: page
 tags: [api]

@@ -1,6 +1,6 @@
 ---
 redirect_to:
-  - https://docs.fyne.io/api/v1.4/widget/radio.md
+  - https://docs.fyne.io/api/v1.4/widget/radio
 
 layout: page
 tags: [api]

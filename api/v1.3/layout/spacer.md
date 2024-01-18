@@ -1,6 +1,6 @@
 ---
 redirect_to:
-  - https://docs.fyne.io/api/v1.3/layout/spacer.md
+  - https://docs.fyne.io/api/v1.3/layout/spacer
 
 layout: page
 tags: [api]

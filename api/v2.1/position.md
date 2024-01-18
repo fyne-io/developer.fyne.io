@@ -1,6 +1,6 @@
 ---
 redirect_to:
-  - https://docs.fyne.io/api/v2.1/position.md
+  - https://docs.fyne.io/api/v2.1/position
 
 layout: page
 tags: [api]

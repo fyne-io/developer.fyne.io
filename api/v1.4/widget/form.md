@@ -1,6 +1,6 @@
 ---
 redirect_to:
-  - https://docs.fyne.io/api/v1.4/widget/form.md
+  - https://docs.fyne.io/api/v1.4/widget/form
 
 layout: page
 tags: [api]

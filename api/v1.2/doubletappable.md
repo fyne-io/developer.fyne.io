@@ -1,6 +1,6 @@
 ---
 redirect_to:
-  - https://docs.fyne.io/api/v1.2/doubletappable.md
+  - https://docs.fyne.io/api/v1.2/doubletappable
 
 layout: page
 tags: [api]

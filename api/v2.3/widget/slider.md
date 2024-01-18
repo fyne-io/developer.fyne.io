@@ -1,6 +1,6 @@
 ---
 redirect_to:
-  - https://docs.fyne.io/api/v2.3/widget/slider.md
+  - https://docs.fyne.io/api/v2.3/widget/slider
 
 layout: page
 tags: [api]

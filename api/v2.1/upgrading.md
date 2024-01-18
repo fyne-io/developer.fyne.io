@@ -1,6 +1,6 @@
 ---
 redirect_to:
-  - https://docs.fyne.io/api/v2.1/upgrading.md
+  - https://docs.fyne.io/api/v2.1/upgrading
 
 layout: page
 tags: [api]

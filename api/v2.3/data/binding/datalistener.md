@@ -1,6 +1,6 @@
 ---
 redirect_to:
-  - https://docs.fyne.io/api/v2.3/data/binding/datalistener.md
+  - https://docs.fyne.io/api/v2.3/data/binding/datalistener
 
 layout: page
 tags: [api]

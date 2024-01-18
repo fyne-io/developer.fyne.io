@@ -1,6 +1,6 @@
 ---
 redirect_to:
-  - https://docs.fyne.io/api/v1.2/pointevent.md
+  - https://docs.fyne.io/api/v1.2/pointevent
 
 layout: page
 tags: [api]

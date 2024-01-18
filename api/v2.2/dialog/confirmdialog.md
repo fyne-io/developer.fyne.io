@@ -1,6 +1,6 @@
 ---
 redirect_to:
-  - https://docs.fyne.io/api/v2.2/dialog/confirmdialog.md
+  - https://docs.fyne.io/api/v2.2/dialog/confiialog
 
 layout: page
 tags: [api]

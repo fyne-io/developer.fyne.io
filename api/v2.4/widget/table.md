@@ -1,6 +1,6 @@
 ---
 redirect_to:
-  - https://docs.fyne.io/_gen/api.md
+  - https://docs.fyne.io/api/v2.4/widget/table
 
 layout: page
 tags: [api]
@@ -9,6 +9,7 @@ package: fyne.io/fyne/v2/widget
 ---
 # widget.Table
 ---
+
 ```go
 import "fyne.io/fyne/v2/widget"
 ```
@@ -21,7 +22,7 @@ import "fyne.io/fyne/v2/widget"
 type Table struct {
 	BaseWidget
 
-	Length       func() (rows int, cols int)                      `json:"-"`
+	Length       func() (int, int)                                `json:"-"`
 	CreateCell   func() fyne.CanvasObject                         `json:"-"`
 	UpdateCell   func(id TableCellID, template fyne.CanvasObject) `json:"-"`
 	OnSelected   func(id TableCellID)                             `json:"-"`
@@ -74,7 +75,7 @@ Table widget is a grid of items that can be scrolled and a cell selected. Its pe
 #### func  NewTable
 
 ```go
-func NewTable(length func() (rows int, cols int), create func() fyne.CanvasObject, update func(TableCellID, fyne.CanvasObject)) *Table
+func NewTable(length func() (int, int), create func() fyne.CanvasObject, update func(TableCellID, fyne.CanvasObject)) *Table
 ```
 NewTable returns a new performant table widget defined by the passed functions. The first returns the data size in rows and columns, second parameter is a function that returns cell template objects that can be cached and the third is used to apply data at specified data location to the passed template CanvasObject.
 
@@ -85,7 +86,7 @@ NewTable returns a new performant table widget defined by the passed functions. 
 #### func  NewTableWithHeaders
 
 ```go
-func NewTableWithHeaders(length func() (rows int, cols int), create func() fyne.CanvasObject, update func(TableCellID, fyne.CanvasObject)) *Table
+func NewTableWithHeaders(length func() (int, int), create func() fyne.CanvasObject, update func(TableCellID, fyne.CanvasObject)) *Table
 ```
 NewTableWithHeaders returns a new performant table widget defined by the passed functions including sticky headers. The first returns the data size in rows and columns, second parameter is a function that returns cell template objects that can be cached and the third is used to apply data at specified data location to the passed template CanvasObject. The row and column headers will stick to the leading and top edges of the table and contain "1-10" and "A-Z" formatted labels.
 

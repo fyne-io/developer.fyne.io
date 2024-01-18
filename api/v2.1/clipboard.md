@@ -1,6 +1,6 @@
 ---
 redirect_to:
-  - https://docs.fyne.io/api/v2.1/clipboard.md
+  - https://docs.fyne.io/api/v2.1/clipboard
 
 layout: page
 tags: [api]

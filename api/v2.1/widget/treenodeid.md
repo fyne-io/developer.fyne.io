@@ -1,6 +1,6 @@
 ---
 redirect_to:
-  - https://docs.fyne.io/api/v2.1/widget/treenodeid.md
+  - https://docs.fyne.io/api/v2.1/widget/treenodeid
 
 layout: page
 tags: [api]

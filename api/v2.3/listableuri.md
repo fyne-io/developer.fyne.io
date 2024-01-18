@@ -1,6 +1,6 @@
 ---
 redirect_to:
-  - https://docs.fyne.io/api/v2.3/listableuri.md
+  - https://docs.fyne.io/api/v2.3/listableuri
 
 layout: page
 tags: [api]

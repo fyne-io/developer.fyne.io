@@ -1,6 +1,6 @@
 ---
 redirect_to:
-  - https://docs.fyne.io/api/v2.1/driver/mobile/keyboardtype.md
+  - https://docs.fyne.io/api/v2.1/driver/mobile/keyboardtype
 
 layout: page
 tags: [api]

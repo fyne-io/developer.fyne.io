@@ -1,6 +1,6 @@
 ---
 redirect_to:
-  - https://docs.fyne.io/api/v1.3/canvas/raster.md
+  - https://docs.fyne.io/api/v1.3/canvas/raster
 
 layout: page
 tags: [api]

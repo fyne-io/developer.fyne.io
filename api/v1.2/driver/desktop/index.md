@@ -1,6 +1,6 @@
 ---
 redirect_to:
-  - https://docs.fyne.io/api/v1.2/driver/desktop/index.md
+  - https://docs.fyne.io/api/v1.2/driver/desktop/
 
 layout: page
 tags: [api]

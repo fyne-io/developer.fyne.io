@@ -1,6 +1,6 @@
 ---
 redirect_to:
-  - https://docs.fyne.io/api/v2.3/widget/select.md
+  - https://docs.fyne.io/api/v2.3/widget/select
 
 layout: page
 tags: [api]

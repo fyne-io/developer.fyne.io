@@ -1,6 +1,6 @@
 ---
 redirect_to:
-  - https://docs.fyne.io/api/v2.2/data/binding/externalbool.md
+  - https://docs.fyne.io/api/v2.2/data/binding/externalbool
 
 layout: page
 tags: [api]

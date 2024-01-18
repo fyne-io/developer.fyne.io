@@ -1,6 +1,6 @@
 ---
 redirect_to:
-  - https://docs.fyne.io/api/v1.2/widget/tabitem.md
+  - https://docs.fyne.io/api/v1.2/widget/tabitem
 
 layout: page
 tags: [api]

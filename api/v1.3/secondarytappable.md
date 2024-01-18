@@ -1,6 +1,6 @@
 ---
 redirect_to:
-  - https://docs.fyne.io/api/v1.3/secondarytappable.md
+  - https://docs.fyne.io/api/v1.3/secondarytappable
 
 layout: page
 tags: [api]

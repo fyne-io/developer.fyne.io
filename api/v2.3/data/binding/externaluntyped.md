@@ -1,6 +1,6 @@
 ---
 redirect_to:
-  - https://docs.fyne.io/api/v2.3/data/binding/externaluntyped.md
+  - https://docs.fyne.io/api/v2.3/data/binding/externaluntyped
 
 layout: page
 tags: [api]

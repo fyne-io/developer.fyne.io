@@ -1,6 +1,6 @@
 ---
 redirect_to:
-  - https://docs.fyne.io/api/v2.0/canvas/lineargradient.md
+  - https://docs.fyne.io/api/v2.0/canvas/lineargradient
 
 layout: page
 tags: [api]

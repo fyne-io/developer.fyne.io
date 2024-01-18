@@ -1,6 +1,6 @@
 ---
 redirect_to:
-  - https://docs.fyne.io/api/v2.2/widget/textgridrow.md
+  - https://docs.fyne.io/api/v2.2/widget/textgridrow
 
 layout: page
 tags: [api]

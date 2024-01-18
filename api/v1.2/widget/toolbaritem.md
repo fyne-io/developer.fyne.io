@@ -1,6 +1,6 @@
 ---
 redirect_to:
-  - https://docs.fyne.io/api/v1.2/widget/toolbaritem.md
+  - https://docs.fyne.io/api/v1.2/widget/toolbaritem
 
 layout: page
 tags: [api]

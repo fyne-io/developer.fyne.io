@@ -1,6 +1,6 @@
 ---
 redirect_to:
-  - https://docs.fyne.io/api/v2.1/widget/separator.md
+  - https://docs.fyne.io/api/v2.1/widget/separator
 
 layout: page
 tags: [api]

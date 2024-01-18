@@ -1,6 +1,6 @@
 ---
 redirect_to:
-  - https://docs.fyne.io/api/v2.3/animationcurve.md
+  - https://docs.fyne.io/api/v2.3/animationcurve
 
 layout: page
 tags: [api]

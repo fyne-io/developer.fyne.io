@@ -1,6 +1,6 @@
 ---
 redirect_to:
-  - https://docs.fyne.io/api/v2.3/data/validation/index.md
+  - https://docs.fyne.io/api/v2.3/data/validation/
 
 layout: page
 tags: [api]

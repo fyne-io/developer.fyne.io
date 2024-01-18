@@ -1,6 +1,6 @@
 ---
 redirect_to:
-  - https://docs.fyne.io/api/v2.0/data/binding/rune.md
+  - https://docs.fyne.io/api/v2.0/data/binding/rune
 
 layout: page
 tags: [api]

@@ -1,6 +1,6 @@
 ---
 redirect_to:
-  - https://docs.fyne.io/api/v1.2/driver/mobile/touchable.md
+  - https://docs.fyne.io/api/v1.2/driver/mobile/touchable
 
 layout: page
 tags: [api]

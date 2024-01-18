@@ -1,6 +1,6 @@
 ---
 redirect_to:
-  - https://docs.fyne.io/api/v2.3/driver/desktop/cursor.md
+  - https://docs.fyne.io/api/v2.3/driver/desktop/cursor
 
 layout: page
 tags: [api]

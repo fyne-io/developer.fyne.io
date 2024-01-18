@@ -1,6 +1,6 @@
 ---
 redirect_to:
-  - https://docs.fyne.io/api/v2.3/driver/androidcontext.md
+  - https://docs.fyne.io/api/v2.3/driver/androidcontext
 
 layout: page
 tags: [api]

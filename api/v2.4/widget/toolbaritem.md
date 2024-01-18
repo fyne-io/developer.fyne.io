@@ -1,6 +1,6 @@
 ---
 redirect_to:
-  - https://docs.fyne.io/_gen/api.md
+  - https://docs.fyne.io/api/v2.4/widget/toolbaritem
 
 layout: page
 tags: [api]
@@ -9,6 +9,7 @@ package: fyne.io/fyne/v2/widget
 ---
 # widget.ToolbarItem
 ---
+
 ```go
 import "fyne.io/fyne/v2/widget"
 ```

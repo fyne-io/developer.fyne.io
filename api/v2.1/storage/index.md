@@ -1,6 +1,6 @@
 ---
 redirect_to:
-  - https://docs.fyne.io/api/v2.1/storage/index.md
+  - https://docs.fyne.io/api/v2.1/storage/
 
 layout: page
 tags: [api]

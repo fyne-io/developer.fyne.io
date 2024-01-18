@@ -14,7 +14,7 @@ function redirect() {
   cat <<EOT >  "$1"
 ---
 permalink: /api/$2
-redirect_to: /api/$VERSION/$2
+redirect_to: https://docs.fyne.io/api/$VERSION/$2
 ---
 EOT
 }

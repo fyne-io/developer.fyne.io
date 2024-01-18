@@ -1,6 +1,6 @@
 ---
 redirect_to:
-  - https://docs.fyne.io/api/v2.0/shortcutpaste.md
+  - https://docs.fyne.io/api/v2.0/shortcutpaste
 
 layout: page
 tags: [api]

@@ -1,6 +1,6 @@
 ---
 redirect_to:
-  - https://docs.fyne.io/api/v1.4/disableable.md
+  - https://docs.fyne.io/api/v1.4/disableable
 
 layout: page
 tags: [api]

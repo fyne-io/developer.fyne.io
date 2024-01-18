@@ -1,6 +1,6 @@
 ---
 redirect_to:
-  - https://docs.fyne.io/api/v2.3/data/binding/untypedlist.md
+  - https://docs.fyne.io/api/v2.3/data/binding/untypedlist
 
 layout: page
 tags: [api]

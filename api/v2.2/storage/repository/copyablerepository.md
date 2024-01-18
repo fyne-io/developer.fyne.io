@@ -1,6 +1,6 @@
 ---
 redirect_to:
-  - https://docs.fyne.io/api/v2.2/storage/repository/copyablerepository.md
+  - https://docs.fyne.io/api/v2.2/storage/repository/copyablerepository
 
 layout: page
 tags: [api]

@@ -1,6 +1,6 @@
 ---
 redirect_to:
-  - https://docs.fyne.io/api/v2.2/notification.md
+  - https://docs.fyne.io/api/v2.2/notification
 
 layout: page
 tags: [api]

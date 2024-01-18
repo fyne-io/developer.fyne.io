@@ -1,6 +1,6 @@
 ---
 redirect_to:
-  - https://docs.fyne.io/api/v2.3/widget/listsegment.md
+  - https://docs.fyne.io/api/v2.3/widget/listsegment
 
 layout: page
 tags: [api]

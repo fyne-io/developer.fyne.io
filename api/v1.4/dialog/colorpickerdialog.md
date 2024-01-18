@@ -1,6 +1,6 @@
 ---
 redirect_to:
-  - https://docs.fyne.io/api/v1.4/dialog/colorpickerdialog.md
+  - https://docs.fyne.io/api/v1.4/dialog/colorpickerdialog
 
 layout: page
 tags: [api]

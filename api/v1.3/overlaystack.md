@@ -1,6 +1,6 @@
 ---
 redirect_to:
-  - https://docs.fyne.io/api/v1.3/overlaystack.md
+  - https://docs.fyne.io/api/v1.3/overlaystack
 
 layout: page
 tags: [api]

@@ -1,6 +1,6 @@
 ---
 redirect_to:
-  - https://docs.fyne.io/api/v2.0/widgetrenderer.md
+  - https://docs.fyne.io/api/v2.0/widgetrenderer
 
 layout: page
 tags: [api]

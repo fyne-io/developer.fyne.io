@@ -1,6 +1,6 @@
 ---
 redirect_to:
-  - https://docs.fyne.io/api/v1.4/canvas/rectangle.md
+  - https://docs.fyne.io/api/v1.4/canvas/rectangle
 
 layout: page
 tags: [api]

@@ -1,6 +1,6 @@
 ---
 redirect_to:
-  - https://docs.fyne.io/api/v2.0/widget/tree.md
+  - https://docs.fyne.io/api/v2.0/widget/tree
 
 layout: page
 tags: [api]

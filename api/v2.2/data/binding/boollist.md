@@ -1,6 +1,6 @@
 ---
 redirect_to:
-  - https://docs.fyne.io/api/v2.2/data/binding/boollist.md
+  - https://docs.fyne.io/api/v2.2/data/binding/boollist
 
 layout: page
 tags: [api]

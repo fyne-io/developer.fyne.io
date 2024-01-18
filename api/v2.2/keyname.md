@@ -1,6 +1,6 @@
 ---
 redirect_to:
-  - https://docs.fyne.io/api/v2.2/keyname.md
+  - https://docs.fyne.io/api/v2.2/keyname
 
 layout: page
 tags: [api]

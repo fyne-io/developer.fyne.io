@@ -1,6 +1,6 @@
 ---
 redirect_to:
-  - https://docs.fyne.io/api/v2.2/textwrap.md
+  - https://docs.fyne.io/api/v2.2/textwrap
 
 layout: page
 tags: [api]

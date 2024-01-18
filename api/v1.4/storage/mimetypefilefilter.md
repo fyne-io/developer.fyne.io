@@ -1,6 +1,6 @@
 ---
 redirect_to:
-  - https://docs.fyne.io/api/v1.4/storage/mimetypefilefilter.md
+  - https://docs.fyne.io/api/v1.4/storage/mimetypefilefilter
 
 layout: page
 tags: [api]

@@ -1,6 +1,6 @@
 ---
 redirect_to:
-  - https://docs.fyne.io/api/v2.3/hardwarekey.md
+  - https://docs.fyne.io/api/v2.3/hardwarekey
 
 layout: page
 tags: [api]

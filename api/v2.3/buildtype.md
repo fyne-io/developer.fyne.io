@@ -1,6 +1,6 @@
 ---
 redirect_to:
-  - https://docs.fyne.io/api/v2.3/buildtype.md
+  - https://docs.fyne.io/api/v2.3/buildtype
 
 layout: page
 tags: [api]

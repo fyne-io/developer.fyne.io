@@ -1,6 +1,6 @@
 ---
 redirect_to:
-  - https://docs.fyne.io/api/v1.3/widget/group.md
+  - https://docs.fyne.io/api/v1.3/widget/group
 
 layout: page
 tags: [api]

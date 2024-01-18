@@ -1,6 +1,6 @@
 ---
 redirect_to:
-  - https://docs.fyne.io/api/v2.2/deviceorientation.md
+  - https://docs.fyne.io/api/v2.2/deviceorientation
 
 layout: page
 tags: [api]

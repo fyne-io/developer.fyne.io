@@ -1,6 +1,6 @@
 ---
 redirect_to:
-  - https://docs.fyne.io/api/v1.3/widget/box.md
+  - https://docs.fyne.io/api/v1.3/widget/box
 
 layout: page
 tags: [api]

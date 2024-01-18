@@ -1,6 +1,6 @@
 ---
 redirect_to:
-  - https://docs.fyne.io/api/v2.2/widget/accordion.md
+  - https://docs.fyne.io/api/v2.2/widget/accordion
 
 layout: page
 tags: [api]

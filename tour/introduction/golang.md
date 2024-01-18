@@ -1,6 +1,4 @@
 ---
-redirect_to:
-  - https://docs.fyne.io/tour/introduction/golang.md
 title: Programming with Go
 order: 2
 

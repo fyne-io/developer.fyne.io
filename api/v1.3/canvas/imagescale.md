@@ -1,6 +1,6 @@
 ---
 redirect_to:
-  - https://docs.fyne.io/api/v1.3/canvas/imagescale.md
+  - https://docs.fyne.io/api/v1.3/canvas/imagescale
 
 layout: page
 tags: [api]

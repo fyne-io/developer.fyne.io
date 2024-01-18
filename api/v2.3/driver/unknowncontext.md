@@ -1,6 +1,6 @@
 ---
 redirect_to:
-  - https://docs.fyne.io/api/v2.3/driver/unknowncontext.md
+  - https://docs.fyne.io/api/v2.3/driver/unknowncontext
 
 layout: page
 tags: [api]

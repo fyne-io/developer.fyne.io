@@ -1,6 +1,6 @@
 ---
 redirect_to:
-  - https://docs.fyne.io/api/v2.3/uriwritecloser.md
+  - https://docs.fyne.io/api/v2.3/uriwritecloser
 
 layout: page
 tags: [api]

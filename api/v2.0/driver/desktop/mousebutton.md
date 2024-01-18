@@ -1,6 +1,6 @@
 ---
 redirect_to:
-  - https://docs.fyne.io/api/v2.0/driver/desktop/mousebutton.md
+  - https://docs.fyne.io/api/v2.0/driver/desktop/mousebutton
 
 layout: page
 tags: [api]

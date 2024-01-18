@@ -1,6 +1,6 @@
 ---
 redirect_to:
-  - https://docs.fyne.io/api/v1.3/canvas/radialgradient.md
+  - https://docs.fyne.io/api/v1.3/canvas/radialgradient
 
 layout: page
 tags: [api]

@@ -1,6 +1,6 @@
 ---
 redirect_to:
-  - https://docs.fyne.io/api/v2.2/container/tablocation.md
+  - https://docs.fyne.io/api/v2.2/container/tablocation
 
 layout: page
 tags: [api]

@@ -1,6 +1,6 @@
 ---
 redirect_to:
-  - https://docs.fyne.io/api/v1.3/driver/desktop/mouseevent.md
+  - https://docs.fyne.io/api/v1.3/driver/desktop/mouseevent
 
 layout: page
 tags: [api]

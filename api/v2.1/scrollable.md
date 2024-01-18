@@ -1,6 +1,6 @@
 ---
 redirect_to:
-  - https://docs.fyne.io/api/v2.1/scrollable.md
+  - https://docs.fyne.io/api/v2.1/scrollable
 
 layout: page
 tags: [api]

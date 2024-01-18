@@ -1,6 +1,6 @@
 ---
 redirect_to:
-  - https://docs.fyne.io/api/v2.3/widget/buttonimportance.md
+  - https://docs.fyne.io/api/v2.3/widget/buttonimportance
 
 layout: page
 tags: [api]

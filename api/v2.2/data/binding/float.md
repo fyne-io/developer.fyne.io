@@ -1,6 +1,6 @@
 ---
 redirect_to:
-  - https://docs.fyne.io/api/v2.2/data/binding/float.md
+  - https://docs.fyne.io/api/v2.2/data/binding/float
 
 layout: page
 tags: [api]

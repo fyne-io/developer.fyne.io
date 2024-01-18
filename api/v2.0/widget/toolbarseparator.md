@@ -1,6 +1,6 @@
 ---
 redirect_to:
-  - https://docs.fyne.io/api/v2.0/widget/toolbarseparator.md
+  - https://docs.fyne.io/api/v2.0/widget/toolbarseparator
 
 layout: page
 tags: [api]

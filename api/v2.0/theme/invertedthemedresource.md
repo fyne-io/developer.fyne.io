@@ -1,6 +1,6 @@
 ---
 redirect_to:
-  - https://docs.fyne.io/api/v2.0/theme/invertedthemedresource.md
+  - https://docs.fyne.io/api/v2.0/theme/invertedthemedresource
 
 layout: page
 tags: [api]

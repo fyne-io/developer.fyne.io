@@ -1,6 +1,6 @@
 ---
 redirect_to:
-  - https://docs.fyne.io/api/v1.3/widget/buttonstyle.md
+  - https://docs.fyne.io/api/v1.3/widget/buttonstyle
 
 layout: page
 tags: [api]

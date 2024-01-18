@@ -1,6 +1,6 @@
 ---
 redirect_to:
-  - https://docs.fyne.io/api/v2.2/data/binding/externalrunelist.md
+  - https://docs.fyne.io/api/v2.2/data/binding/externalrunelist
 
 layout: page
 tags: [api]

@@ -1,6 +1,6 @@
 ---
 redirect_to:
-  - https://docs.fyne.io/api/v2.0/delta.md
+  - https://docs.fyne.io/api/v2.0/delta
 
 layout: page
 tags: [api]

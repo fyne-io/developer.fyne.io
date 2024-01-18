@@ -1,6 +1,6 @@
 ---
 redirect_to:
-  - https://docs.fyne.io/api/v2.0/data/binding/bool.md
+  - https://docs.fyne.io/api/v2.0/data/binding/bool
 
 layout: page
 tags: [api]

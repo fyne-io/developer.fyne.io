@@ -1,6 +1,6 @@
 ---
 redirect_to:
-  - https://docs.fyne.io/api/v2.0/canvas/imagefill.md
+  - https://docs.fyne.io/api/v2.0/canvas/imagefill
 
 layout: page
 tags: [api]

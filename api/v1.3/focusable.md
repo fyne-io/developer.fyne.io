@@ -1,6 +1,6 @@
 ---
 redirect_to:
-  - https://docs.fyne.io/api/v1.3/focusable.md
+  - https://docs.fyne.io/api/v1.3/focusable
 
 layout: page
 tags: [api]

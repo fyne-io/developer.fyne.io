@@ -1,6 +1,6 @@
 ---
 redirect_to:
-  - https://docs.fyne.io/api/v2.1/driver/desktop/hoverable.md
+  - https://docs.fyne.io/api/v2.1/driver/desktop/hoverable
 
 layout: page
 tags: [api]
