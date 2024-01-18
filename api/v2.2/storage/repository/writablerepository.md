@@ -1,8 +1,12 @@
 ---
+redirect_to:
+  - https://docs.fyne.io/api/v2.2/storage/repository/writablerepository.md
+
 layout: page
 tags: [api]
 title: Fyne API "repository.WritableRepository"
 ---
+
 
 # repository.WritableRepository
 ---

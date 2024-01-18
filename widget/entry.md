@@ -1,10 +1,11 @@
 ---
+redirect_to:
+  - https://docs.fyne.io/widget/entry.md
 title: Entry
 
 redirect_from:
   - /tour/widget/entry
 ---
-
 The entry widget is used for user input of simple text content.
 An entry can be created with a simple `widget.NewEntry()`
 constructing function. When you create the widget keep a

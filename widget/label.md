@@ -1,4 +1,6 @@
 ---
+redirect_to:
+  - https://docs.fyne.io/widget/label.md
 title: Label
 
 redirect_from:
@@ -6,7 +8,6 @@ redirect_from:
   - /tour/widget/label
   - /tour/widget/
 ---
-
 Widgets are the main components of a Fyne application GUI, they can be
 used in any place that a basic `fyne.CanvasObject` can. They manage user
 interactions and will always match the current theme.

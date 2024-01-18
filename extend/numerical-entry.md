@@ -1,4 +1,7 @@
 ---
+redirect_to:
+  - https://docs.fyne.io/extend/numerical-entry.md
+
 layout: page
 title: Numerical Entry
 
@@ -6,7 +9,6 @@ redirect_from:
  - /tutorial/keypress-on-entry.html
  - /tutorial/numerical-entry
 ---
-
 In the traditional sense, GUI programs have used callbacks to customize actions for widgets. Fyne does not expose inserting custom callbacks to capture events on widgets, but it does not need to. The Go language is plenty extensible to make this work.
 
 Instead we can simply use Type Embedding and extend the widget to only make it possible to enter numerical values.

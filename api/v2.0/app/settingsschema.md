@@ -1,8 +1,12 @@
 ---
+redirect_to:
+  - https://docs.fyne.io/api/v2.0/app/settingsschema.md
+
 layout: page
 tags: [api]
 title: Fyne API "app.SettingsSchema"
 ---
+
 
 # app.SettingsSchema
 ---

@@ -1,8 +1,12 @@
 ---
+redirect_to:
+  - https://docs.fyne.io/api/v2.3/widget/progressbarinfinite.md
+
 layout: page
 tags: [api]
 title: Fyne API "widget.ProgressBarInfinite"
 ---
+
 
 # widget.ProgressBarInfinite
 ---

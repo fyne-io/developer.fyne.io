@@ -1,8 +1,12 @@
 ---
+redirect_to:
+  - https://docs.fyne.io/api/v2.3/widget/disableablewidget.md
+
 layout: page
 tags: [api]
 title: Fyne API "widget.DisableableWidget"
 ---
+
 
 # widget.DisableableWidget
 ---

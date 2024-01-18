@@ -1,10 +1,12 @@
 ---
+redirect_to:
+  - https://docs.fyne.io/faq/layout.md
+
 layout: page
 title: Layout and Widget Size
 
 order: 10
 ---
-
 Intro
 
 ## Move and Resize

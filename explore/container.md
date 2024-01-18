@@ -1,10 +1,12 @@
 ---
+redirect_to:
+  - https://docs.fyne.io/explore/container.md
+
 title: Container and Layouts
 
 redirect_from:
 - /tour/basics/container
 ---
-
 In the previous example we saw how to set a `CanvasObject` to the
 content of a `Canvas`, but it is not very useful to only show
 one visual element. To show more than one item we use the `Container` type.

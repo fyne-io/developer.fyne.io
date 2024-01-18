@@ -1,8 +1,12 @@
 ---
+redirect_to:
+  - https://docs.fyne.io/api/v1.4/mainmenu.md
+
 layout: page
 tags: [api]
 title: Fyne API "fyne.MainMenu"
 ---
+
 
 # fyne.MainMenu
 ---

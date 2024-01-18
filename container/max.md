@@ -1,10 +1,12 @@
 ---
+redirect_to:
+  - https://docs.fyne.io/container/max.md
+
 title: Max
 
 redirect_from:
 - /tour/layout/maxlayout
 ---
-
 The `layout.MaxLayout` is the simplest layout, it sets all items in
 the container to be the same size as the container. This is not
 often useful in general containers but can be suitable when composing

@@ -1,8 +1,12 @@
 ---
+redirect_to:
+  - https://docs.fyne.io/api/v2.3/themeiconname.md
+
 layout: page
 tags: [api]
 title: Fyne API "fyne.ThemeIconName"
 ---
+
 
 # fyne.ThemeIconName
 ---

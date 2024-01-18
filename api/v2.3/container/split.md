@@ -1,8 +1,12 @@
 ---
+redirect_to:
+  - https://docs.fyne.io/api/v2.3/container/split.md
+
 layout: page
 tags: [api]
 title: Fyne API "container.Split"
 ---
+
 
 # container.Split
 ---

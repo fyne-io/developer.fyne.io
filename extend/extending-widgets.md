@@ -1,4 +1,7 @@
 ---
+redirect_to:
+  - https://docs.fyne.io/extend/extending-widgets.md
+
 layout: page
 title: Extending Widgets
 
@@ -7,6 +10,7 @@ redirect_from:
  - /tutorial/extending-widgets
  - /tutorial/
 ---
+
 
 The standard Fyne widgets provide the minimum functionality and customisation
 to support most use-cases. It may be required at certain times to have more

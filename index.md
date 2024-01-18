@@ -1,14 +1,17 @@
 ---
+redirect_to:
+  - https://docs.fyne.io/index.md
+
 title: "Fyne toolkit documentation for developers"
 permalink: index.html
 ---
-
 This site is home to the documentation and examples for developers working with the
 Fyne toolkit. We have details for people just getting started, building their first
 graphical app through to detailed walkthroughs of complex topics related to building
 leading cross platform apps.
 
 ---
+
 
 <div class="intro-row">
     <div class="col-lg-4 text-center">
@@ -39,6 +42,7 @@ leading cross platform apps.
 </div>
 
 ---
+
 
 ## Installing
 

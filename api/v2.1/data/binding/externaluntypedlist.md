@@ -1,8 +1,12 @@
 ---
+redirect_to:
+  - https://docs.fyne.io/api/v2.1/data/binding/externaluntypedlist.md
+
 layout: page
 tags: [api]
 title: Fyne API "binding.ExternalUntypedList"
 ---
+
 
 # binding.ExternalUntypedList
 ---

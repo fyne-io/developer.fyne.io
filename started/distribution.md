@@ -1,10 +1,11 @@
 ---
+redirect_to:
+  - https://docs.fyne.io/started/distribution.md
 layout: page
 title: Distributing to App Stores	
 
 order: 60
 ---
-
 Packaging a graphical app as described in the [Packaging](/started/packaging)
 page provides a file or bundle that could be directly shared or distributed.
 However signing and uploading to app stores and market places is an additional

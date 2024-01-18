@@ -1,10 +1,12 @@
 ---
+redirect_to:
+  - https://docs.fyne.io/explore/binding.md
+
 layout: page
 title: Data Binding
 
 since: 2.0
 ---
-
 Data binding was introduced in Fyne v2.0.0 and makes it easier to connect
 many widgets to a data source that will update over time.
 the `data/binding` package has many helpful bindings that can manage most standard

@@ -1,10 +1,12 @@
 ---
+redirect_to:
+  - https://docs.fyne.io/_gen/api.md
+
 layout: page
 tags: [api]
 title: Fyne API "fyne.ThemeSizeName"
 package: fyne.io/fyne/v2
 ---
-
 # fyne.ThemeSizeName
 ---
 ```go

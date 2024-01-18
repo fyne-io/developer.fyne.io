@@ -1,4 +1,6 @@
 ---
+redirect_to:
+  - https://docs.fyne.io/started/index.md
 layout: page
 title: Getting Started
 
@@ -46,7 +48,6 @@ install:
         source: termux
 
 ---
-
 Using the Fyne toolkit to build cross platform applications is very simple but does require some tools to be installed before you can begin. If your computer is set up for development with Go then the following steps may not be required, but we advise reading the tips for your operating system just in case. If later steps in this tutorial fail then you should re-visit the prerequisites below.
 
 ## Prerequisites

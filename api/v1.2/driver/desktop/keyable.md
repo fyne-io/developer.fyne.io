@@ -1,8 +1,12 @@
 ---
+redirect_to:
+  - https://docs.fyne.io/api/v1.2/driver/desktop/keyable.md
+
 layout: page
 tags: [api]
 title: Fyne API desktop
 ---
+
 
 # desktop
 ---

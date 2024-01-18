@@ -1,10 +1,12 @@
 ---
+redirect_to:
+  - https://docs.fyne.io/faq/troubleshoot.md
+
 layout: page
 title: Troubleshooting
 
 order: 999
 ---
-
 Some things can not go as expected during setup or in compiling your first app. We try to address these problems here.
 Remember you can also check your configuration using the
 [Fyne Setup](https://geoffrey-artefacts.fynelabs.com/github/andydotxyz/fyne-io/setup/latest/) tool.

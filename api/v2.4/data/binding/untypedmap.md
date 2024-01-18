@@ -1,10 +1,12 @@
 ---
+redirect_to:
+  - https://docs.fyne.io/_gen/api.md
+
 layout: page
 tags: [api]
 title: Fyne API "binding.UntypedMap"
 package: fyne.io/fyne/v2/data/binding
 ---
-
 # binding.UntypedMap
 ---
 ```go

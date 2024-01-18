@@ -1,8 +1,12 @@
 ---
+redirect_to:
+  - https://docs.fyne.io/api/v2.3/driver/desktop/hoverable.md
+
 layout: page
 tags: [api]
 title: Fyne API "desktop.Hoverable"
 ---
+
 
 # desktop.Hoverable
 ---

@@ -1,8 +1,12 @@
 ---
+redirect_to:
+  - https://docs.fyne.io/api/v1.4/canvas/imagefill.md
+
 layout: page
 tags: [api]
 title: Fyne API "canvas.ImageFill"
 ---
+
 
 # canvas.ImageFill
 ---

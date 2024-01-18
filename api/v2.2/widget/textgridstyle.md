@@ -1,8 +1,12 @@
 ---
+redirect_to:
+  - https://docs.fyne.io/api/v2.2/widget/textgridstyle.md
+
 layout: page
 tags: [api]
 title: Fyne API "widget.TextGridStyle"
 ---
+
 
 # widget.TextGridStyle
 ---

@@ -1,8 +1,12 @@
 ---
+redirect_to:
+  - https://docs.fyne.io/api/v2.2/tappable.md
+
 layout: page
 tags: [api]
 title: Fyne API "fyne.Tappable"
 ---
+
 
 # fyne.Tappable
 ---

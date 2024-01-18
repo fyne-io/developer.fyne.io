@@ -1,8 +1,12 @@
 ---
+redirect_to:
+  - https://docs.fyne.io/api/v2.0/upgrading.md
+
 layout: page
 tags: [api]
 title: Upgrading to v2.0
 ---
+
 
 As our first ["major"](https://semver.org/) release the API updates in 2.0
 contain some breaking changes.
@@ -76,5 +80,3 @@ after performing the upgrade
 * Dialogs no longer show when created, unless using the ShowXxx convenience methods
 * Entry widget now contains scrolling so should no longer be wrapped in a scroll container
 * iOS apps preferences will be lost in this upgrade as we move to more advanced storage
-
-

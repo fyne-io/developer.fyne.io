@@ -1,8 +1,12 @@
 ---
+redirect_to:
+  - https://docs.fyne.io/api/v2.0/widget/select.md
+
 layout: page
 tags: [api]
 title: Fyne API "widget.Select"
 ---
+
 
 # widget.Select
 ---

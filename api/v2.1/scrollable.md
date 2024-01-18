@@ -1,8 +1,12 @@
 ---
+redirect_to:
+  - https://docs.fyne.io/api/v2.1/scrollable.md
+
 layout: page
 tags: [api]
 title: Fyne API "fyne.Scrollable"
 ---
+
 
 # fyne.Scrollable
 ---

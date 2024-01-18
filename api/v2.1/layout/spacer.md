@@ -1,8 +1,12 @@
 ---
+redirect_to:
+  - https://docs.fyne.io/api/v2.1/layout/spacer.md
+
 layout: page
 tags: [api]
 title: Fyne API "layout.Spacer"
 ---
+
 
 # layout.Spacer
 ---

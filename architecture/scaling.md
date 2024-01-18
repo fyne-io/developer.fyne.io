@@ -1,8 +1,10 @@
 ---
+redirect_to:
+  - https://docs.fyne.io/architecture/scaling.md
+
 layout: page
 title: Scaling
 ---
-
 Fyne is built entirely using vector graphics, which means applications written with Fyne will scale to any size beautifully
 (not just whole number increments).
 This is a great benefit to the rising popularity of high density displays on mobile devices and high-end computers.

@@ -1,10 +1,11 @@
 ---
+redirect_to:
+  - https://docs.fyne.io/widget/button.md
 title: Button
 
 redirect_from:
   - /tour/widget/button
 ---
-
 The button widget can contain text, an icon or both, the constructor
 functions are `widget.NewButton()` and `widget.NewButtonWithIcon()`.
 To create a text button there are just 2 parameters, the `string` content

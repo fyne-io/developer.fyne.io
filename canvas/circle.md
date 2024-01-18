@@ -1,10 +1,12 @@
 ---
+redirect_to:
+  - https://docs.fyne.io/canvas/circle.md
+
 title: Circle
 
 redirect_from:
   - /tour/canvas/circle
 ---
-
 `canvas.Circle` defines a circle shape filled by the specified
 colour. You may also set a `StrokeWidth` and therefore a different
 `StrokeColor` as shown in this example.

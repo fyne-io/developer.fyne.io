@@ -1,10 +1,11 @@
 ---
+redirect_to:
+  - https://docs.fyne.io/widget/progressbar.md
 title: ProgressBar
 
 redirect_from:
   - /tour/widget/progressbar
 ---
-
 The progress bar widget has two forms, the standard progress bar
 shows the user which `Value` has been reached, from `Min` to
 `Max`. The default min is `0.0` and the max defaults to `1.0`.

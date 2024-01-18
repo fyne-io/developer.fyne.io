@@ -1,4 +1,7 @@
 ---
+redirect_to:
+  - https://docs.fyne.io/canvas/rectangle.md
+
 title: Rectangle
 
 redirect_from:
@@ -6,7 +9,6 @@ redirect_from:
   - /tour/canvas/
   - /canvas/
 ---
-
 `canvas.Rectangle` is the simplest canvas object in Fyne. It displays
 a block of the specified colour. You can also set the colour using
 the `FillColor` field.

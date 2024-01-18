@@ -1,8 +1,12 @@
 ---
+redirect_to:
+  - https://docs.fyne.io/api/v2.3/upgrading.md
+
 layout: page
 tags: [api]
 title: Upgrading to v2.3
 ---
+
 
 The 2.3 release is fully backward compatible with 2.2.4 and earlier, so upgrading
 is as simple as updating the version of code you compile with.
@@ -51,4 +55,3 @@ run as expected, there are some changes which you may notice.
 * Buttons are no longer transparent in the default theme, so items drawn under
 them will not show through. As this was most commonly to show a color of button
 consider setting `Button.Importance` to new `ErrorImportance` or `WarningImportance` instead.
-

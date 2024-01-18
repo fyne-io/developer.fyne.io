@@ -1,8 +1,12 @@
 ---
+redirect_to:
+  - https://docs.fyne.io/api/v2.0/widget/separator.md
+
 layout: page
 tags: [api]
 title: Fyne API "widget.Separator"
 ---
+
 
 # widget.Separator
 ---

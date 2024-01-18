@@ -1,10 +1,12 @@
 ---
+redirect_to:
+  - https://docs.fyne.io/faq/theme.md
+
 layout: page
 title: Theme and Customisation
 
 order: 10
 ---
-
 In this page we answer some common questions about the design of Fyne themes and widgets.
 
 ## Customisation

@@ -1,10 +1,12 @@
 ---
+redirect_to:
+  - https://docs.fyne.io/container/center.md
+
 title: Center
 
 redirect_from:
 - /tour/layout/centerlayout
 ---
-
 `layout.CenterLayout` organises all items in its container to be
 centered in the available space. The objects will be drawn in the order
 they are passed to the container, with the last being drawn top-most.

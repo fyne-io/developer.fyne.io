@@ -1,8 +1,12 @@
 ---
+redirect_to:
+  - https://docs.fyne.io/api/v2.0/listableuri.md
+
 layout: page
 tags: [api]
 title: Fyne API "fyne.ListableURI"
 ---
+
 
 # fyne.ListableURI
 ---

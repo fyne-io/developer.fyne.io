@@ -1,10 +1,12 @@
 ---
+redirect_to:
+  - https://docs.fyne.io/canvas/raster.md
+
 title: Raster
 
 redirect_from:
   - /tour/canvas/raster
 ---
-
 The `canvas.Raster` is like an image but draws exactly one spot
 for each pixel on the screen. This means that as a user interface
 scales or the image resizes more pixels will be requested to fill

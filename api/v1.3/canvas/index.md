@@ -1,8 +1,12 @@
 ---
+redirect_to:
+  - https://docs.fyne.io/api/v1.3/canvas/index.md
+
 layout: page
 tags: [api]
 title: Fyne API canvas
 ---
+
 
 # canvas
 ---

@@ -1,6 +1,10 @@
 ---
+redirect_to:
+  - https://docs.fyne.io/submit-addon.md
 permalink: /submit-addon/
 ---
+
+
 <div id="zf_div_g8NkKp_JhP5T7uSIz-odwDbUB3UcKTXj1ougwISvYug"></div><script type="text/javascript">(function() {
 try{
 var f = document.createElement("iframe");   
@@ -25,4 +29,3 @@ iframe.style.height = zf_ifrm_ht_nw;
 }, false);
 }catch(e){}
 })();</script>
-

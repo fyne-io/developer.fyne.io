@@ -1,10 +1,12 @@
 ---
+redirect_to:
+  - https://docs.fyne.io/binding/simple.md
+
 title: Binding Simple Widgets
 
 redirect_from:
 - /tour/binding/simple
 ---
-
 The simplest form of binding a widget is to pass it
 a bound item as a value instead of a static value.
 Many widgets provide a `WithData` constructor that will

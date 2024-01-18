@@ -1,4 +1,7 @@
 ---
+redirect_to:
+  - https://docs.fyne.io/explore/layouts.md
+
 layout: page
 title: Layout List
 readonly: true
@@ -6,11 +9,9 @@ readonly: true
 redirect_from:
 - /started/layouts
 ---
-
 ## Standard Layouts
 
 ---
-
 ### Horizontal Box (HBox)
 
 Horizontal Box arranges items in a horizontal row.

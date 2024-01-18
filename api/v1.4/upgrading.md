@@ -1,8 +1,12 @@
 ---
+redirect_to:
+  - https://docs.fyne.io/api/v1.4/upgrading.md
+
 layout: page
 tags: [api]
 title: Upgrading to v1.4
 ---
+
 
 The 1.4 release is fully backward compatible with 1.3.3 and earlier, so upgrading
 is as simple as updating the version of code you compile with.
@@ -40,4 +44,3 @@ can now choose from a range of primary colors.
 * Buttons are now transparent with an outline by default, this may impact your app design.
 * The Group widget has been deprecated and replaced with the new Card widget.
 * Many container widgets have been deprecated and they have been replaced by new types in the `container` package.
-

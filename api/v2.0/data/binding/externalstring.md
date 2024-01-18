@@ -1,8 +1,12 @@
 ---
+redirect_to:
+  - https://docs.fyne.io/api/v2.0/data/binding/externalstring.md
+
 layout: page
 tags: [api]
 title: Fyne API "binding.ExternalString"
 ---
+
 
 # binding.ExternalString
 ---

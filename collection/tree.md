@@ -1,7 +1,11 @@
 ---
+redirect_to:
+  - https://docs.fyne.io/collection/tree.md
+
 title: Tree
 
---- 
+---
+ 
 
 The `Tree` collection widget is like the [List](/collection/list) widget (another of the toolkit's collection widgets) with a multi-level data structure.
 Like `List` this is designed to help build really performant

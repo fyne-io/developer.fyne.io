@@ -1,10 +1,11 @@
 ---
+redirect_to:
+  - https://docs.fyne.io/started/webapp.md
 layout: page
 title: Run in a Browser
 
 order: 78
 ---
-
 Fyne applications can also be run over the web using a standard web browser!
 Due to the wide variety of standards and strenghts of different engines this is a little more complex.
 

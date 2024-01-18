@@ -1,8 +1,12 @@
 ---
+redirect_to:
+  - https://docs.fyne.io/api/v2.0/container.md
+
 layout: page
 tags: [api]
 title: Fyne API "fyne.Container"
 ---
+
 
 # fyne.Container
 ---

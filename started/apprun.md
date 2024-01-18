@@ -1,4 +1,6 @@
 ---
+redirect_to:
+  - https://docs.fyne.io/started/apprun.md
 title: Application and RunLoop
 
 redirect_from:
@@ -6,7 +8,6 @@ redirect_from:
 - /tour/basics/apprun
 
 ---
-
 For a GUI application to work it needs to run an event loop
 (sometimes called a runloop) that processes user interactions
 and drawing events. In Fyne this is started using the `App.Run()`

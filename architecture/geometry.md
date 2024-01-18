@@ -1,14 +1,15 @@
 ---
+redirect_to:
+  - https://docs.fyne.io/architecture/geometry.md
+
 layout: page
 title: Geometry
 ---
-
 Fyne apps are based on 1 canvas per window.
 Each canvas has a root CanvasObject which can be a single widget or a Container for many sub-objects whose size and position are controlled by a Layout.
 
 ## Position
 ---
-
 Each canvas has its origin at the top left (0, 0) every element of the UI may be scaled depending on the output device and so the API does not describe pixels or exact measurements.
 The position (10, 10) may be 10 pixels right and down from the origin on, for example, a 120DPI monitor but on a HiDPI (or "Retina") display this will probably be closer to 20 pixels.
 
@@ -19,6 +20,7 @@ This is designed to allow code to be as self-contained as possible.
 
 ## Pixel size
 ---
+
 
 Like other vector based GUI libraries the Fyne coordinates need to be based
 on some baseline monitor resolution. All [scaling](/architecture/scaling) is
@@ -49,4 +51,3 @@ Fyne also defines a `canvas.Raster` primitive which will draw pixels exactly at 
 to draw at the highest possible output resolution without knowing 
 details of the device you are running on.
 If for some reason you need "pixel perfect" positioning you need to multiply `CanvasObject.Size()` by `Canvas.Scale()`.
-

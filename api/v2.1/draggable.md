@@ -1,8 +1,12 @@
 ---
+redirect_to:
+  - https://docs.fyne.io/api/v2.1/draggable.md
+
 layout: page
 tags: [api]
 title: Fyne API "fyne.Draggable"
 ---
+
 
 # fyne.Draggable
 ---

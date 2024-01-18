@@ -1,10 +1,14 @@
 ---
+redirect_to:
+  - https://docs.fyne.io/collection/list.md
+
 title: List
 
 redirect_from:
   - /tour/widget/list
   - /widget/list
 ---
+
 
 The `List` collection widget is one of the toolkit's collection widgets.
 These widgets are designed to help build really performant

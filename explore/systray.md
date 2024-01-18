@@ -1,10 +1,12 @@
 ---
+redirect_to:
+  - https://docs.fyne.io/explore/systray.md
+
 layout: page
 title: System Tray Menu
 
 since: 2.2
 ---
-
 ## Adding a System Tray menu
 
 Since the v2.2.0 release Fyne has built in support for a system tray menu.
@@ -101,4 +103,3 @@ func main() {
 ```
 
 {% include youtube.html id="t0vnGbzoB3I" %}
-

@@ -1,8 +1,12 @@
 ---
+redirect_to:
+  - https://docs.fyne.io/api/v2.0/driver/desktop/standardcursor.md
+
 layout: page
 tags: [api]
 title: Fyne API "desktop.StandardCursor"
 ---
+
 
 # desktop.StandardCursor
 ---

@@ -1,10 +1,12 @@
 ---
+redirect_to:
+  - https://docs.fyne.io/binding/conversion.md
+
 title: Data Conversion
 
 redirect_from:
 - /tour/binding/conversion
 ---
-
 So far we have used data binding where the type of
 data matches the output type (for example `String` and
 `Label` or `Entry`). Often it will be desirable to

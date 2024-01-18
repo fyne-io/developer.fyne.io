@@ -1,10 +1,12 @@
 ---
+redirect_to:
+  - https://docs.fyne.io/architecture/organisation.md
+
 title: Organisation and Packages
 
 redirect_from:
 - /tour/introduction/organisation
 ---
-
 The Fyne project is split into many packages, each providing different
 types of functionality. They are as follows:
 

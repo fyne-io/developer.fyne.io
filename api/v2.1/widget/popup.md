@@ -1,8 +1,12 @@
 ---
+redirect_to:
+  - https://docs.fyne.io/api/v2.1/widget/popup.md
+
 layout: page
 tags: [api]
 title: Fyne API "widget.PopUp"
 ---
+
 
 # widget.PopUp
 ---

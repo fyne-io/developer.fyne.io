@@ -1,8 +1,12 @@
 ---
+redirect_to:
+  - https://docs.fyne.io/api/v2.2/storage/repository/listablerepository.md
+
 layout: page
 tags: [api]
 title: Fyne API "repository.ListableRepository"
 ---
+
 
 # repository.ListableRepository
 ---

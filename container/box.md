@@ -1,10 +1,14 @@
 ---
+redirect_to:
+  - https://docs.fyne.io/container/box.md
+
 title: Box
 
 redirect_from:
 - /tour/layout/boxlayout
 - /container/
 ---
+
 
 As discussed in [Container and Layouts](/explore/container) elements
 within a container can be arranged using a layout. This section explores

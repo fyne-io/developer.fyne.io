@@ -1,8 +1,12 @@
 ---
+redirect_to:
+  - https://docs.fyne.io/api/v2.3/driver/desktop/mousebutton.md
+
 layout: page
 tags: [api]
 title: Fyne API "desktop.MouseButton"
 ---
+
 
 # desktop.MouseButton
 ---

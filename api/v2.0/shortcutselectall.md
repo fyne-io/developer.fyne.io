@@ -1,8 +1,12 @@
 ---
+redirect_to:
+  - https://docs.fyne.io/api/v2.0/shortcutselectall.md
+
 layout: page
 tags: [api]
 title: Fyne API "fyne.ShortcutSelectAll"
 ---
+
 
 # fyne.ShortcutSelectAll
 ---

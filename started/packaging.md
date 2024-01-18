@@ -1,10 +1,11 @@
 ---
+redirect_to:
+  - https://docs.fyne.io/started/packaging.md
 layout: page
 title: Packaging for Desktop
 
 order: 50
 ---
-
 Packaging a graphical app for distribution can be complex.
 Graphical applications typically have icons and metadata associated
 with them as well as specific formats required to integrate with each

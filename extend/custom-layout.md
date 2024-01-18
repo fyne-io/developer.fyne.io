@@ -1,10 +1,14 @@
 ---
+redirect_to:
+  - https://docs.fyne.io/extend/custom-layout.md
+
 layout: page
 title: Building a Custom Layout
 
 redirect_from:
  - /tutorial/custom-layout
 ---
+
 
 In a Fyne application each `Container` arranges its child elements using a simple layout algorithm.
 Fyne defines many layouts available in the `fyne.io/fyne/v2/layout` package.

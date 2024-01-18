@@ -1,4 +1,7 @@
 ---
+redirect_to:
+  - https://docs.fyne.io/explore/widgets.md
+
 layout: page
 title: Widget List
 readonly: true
@@ -6,11 +9,9 @@ readonly: true
 redirect_from:
 - /started/widgets
 ---
-
 ## Standard Widgets (in `widget` package)
 
 ---
-
 ### Accordion
 
 Accordion displays a list of AccordionItems. Each item is represented by a button that reveals a detailed view when tapped.

@@ -1,8 +1,12 @@
 ---
+redirect_to:
+  - https://docs.fyne.io/api/v1.4/driver/desktop/customshortcut.md
+
 layout: page
 tags: [api]
 title: Fyne API "desktop.CustomShortcut"
 ---
+
 
 # desktop.CustomShortcut
 ---

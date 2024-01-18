@@ -1,4 +1,6 @@
 ---
+redirect_to:
+  - https://docs.fyne.io/pages/tags/tag_getting_started.md
 title: "Getting started pages"
 tagName: getting_started
 search: exclude

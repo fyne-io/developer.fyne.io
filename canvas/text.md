@@ -1,10 +1,12 @@
 ---
+redirect_to:
+  - https://docs.fyne.io/canvas/text.md
+
 title: Text
 
 redirect_from:
   - /tour/canvas/text
 ---
-
 `canvas.Text` is used for all text rendering within Fyne.
 It is created by specifying the text and colour for the text.
 Text is rendered using the default font, specified by the current theme.

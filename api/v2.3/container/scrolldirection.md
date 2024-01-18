@@ -1,8 +1,12 @@
 ---
+redirect_to:
+  - https://docs.fyne.io/api/v2.3/container/scrolldirection.md
+
 layout: page
 tags: [api]
 title: Fyne API "container.ScrollDirection"
 ---
+
 
 # container.ScrollDirection
 ---

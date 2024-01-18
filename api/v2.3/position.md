@@ -1,8 +1,12 @@
 ---
+redirect_to:
+  - https://docs.fyne.io/api/v2.3/position.md
+
 layout: page
 tags: [api]
 title: Fyne API "fyne.Position"
 ---
+
 
 # fyne.Position
 ---

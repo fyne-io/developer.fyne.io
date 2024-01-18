@@ -1,10 +1,11 @@
 ---
+redirect_to:
+  - https://docs.fyne.io/widget/choices.md
 title: Choices
 
 redirect_from:
   - /tour/widget/choices
 ---
-
 There are various widgets available to present the user with
 a choice, these include a checkbox, radio group and select popup.
 

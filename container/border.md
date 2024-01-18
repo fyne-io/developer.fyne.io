@@ -1,10 +1,12 @@
 ---
+redirect_to:
+  - https://docs.fyne.io/container/border.md
+
 title: Border
 
 redirect_from:
 - /tour/layout/borderlayout
 ---
-
 The border layout is possibly the most widely used to construct user
 interfaces as it allows the positioning of items around a central element
 which will expand to fill the space. To create a border container you need

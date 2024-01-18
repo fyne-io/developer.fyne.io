@@ -1,10 +1,12 @@
 ---
+redirect_to:
+  - https://docs.fyne.io/container/apptabs.md
+
 title: AppTabs
 
 redirect_from:
 - /tour/container/apptabs
 ---
-
 The AppTabs container is used to allow the user to switch
 between different content panels. Tabs are either just text
 or text and an icon. It is recommended not to mix some tabs

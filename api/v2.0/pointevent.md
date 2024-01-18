@@ -1,8 +1,12 @@
 ---
+redirect_to:
+  - https://docs.fyne.io/api/v2.0/pointevent.md
+
 layout: page
 tags: [api]
 title: Fyne API "fyne.PointEvent"
 ---
+
 
 # fyne.PointEvent
 ---

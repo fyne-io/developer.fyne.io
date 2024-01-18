@@ -1,8 +1,12 @@
 ---
+redirect_to:
+  - https://docs.fyne.io/api/v1.3/upgrading.md
+
 layout: page
 tags: [api]
 title: Upgrading to v1.3
 ---
+
 
 The 1.3 release is fully backward compatible with 1.2.4 and earlier, so upgrading
 is as simple as updating the version of code you compile with.
@@ -40,4 +44,3 @@ run as expected, there are some changes which you may notice.
 * Resizing windows now live-refreshes the content and animations will continue
 * `FixedGridLayout` has been renamed `GridWrapLayout` - the old APIs remain but deprecated
 * Some other APIs have been deprecated and will be removed in 2.0 later in 2020
-

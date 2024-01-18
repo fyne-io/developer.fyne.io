@@ -1,8 +1,10 @@
 ---
+redirect_to:
+  - https://docs.fyne.io/architecture/widgets.md
+
 layout: page
 title: Widgets
 ---
-
 Widgets in the Fyne toolkit are designed for a clean and pleasant
 user interaction, following a standard theme and supporting 
 rapid app development, solid testing and easy maintenance.
@@ -12,7 +14,6 @@ we explore them in this page.
 
 ## Behaviour API
 ---
-
 One thing that you will notice about the standard widgets is that
 the API is all about behaviour and state - but very little that
 controls the actual look of an element. This is by design. 
@@ -44,6 +45,7 @@ that seems desirable.
 ## Content Padding
 ---
 
+
 The standard widgets use the theme specified padding to make
 appropriate space around their graphical components.
 The `widget` package uses a standard height and baseline to ensure that
@@ -70,4 +72,3 @@ vertically when placed next to each other.
 
 It is recommended that custom widgets include similar dimensions 
 so that they fit well alongside the standard widgets.
-

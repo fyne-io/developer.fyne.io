@@ -1,8 +1,12 @@
 ---
+redirect_to:
+  - https://docs.fyne.io/canvas/animation.md
+
 title: Animation
 
 since: 2.0
 ---
+
 
 Fyne includes an animation framework that allows you to smoothly transition canvas properties from
 one value to another over time. An animation can contain any code which means that any types of object

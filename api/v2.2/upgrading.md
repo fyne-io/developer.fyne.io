@@ -1,8 +1,12 @@
 ---
+redirect_to:
+  - https://docs.fyne.io/api/v2.2/upgrading.md
+
 layout: page
 tags: [api]
 title: Upgrading to v2.2
 ---
+
 
 The 2.2 release is fully backward compatible with 2.0.4 and earlier, so upgrading
 is as simple as updating the version of code you compile with.
@@ -49,4 +53,3 @@ run as expected, there are some changes which you may notice.
 * Toolbar item constructors now return concrete types instead of ToolbarItem
 * Low importance buttons no longer draw button color as a background
 * ProgressBar widget height is now consistent with other widgets
-

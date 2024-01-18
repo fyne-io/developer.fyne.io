@@ -1,4 +1,6 @@
 ---
+redirect_to:
+  - https://docs.fyne.io/pages/tags/tag_mobile.md
 title: "Mobile Pages"
 search: exclude
 tagName: mobile

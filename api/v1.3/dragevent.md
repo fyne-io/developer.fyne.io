@@ -1,8 +1,12 @@
 ---
+redirect_to:
+  - https://docs.fyne.io/api/v1.3/dragevent.md
+
 layout: page
 tags: [api]
 title: Fyne API fyne
 ---
+
 
 # fyne
 ---

@@ -1,8 +1,12 @@
 ---
+redirect_to:
+  - https://docs.fyne.io/api/v2.1/vector2.md
+
 layout: page
 tags: [api]
 title: Fyne API "fyne.Vector2"
 ---
+
 
 # fyne.Vector2
 ---

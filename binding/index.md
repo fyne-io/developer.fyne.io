@@ -1,10 +1,12 @@
 ---
+redirect_to:
+  - https://docs.fyne.io/binding/index.md
+
 title: Data Binding
 
 redirect_from:
 - /tour/binding
 ---
-
 Data binding is a powerful new addition to the Fyne toolkit
 that was introduced in version `v2.0.0`.
 By using data binding we can avoid manually managing many standard

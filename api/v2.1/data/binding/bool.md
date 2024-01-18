@@ -1,8 +1,12 @@
 ---
+redirect_to:
+  - https://docs.fyne.io/api/v2.1/data/binding/bool.md
+
 layout: page
 tags: [api]
 title: Fyne API "binding.Bool"
 ---
+
 
 # binding.Bool
 ---

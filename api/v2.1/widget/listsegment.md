@@ -1,8 +1,12 @@
 ---
+redirect_to:
+  - https://docs.fyne.io/api/v2.1/widget/listsegment.md
+
 layout: page
 tags: [api]
 title: Fyne API "widget.ListSegment"
 ---
+
 
 # widget.ListSegment
 ---

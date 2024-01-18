@@ -1,8 +1,12 @@
 ---
+redirect_to:
+  - https://docs.fyne.io/api/v2.1/dialog/entrydialog.md
+
 layout: page
 tags: [api]
 title: Fyne API "dialog.EntryDialog"
 ---
+
 
 # dialog.EntryDialog
 ---

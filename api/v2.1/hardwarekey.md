@@ -1,8 +1,12 @@
 ---
+redirect_to:
+  - https://docs.fyne.io/api/v2.1/hardwarekey.md
+
 layout: page
 tags: [api]
 title: Fyne API "fyne.HardwareKey"
 ---
+
 
 # fyne.HardwareKey
 ---

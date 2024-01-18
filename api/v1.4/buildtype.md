@@ -1,8 +1,12 @@
 ---
+redirect_to:
+  - https://docs.fyne.io/api/v1.4/buildtype.md
+
 layout: page
 tags: [api]
 title: Fyne API "fyne.BuildType"
 ---
+
 
 # fyne.BuildType
 ---

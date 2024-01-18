@@ -1,4 +1,7 @@
 ---
+redirect_to:
+  - https://docs.fyne.io/canvas/gradient.md
+
 title: Gradient
 
 since: 1.1
@@ -6,7 +9,6 @@ since: 1.1
 redirect_from:
   - /tour/canvas/gradient
 ---
-
 The last canvas primitive type is Gradient, available as
 `canvas.LinearGradient` and `canvas.RadialGradient` which is used
 to draw a gradient from one colour to another in various patterns.

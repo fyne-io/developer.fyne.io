@@ -1,10 +1,11 @@
 ---
+redirect_to:
+  - https://docs.fyne.io/started/windows.md
 title: Window Handling
 
 redirect_from:
 - /tour/basics/windows
 ---
-
 Windows are created using `App.NewWindow()` and need to be shown using
 the `Show()` function. The helper method `ShowAndRun()` on `fyne.Window`
 allows you to show your window and run the application at the same time.

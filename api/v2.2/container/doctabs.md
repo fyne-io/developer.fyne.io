@@ -1,8 +1,12 @@
 ---
+redirect_to:
+  - https://docs.fyne.io/api/v2.2/container/doctabs.md
+
 layout: page
 tags: [api]
 title: Fyne API "container.DocTabs"
 ---
+
 
 # container.DocTabs
 ---

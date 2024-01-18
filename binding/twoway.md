@@ -1,10 +1,12 @@
 ---
+redirect_to:
+  - https://docs.fyne.io/binding/twoway.md
+
 title: Two-Way Binding
 
 redirect_from:
 - /tour/binding/twoway
 ---
-
 So far we have looked at data binding as a way of keeping
 our user interface elements up to date. Far more common,
 however, is the need to update values from the UI

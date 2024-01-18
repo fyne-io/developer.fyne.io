@@ -1,8 +1,12 @@
 ---
+redirect_to:
+  - https://docs.fyne.io/api/v1.4/widget/tree.md
+
 layout: page
 tags: [api]
 title: Fyne API "widget.Tree"
 ---
+
 
 # widget.Tree
 ---

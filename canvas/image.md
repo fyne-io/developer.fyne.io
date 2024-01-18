@@ -1,10 +1,12 @@
 ---
+redirect_to:
+  - https://docs.fyne.io/canvas/image.md
+
 title: Image
 
 redirect_from:
   - /tour/canvas/image
 ---
-
 A `canvas.Image` represents a scalable image resource in Fyne.
 It can be loaded from a resource (as shown in the example), from an
 image file, from a URI location containing an image, from an `io.Reader`, or from a Go `image.Image` in memory.

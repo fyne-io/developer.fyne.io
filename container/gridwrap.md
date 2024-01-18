@@ -1,10 +1,12 @@
 ---
+redirect_to:
+  - https://docs.fyne.io/container/gridwrap.md
+
 title: Grid Wrap
 
 redirect_from:
 - /tour/layout/gridwraplayout
 ---
-
 Like the previous grid layout, the grid wrap layout creates an arrangement
 of elements in a grid pattern. However this grid does not have a set
 number of columns, instead it uses a fixed size for each cell and

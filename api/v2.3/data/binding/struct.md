@@ -1,8 +1,12 @@
 ---
+redirect_to:
+  - https://docs.fyne.io/api/v2.3/data/binding/struct.md
+
 layout: page
 tags: [api]
 title: Fyne API "binding.Struct"
 ---
+
 
 # binding.Struct
 ---

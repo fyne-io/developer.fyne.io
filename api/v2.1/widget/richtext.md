@@ -1,8 +1,12 @@
 ---
+redirect_to:
+  - https://docs.fyne.io/api/v2.1/widget/richtext.md
+
 layout: page
 tags: [api]
 title: Fyne API "widget.RichText"
 ---
+
 
 # widget.RichText
 ---

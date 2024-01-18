@@ -1,10 +1,12 @@
 ---
+redirect_to:
+  - https://docs.fyne.io/_gen/api.md
+
 layout: page
 tags: [api]
 title: Fyne API "canvas.LinearGradient"
 package: fyne.io/fyne/v2/canvas
 ---
-
 # canvas.LinearGradient
 ---
 ```go

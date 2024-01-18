@@ -1,10 +1,11 @@
 ---
+redirect_to:
+  - https://docs.fyne.io/widget/form.md
 title: Form
 
 redirect_from:
   - /tour/widget/form
 ---
-
 The form widget is used to lay out many input fields with
 labels and optional cancel and submit buttons. In its most
 bare form it aligns labels to the left of each input widget.

@@ -1,10 +1,14 @@
 ---
+redirect_to:
+  - https://docs.fyne.io/collection/table.md
+
 title: Table
 
 redirect_from:
   - /tour/widget/table
   - /widget/table
---- 
+---
+ 
 
 The `Table` collection widget is like the [List](/collection/list) widget (another of the toolkit's collection widgets) with a two-dimensional index.
 Like `List` this is designed to help build really performant

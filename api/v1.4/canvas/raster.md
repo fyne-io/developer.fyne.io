@@ -1,8 +1,12 @@
 ---
+redirect_to:
+  - https://docs.fyne.io/api/v1.4/canvas/raster.md
+
 layout: page
 tags: [api]
 title: Fyne API "canvas.Raster"
 ---
+
 
 # canvas.Raster
 ---

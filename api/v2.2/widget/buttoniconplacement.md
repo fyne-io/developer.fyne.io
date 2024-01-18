@@ -1,8 +1,12 @@
 ---
+redirect_to:
+  - https://docs.fyne.io/api/v2.2/widget/buttoniconplacement.md
+
 layout: page
 tags: [api]
 title: Fyne API "widget.ButtonIconPlacement"
 ---
+
 
 # widget.ButtonIconPlacement
 ---

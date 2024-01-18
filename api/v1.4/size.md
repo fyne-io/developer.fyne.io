@@ -1,8 +1,12 @@
 ---
+redirect_to:
+  - https://docs.fyne.io/api/v1.4/size.md
+
 layout: page
 tags: [api]
 title: Fyne API "fyne.Size"
 ---
+
 
 # fyne.Size
 ---

@@ -1,8 +1,12 @@
 ---
+redirect_to:
+  - https://docs.fyne.io/api/v2.2/staticresource.md
+
 layout: page
 tags: [api]
 title: Fyne API "fyne.StaticResource"
 ---
+
 
 # fyne.StaticResource
 ---

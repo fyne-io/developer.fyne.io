@@ -1,4 +1,7 @@
 ---
+redirect_to:
+  - https://docs.fyne.io/explore/dialogs.md
+
 layout: page
 title: Dialog List
 readonly: true
@@ -6,11 +9,9 @@ readonly: true
 redirect_from:
 - /started/dialogs
 ---
-
 ## Standard Dialogs
 
 ---
-
 ### Color
 
 Allow users to pick a colour from a standard set (or any color in advanced mode).
@@ -47,4 +48,3 @@ A simple way to present some information to the app user.
 Present any content inside a dialog container.
 
 {% include dialog.html name="custom" %}
-

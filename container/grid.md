@@ -1,10 +1,12 @@
 ---
+redirect_to:
+  - https://docs.fyne.io/container/grid.md
+
 title: Grid
 
 redirect_from:
 - /tour/layout/gridlayout
 ---
-
 The grid layout lays out the elements of a container in a grid pattern
 with a fixed number of columns. Items will fill a single row until the
 number of columns is met, after this a new row will be created.

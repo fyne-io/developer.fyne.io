@@ -1,8 +1,12 @@
 ---
+redirect_to:
+  - https://docs.fyne.io/started/demo.md
 layout: page
 title: Run Fyne Demo
 
 ---
+
+
 
 If you want to see the Fyne toolkit in action before you start to code your own application,
 you can see our [demo app](https://github.com/fyne-io/fyne/tree/master/cmd/fyne_demo).

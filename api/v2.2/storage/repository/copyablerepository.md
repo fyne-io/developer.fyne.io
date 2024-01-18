@@ -1,8 +1,12 @@
 ---
+redirect_to:
+  - https://docs.fyne.io/api/v2.2/storage/repository/copyablerepository.md
+
 layout: page
 tags: [api]
 title: Fyne API "repository.CopyableRepository"
 ---
+
 
 # repository.CopyableRepository
 ---

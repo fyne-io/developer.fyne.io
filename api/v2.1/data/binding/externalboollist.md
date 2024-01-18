@@ -1,8 +1,12 @@
 ---
+redirect_to:
+  - https://docs.fyne.io/api/v2.1/data/binding/externalboollist.md
+
 layout: page
 tags: [api]
 title: Fyne API "binding.ExternalBoolList"
 ---
+
 
 # binding.ExternalBoolList
 ---

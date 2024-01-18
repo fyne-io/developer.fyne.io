@@ -1,10 +1,11 @@
 ---
+redirect_to:
+  - https://docs.fyne.io/widget/toolbar.md
 title: Toolbar
 
 redirect_from:
   - /tour/widget/toolbar
 ---
-
 The toolbar widget creates a row of action buttons using
 icons to represent each. The `widget.NewToolbar(...)`
 constructor function takes a list of `widget.ToolbarItem`

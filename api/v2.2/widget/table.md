@@ -1,8 +1,12 @@
 ---
+redirect_to:
+  - https://docs.fyne.io/api/v2.2/widget/table.md
+
 layout: page
 tags: [api]
 title: Fyne API "widget.Table"
 ---
+
 
 # widget.Table
 ---

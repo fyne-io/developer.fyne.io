@@ -1,10 +1,14 @@
 ---
+redirect_to:
+  - https://docs.fyne.io/guiintro/index.md
+
 title: GUI Overview
 order: 4
 
 redirect_from:
 - /tour/introduction/guis
 ---
+
 
 Graphical applications are often more complicated to create than web
 based or command line applications. Fyne changes this by utilizing the great design of Go

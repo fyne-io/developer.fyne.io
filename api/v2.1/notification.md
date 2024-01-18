@@ -1,8 +1,12 @@
 ---
+redirect_to:
+  - https://docs.fyne.io/api/v2.1/notification.md
+
 layout: page
 tags: [api]
 title: Fyne API "fyne.Notification"
 ---
+
 
 # fyne.Notification
 ---

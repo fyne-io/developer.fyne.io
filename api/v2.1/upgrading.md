@@ -1,8 +1,12 @@
 ---
+redirect_to:
+  - https://docs.fyne.io/api/v2.1/upgrading.md
+
 layout: page
 tags: [api]
 title: Upgrading to v2.1
 ---
+
 
 The 2.1 release is fully backward compatible with 2.0.4 and earlier, so upgrading
 is as simple as updating the version of code you compile with.

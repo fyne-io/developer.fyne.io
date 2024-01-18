@@ -1,8 +1,12 @@
 ---
+redirect_to:
+  - https://docs.fyne.io/api/v2.2/lifecycle.md
+
 layout: page
 tags: [api]
 title: Fyne API "fyne.Lifecycle"
 ---
+
 
 # fyne.Lifecycle
 ---

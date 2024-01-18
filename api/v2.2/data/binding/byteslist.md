@@ -1,8 +1,12 @@
 ---
+redirect_to:
+  - https://docs.fyne.io/api/v2.2/data/binding/byteslist.md
+
 layout: page
 tags: [api]
 title: Fyne API "binding.BytesList"
 ---
+
 
 # binding.BytesList
 ---

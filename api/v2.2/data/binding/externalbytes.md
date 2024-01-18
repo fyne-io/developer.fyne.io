@@ -1,8 +1,12 @@
 ---
+redirect_to:
+  - https://docs.fyne.io/api/v2.2/data/binding/externalbytes.md
+
 layout: page
 tags: [api]
 title: Fyne API "binding.ExternalBytes"
 ---
+
 
 # binding.ExternalBytes
 ---

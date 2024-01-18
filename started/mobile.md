@@ -1,10 +1,14 @@
 ---
+redirect_to:
+  - https://docs.fyne.io/started/mobile.md
 layout: page
 title: Mobile Packaging
 
 redirect-from:
 - /started/packaging-mobile
 ---
+
+
 
 Your Fyne app code will work out of the box as mobile apps, just as it did for desktop.
 However it is a little more complex to package the code for distribution.
@@ -53,4 +57,3 @@ Afterwards you can use the command line tools as follows:
 ```
 xcrun simctl install booted myapp.app
 ```
-

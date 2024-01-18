@@ -1,8 +1,12 @@
 ---
+redirect_to:
+  - https://docs.fyne.io/api/v2.1/theme/disabledresource.md
+
 layout: page
 tags: [api]
 title: Fyne API "theme.DisabledResource"
 ---
+
 
 # theme.DisabledResource
 ---

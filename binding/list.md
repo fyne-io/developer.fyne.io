@@ -1,10 +1,12 @@
 ---
+redirect_to:
+  - https://docs.fyne.io/binding/list.md
+
 title: List Data
 
 redirect_from:
 - /tour/binding/list
 ---
-
 To demonstrate how more complex types can be connected
 we will look at the `List` widget and how data binding
 can make it easier to use. Firstly we create a `StringList`

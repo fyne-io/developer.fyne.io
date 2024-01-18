@@ -1,10 +1,12 @@
 ---
+redirect_to:
+  - https://docs.fyne.io/_gen/api.md
+
 layout: page
 tags: [api]
 title: Fyne API "widget.Form"
 package: fyne.io/fyne/v2/widget
 ---
-
 # widget.Form
 ---
 ```go

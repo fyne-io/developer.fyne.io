@@ -1,8 +1,12 @@
 ---
+redirect_to:
+  - https://docs.fyne.io/api/v1.4/theme/primarythemedresource.md
+
 layout: page
 tags: [api]
 title: Fyne API "theme.PrimaryThemedResource"
 ---
+
 
 # theme.PrimaryThemedResource
 ---

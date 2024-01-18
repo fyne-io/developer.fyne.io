@@ -1,8 +1,12 @@
 ---
+redirect_to:
+  - https://docs.fyne.io/api/v2.0/widget/accordion.md
+
 layout: page
 tags: [api]
 title: Fyne API "widget.Accordion"
 ---
+
 
 # widget.Accordion
 ---

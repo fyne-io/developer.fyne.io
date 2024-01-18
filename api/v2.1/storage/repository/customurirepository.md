@@ -1,8 +1,12 @@
 ---
+redirect_to:
+  - https://docs.fyne.io/api/v2.1/storage/repository/customurirepository.md
+
 layout: page
 tags: [api]
 title: Fyne API "repository.CustomURIRepository"
 ---
+
 
 # repository.CustomURIRepository
 ---

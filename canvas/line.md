@@ -1,10 +1,12 @@
 ---
+redirect_to:
+  - https://docs.fyne.io/canvas/line.md
+
 title: Line
 
 redirect_from:
   - /tour/canvas/line
 ---
-
 The `canvas.Line` object draws a line from the `Position1` (default
 is top, left) to `Position2` (default is bottom, right).
 You specify its colour and can vary the stroke width which otherwise

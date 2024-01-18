@@ -1,8 +1,12 @@
 ---
+redirect_to:
+  - https://docs.fyne.io/api/v1.2/widget/group.md
+
 layout: page
 tags: [api]
 title: Fyne API widget
 ---
+
 
 # widget
 ---

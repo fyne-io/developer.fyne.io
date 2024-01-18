@@ -1,8 +1,12 @@
 ---
+redirect_to:
+  - https://docs.fyne.io/explore/icons.md
+
 layout: page
 title: Theme Icons
 
 ---
+
 Each of the following icons is available via the `theme` package as a function. 
 For example `theme.InfoIcon()`.
 

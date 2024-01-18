@@ -1,8 +1,9 @@
 ---
+redirect_to:
+  - https://docs.fyne.io/started/updating.md
 layout: page
 title: Updating Content in your GUI
 ---
-
 Having completed the [hello world](/started/hello) tutorial or other
 examples you will have created a basic user interface. In this page
 we see how the content of a GUI can be updated from your code.

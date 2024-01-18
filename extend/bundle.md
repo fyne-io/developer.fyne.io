@@ -1,10 +1,14 @@
 ---
+redirect_to:
+  - https://docs.fyne.io/extend/bundle.md
+
 layout: page
 title: Bundling resources 
 
 redirect_from:
  - /tutorial/bundle
 ---
+
 
 Go based applications are usually built as a single binary executable, and this is the same for Fyne applications.
 A single file makes it easier to distribute install our software. Unfortunately GUI
@@ -53,4 +57,3 @@ If you will be bundling many files it is recommended to save the commands in a g
 If you then change any assets or add new ones then you can update this header and run it with "go generate" to update your `bundled.go` file.
 You should then add `bundled.go` to version control so others can build your app
 without needing to run "fyne bundle".
-

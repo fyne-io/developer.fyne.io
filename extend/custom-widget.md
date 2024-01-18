@@ -1,4 +1,7 @@
 ---
+redirect_to:
+  - https://docs.fyne.io/extend/custom-widget.md
+
 layout: page
 title: Writing a Custom Widget
 
@@ -6,7 +9,6 @@ redirect_from:
  - /develop/custom-widget.html
  - /tutorial/write-custom-widget
 ---
-
 The standard widgets included with Fyne are designed to support standard user interactions and requirements.
 As a GUI often has to provide custom functionality it may be necessary to write a custom widget.
 This article outlines how.
