@@ -1,5 +1,7 @@
 # developer.fyne.io Website
 
+> This repository has been archived as we are now using [docs.fyne.io](/fyne-io/docs.fyne.io).
+
 This repository contains the source of the https://developer.fyne.io website.
 
 ## Running the website locally
