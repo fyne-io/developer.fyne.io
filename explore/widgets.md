@@ -1,6 +1,6 @@
 ---
 redirect_to:
-  - https://docs.fyne.io/explore/widgets.md
+  - https://docs.fyne.io/explore/widgets
 
 layout: page
 title: Widget List

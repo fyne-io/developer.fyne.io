@@ -1,6 +1,6 @@
 ---
 redirect_to:
-  - https://docs.fyne.io/canvas/raster.md
+  - https://docs.fyne.io/canvas/raster
 
 title: Raster
 

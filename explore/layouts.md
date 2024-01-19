@@ -1,6 +1,6 @@
 ---
 redirect_to:
-  - https://docs.fyne.io/explore/layouts.md
+  - https://docs.fyne.io/explore/layouts
 
 layout: page
 title: Layout List

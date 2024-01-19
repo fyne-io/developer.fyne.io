@@ -1,6 +1,6 @@
 ---
 redirect_to:
-  - https://docs.fyne.io/faq/layout.md
+  - https://docs.fyne.io/faq/layout
 
 layout: page
 title: Layout and Widget Size

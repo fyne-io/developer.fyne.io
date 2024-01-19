@@ -1,6 +1,6 @@
 ---
 redirect_to:
-  - https://docs.fyne.io/extend/custom-layout.md
+  - https://docs.fyne.io/extend/custom-layout
 
 layout: page
 title: Building a Custom Layout

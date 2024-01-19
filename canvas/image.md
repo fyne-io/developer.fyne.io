@@ -1,6 +1,6 @@
 ---
 redirect_to:
-  - https://docs.fyne.io/canvas/image.md
+  - https://docs.fyne.io/canvas/image
 
 title: Image
 

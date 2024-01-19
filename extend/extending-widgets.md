@@ -1,6 +1,6 @@
 ---
 redirect_to:
-  - https://docs.fyne.io/extend/extending-widgets.md
+  - https://docs.fyne.io/extend/extending-widgets
 
 layout: page
 title: Extending Widgets

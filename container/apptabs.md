@@ -1,6 +1,6 @@
 ---
 redirect_to:
-  - https://docs.fyne.io/container/apptabs.md
+  - https://docs.fyne.io/container/apptabs
 
 title: AppTabs
 

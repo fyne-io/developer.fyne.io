@@ -1,6 +1,6 @@
 ---
 redirect_to:
-  - https://docs.fyne.io/started/distribution.md
+  - https://docs.fyne.io/started/distribution
 layout: page
 title: Distributing to App Stores	
 

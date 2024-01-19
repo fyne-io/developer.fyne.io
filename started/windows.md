@@ -1,6 +1,6 @@
 ---
 redirect_to:
-  - https://docs.fyne.io/started/windows.md
+  - https://docs.fyne.io/started/windows
 title: Window Handling
 
 redirect_from:

@@ -1,6 +1,6 @@
 ---
 redirect_to:
-  - https://docs.fyne.io/extend/custom-theme.md
+  - https://docs.fyne.io/extend/custom-theme
 
 layout: page
 title: Creating a Custom Theme

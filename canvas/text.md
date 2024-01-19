@@ -1,6 +1,6 @@
 ---
 redirect_to:
-  - https://docs.fyne.io/canvas/text.md
+  - https://docs.fyne.io/canvas/text
 
 title: Text
 

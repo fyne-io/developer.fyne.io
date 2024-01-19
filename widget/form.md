@@ -1,6 +1,6 @@
 ---
 redirect_to:
-  - https://docs.fyne.io/widget/form.md
+  - https://docs.fyne.io/widget/form
 title: Form
 
 redirect_from:

@@ -1,6 +1,6 @@
 ---
 redirect_to:
-  - https://docs.fyne.io/explore/container.md
+  - https://docs.fyne.io/explore/container
 
 title: Container and Layouts
 

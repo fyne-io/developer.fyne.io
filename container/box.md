@@ -1,6 +1,6 @@
 ---
 redirect_to:
-  - https://docs.fyne.io/container/box.md
+  - https://docs.fyne.io/container/box
 
 title: Box
 

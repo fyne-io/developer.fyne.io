@@ -1,6 +1,6 @@
 ---
 redirect_to:
-  - https://docs.fyne.io/extend/numerical-entry.md
+  - https://docs.fyne.io/extend/numerical-entry
 
 layout: page
 title: Numerical Entry

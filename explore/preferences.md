@@ -1,6 +1,6 @@
 ---
 redirect_to:
-  - https://docs.fyne.io/explore/preferences.md
+  - https://docs.fyne.io/explore/preferences
 
 layout: page
 title: Using the Preferences API

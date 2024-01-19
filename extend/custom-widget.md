@@ -1,6 +1,6 @@
 ---
 redirect_to:
-  - https://docs.fyne.io/extend/custom-widget.md
+  - https://docs.fyne.io/extend/custom-widget
 
 layout: page
 title: Writing a Custom Widget

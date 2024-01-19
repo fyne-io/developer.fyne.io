@@ -1,6 +1,6 @@
 ---
 redirect_to:
-  - https://docs.fyne.io/container/max.md
+  - https://docs.fyne.io/container/max
 
 title: Max
 

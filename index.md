@@ -1,6 +1,6 @@
 ---
 redirect_to:
-  - https://docs.fyne.io/index.md
+  - https://docs.fyne.io/
 
 title: "Fyne toolkit documentation for developers"
 permalink: index.html

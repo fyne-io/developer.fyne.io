@@ -1,6 +1,6 @@
 ---
 redirect_to:
-  - https://docs.fyne.io/explore/canvas.md
+  - https://docs.fyne.io/explore/canvas
 
 title: Canvas and CanvasObject
 

@@ -1,6 +1,6 @@
 ---
 redirect_to:
-  - https://docs.fyne.io/started/hello.md
+  - https://docs.fyne.io/started/hello
 layout: page
 title: Creating your first Fyne app
 

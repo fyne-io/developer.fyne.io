@@ -1,6 +1,6 @@
 ---
 redirect_to:
-  - https://docs.fyne.io/explore/compiling.md
+  - https://docs.fyne.io/explore/compiling
 
 layout: page
 title: Compile Options

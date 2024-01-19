@@ -1,6 +1,6 @@
 ---
 redirect_to:
-  - https://docs.fyne.io/started/index.md
+  - https://docs.fyne.io/started/
 layout: page
 title: Getting Started
 

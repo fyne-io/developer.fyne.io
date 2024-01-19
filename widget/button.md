@@ -1,6 +1,6 @@
 ---
 redirect_to:
-  - https://docs.fyne.io/widget/button.md
+  - https://docs.fyne.io/widget/button
 title: Button
 
 redirect_from:

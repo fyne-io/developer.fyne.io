@@ -1,6 +1,6 @@
 ---
 redirect_to:
-  - https://docs.fyne.io/architecture/organisation.md
+  - https://docs.fyne.io/architecture/organisation
 
 title: Organisation and Packages
 

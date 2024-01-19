@@ -1,6 +1,6 @@
 ---
 redirect_to:
-  - https://docs.fyne.io/started/packaging.md
+  - https://docs.fyne.io/started/packaging
 layout: page
 title: Packaging for Desktop
 

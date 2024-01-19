@@ -1,6 +1,6 @@
 ---
 redirect_to:
-  - https://docs.fyne.io/started/cross-compiling.md
+  - https://docs.fyne.io/started/cross-compiling
 layout: page
 title: Compiling for different platforms
 

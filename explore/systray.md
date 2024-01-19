@@ -1,6 +1,6 @@
 ---
 redirect_to:
-  - https://docs.fyne.io/explore/systray.md
+  - https://docs.fyne.io/explore/systray
 
 layout: page
 title: System Tray Menu

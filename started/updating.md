@@ -1,6 +1,6 @@
 ---
 redirect_to:
-  - https://docs.fyne.io/started/updating.md
+  - https://docs.fyne.io/started/updating
 layout: page
 title: Updating Content in your GUI
 ---

@@ -1,6 +1,6 @@
 ---
 redirect_to:
-  - https://docs.fyne.io/started/testing.md
+  - https://docs.fyne.io/started/testing
 layout: page
 title: Testing Graphical Apps
 ---

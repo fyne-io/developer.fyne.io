@@ -1,6 +1,6 @@
 ---
 redirect_to:
-  - https://docs.fyne.io/widget/toolbar.md
+  - https://docs.fyne.io/widget/toolbar
 title: Toolbar
 
 redirect_from:

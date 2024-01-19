@@ -1,6 +1,6 @@
 ---
 redirect_to:
-  - https://docs.fyne.io/guiintro/index.md
+  - https://docs.fyne.io/guiintro/
 
 title: GUI Overview
 order: 4

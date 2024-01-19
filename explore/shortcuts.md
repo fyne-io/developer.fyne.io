@@ -1,6 +1,6 @@
 ---
 redirect_to:
-  - https://docs.fyne.io/explore/shortcuts.md
+  - https://docs.fyne.io/explore/shortcuts
 
 layout: page
 title: Adding Shortcuts to an App

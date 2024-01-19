@@ -1,6 +1,6 @@
 ---
 redirect_to:
-  - https://docs.fyne.io/explore/icons.md
+  - https://docs.fyne.io/explore/icons
 
 layout: page
 title: Theme Icons

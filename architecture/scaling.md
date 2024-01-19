@@ -1,6 +1,6 @@
 ---
 redirect_to:
-  - https://docs.fyne.io/architecture/scaling.md
+  - https://docs.fyne.io/architecture/scaling
 
 layout: page
 title: Scaling

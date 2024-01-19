@@ -1,6 +1,6 @@
 ---
 redirect_to:
-  - https://docs.fyne.io/submit-addon.md
+  - https://docs.fyne.io/submit-addon
 permalink: /submit-addon/
 ---
 

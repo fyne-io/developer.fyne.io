@@ -1,6 +1,6 @@
 ---
 redirect_to:
-  - https://docs.fyne.io/started/metadata.md
+  - https://docs.fyne.io/started/metadata
 layout: page
 title: App Metadata
 

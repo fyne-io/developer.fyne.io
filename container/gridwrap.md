@@ -1,6 +1,6 @@
 ---
 redirect_to:
-  - https://docs.fyne.io/container/gridwrap.md
+  - https://docs.fyne.io/container/gridwrap
 
 title: Grid Wrap
 

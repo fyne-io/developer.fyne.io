@@ -1,6 +1,6 @@
 ---
 redirect_to:
-  - https://docs.fyne.io/binding/twoway.md
+  - https://docs.fyne.io/binding/twoway
 
 title: Two-Way Binding
 

@@ -1,6 +1,6 @@
 ---
 redirect_to:
-  - https://docs.fyne.io/started/mobile.md
+  - https://docs.fyne.io/started/mobile
 layout: page
 title: Mobile Packaging
 

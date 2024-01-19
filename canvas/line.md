@@ -1,6 +1,6 @@
 ---
 redirect_to:
-  - https://docs.fyne.io/canvas/line.md
+  - https://docs.fyne.io/canvas/line
 
 title: Line
 

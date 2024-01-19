@@ -1,6 +1,6 @@
 ---
 redirect_to:
-  - https://docs.fyne.io/canvas/rectangle.md
+  - https://docs.fyne.io/canvas/rectangle
 
 title: Rectangle
 

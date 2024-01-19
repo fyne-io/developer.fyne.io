@@ -1,6 +1,6 @@
 ---
 redirect_to:
-  - https://docs.fyne.io/started/webapp.md
+  - https://docs.fyne.io/started/webapp
 layout: page
 title: Run in a Browser
 

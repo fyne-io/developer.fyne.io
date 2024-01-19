@@ -1,6 +1,6 @@
 ---
 redirect_to:
-  - https://docs.fyne.io/pages/tags/tag_troubleshooting.md
+  - https://docs.fyne.io/pages/tags/tag_troubleshooting
 title: "Troubleshooting pages"
 tagName: troubleshooting
 search: exclude

@@ -1,6 +1,6 @@
 ---
 redirect_to:
-  - https://docs.fyne.io/explore/binding.md
+  - https://docs.fyne.io/explore/binding
 
 layout: page
 title: Data Binding

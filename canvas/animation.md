@@ -1,6 +1,6 @@
 ---
 redirect_to:
-  - https://docs.fyne.io/canvas/animation.md
+  - https://docs.fyne.io/canvas/animation
 
 title: Animation
 

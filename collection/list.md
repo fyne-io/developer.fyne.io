@@ -1,6 +1,6 @@
 ---
 redirect_to:
-  - https://docs.fyne.io/collection/list.md
+  - https://docs.fyne.io/collection/list
 
 title: List
 

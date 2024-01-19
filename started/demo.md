@@ -1,6 +1,6 @@
 ---
 redirect_to:
-  - https://docs.fyne.io/started/demo.md
+  - https://docs.fyne.io/started/demo
 layout: page
 title: Run Fyne Demo
 

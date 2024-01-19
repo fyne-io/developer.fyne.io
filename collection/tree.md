@@ -1,6 +1,6 @@
 ---
 redirect_to:
-  - https://docs.fyne.io/collection/tree.md
+  - https://docs.fyne.io/collection/tree
 
 title: Tree
 

@@ -1,6 +1,6 @@
 ---
 redirect_to:
-  - https://docs.fyne.io/widget/progressbar.md
+  - https://docs.fyne.io/widget/progressbar
 title: ProgressBar
 
 redirect_from:

@@ -1,6 +1,6 @@
 ---
 redirect_to:
-  - https://docs.fyne.io/faq/index.md
+  - https://docs.fyne.io/faq/
 
 layout: page
 title: Frequently Asked Questions

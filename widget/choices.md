@@ -1,6 +1,6 @@
 ---
 redirect_to:
-  - https://docs.fyne.io/widget/choices.md
+  - https://docs.fyne.io/widget/choices
 title: Choices
 
 redirect_from:

@@ -1,6 +1,6 @@
 ---
 redirect_to:
-  - https://docs.fyne.io/collection/table.md
+  - https://docs.fyne.io/collection/table
 
 title: Table
 

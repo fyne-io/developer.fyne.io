@@ -1,6 +1,6 @@
 ---
 redirect_to:
-  - https://docs.fyne.io/architecture/widgets.md
+  - https://docs.fyne.io/architecture/widgets
 
 layout: page
 title: Widgets

@@ -1,6 +1,6 @@
 ---
 redirect_to:
-  - https://docs.fyne.io/binding/simple.md
+  - https://docs.fyne.io/binding/simple
 
 title: Binding Simple Widgets
 

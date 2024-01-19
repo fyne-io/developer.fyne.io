@@ -1,6 +1,6 @@
 ---
 redirect_to:
-  - https://docs.fyne.io/container/grid.md
+  - https://docs.fyne.io/container/grid
 
 title: Grid
 

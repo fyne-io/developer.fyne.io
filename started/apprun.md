@@ -1,6 +1,6 @@
 ---
 redirect_to:
-  - https://docs.fyne.io/started/apprun.md
+  - https://docs.fyne.io/started/apprun
 title: Application and RunLoop
 
 redirect_from:

@@ -1,6 +1,6 @@
 ---
 redirect_to:
-  - https://docs.fyne.io/canvas/circle.md
+  - https://docs.fyne.io/canvas/circle
 
 title: Circle
 

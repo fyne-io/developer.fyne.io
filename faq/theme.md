@@ -1,6 +1,6 @@
 ---
 redirect_to:
-  - https://docs.fyne.io/faq/theme.md
+  - https://docs.fyne.io/faq/theme
 
 layout: page
 title: Theme and Customisation

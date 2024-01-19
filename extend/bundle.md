@@ -1,6 +1,6 @@
 ---
 redirect_to:
-  - https://docs.fyne.io/extend/bundle.md
+  - https://docs.fyne.io/extend/bundle
 
 layout: page
 title: Bundling resources 

@@ -1,6 +1,6 @@
 ---
 redirect_to:
-  - https://docs.fyne.io/binding/conversion.md
+  - https://docs.fyne.io/binding/conversion
 
 title: Data Conversion
 

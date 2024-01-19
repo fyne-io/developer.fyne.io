@@ -1,6 +1,6 @@
 ---
 redirect_to:
-  - https://docs.fyne.io/binding/list.md
+  - https://docs.fyne.io/binding/list
 
 title: List Data
 

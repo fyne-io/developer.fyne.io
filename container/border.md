@@ -1,6 +1,6 @@
 ---
 redirect_to:
-  - https://docs.fyne.io/container/border.md
+  - https://docs.fyne.io/container/border
 
 title: Border
 

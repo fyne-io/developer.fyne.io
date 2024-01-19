@@ -1,6 +1,6 @@
 ---
 redirect_to:
-  - https://docs.fyne.io/pages/tags/tag_news.md
+  - https://docs.fyne.io/pages/tags/tag_news
 title: "News"
 tagName: news
 search: exclude

@@ -1,6 +1,6 @@
 ---
 redirect_to:
-  - https://docs.fyne.io/container/center.md
+  - https://docs.fyne.io/container/center
 
 title: Center
 

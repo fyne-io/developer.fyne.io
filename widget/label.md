@@ -1,6 +1,6 @@
 ---
 redirect_to:
-  - https://docs.fyne.io/widget/label.md
+  - https://docs.fyne.io/widget/label
 title: Label
 
 redirect_from:

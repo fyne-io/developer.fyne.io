@@ -1,6 +1,6 @@
 ---
 redirect_to:
-  - https://docs.fyne.io/canvas/gradient.md
+  - https://docs.fyne.io/canvas/gradient
 
 title: Gradient
 

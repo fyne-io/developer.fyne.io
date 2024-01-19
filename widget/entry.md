@@ -1,6 +1,6 @@
 ---
 redirect_to:
-  - https://docs.fyne.io/widget/entry.md
+  - https://docs.fyne.io/widget/entry
 title: Entry
 
 redirect_from:

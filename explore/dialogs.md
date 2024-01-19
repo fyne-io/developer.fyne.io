@@ -1,6 +1,6 @@
 ---
 redirect_to:
-  - https://docs.fyne.io/explore/dialogs.md
+  - https://docs.fyne.io/explore/dialogs
 
 layout: page
 title: Dialog List

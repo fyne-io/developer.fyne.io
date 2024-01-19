@@ -1,6 +1,6 @@
 ---
 redirect_to:
-  - https://docs.fyne.io/architecture/geometry.md
+  - https://docs.fyne.io/architecture/geometry
 
 layout: page
 title: Geometry
