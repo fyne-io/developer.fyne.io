@@ -287,6 +287,9 @@ entries:
     - title: Add a Custom Theme
       url: /extend/custom-theme
       output: web, pdf
+    - title: List of struct and ListWithData widget
+      url: /tutorial/list-with-data
+      output: web, pdf
 
     - title: Extending Widgets
       url: /extend/extending-widgets
